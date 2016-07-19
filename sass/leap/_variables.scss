@@ -1,0 +1,34 @@
+// Global Colors
+$dark: #384047;
+$bg: #edeff0;
+
+// Spacing Units
+//   0   = 0px
+//   0.5 = 8px
+//   1   = 16px
+//   2   = 24px
+//   3   = 32px
+//   4   = 48px
+//   5   = 64px
+//   6   = 80px
+$spacing: (
+  0: 0rem,
+  0.5: 0.5rem,
+  1: 1rem,
+  2: 1.5rem,
+  3: 2rem,
+  4: 3rem,
+  5: 4rem,
+  6: 5rem
+);
+
+// Global Border Variables
+$border-color-dark: lighten($dark, 50%);   // #b7c0c7
+$border-color-mid: lighten($dark, 60%);    // #d4d9dd
+$border-color-normal: lighten($dark, 67%); // #e8ebed
+$border-color-light: lighten($dark, 70%);  // #f0f2f4
+$border-radius: 4px;
+
+// Global Responsive Breakpoints
+$desktop: 960px;
+$tablet: 680px;

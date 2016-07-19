@@ -1,0 +1,70 @@
+// Local border variables
+$border-types: top, bottom, left, right
+$border-values: normal, dark, mid, light
+
+
+
+// This function returns a border variable to be used within a mixin loop
+@function border-var($value)
+  @if $value == normal
+    @return $border-color-normal
+  @else if $value == dark
+    @return $border-color-dark
+  @else if $value == mid
+    @return $border-color-mid
+  @else if $value == light
+    @return $border-color-light
+
+
+
+// Creates the style declarations for each border type and value
+@mixin border-style($suffix)
+
+  // Iterate through each value in $border-values
+  @each $value in $border-values
+
+    // We don't want a modifier on the normal style,
+    // so we need a conditional to control that
+    @if $value == normal
+      .border-#{$suffix}
+        border: solid 1px border-var($value) !important
+    @else
+      .border-#{$suffix}-#{$value}
+        border: solid 1px border-var($value) !important
+
+    // Iterate through each type in $border-types
+    @each $border in $border-types
+
+      // We don't want a modifier on the normal style,
+      // so we need a conditional to control that
+      @if $value == normal
+        .border-#{$border}-#{$suffix}
+          border-#{$border}: solid 1px border-var($value) !important
+      @else
+        .border-#{$border}-#{$suffix}-#{$value}
+          border-#{$border}: solid 1px border-var($value) !important
+
+
+
+// Adds the media queries to the border-style mixin
+@mixin border($suffix, $media: null)
+
+  // We want to use @media screen whenever no $media
+  // is passed into the mixin
+  @if length($media) == 2
+    +media($media)
+      +border-style($suffix)
+  @else
+    @media screen
+      +border-style($suffix)
+
+
+
+// Small border classes
++border(sm)
+
+// Medium border classes
++border(md, min-width $tablet)
+
+// Large border classes
++border(lg, min-width $desktop)

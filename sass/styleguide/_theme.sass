@@ -1,0 +1,46 @@
+body
+  background-color: $bg
+
+.guide
+
+  // =========================================
+  // Guide Banner
+  // =========================================
+  &-banner
+    background-color: $dark
+
+  // =========================================
+  // A11y Skip
+  // =========================================
+  &-skip-content a
+    color: #fff
+    font-size: 0.875rem
+    text-decoration: none
+
+  // =========================================
+  // Guide Name
+  // =========================================
+  &-name
+    color: #fff
+    font-size: 2rem
+    font-weight: bold
+    text-decoration: none
+
+  // =========================================
+  // Guide Navigation
+  // =========================================
+  &-navigation
+    background-color: $dark
+    &-link
+      color: #fff
+      font-size: 0.875rem
+      text-decoration: none
+      &:hover
+        background-color: darken($dark, 5%)
+
+  // =========================================
+  // Guide Main
+  // =========================================
+  &-content
+    background-color: #fff
+    border-radius: $border-radius
