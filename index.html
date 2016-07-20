@@ -24,6 +24,18 @@
 
 
 
+        <div id="float">
+          <h2>Floats</h2>
+          <p>To float elements, use the following classes: <code>.float-left-xs</code>, <code>.float-right-xs</code>, and <code>.float-none-xs</code></p>
+          <div class="col-container">
+            <div class="float-left-xs">.float-left-xs</div>
+            <div class="float-right-xs">.float-right-xs</div>
+          </div>
+          <div class="float-none-xs">.float-none-xs</div>
+        </div>
+
+
+
         <div id="display">
           <h2>Display</h2>
           <p>Use <code>.hide-xs</code>, <code>.block-xs</code>, <code>.inline-xs</code> and <code>.inline-block-xs</code> to change an element's display.</p>
@@ -41,11 +53,11 @@
 
 
 
-        <div id="spacing">
+        <div id="spacing-units">
           <h2>Spacing Units and Naming</h2>
           <p>We use our spacial units across margin, padding, and positioning. These comes in values from 0-6 and a half space unit of 0.5. Each value represents a unit based on 1rem=16px. Each class uses a shorthand of its name to indicate properties and direction.</p>
           <div class="col-container">
-            <div class="col col-4-xs">
+            <div class="col col-30-lg">
               <p><strong>Units</strong></p>
               <ul>
                 <li><strong>0</strong> = 0</li>
@@ -58,9 +70,133 @@
                 <li><strong>6</strong> = 5rem</li>
               </ul>
             </div>
-            <div class="col col-4-xs"
+            <div class="col col-30-lg">
+              <p><strong>Properties</strong></p>
+              <ul>
+                <li><strong>mg</strong> = margin</li>
+                <li><strong>pd</strong> = padding</li>
+              </ul>
+            </div>
+            <div class="col col-30-lg">
+              <p><strong>Sides</strong></p>
+              <ul>
+                <li><strong>t</strong> = top</li>
+                <li><strong>b</strong> = bottom</li>
+                <li><strong>l</strong> = left</li>
+                <li><strong>r</strong> = right</li>
+                <li><strong>lr</strong> = left + right</li>
+                <li><strong>tb</strong> = top + bottom</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div id="spacing">
+          <h2>Spacing</h2>
+          <h3>Uniform Spacing</h3>
+          <p>These classes are used to apply equal spacing around the entire element.</p>
+          <div class="col-container">
+            <div class="col col-30-md">
+              <p><strong>Margin</strong></p>
+              <ul>
+                <li><code>.mg-0-xs</code></li>
+                <li><code>.mg-05-xs</code></li>
+                <li><code>.mg-1-xs</code></li>
+                <li><code>.mg-2-xs</code></li>
+                <li><code>.mg-3-xs</code></li>
+                <li><code>.mg-4-xs</code></li>
+                <li><code>.mg-5-xs</code></li>
+                <li><code>.mg-6-xs</code></li>
+              </ul>
+            </div>
+            <div class="col col-30-md">
+              <p><strong>Padding</strong></p>
+              <ul>
+                <li><code>.pd-0-xs</code></li>
+                <li><code>.pd-05-xs</code></li>
+                <li><code>.pd-1-xs</code></li>
+                <li><code>.pd-2-xs</code></li>
+                <li><code>.pd-3-xs</code></li>
+                <li><code>.pd-4-xs</code></li>
+                <li><code>.pd-5-xs</code></li>
+                <li><code>.pd-6-xs</code></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-container border-xs">
+            <div class="border-dark-xs float-left-xs inline-block-xs mg-05-xs">mg-05-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs mg-1-xs">mg-1-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs mg-2-xs">mg-2-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs mg-3-xs">mg-3-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs pd-05-xs">pd-05-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs pd-1-xs">pd-1-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs pd-2-xs">pd-2-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs pd-3-xs">pd-3-xs</div>
+          </div>
+          <div class="guide-code">
+<pre><code class="language-html">&lt;div class="col-container border-xs"&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs mg-05-xs"&gt;mg-05-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs mg-1-xs"&gt;mg-1-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs mg-2-xs"&gt;mg-2-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs mg-3-xs"&gt;mg-3-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs pd-05-xs"&gt;pd-05-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs pd-1-xs"&gt;pd-1-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs pd-2-xs"&gt;pd-2-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs pd-3-xs"&gt;pd-3-xs&lt;/div&gt;
+&lt;/div&gt;</code></pre>
           </div>
 
+          <h3>Individual Spacing</h3>
+          <p>These classes are used to apply spacing to a particular side of an element.</p>
+          <div class="col-container">
+            <div class="col col-50-lg">
+              <p><strong>Margin</strong></p>
+              <ul>
+                <li><code>.mg-t-1-xs</code> <span class="mg-l-1-xs">margin-top</span></li>
+                <li><code>.mg-b-1-xs</code> <span class="mg-l-1-xs">margin-bottom</span></li>
+                <li><code>.mg-l-1-xs</code> <span class="mg-l-1-xs">margin-left</span></li>
+                <li><code>.mg-r-1-xs</code> <span class="mg-l-1-xs">margin-right</span></li>
+                <li><code>.mg-lr-1-xs</code> <span class="mg-l-1-xs">margin left + right</span></li>
+                <li><code>.mg-tb-1-xs</code> <span class="mg-l-1-xs">margin top + bottom</span></li>
+                <li><code>.mg-auto-xs</code> <span class="mg-l-1-xs">horizontal center</span></li>
+              </ul>
+            </div>
+            <div class="col col-50-lg">
+              <p><strong>Padding</strong></p>
+              <ul>
+                <li><code>.pd-0-xs</code> <span class="mg-l-1-xs">padding-top</span></li>
+                <li><code>.pd-05-xs</code> <span class="mg-l-1-xs">padding-bottom</span></li>
+                <li><code>.pd-1-xs</code> <span class="mg-l-1-xs">padding-left</span></li>
+                <li><code>.pd-2-xs</code> <span class="mg-l-1-xs">padding-right</span></li>
+                <li><code>.pd-3-xs</code> <span class="mg-l-1-xs">padding left + right</span></li>
+                <li><code>.pd-4-xs</code> <span class="mg-l-1-xs">padding top + bottom</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-container border-xs">
+            <div class="border-dark-xs float-left-xs inline-block-xs mg-t-3-xs">mg-t-3-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs mg-t-4-xs">mg-t-4-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs mg-t-5-xs">mg-t-5-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs mg-t-6-xs">mg-t-6-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs pd-l-3-xs">pd-l-3-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs pd-l-4-xs">pd-l-4-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs pd-l-5-xs">pd-l-5-xs</div>
+            <div class="border-dark-xs float-left-xs inline-block-xs pd-l-6-xs">pd-l-6-xs</div>
+          </div>
+          <div class="guide-code">
+<pre><code class="language-html">&lt;div class="col-container border-xs"&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs mg-t-3-xs"&gt;mg-t-3-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs mg-t-4-xs"&gt;mg-t-4-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs mg-t-5-xs"&gt;mg-t-5-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs mg-t-6-xs"&gt;mg-t-6-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs pd-l-3-xs"&gt;pd-l-3-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs pd-l-4-xs"&gt;pd-l-4-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs pd-l-5-xs"&gt;pd-l-5-xs&lt;/div&gt;
+  &lt;div class="border-dark-xs float-left-xs inline-block-xs pd-l-6-xs"&gt;pd-l-6-xs&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
         </div>
 
 

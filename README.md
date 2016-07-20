@@ -181,7 +181,7 @@ Atomic classes that can be stacked to quickly create layouts, spacing, etc, on a
 * [x] left and right (x-axis)
 * [x] top and bottom (y-axis)
 * [x] auto
-* [ ] Documentation
+* [x] Documentation
 
 #### Padding (0, 0.5, 1, 2, 3, 4, 5, 6)
 * [x] uniform
@@ -191,13 +191,13 @@ Atomic classes that can be stacked to quickly create layouts, spacing, etc, on a
 * [x] right  
 * [x] left and right (x-axis)
 * [x] top and bottom (y-axis)
-* [ ] Documentation
+* [x] Documentation
 
 #### Floats
-* [ ] Left
-* [ ] Right
-* [ ] None
-* [ ] Documentation
+* [x] Left
+* [x] Right
+* [x] None
+* [x] Documentation
 
 #### Display
 * [x] Inline

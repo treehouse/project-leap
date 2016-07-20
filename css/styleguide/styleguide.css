@@ -3592,6 +3592,71 @@ body {
     padding-bottom: 5rem !important;
   }
 }
+@media screen {
+  .float-left-xs {
+    float: left !important;
+  }
+
+  .float-right-xs {
+    float: right !important;
+  }
+
+  .float-none-xs {
+    float: none !important;
+  }
+}
+@media screen and (min-width: 480px) {
+  .float-left-sm {
+    float: left !important;
+  }
+
+  .float-right-sm {
+    float: right !important;
+  }
+
+  .float-none-sm {
+    float: none !important;
+  }
+}
+@media screen and (min-width: 680px) {
+  .float-left-md {
+    float: left !important;
+  }
+
+  .float-right-md {
+    float: right !important;
+  }
+
+  .float-none-md {
+    float: none !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .float-left-lg {
+    float: left !important;
+  }
+
+  .float-right-lg {
+    float: right !important;
+  }
+
+  .float-none-lg {
+    float: none !important;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .float-left-xl {
+    float: left !important;
+  }
+
+  .float-right-xl {
+    float: right !important;
+  }
+
+  .float-none-xl {
+    float: none !important;
+  }
+}
 .guide-banner {
   position: fixed;
   top: 0;
