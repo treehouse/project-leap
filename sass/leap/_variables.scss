@@ -23,6 +23,17 @@ $spacing: (
   6:   5rem
 );
 
+// Spacing Sides
+$spacing-sides: (
+  all: all,
+  t: top,
+  b: bottom,
+  l: left,
+  r: right,
+  lr: null,
+  tb: null
+);
+
 // Global Border Variables
 $border-color-dark: lighten($dark, 50%);   // #b7c0c7
 $border-color-mid: lighten($dark, 60%);    // #d4d9dd

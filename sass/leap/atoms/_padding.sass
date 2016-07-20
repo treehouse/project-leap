@@ -1,13 +1,8 @@
-// Local border variables
-$padding-types: all, t, b, l, r, lr, tb
-
-
-
 // Creates the style declarations for each border type and value
 @mixin padding-style($suffix)
 
-  // Iterate through each value in $padding-types
-  @each $type in $padding-types
+  // Iterate through each value in $spacing-sides
+  @each $type, $side in $spacing-sides
 
     // We don't want a modifier on the padding for all sides,
     // so we need a conditional to control that
@@ -33,11 +28,35 @@ $padding-types: all, t, b, l, r, lr, tb
         // We don't want a class of "0.5" so we use a conditional to
         // let us rename is at "05" in this instance
         @if $unit == 0.5
-          .pd-#{$type}-#{$suffix}-05
-            padding: spacing($unit) !important
+
+          // We need to control printing out two properties for
+          // the lt and tb case and a single for the others
+          @if $type == lr
+            .pd-#{$type}-#{$suffix}-05
+              padding-left: spacing($unit) !important
+              padding-right: spacing($unit) !important
+          @else if $type == tb
+            .pd-#{$type}-#{$suffix}-05
+              padding-top: spacing($unit) !important
+              padding-bottom: spacing($unit) !important
+          @else
+            .pd-#{$type}-#{$suffix}-05
+              padding-#{$side}: spacing($unit) !important
         @else
-          .pd-#{$type}-#{$suffix}-#{$unit}
-            padding: spacing($unit) !important
+
+          // We need to control printing out two properties for
+          // the lt and tb case and a single for the others
+          @if $type == lr
+            .pd-#{$type}-#{$suffix}-#{$unit}
+              padding-left: spacing($unit) !important
+              padding-right: spacing($unit) !important
+          @else if $type == tb
+            .pd-#{$type}-#{$suffix}-#{$unit}
+              padding-top: spacing($unit) !important
+              padding-bottom: spacing($unit) !important
+          @else
+            .pd-#{$type}-#{$suffix}-#{$unit}
+              padding-#{$side}: spacing($unit) !important
 
 
 

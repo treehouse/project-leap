@@ -1,4 +1,4 @@
-Building Blocks
+Building Blocks (Atoms)
 ===
 
 
@@ -173,24 +173,24 @@ Layout
 Atomic classes that can be stacked to quickly create layouts, spacing, etc, on any given page or component. All of these have responsive prefixes, defaulting to mobile-first.
 
 #### Margin (0, 0.5, 1, 2, 3, 4, 5, 6)
-* [ ] uniform
-* [ ] top
-* [ ] right
-* [ ] bottom
-* [ ] right  
-* [ ] left and right (x-axis)
-* [ ] top and bottom (y-axis)
-* [ ] auto
+* [x] uniform
+* [x] top
+* [x] right
+* [x] bottom
+* [x] right  
+* [x] left and right (x-axis)
+* [x] top and bottom (y-axis)
+* [x] auto
 * [ ] Documentation
 
 #### Padding (0, 0.5, 1, 2, 3, 4, 5, 6)
-* [ ] uniform
-* [ ] top
-* [ ] right
-* [ ] bottom
-* [ ] right  
-* [ ] left and right (x-axis)
-* [ ] top and bottom (y-axis)
+* [x] uniform
+* [x] top
+* [x] right
+* [x] bottom
+* [x] right  
+* [x] left and right (x-axis)
+* [x] top and bottom (y-axis)
 * [ ] Documentation
 
 #### Floats
