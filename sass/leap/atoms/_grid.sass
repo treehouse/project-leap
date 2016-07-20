@@ -45,11 +45,17 @@ $widths: 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 
 
 
 
+  // Extra Small column classes
+  +build-col(xs)
+
   // Small column classes
-  +build-col(sm)
+  +build-col(sm, min-width $sm)
 
   // Medium column classes
-  +build-col(md, min-width $tablet)
+  +build-col(md, min-width $md)
 
   // Large column classes
-  +build-col(lg, min-width $desktop)
+  +build-col(lg, min-width $lg)
+
+  // Extra Large column classes
+  +build-col(xl, min-width $xl)

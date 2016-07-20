@@ -26,11 +26,17 @@
 
         <div id="display">
           <h2>Display</h2>
-          <p>Use <code>.hide-sm</code>, <code>.block-sm</code>, <code>.inline-sm</code> and <code>.inline-block-sm</code> to change an element's display.</p>
-          <div class="hide-sm">.hide-sm</div>
-          <div class="block-sm border-sm-dark">.block-sm</div>
-          <div class="inline-sm border-sm-dark">.inline-sm</div>
-          <div class="inline-block-sm border-sm-dark">.inline-block-sm</div>
+          <p>Use <code>.hide-xs</code>, <code>.block-xs</code>, <code>.inline-xs</code> and <code>.inline-block-xs</code> to change an element's display.</p>
+          <div class="hide-xs">.hide-xs</div>
+          <div class="block-xs border-xs-dark">.block-xs</div>
+          <div class="inline-xs border-xs-dark">.inline-xs</div>
+          <div class="inline-block-xs border-xs-dark">.inline-block-xs</div>
+          <div class="guide-code">
+<pre><code class="language-html">&lt;div class="hide-xs"&gt;.hide-xs&lt;/div&gt;
+&lt;div class="block-xs border-xs-dark"&gt;.block-xs&lt;/div&gt;
+&lt;div class="inline-xs border-xs-dark"&gt;.inline-xs&lt;/div&gt;
+&lt;div class="inline-block-xs border-xs-dark"&gt;.inline-block-xs&lt;/div&gt;</code></pre>
+          </div>
         </div>
 
 
@@ -39,76 +45,87 @@
           <h2>Spacing</h2>
           <p>We use our spacial units across margin, padding, and positioning. These comes in values from 0-6 and a half space unit of 0.5. Each value represents a unit based on 1rem=16px. Each class uses a shorthand of its name to indicate properties and direction.</p>
           <div class="col-container">
-            <div class="col col-4-sm">
+            <div class="col col-4-xs">
               <p><strong>Units</strong></p>
               <ul>
                 <li><strong>0</strong> = 0</li>
                 <li><strong>0.5</strong> = 0.5rem</li>
+                <li><strong>1</strong> = 1rem</li>
+                <li><strong>2</strong> = 1.5rem</li>
+                <li><strong>3</strong> = 2rem</li>
+                <li><strong>4</strong> = 3rem</li>
+                <li><strong>5</strong> = 4rem</li>
+                <li><strong>6</strong> = 5rem</li>
               </ul>
             </div>
           </div>
+
         </div>
 
 
 
         <div id="border">
           <h2>Border</h2>
-          <p>To adjust borders on elements, use the following classes: <code>.border-sm</code>, <code>.border-top-sm</code>, <code>.border-bottom-sm</code>, <code>.border-left-sm</code>, <code>.border-right-sm</code>. Use <code>dark</code>, <code>mid</code>, <code>light</code> modifiers to change the color of the border.</p>
+          <p>To adjust borders on elements, use the following classes: <code>.border-xs</code>, <code>.border-top-xs</code>, <code>.border-bottom-xs</code>, <code>.border-left-xs</code>, <code>.border-right-xs</code>. Use <code>dark</code>, <code>mid</code>, <code>light</code> modifiers to change the color of the border.</p>
 
           <h4>Normal</h4>
-          <div class="border-sm inline-sm">.border-sm</div>
-          <div class="border-top-sm inline-sm">.border-top-sm</div>
-          <div class="border-bottom-sm inline-sm">.border-bottom-sm</div>
-          <div class="border-left-sm inline-sm">.border-left-sm</div>
-          <div class="border-right-sm inline-sm">.border-right-sm</div>
+          <div class="border-xs inline-xs">.border-xs</div>
+          <div class="border-top-xs inline-xs">.border-top-xs</div>
+          <div class="border-bottom-xs inline-xs">.border-bottom-xs</div>
+          <div class="border-left-xs inline-xs">.border-left-xs</div>
+          <div class="border-right-xs inline-xs">.border-right-xs</div>
 
           <h4>Dark</h4>
-          <div class="border-sm-dark inline-sm">.border-sm-dark</div>
-          <div class="border-top-sm-dark inline-sm">.border-top-sm-dark</div>
-          <div class="border-bottom-sm-dark inline-sm">.border-bottom-sm-dark</div>
-          <div class="border-left-sm-dark inline-sm">.border-left-sm-dark</div>
-          <div class="border-right-sm-dark inline-sm">.border-right-sm-dark</div>
+          <div class="border-xs-dark inline-xs">.border-xs-dark</div>
+          <div class="border-top-xs-dark inline-xs">.border-top-xs-dark</div>
+          <div class="border-bottom-xs-dark inline-xs">.border-bottom-xs-dark</div>
+          <div class="border-left-xs-dark inline-xs">.border-left-xs-dark</div>
+          <div class="border-right-xs-dark inline-xs">.border-right-xs-dark</div>
 
           <h4>Mid</h4>
-          <div class="border-sm-mid inline-sm">.border-sm-mid</div>
-          <div class="border-top-sm-mid inline-sm">.border-top-sm-mid</div>
-          <div class="border-bottom-sm-mid inline-sm">.border-bottom-sm-mid</div>
-          <div class="border-left-sm-mid inline-sm">.border-left-sm-mid</div>
-          <div class="border-right-sm-mid inline-sm">.border-right-sm-mid</div>
+          <div class="border-xs-mid inline-xs">.border-xs-mid</div>
+          <div class="border-top-xs-mid inline-xs">.border-top-xs-mid</div>
+          <div class="border-bottom-xs-mid inline-xs">.border-bottom-xs-mid</div>
+          <div class="border-left-xs-mid inline-xs">.border-left-xs-mid</div>
+          <div class="border-right-xs-mid inline-xs">.border-right-xs-mid</div>
 
           <h4>Light</h4>
-          <div class="border-sm-light inline-sm">.border-sm-light</div>
-          <div class="border-top-sm-light inline-sm">.border-top-sm-light</div>
-          <div class="border-bottom-sm-light inline-sm">.border-bottom-sm-light</div>
-          <div class="border-left-sm-light inline-sm">.border-left-sm-light</div>
-          <div class="border-right-sm-light inline-sm">.border-right-sm-light</div>
+          <div class="border-xs-light inline-xs">.border-xs-light</div>
+          <div class="border-top-xs-light inline-xs">.border-top-xs-light</div>
+          <div class="border-bottom-xs-light inline-xs">.border-bottom-xs-light</div>
+          <div class="border-left-xs-light inline-xs">.border-left-xs-light</div>
+          <div class="border-right-xs-light inline-xs">.border-right-xs-light</div>
+          <div class="guide-code">
+<pre><code class="language-html">&lt;div class="border-xs inline-xs"&gt;.border-xs&lt;/div&gt;
+&lt;div class="border-top-xs inline-xs"&gt;.border-top-xs&lt;/div&gt;
+&lt;div class="border-bottom-xs inline-xs"&gt;.border-bottom-xs&lt;/div&gt;
+&lt;div class="border-left-xs inline-xs"&gt;.border-left-xs&lt;/div&gt;
+&lt;div class="border-right-xs inline-xs"&gt;.border-right-xs&lt;/div&gt;</code></pre>
+          </div>
         </div>
 
 
 
         <div id="grid">
           <h2>Grid</h2>
-          <p>Description...</p>
+          <p>We provide a mobile-first, fluid grid to help layout pages with ease. To start a new grid, create a div with the class of <code>.col-container</code>. Then add columns inside it using <code>.col .col-n-xs</code>, where n = 5-100 in increments of 5, with the addition of 33 to let us do columns in thirds.</p>
+          <p><strong>Important:</strong> Column classes should generally be used on container elements. It's bad practice to apply grid-based widths directly to elements such as form fields, headers or images. Also, avoid applying styles directly to a column element. Instead, nest your content within the column and apply styling there.</p>
           <div class="col-container">
-            <div class="col col-30-sm col-50-lg">
-              <div class="block-sm hide-lg border-sm-dark">.col .col-30-sm</div>
-              <div class="hide-sm block-lg border-sm-dark">.col .col-50-lg</div>
-            </div>
-            <div class="col col-70-sm col-50-lg">
-              <div class="block-sm hide-lg border-sm-dark">.col .col-70-sm</div>
-              <div class="hide-sm block-lg border-sm-dark">.col .col-50-lg</div>
-            </div>
+            <div class="col col-30-xs border-xs-mid">.col .col-30-xs</div>
+            <div class="col col-20-xs border-xs-mid">.col .col-20-xs</div>
+            <div class="col col-50-xs border-xs-mid">.col .col-50-xs</div>
           </div>
-          <div class="col-container col-gutters">
-            <div class="col col-50-sm col-20-lg">
-              <div class="block-sm hide-lg border-sm-dark">.col .col-50-sm</div>
-              <div class="hide-sm block-lg border-sm-dark">.col .col-20-lg</div>
-            </div>
-            <div class="col col-50-sm col-80-lg">
-              <div class="block-sm hide-lg border-sm-dark">.col .col-50-sm</div>
-              <div class="hide-sm block-lg border-sm-dark">.col .col-80-lg</div>
-            </div>
+          <div class="guide-code">
+<pre><code class="language-html">&lt;div class="col-container"&gt;
+  &lt;div class="col col-30-xs border-xs-mid"&gt;.col .col-30-xs&lt;/div&gt;
+  &lt;div class="col col-20-xs border-xs-mid"&gt;.col .col-20-xs&lt;/div&gt;
+  &lt;div class="col col-50-xs border-xs-mid"&gt;.col .col-50-xs&lt;/div&gt;
+&lt;/div&gt;</code></pre>
           </div>
+
+          <h2>Nesting Columns</h2>
+          <p>Each column in our grid can hold another set of columns inside of it. You don't need to nest another <code>.col-container</code> to make things work properly, but you can if you'd like.</p>
+
         </div>
 
 
@@ -135,5 +152,6 @@
       <p class="guide-contentinfo-copy">Copyright &copy; 2015-2016 Treehouse. All rights reserved.</p>
     </footer>
 
+    <script src="js/prism.js"></script>
   </body>
 </html>

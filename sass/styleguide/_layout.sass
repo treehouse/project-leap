@@ -9,6 +9,9 @@
     width: 15rem
     padding: 2rem 2rem
     line-height: 1
+    display: none
+    +media(min-width $md)
+      display: block
 
   // =========================================
   // A11y Skip
@@ -31,6 +34,9 @@
     +fixed(top 6rem bottom 0)
     padding-top: 0
     width: 15rem
+    display: none
+    +media(min-width $md)
+      display: block
     nav
       position: absolute
       height: 100%
@@ -50,7 +56,8 @@
   // =========================================
   &-main,
   &-contentinfo
-    margin-left: 15rem
+    +media(min-width $md)
+      margin-left: 15rem
   &-content
     padding: spacing(3)
     margin: spacing(3)
