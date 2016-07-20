@@ -7,22 +7,26 @@ Grid
 ---
 Let's utilize a mobile-first approach and have mobile be the default. The rest of the classes will override eachother as they cascade, letting us give alternate styles to override mobile within our responsive breakpoints. Containers won't have gutters by default but we can add a class to the container to do auto gutters. Can also apply padding atoms to individual columns to control gutter with a bit more granularity.
 
-* [ ] Container
-  * [ ] Documentation
-* [ ] Container with auto gutters
-  * [ ] Documentation
-* [ ] Column Default
-  * [ ] Documentation
-* [ ] Nested columns
+* [x] Column Sizes (5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100)
+  * [x] Documentation
+* [x] Container
+  * [x] Documentation
+* [x] Column Default (xs)
+  * [x] Documentation
+* [x] Nested columns
+  * [x] Documentation
+* [ ] Offset Columns
   * [ ] Documentation
 * [ ] Centered Columns
   * [ ] Documentation
-* [x] Column Sizes (5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100)
-  * [x] xs
-  * [x] sm
-  * [x] md
-  * [x] lg
-  * [x] xl
+* [ ] Container with auto gutters
+  * [ ] Documentation
+* [ ] Responsive Grid (Overriding with each grid size class)
+  * [ ] xs
+  * [ ] sm
+  * [ ] md
+  * [ ] lg
+  * [ ] xl
   * [ ] Documentation
 
 
