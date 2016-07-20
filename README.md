@@ -264,7 +264,7 @@ Border styles that can be applied to any element
 
 
 
-Responsive (mobile, mobile + tablet, tablet, tablet + desktop, desktop)
+Responsive
 ---
 We will utilize a mobile-first approach and apply different responsive styles at our unique breakpoints.
 
