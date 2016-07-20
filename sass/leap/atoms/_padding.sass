@@ -14,10 +14,10 @@
         // We don't want a class of "0.5" so we use a conditional to
         // let us rename is at "05" in this instance
         @if $unit == 0.5
-          .pd-#{$suffix}-05
+          .pd-05-#{$suffix}
             padding: spacing($unit) !important
         @else
-          .pd-#{$suffix}-#{$unit}
+          .pd-#{$unit}-#{$suffix}
             padding: spacing($unit) !important
 
     @else
@@ -32,30 +32,30 @@
           // We need to control printing out two properties for
           // the lt and tb case and a single for the others
           @if $type == lr
-            .pd-#{$type}-#{$suffix}-05
+            .pd-#{$type}-05-#{$suffix}
               padding-left: spacing($unit) !important
               padding-right: spacing($unit) !important
           @else if $type == tb
-            .pd-#{$type}-#{$suffix}-05
+            .pd-#{$type}-05-#{$suffix}
               padding-top: spacing($unit) !important
               padding-bottom: spacing($unit) !important
           @else
-            .pd-#{$type}-#{$suffix}-05
+            .pd-#{$type}-05-#{$suffix}
               padding-#{$side}: spacing($unit) !important
         @else
 
           // We need to control printing out two properties for
           // the lt and tb case and a single for the others
           @if $type == lr
-            .pd-#{$type}-#{$suffix}-#{$unit}
+            .pd-#{$type}-#{$unit}-#{$suffix}
               padding-left: spacing($unit) !important
               padding-right: spacing($unit) !important
           @else if $type == tb
-            .pd-#{$type}-#{$suffix}-#{$unit}
+            .pd-#{$type}-#{$unit}-#{$suffix}
               padding-top: spacing($unit) !important
               padding-bottom: spacing($unit) !important
           @else
-            .pd-#{$type}-#{$suffix}-#{$unit}
+            .pd-#{$type}-#{$unit}-#{$suffix}
               padding-#{$side}: spacing($unit) !important
 
 

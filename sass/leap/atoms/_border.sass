@@ -29,7 +29,7 @@ $border-values: normal, dark, mid, light
       .border-#{$suffix}
         border: solid 1px border-var($value) !important
     @else
-      .border-#{$suffix}-#{$value}
+      .border-#{$value}-#{$suffix}
         border: solid 1px border-var($value) !important
 
     // Iterate through each type in $border-types
@@ -41,7 +41,7 @@ $border-values: normal, dark, mid, light
         .border-#{$border}-#{$suffix}
           border-#{$border}: solid 1px border-var($value) !important
       @else
-        .border-#{$border}-#{$suffix}-#{$value}
+        .border-#{$border}-#{$value}-#{$suffix}
           border-#{$border}: solid 1px border-var($value) !important
 
 

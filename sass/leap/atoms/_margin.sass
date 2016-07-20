@@ -14,10 +14,10 @@
         // We don't want a class of "0.5" so we use a conditional to
         // let us rename is at "05" in this instance
         @if $unit == 0.5
-          .mg-#{$suffix}-05
+          .mg-05-#{$suffix}
             margin: spacing($unit) !important
         @else
-          .mg-#{$suffix}-#{$unit}
+          .mg-#{$unit}-#{$suffix}
             margin: spacing($unit) !important
 
     @else
@@ -32,37 +32,37 @@
           // We need to control printing out two properties for
           // the lt and tb case and a single for the others
           @if $type == lr
-            .mg-#{$type}-#{$suffix}-05
+            .mg-#{$type}-05-#{$suffix}
               margin-left: spacing($unit) !important
               margin-right: spacing($unit) !important
           @else if $type == tb
-            .mg-#{$type}-#{$suffix}-05
+            .mg-#{$type}-05-#{$suffix}
               margin-top: spacing($unit) !important
               margin-bottom: spacing($unit) !important
           @else
-            .mg-#{$type}-#{$suffix}-05
+            .mg-#{$type}-05-#{$suffix}
               margin-#{$side}: spacing($unit) !important
         @else
 
           // We need to control printing out two properties for
           // the lt and tb case and a single for the others
           @if $type == lr
-            .mg-#{$type}-#{$suffix}-#{$unit}
+            .mg-#{$type}-#{$unit}-#{$suffix}
               margin-left: spacing($unit) !important
               margin-right: spacing($unit) !important
           @else if $type == tb
-            .mg-#{$type}-#{$suffix}-#{$unit}
+            .mg-#{$type}-#{$unit}-#{$suffix}
               margin-top: spacing($unit) !important
               margin-bottom: spacing($unit) !important
           @else
-            .mg-#{$type}-#{$suffix}-#{$unit}
+            .mg-#{$type}-#{$unit}-#{$suffix}
               margin-#{$side}: spacing($unit) !important
 
 
 
 // Creates the styles for margin: 0 auto for horizontal centering
 @mixin margin-auto($suffix)
-  .mg-#{$suffix}-auto
+  .mg-auto-#{$suffix}
     margin: 0 auto !important
 
 
