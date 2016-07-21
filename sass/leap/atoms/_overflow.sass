@@ -1,49 +1,41 @@
-@media screen
-	.overflow-hidden-xs
-		overflow: hidden !important
-	.overflow-auto-xs
-		overflow: auto !important
-	.overflow-scroll-xs
-		overflow: scroll !important
-	.overflow-visible-xs
-		overflow: visible !important
+$overflow-types: hidden, auto, scroll, visible
 
-+media(min-width $sm)
-	.overflow-hidden-sm
-		overflow: hidden !important
-	.overflow-auto-sm
-		overflow: auto !important
-	.overflow-scroll-sm
-		overflow: scroll !important
-	.overflow-visible-sm
-		overflow: visible !important
 
-+media(min-width $md)
-	.overflow-hidden-md
-		overflow: hidden !important
-	.overflow-auto-md
-		overflow: auto !important
-	.overflow-scroll-md
-		overflow: scroll !important
-	.overflow-visible-md
-		overflow: visible !important
+// Create the style declarations for each overflow type
+@mixin overflow-style($suffix)
 
-+media(min-width $lg)
-	.overflow-hidden-lg
-		overflow: hidden !important
-	.overflow-auto-lg
-		overflow: auto !important
-	.overflow-scroll-lg
-		overflow: scroll !important
-	.overflow-visible-lg
-		overflow: visible !important
+  // Iterate through each type in $overflow-types
+  @each $type in $overflow-types
+    .overflow-#{$type}-#{$suffix}
+      overflow: #{$type} !important
 
-+media(min-width $xl)
-	.overflow-hidden-xl
-		overflow: hidden !important
-	.overflow-auto-xl
-		overflow: auto !important
-	.overflow-scroll-xl
-		overflow: scroll !important
-	.overflow-visible-xl
-		overflow: visible !important
+
+
+// Adds media queries to overflow style mixin
+@mixin overflow($suffix, $media: null)
+
+  // We want to use @media screen whenever no $media
+  // is passed into the mixin
+  @if length($media) == 2
+    +media($media)
+      +overflow-style($suffix)
+  @else
+    @media screen
+      +overflow-style($suffix)
+
+
+
+// Extra Small overflow classes
++overflow(xs)
+
+// Small overflow classes
++overflow(sm, min-width $sm)
+
+// Medium overflow classes
++overflow(md, min-width $md)
+
+// Large overflow classes
++overflow(lg, min-width $lg)
+
+// Extra Large overflow classes
++overflow(xl, min-width $xl)

@@ -3657,6 +3657,91 @@ body {
     float: none !important;
   }
 }
+@media screen {
+  .overflow-hidden-xs {
+    overflow: hidden !important;
+  }
+
+  .overflow-auto-xs {
+    overflow: auto !important;
+  }
+
+  .overflow-scroll-xs {
+    overflow: scroll !important;
+  }
+
+  .overflow-visible-xs {
+    overflow: visible !important;
+  }
+}
+@media screen and (min-width: 480px) {
+  .overflow-hidden-sm {
+    overflow: hidden !important;
+  }
+
+  .overflow-auto-sm {
+    overflow: auto !important;
+  }
+
+  .overflow-scroll-sm {
+    overflow: scroll !important;
+  }
+
+  .overflow-visible-sm {
+    overflow: visible !important;
+  }
+}
+@media screen and (min-width: 680px) {
+  .overflow-hidden-md {
+    overflow: hidden !important;
+  }
+
+  .overflow-auto-md {
+    overflow: auto !important;
+  }
+
+  .overflow-scroll-md {
+    overflow: scroll !important;
+  }
+
+  .overflow-visible-md {
+    overflow: visible !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .overflow-hidden-lg {
+    overflow: hidden !important;
+  }
+
+  .overflow-auto-lg {
+    overflow: auto !important;
+  }
+
+  .overflow-scroll-lg {
+    overflow: scroll !important;
+  }
+
+  .overflow-visible-lg {
+    overflow: visible !important;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .overflow-hidden-xl {
+    overflow: hidden !important;
+  }
+
+  .overflow-auto-xl {
+    overflow: auto !important;
+  }
+
+  .overflow-scroll-xl {
+    overflow: scroll !important;
+  }
+
+  .overflow-visible-xl {
+    overflow: visible !important;
+  }
+}
 .guide-banner {
   position: fixed;
   top: 0;
