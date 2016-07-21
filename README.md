@@ -211,11 +211,11 @@ Atomic classes that can be stacked to quickly create layouts, spacing, etc, on a
 * [x] Documentation
 
 #### Overflow (uniform, x, y)
-* [ ] Hidden
-* [ ] Auto
-* [ ] Scroll
-* [ ] Visible
-* [ ] Documentation
+* [x] Hidden
+* [x] Auto
+* [x] Scroll
+* [x] Visible
+* [x] Documentation
 
 #### Width and Height
 * [ ] Width 100%
