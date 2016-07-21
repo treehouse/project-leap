@@ -218,6 +218,7 @@ Atomic classes that can be stacked to quickly create layouts, spacing, etc, on a
 * [x] Documentation
 
 #### Width and Height
+* [ ] Max Width 100%
 * [ ] Width 100%
 * [ ] Width Auto
 * [ ] Height 100%
