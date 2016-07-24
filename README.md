@@ -258,12 +258,12 @@ Border styles that can be applied to any element
   * [x] Documentation
 * [x] Light
   * [x] Documentation
-* [ ] Removing Borders
-  * [ ] Documentation
-* [ ] Rounded Corners
-  * [ ] Documentation
-* [ ] Circles
-  * [ ] Documentation
+* [x] Removing Borders
+  * [x] Documentation
+* [x] Rounded Corners
+  * [x] Documentation
+* [x] Circles
+  * [x] Documentation
 
 
 
