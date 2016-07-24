@@ -15,19 +15,19 @@ Let's utilize a mobile-first approach and have mobile be the default. The rest o
   * [x] Documentation
 * [x] Nested columns
   * [x] Documentation
-* [ ] Offset Columns
-  * [ ] Documentation
-* [ ] Centered Columns
-  * [ ] Documentation
-* [ ] Container with auto gutters
-  * [ ] Documentation
-* [ ] Responsive Grid (Overriding with each grid size class)
-  * [ ] xs
-  * [ ] sm
-  * [ ] md
-  * [ ] lg
-  * [ ] xl
-  * [ ] Documentation
+* [x] Offset Columns
+  * [x] Documentation
+* [x] Centered Columns
+  * [x] Documentation
+* [x] Container with auto gutters
+  * [x] Documentation
+* [x] Responsive Grid (Overriding with each grid size class)
+  * [x] xs
+  * [x] sm
+  * [x] md
+  * [x] lg
+  * [x] xl
+  * [x] Documentation
 
 
 
