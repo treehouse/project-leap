@@ -1068,6 +1068,26 @@ body {
   .border-right-light-xs {
     border-right: solid 1px #f0f2f4 !important;
   }
+
+  .border-none-xs {
+    border: none !important;
+  }
+
+  .border-none-top-xs {
+    border-top: none !important;
+  }
+
+  .border-none-bottom-xs {
+    border-bottom: none !important;
+  }
+
+  .border-none-left-xs {
+    border-left: none !important;
+  }
+
+  .border-none-right-xs {
+    border-right: none !important;
+  }
 }
 @media screen and (min-width: 480px) {
   .border-sm {
@@ -1148,6 +1168,26 @@ body {
 
   .border-right-light-sm {
     border-right: solid 1px #f0f2f4 !important;
+  }
+
+  .border-none-sm {
+    border: none !important;
+  }
+
+  .border-none-top-sm {
+    border-top: none !important;
+  }
+
+  .border-none-bottom-sm {
+    border-bottom: none !important;
+  }
+
+  .border-none-left-sm {
+    border-left: none !important;
+  }
+
+  .border-none-right-sm {
+    border-right: none !important;
   }
 }
 @media screen and (min-width: 680px) {
@@ -1230,6 +1270,26 @@ body {
   .border-right-light-md {
     border-right: solid 1px #f0f2f4 !important;
   }
+
+  .border-none-md {
+    border: none !important;
+  }
+
+  .border-none-top-md {
+    border-top: none !important;
+  }
+
+  .border-none-bottom-md {
+    border-bottom: none !important;
+  }
+
+  .border-none-left-md {
+    border-left: none !important;
+  }
+
+  .border-none-right-md {
+    border-right: none !important;
+  }
 }
 @media screen and (min-width: 960px) {
   .border-lg {
@@ -1311,6 +1371,26 @@ body {
   .border-right-light-lg {
     border-right: solid 1px #f0f2f4 !important;
   }
+
+  .border-none-lg {
+    border: none !important;
+  }
+
+  .border-none-top-lg {
+    border-top: none !important;
+  }
+
+  .border-none-bottom-lg {
+    border-bottom: none !important;
+  }
+
+  .border-none-left-lg {
+    border-left: none !important;
+  }
+
+  .border-none-right-lg {
+    border-right: none !important;
+  }
 }
 @media screen and (min-width: 1140px) {
   .border-xl {
@@ -1391,6 +1471,26 @@ body {
 
   .border-right-light-xl {
     border-right: solid 1px #f0f2f4 !important;
+  }
+
+  .border-none-xl {
+    border: none !important;
+  }
+
+  .border-none-top-xl {
+    border-top: none !important;
+  }
+
+  .border-none-bottom-xl {
+    border-bottom: none !important;
+  }
+
+  .border-none-left-xl {
+    border-left: none !important;
+  }
+
+  .border-none-right-xl {
+    border-right: none !important;
   }
 }
 @media screen {

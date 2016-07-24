@@ -46,6 +46,19 @@ $border-values: normal, dark, mid, light
 
 
 
+// Creates border none classes
+@mixin border-none($suffix)
+
+  // Create style for border none on all sides
+  .border-none-#{$suffix}
+    border: none !important
+
+  // Iterate through border sides and create border none styles
+  @each $type in $border-types
+    .border-none-#{$type}-#{$suffix}
+      border-#{$type}: none !important
+
+
 // Adds the media queries to the border-style mixin
 @mixin border($suffix, $media: null)
 
@@ -54,9 +67,11 @@ $border-values: normal, dark, mid, light
   @if length($media) == 2
     +media($media)
       +border-style($suffix)
+      +border-none($suffix)
   @else
     @media screen
       +border-style($suffix)
+      +border-none($suffix)
 
 
 
