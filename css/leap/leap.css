@@ -223,331 +223,647 @@ body {
   clear: both;
 }
 .col-center {
+  float: none;
   margin: 0 auto;
 }
 @media screen {
   .col-5-xs {
     width: 5% !important;
   }
+  .col-offset-5-xs {
+    margin-left: 5% !important;
+  }
   .col-10-xs {
     width: 10% !important;
+  }
+  .col-offset-10-xs {
+    margin-left: 10% !important;
   }
   .col-15-xs {
     width: 15% !important;
   }
+  .col-offset-15-xs {
+    margin-left: 15% !important;
+  }
   .col-20-xs {
     width: 20% !important;
+  }
+  .col-offset-20-xs {
+    margin-left: 20% !important;
   }
   .col-25-xs {
     width: 25% !important;
   }
+  .col-offset-25-xs {
+    margin-left: 25% !important;
+  }
   .col-30-xs {
     width: 30% !important;
+  }
+  .col-offset-30-xs {
+    margin-left: 30% !important;
   }
   .col-33-xs {
     width: 33% !important;
   }
+  .col-offset-33-xs {
+    margin-left: 33% !important;
+  }
   .col-35-xs {
     width: 35% !important;
+  }
+  .col-offset-35-xs {
+    margin-left: 35% !important;
   }
   .col-40-xs {
     width: 40% !important;
   }
+  .col-offset-40-xs {
+    margin-left: 40% !important;
+  }
   .col-45-xs {
     width: 45% !important;
+  }
+  .col-offset-45-xs {
+    margin-left: 45% !important;
   }
   .col-50-xs {
     width: 50% !important;
   }
+  .col-offset-50-xs {
+    margin-left: 50% !important;
+  }
   .col-55-xs {
     width: 55% !important;
+  }
+  .col-offset-55-xs {
+    margin-left: 55% !important;
   }
   .col-60-xs {
     width: 60% !important;
   }
+  .col-offset-60-xs {
+    margin-left: 60% !important;
+  }
   .col-65-xs {
     width: 65% !important;
+  }
+  .col-offset-65-xs {
+    margin-left: 65% !important;
   }
   .col-70-xs {
     width: 70% !important;
   }
+  .col-offset-70-xs {
+    margin-left: 70% !important;
+  }
   .col-75-xs {
     width: 75% !important;
+  }
+  .col-offset-75-xs {
+    margin-left: 75% !important;
   }
   .col-80-xs {
     width: 80% !important;
   }
+  .col-offset-80-xs {
+    margin-left: 80% !important;
+  }
   .col-85-xs {
     width: 85% !important;
+  }
+  .col-offset-85-xs {
+    margin-left: 85% !important;
   }
   .col-90-xs {
     width: 90% !important;
   }
+  .col-offset-90-xs {
+    margin-left: 90% !important;
+  }
   .col-95-xs {
     width: 95% !important;
   }
+  .col-offset-95-xs {
+    margin-left: 95% !important;
+  }
   .col-100-xs {
     width: 100% !important;
+  }
+  .col-offset-100-xs {
+    margin-left: 100% !important;
   }
 }
 @media screen and (min-width: 480px) {
   .col-5-sm {
     width: 5% !important;
   }
+  .col-offset-5-sm {
+    margin-left: 5% !important;
+  }
   .col-10-sm {
     width: 10% !important;
+  }
+  .col-offset-10-sm {
+    margin-left: 10% !important;
   }
   .col-15-sm {
     width: 15% !important;
   }
+  .col-offset-15-sm {
+    margin-left: 15% !important;
+  }
   .col-20-sm {
     width: 20% !important;
+  }
+  .col-offset-20-sm {
+    margin-left: 20% !important;
   }
   .col-25-sm {
     width: 25% !important;
   }
+  .col-offset-25-sm {
+    margin-left: 25% !important;
+  }
   .col-30-sm {
     width: 30% !important;
+  }
+  .col-offset-30-sm {
+    margin-left: 30% !important;
   }
   .col-33-sm {
     width: 33% !important;
   }
+  .col-offset-33-sm {
+    margin-left: 33% !important;
+  }
   .col-35-sm {
     width: 35% !important;
+  }
+  .col-offset-35-sm {
+    margin-left: 35% !important;
   }
   .col-40-sm {
     width: 40% !important;
   }
+  .col-offset-40-sm {
+    margin-left: 40% !important;
+  }
   .col-45-sm {
     width: 45% !important;
+  }
+  .col-offset-45-sm {
+    margin-left: 45% !important;
   }
   .col-50-sm {
     width: 50% !important;
   }
+  .col-offset-50-sm {
+    margin-left: 50% !important;
+  }
   .col-55-sm {
     width: 55% !important;
+  }
+  .col-offset-55-sm {
+    margin-left: 55% !important;
   }
   .col-60-sm {
     width: 60% !important;
   }
+  .col-offset-60-sm {
+    margin-left: 60% !important;
+  }
   .col-65-sm {
     width: 65% !important;
+  }
+  .col-offset-65-sm {
+    margin-left: 65% !important;
   }
   .col-70-sm {
     width: 70% !important;
   }
+  .col-offset-70-sm {
+    margin-left: 70% !important;
+  }
   .col-75-sm {
     width: 75% !important;
+  }
+  .col-offset-75-sm {
+    margin-left: 75% !important;
   }
   .col-80-sm {
     width: 80% !important;
   }
+  .col-offset-80-sm {
+    margin-left: 80% !important;
+  }
   .col-85-sm {
     width: 85% !important;
+  }
+  .col-offset-85-sm {
+    margin-left: 85% !important;
   }
   .col-90-sm {
     width: 90% !important;
   }
+  .col-offset-90-sm {
+    margin-left: 90% !important;
+  }
   .col-95-sm {
     width: 95% !important;
   }
+  .col-offset-95-sm {
+    margin-left: 95% !important;
+  }
   .col-100-sm {
     width: 100% !important;
+  }
+  .col-offset-100-sm {
+    margin-left: 100% !important;
   }
 }
 @media screen and (min-width: 680px) {
   .col-5-md {
     width: 5% !important;
   }
+  .col-offset-5-md {
+    margin-left: 5% !important;
+  }
   .col-10-md {
     width: 10% !important;
+  }
+  .col-offset-10-md {
+    margin-left: 10% !important;
   }
   .col-15-md {
     width: 15% !important;
   }
+  .col-offset-15-md {
+    margin-left: 15% !important;
+  }
   .col-20-md {
     width: 20% !important;
+  }
+  .col-offset-20-md {
+    margin-left: 20% !important;
   }
   .col-25-md {
     width: 25% !important;
   }
+  .col-offset-25-md {
+    margin-left: 25% !important;
+  }
   .col-30-md {
     width: 30% !important;
+  }
+  .col-offset-30-md {
+    margin-left: 30% !important;
   }
   .col-33-md {
     width: 33% !important;
   }
+  .col-offset-33-md {
+    margin-left: 33% !important;
+  }
   .col-35-md {
     width: 35% !important;
+  }
+  .col-offset-35-md {
+    margin-left: 35% !important;
   }
   .col-40-md {
     width: 40% !important;
   }
+  .col-offset-40-md {
+    margin-left: 40% !important;
+  }
   .col-45-md {
     width: 45% !important;
+  }
+  .col-offset-45-md {
+    margin-left: 45% !important;
   }
   .col-50-md {
     width: 50% !important;
   }
+  .col-offset-50-md {
+    margin-left: 50% !important;
+  }
   .col-55-md {
     width: 55% !important;
+  }
+  .col-offset-55-md {
+    margin-left: 55% !important;
   }
   .col-60-md {
     width: 60% !important;
   }
+  .col-offset-60-md {
+    margin-left: 60% !important;
+  }
   .col-65-md {
     width: 65% !important;
+  }
+  .col-offset-65-md {
+    margin-left: 65% !important;
   }
   .col-70-md {
     width: 70% !important;
   }
+  .col-offset-70-md {
+    margin-left: 70% !important;
+  }
   .col-75-md {
     width: 75% !important;
+  }
+  .col-offset-75-md {
+    margin-left: 75% !important;
   }
   .col-80-md {
     width: 80% !important;
   }
+  .col-offset-80-md {
+    margin-left: 80% !important;
+  }
   .col-85-md {
     width: 85% !important;
+  }
+  .col-offset-85-md {
+    margin-left: 85% !important;
   }
   .col-90-md {
     width: 90% !important;
   }
+  .col-offset-90-md {
+    margin-left: 90% !important;
+  }
   .col-95-md {
     width: 95% !important;
   }
+  .col-offset-95-md {
+    margin-left: 95% !important;
+  }
   .col-100-md {
     width: 100% !important;
+  }
+  .col-offset-100-md {
+    margin-left: 100% !important;
   }
 }
 @media screen and (min-width: 960px) {
   .col-5-lg {
     width: 5% !important;
   }
+  .col-offset-5-lg {
+    margin-left: 5% !important;
+  }
   .col-10-lg {
     width: 10% !important;
+  }
+  .col-offset-10-lg {
+    margin-left: 10% !important;
   }
   .col-15-lg {
     width: 15% !important;
   }
+  .col-offset-15-lg {
+    margin-left: 15% !important;
+  }
   .col-20-lg {
     width: 20% !important;
+  }
+  .col-offset-20-lg {
+    margin-left: 20% !important;
   }
   .col-25-lg {
     width: 25% !important;
   }
+  .col-offset-25-lg {
+    margin-left: 25% !important;
+  }
   .col-30-lg {
     width: 30% !important;
+  }
+  .col-offset-30-lg {
+    margin-left: 30% !important;
   }
   .col-33-lg {
     width: 33% !important;
   }
+  .col-offset-33-lg {
+    margin-left: 33% !important;
+  }
   .col-35-lg {
     width: 35% !important;
+  }
+  .col-offset-35-lg {
+    margin-left: 35% !important;
   }
   .col-40-lg {
     width: 40% !important;
   }
+  .col-offset-40-lg {
+    margin-left: 40% !important;
+  }
   .col-45-lg {
     width: 45% !important;
+  }
+  .col-offset-45-lg {
+    margin-left: 45% !important;
   }
   .col-50-lg {
     width: 50% !important;
   }
+  .col-offset-50-lg {
+    margin-left: 50% !important;
+  }
   .col-55-lg {
     width: 55% !important;
+  }
+  .col-offset-55-lg {
+    margin-left: 55% !important;
   }
   .col-60-lg {
     width: 60% !important;
   }
+  .col-offset-60-lg {
+    margin-left: 60% !important;
+  }
   .col-65-lg {
     width: 65% !important;
+  }
+  .col-offset-65-lg {
+    margin-left: 65% !important;
   }
   .col-70-lg {
     width: 70% !important;
   }
+  .col-offset-70-lg {
+    margin-left: 70% !important;
+  }
   .col-75-lg {
     width: 75% !important;
+  }
+  .col-offset-75-lg {
+    margin-left: 75% !important;
   }
   .col-80-lg {
     width: 80% !important;
   }
+  .col-offset-80-lg {
+    margin-left: 80% !important;
+  }
   .col-85-lg {
     width: 85% !important;
+  }
+  .col-offset-85-lg {
+    margin-left: 85% !important;
   }
   .col-90-lg {
     width: 90% !important;
   }
+  .col-offset-90-lg {
+    margin-left: 90% !important;
+  }
   .col-95-lg {
     width: 95% !important;
   }
+  .col-offset-95-lg {
+    margin-left: 95% !important;
+  }
   .col-100-lg {
     width: 100% !important;
+  }
+  .col-offset-100-lg {
+    margin-left: 100% !important;
   }
 }
 @media screen and (min-width: 1140px) {
   .col-5-xl {
     width: 5% !important;
   }
+  .col-offset-5-xl {
+    margin-left: 5% !important;
+  }
   .col-10-xl {
     width: 10% !important;
+  }
+  .col-offset-10-xl {
+    margin-left: 10% !important;
   }
   .col-15-xl {
     width: 15% !important;
   }
+  .col-offset-15-xl {
+    margin-left: 15% !important;
+  }
   .col-20-xl {
     width: 20% !important;
+  }
+  .col-offset-20-xl {
+    margin-left: 20% !important;
   }
   .col-25-xl {
     width: 25% !important;
   }
+  .col-offset-25-xl {
+    margin-left: 25% !important;
+  }
   .col-30-xl {
     width: 30% !important;
+  }
+  .col-offset-30-xl {
+    margin-left: 30% !important;
   }
   .col-33-xl {
     width: 33% !important;
   }
+  .col-offset-33-xl {
+    margin-left: 33% !important;
+  }
   .col-35-xl {
     width: 35% !important;
+  }
+  .col-offset-35-xl {
+    margin-left: 35% !important;
   }
   .col-40-xl {
     width: 40% !important;
   }
+  .col-offset-40-xl {
+    margin-left: 40% !important;
+  }
   .col-45-xl {
     width: 45% !important;
+  }
+  .col-offset-45-xl {
+    margin-left: 45% !important;
   }
   .col-50-xl {
     width: 50% !important;
   }
+  .col-offset-50-xl {
+    margin-left: 50% !important;
+  }
   .col-55-xl {
     width: 55% !important;
+  }
+  .col-offset-55-xl {
+    margin-left: 55% !important;
   }
   .col-60-xl {
     width: 60% !important;
   }
+  .col-offset-60-xl {
+    margin-left: 60% !important;
+  }
   .col-65-xl {
     width: 65% !important;
+  }
+  .col-offset-65-xl {
+    margin-left: 65% !important;
   }
   .col-70-xl {
     width: 70% !important;
   }
+  .col-offset-70-xl {
+    margin-left: 70% !important;
+  }
   .col-75-xl {
     width: 75% !important;
+  }
+  .col-offset-75-xl {
+    margin-left: 75% !important;
   }
   .col-80-xl {
     width: 80% !important;
   }
+  .col-offset-80-xl {
+    margin-left: 80% !important;
+  }
   .col-85-xl {
     width: 85% !important;
+  }
+  .col-offset-85-xl {
+    margin-left: 85% !important;
   }
   .col-90-xl {
     width: 90% !important;
   }
+  .col-offset-90-xl {
+    margin-left: 90% !important;
+  }
   .col-95-xl {
     width: 95% !important;
   }
+  .col-offset-95-xl {
+    margin-left: 95% !important;
+  }
   .col-100-xl {
     width: 100% !important;
+  }
+  .col-offset-100-xl {
+    margin-left: 100% !important;
   }
 }
 

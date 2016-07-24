@@ -11,7 +11,7 @@
   <body>
 
     <header class="guide-banner" role="banner">
-      <a class="guide-name" href="/">
+      <a class="guide-name" href="index.html">
         Leap
       </a>
       <div class="guide-skip-content">
@@ -21,67 +21,6 @@
 
     <main class="guide-main" role="main">
       <div class="guide-content">
-
-
-
-        <section id="grid">
-          <h2>Grid</h2>
-          <p>We provide a mobile-first, fluid grid to help layout pages with ease. To start a new grid, create a div with the class of <code>.col-container</code>. Then add columns inside it using <code>.col .col-n-xs</code>, where n = 5-100 in increments of 5, with the addition of 33 to let us do columns in thirds.</p>
-          <p><strong>Important:</strong> Column classes should generally be used on container elements. It's bad practice to apply grid-based widths directly to elements such as form fields, headers or images. Also, avoid applying styles directly to a column element. Instead, nest your content within the column and apply styling there.</p>
-          <div class="col-container">
-            <div class="col col-30-xs col-50-lg border-mid-xs">.col .col-30-xs</div>
-            <div class="col col-20-xs col-30-lg border-mid-xs">.col .col-20-xs</div>
-            <div class="col col-50-xs col-20-xl border-mid-xs">.col .col-50-xs</div>
-          </div>
-          <div class="guide-code">
-<pre><code class="language-html">&lt;div class="col-container"&gt;
-  &lt;div class="col col-30-xs border-mid-xs"&gt;.col .col-30-xs&lt;/div&gt;
-  &lt;div class="col col-20-xs border-mid-xs"&gt;.col .col-20-xs&lt;/div&gt;
-  &lt;div class="col col-50-xs border-mid-xs"&gt;.col .col-50-xs&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-
-          <h2>Nesting Columns</h2>
-          <p>Each column in our grid can hold another set of columns inside of it. To make things work properly nest another <code>.col-container</code> inside the <code>.col</code>.</p>
-          <div class="col-container">
-            <div class="col col-50-xs border-xs">
-              <span class="block-xs m-b-1-xs">.col .col-50-xs</span>
-              <div class="col-container">
-                <div class="col col-30-xs border-dark-xs">.col .col-30-xs</div>
-                <div class="col col-30-xs border-dark-xs">.col .col-30-xs</div>
-                <div class="col col-40-xs border-dark-xs">.col .col-40-xs</div>
-              </div>
-            </div>
-            <div class="col col-50-xs border-xs">
-              <span class="block-xs m-b-1-xs">.col .col-50-xs</span>
-              <div class="col-container">
-                <div class="col col-20-xs border-dark-xs">.col .col-20-xs</div>
-                <div class="col col-60-xs border-dark-xs">.col .col-60-xs</div>
-                <div class="col col-20-xs border-dark-xs">.col .col-20-xs</div>
-              </div>
-            </div>
-          </div>
-          <div class="guide-code">
-<pre><code class="language-html">&lt;div class="col-container"&gt;
-  &lt;div class="col col-50-xs border-xs"&gt;
-    &lt;span class="block-xs m-b-1-xs"&gt;.col .col-50-xs&lt;/span&gt;
-    &lt;div class="col-container"&gt;
-      &lt;div class="col col-30-xs border-dark-xs"&gt;.col .col-30-xs&lt;/div&gt;
-      &lt;div class="col col-30-xs border-dark-xs"&gt;.col .col-30-xs&lt;/div&gt;
-      &lt;div class="col col-40-xs border-dark-xs"&gt;.col .col-40-xs&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="col col-50-xs border-xs"&gt;
-    &lt;span class="block-xs m-b-1-xs"&gt;.col .col-50-xs&lt;/span&gt;
-    &lt;div class="col-container"&gt;
-      &lt;div class="col col-20-xs border-dark-xs"&gt;.col .col-20-xs&lt;/div&gt;
-      &lt;div class="col col-60-xs border-dark-xs"&gt;.col .col-60-xs&lt;/div&gt;
-      &lt;div class="col col-20-xs border-dark-xs"&gt;.col .col-20-xs&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-          </div>
-        </section>
 
 
 
@@ -135,7 +74,6 @@
             <p>.overflow-visible-xs</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum maiores esse vel quia, voluptates quos. Tempora natus iste aperiam sequi mollitia, doloremque quas recusandae, rerum minima dolorum, veritatis vitae maxime.</p>
           </div>
-
           <div class="guide-code">
 <pre><code class="language-html">&lt;div class="overflow-hidden-xs p-1-xs m-b-3-xs border-dark-xs" style="height: 110px"&gt;
   &lt;p&gt;.overflow-hidden-xs&lt;/p&gt;
@@ -383,7 +321,7 @@
       <nav id="navigation" role="navigation" tabindex="-1">
         <ul class="guide-navigation-list">
           <li class="guide-navigation-item">
-            <a class="guide-navigation-link" href="javascript:void(0)">Nav Item 1</a>
+            <a class="guide-navigation-link" href="grid.html">Grid</a>
           </li>
           <li class="guide-navigation-item">
             <a class="guide-navigation-link" href="javascript:void(0)">Nav Item 2</a>
@@ -396,7 +334,7 @@
     </div>
 
     <footer class="guide-contentinfo" role="contentinfo">
-      <p class="guide-contentinfo-copy">Copyright &copy; 2015-2016 Treehouse. All rights reserved.</p>
+      <p class="guide-contentinfo-copy">Copyright &copy; 2016 Treehouse. All rights reserved.</p>
     </footer>
 
     <script src="js/prism.js"></script>

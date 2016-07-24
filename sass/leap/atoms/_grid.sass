@@ -19,6 +19,7 @@ $widths: 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 
 
   // Center a single column inside of a .col-container
   &-center
+    float: none
     margin: 0 auto
 
 
@@ -28,6 +29,8 @@ $widths: 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 
     @each $width in $widths
       &-#{$width}-#{$suffix}
         width: percentage($width/100) !important
+      &-offset-#{$width}-#{$suffix}
+        margin-left: percentage($width/100) !important
 
 
 
