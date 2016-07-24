@@ -1088,6 +1088,26 @@ body {
   .border-none-right-xs {
     border-right: none !important;
   }
+
+  .round {
+    border-radius: 4px !important;
+  }
+  .round-top {
+    border-radius: 4px 4px 0 0 !important;
+  }
+  .round-bottom {
+    border-radius: 0 0 4px 4px !important;
+  }
+  .round-left {
+    border-radius: 4px 0 0 4px !important;
+  }
+  .round-right {
+    border-radius: 0 4px 4px 0 !important;
+  }
+
+  .circle {
+    border-radius: 50% !important;
+  }
 }
 @media screen and (min-width: 480px) {
   .border-sm {
@@ -1188,6 +1208,26 @@ body {
 
   .border-none-right-sm {
     border-right: none !important;
+  }
+
+  .round {
+    border-radius: 4px !important;
+  }
+  .round-top {
+    border-radius: 4px 4px 0 0 !important;
+  }
+  .round-bottom {
+    border-radius: 0 0 4px 4px !important;
+  }
+  .round-left {
+    border-radius: 4px 0 0 4px !important;
+  }
+  .round-right {
+    border-radius: 0 4px 4px 0 !important;
+  }
+
+  .circle {
+    border-radius: 50% !important;
   }
 }
 @media screen and (min-width: 680px) {
@@ -1290,6 +1330,26 @@ body {
   .border-none-right-md {
     border-right: none !important;
   }
+
+  .round {
+    border-radius: 4px !important;
+  }
+  .round-top {
+    border-radius: 4px 4px 0 0 !important;
+  }
+  .round-bottom {
+    border-radius: 0 0 4px 4px !important;
+  }
+  .round-left {
+    border-radius: 4px 0 0 4px !important;
+  }
+  .round-right {
+    border-radius: 0 4px 4px 0 !important;
+  }
+
+  .circle {
+    border-radius: 50% !important;
+  }
 }
 @media screen and (min-width: 960px) {
   .border-lg {
@@ -1391,6 +1451,26 @@ body {
   .border-none-right-lg {
     border-right: none !important;
   }
+
+  .round {
+    border-radius: 4px !important;
+  }
+  .round-top {
+    border-radius: 4px 4px 0 0 !important;
+  }
+  .round-bottom {
+    border-radius: 0 0 4px 4px !important;
+  }
+  .round-left {
+    border-radius: 4px 0 0 4px !important;
+  }
+  .round-right {
+    border-radius: 0 4px 4px 0 !important;
+  }
+
+  .circle {
+    border-radius: 50% !important;
+  }
 }
 @media screen and (min-width: 1140px) {
   .border-xl {
@@ -1491,6 +1571,26 @@ body {
 
   .border-none-right-xl {
     border-right: none !important;
+  }
+
+  .round {
+    border-radius: 4px !important;
+  }
+  .round-top {
+    border-radius: 4px 4px 0 0 !important;
+  }
+  .round-bottom {
+    border-radius: 0 0 4px 4px !important;
+  }
+  .round-left {
+    border-radius: 4px 0 0 4px !important;
+  }
+  .round-right {
+    border-radius: 0 4px 4px 0 !important;
+  }
+
+  .circle {
+    border-radius: 50% !important;
   }
 }
 @media screen {

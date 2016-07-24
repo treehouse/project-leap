@@ -59,6 +59,28 @@ $border-values: normal, dark, mid, light
       border-#{$type}: none !important
 
 
+
+// Creates border radius classes
+@mixin border-radius
+
+  // Create style for border radius classes
+  .round
+    border-radius: $border-radius !important
+    &-top
+      border-radius: $border-radius $border-radius 0 0 !important
+    &-bottom
+      border-radius: 0 0 $border-radius $border-radius !important
+    &-left
+      border-radius: $border-radius 0 0 $border-radius !important
+    &-right
+      border-radius: 0 $border-radius $border-radius 0 !important
+
+  // Create the circle class
+  .circle
+    border-radius: 50% !important
+
+
+
 // Adds the media queries to the border-style mixin
 @mixin border($suffix, $media: null)
 
@@ -68,10 +90,12 @@ $border-values: normal, dark, mid, light
     +media($media)
       +border-style($suffix)
       +border-none($suffix)
+      +border-radius
   @else
     @media screen
       +border-style($suffix)
       +border-none($suffix)
+      +border-radius
 
 
 
