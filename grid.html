@@ -22,18 +22,18 @@
     <main class="guide-main" role="main">
       <div class="guide-content">
 
-        <h1>Grid</h1>
+        <h1 class="border-b-xs p-b-05-xs m-b-4-xs">Grid</h1>
 
         <section id="grid">
-          <h2>The Grid</h2>
-          <p>We provide a mobile-first, fluid grid to help layout pages with ease. To start a new grid, create a div with the class of <code>.col-container</code>. Then add columns inside it using <code>.col .col-n-xs</code>, where n = 5-100 in increments of 5, with the addition of 33 to let us do columns in thirds.</p>
-          <p><strong>Important:</strong> Column classes should generally be used on container elements. It's bad practice to apply grid-based widths directly to elements such as form fields, headers or images. Also, avoid applying styles directly to a column element. Instead, nest your content within the column and apply styling there.</p>
+          <h2 class="m-b-1-xs">The Grid</h2>
+          <p class="m-b-1-xs">We provide a mobile-first, fluid grid to help layout pages with ease. To start a new grid, create a div with the class of <code>.col-container</code>. Then add columns inside it using <code>.col .col-n-xs</code>, where n = 5-100 in increments of 5, with the addition of 33 to let us do columns in thirds.</p>
+          <p class="m-b-3-xs"><strong>Important:</strong> Column classes should generally be used on container elements. It's bad practice to apply grid-based widths directly to elements such as form fields, headers or images. Also, avoid applying styles directly to a column element. Instead, nest your content within the column and apply styling there.</p>
           <div class="col-container">
             <div class="col col-30-xs col-50-lg border-mid-xs">.col .col-30-xs</div>
             <div class="col col-20-xs col-30-lg border-mid-xs">.col .col-20-xs</div>
             <div class="col col-50-xs col-20-xl border-mid-xs">.col .col-50-xs</div>
           </div>
-          <div class="guide-code">
+          <div class="guide-code m-b-4-xs">
 <pre><code class="language-html">&lt;div class="col-container"&gt;
   &lt;div class="col col-30-xs border-mid-xs"&gt;.col .col-30-xs&lt;/div&gt;
   &lt;div class="col col-20-xs border-mid-xs"&gt;.col .col-20-xs&lt;/div&gt;
@@ -41,8 +41,8 @@
 &lt;/div&gt;</code></pre>
           </div>
 
-          <h2>Nesting Columns</h2>
-          <p>Each column in our grid can hold another set of columns inside of it. To make things work properly nest another <code>.col-container</code> inside the <code>.col</code>.</p>
+          <h2 class="m-b-1-xs">Nesting Columns</h2>
+          <p class="m-b-3-xs">Each column in our grid can hold another set of columns inside of it. To make things work properly nest another <code>.col-container</code> inside the <code>.col</code>.</p>
           <div class="col-container">
             <div class="col col-50-xs border-xs">
               <span class="block-xs m-b-1-xs">.col .col-50-xs</span>
@@ -61,7 +61,7 @@
               </div>
             </div>
           </div>
-          <div class="guide-code">
+          <div class="guide-code m-b-4-xs">
 <pre><code class="language-html">&lt;div class="col-container"&gt;
   &lt;div class="col col-50-xs border-xs"&gt;
     &lt;span class="block-xs m-b-1-xs"&gt;.col .col-50-xs&lt;/span&gt;
@@ -82,11 +82,11 @@
 &lt;/div&gt;</code></pre>
           </div>
 
-          <h2>Gutters</h2>
-          <p>The Leap grid doesn't include gutter by default. But there are times when you want to include gutters between your grid. For those times, we have <code>.col-gutters</code>, which can be added next to <code>.col-container</code> to automatically assign gutters to the internal columns. You may also choose to apply gutters manually (for a little more control) by using our padding utility classes next to the column classes.</p>
+          <h2 class="m-b-1-xs">Gutters</h2>
+          <p class="m-b-3-xs">The Leap grid doesn't include gutter by default. But there are times when you want to include gutters between your grid. For those times, we have <code>.col-gutters</code>, which can be added next to <code>.col-container</code> to automatically assign gutters to the internal columns. You may also choose to apply gutters manually (for a little more control) by using our padding utility classes next to the column classes.</p>
 
-          <h3>Automatic Gutters</h3>
-          <p><strong>Note:</strong> Gutters will not be applied to nested columns unless applied to its parent container.</p>
+          <h3 class="m-b-1-xs">Automatic Gutters</h3>
+          <p class="m-b-3-xs">Gutters will not be applied to nested columns unless applied to its parent container.</p>
           <div class="col-container col-gutters">
             <div class="col col-40-xs">
               <div class="border-mid-xs">.col</div>
@@ -99,7 +99,7 @@
               </div>
             </div>
           </div>
-          <div class="guide-code">
+          <div class="guide-code m-b-4-xs">
 <pre><code class="language-html">&lt;div class="col-container col-gutters"&gt;
   &lt;div class="col col-40-xs"&gt;
     &lt;div class="border-mid-xs"&gt;.col&lt;/div&gt;
@@ -114,8 +114,8 @@
 &lt;/div&gt;</code></pre>
           </div>
 
-          <h3>Manual Gutters</h3>
-          <p>With manual gutters, any styling should be applied to a nested element, not the columns themselves.</p>
+          <h3 class="m-b-1-xs">Manual Gutters</h3>
+          <p class="m-b-3-xs">With manual gutters, any styling should be applied to a nested element, not the columns themselves.</p>
           <div class="col-container">
             <div class="col col-30-xs p-r-1-xs">
               <div class="border-mid-xs">.col</div>
@@ -127,7 +127,7 @@
               <div class="border-mid-xs">.col</div>
             </div>
           </div>
-          <div class="guide-code">
+          <div class="guide-code m-b-4-xs">
 <pre><code class="language-html">&lt;div class="col-container"&gt;
   &lt;div class="col col-30-xs p-r-1-xs"&gt;
     &lt;div class="border-mid-xs"&gt;.col&lt;/div&gt;
@@ -141,15 +141,15 @@
 &lt;/div&gt;</code></pre>
           </div>
 
-          <h2>Centering Columns</h2>
-          <p>Sometimes you want to center a single column within its container. This is possible by adding <code>.col-center</code> next to your <code>.col col-n-xs</code> class. You may also control column centering by using our margin and float utility classes. Simply apply <code>.m-auto-xs .float-none-xs</code> and you'll get the same styles as <code>.col-center</code>.</p>
+          <h2 class="m-b-1-xs">Centering Columns</h2>
+          <p class="m-b-3-xs">Sometimes you want to center a single column within its container. This is possible by adding <code>.col-center</code> next to your <code>.col col-n-xs</code> class. You may also control column centering by using our margin and float utility classes. Simply apply <code>.m-auto-xs .float-none-xs</code> and you'll get the same styles as <code>.col-center</code>.</p>
           <div class="col-container border-xs p-1-xs m-b-1-xs">
             <div class="col col-50-xs col-center border-dark-xs">.col .col-50-xs .col-center</div>
           </div>
           <div class="col-container border-xs p-1-xs">
             <div class="col col-30-xs col-center border-dark-xs">.col .col-30-xs .col-center</div>
           </div>
-          <div class="guide-code">
+          <div class="guide-code m-b-4-xs">
 <pre><code class="language-html">&lt;div class="col-container border-xs p-1-xs m-b-1-xs"&gt;
   &lt;div class="col col-50-xs col-center border-dark-xs"&gt;.col .col-50-xs .col-center&lt;/div&gt;
 &lt;/div&gt;
@@ -158,21 +158,21 @@
 &lt;/div&gt;</code></pre>
           </div>
 
-          <h2>Column Offsets</h2>
-          <p>Move columns over by different grid widths by using <code>.col-offset-n-xs</code>. Keep in mind that the columns and offsets used within a <code>.col-container</code> shouldn't add up to more than 100.</p>
+          <h2 class="m-b-1-xs">Column Offsets</h2>
+          <p class="m-b-3-xs">Move columns over by different grid widths by using <code>.col-offset-n-xs</code>. Keep in mind that the columns and offsets used within a <code>.col-container</code> shouldn't add up to more than 100.</p>
           <div class="col-container border-xs p-1-xs m-b-1-xs">
             <div class="col col-40-xs border-dark-xs">.col-40-xs</div>
             <div class="col col-40-xs col-offset-20-xs border-dark-xs">.col-40-xs .col-offset-30-xs</div>
           </div>
-          <div class="guide-code">
+          <div class="guide-code m-b-4-xs">
 <pre><code class="language-html">&lt;div class="col-container border-xs p-1-xs m-b-1-xs"&gt;
   &lt;div class="col col-40-xs border-dark-xs"&gt;.col-40-xs&lt;/div&gt;
   &lt;div class="col col-40-xs col-offset-20-xs border-dark-xs"&gt;.col-40-xs .col-offset-30-xs&lt;/div&gt;
 &lt;/div&gt;</code></pre>
           </div>
 
-          <h2>Responsive Breakpoint Classes</h2>
-          <p>Our mobile first grid comes with a set of breakpoint class suffixes that can be used to override columns across breakpoints. For example, if a div needs to take up the full width of the page across all display sizes, use <code>.col-100-xs</code>. If that same div needs to be half width at the medium breakpoint and a quarter at our large breakpoints, add <code>.col-50-md</code> and <code>.col-33-lg</code>. Resize the browser to see the effect in action. Note that there are also suffixes for small and extra large. You can learn more about the breakpoints in our <a href="responsive.html">responsive documentation</a></p>
+          <h2 class="m-b-1-xs">Responsive Breakpoint Classes</h2>
+          <p class="m-b-3-xs">Our mobile first grid comes with a set of breakpoint class suffixes that can be used to override columns across breakpoints. For example, if a div needs to take up the full width of the page across all display sizes, use <code>.col-100-xs</code>. If that same div needs to be half width at the medium breakpoint and a quarter at our large breakpoints, add <code>.col-50-md</code> and <code>.col-33-lg</code>. Resize the browser to see the effect in action. Note that there are also suffixes for small and extra large. You can learn more about the breakpoints in our <a href="responsive.html">responsive documentation</a></p>
           <div class="col-container">
             <div class="col col-100-xs col-50-md col-25-lg border-dark-xs">
               <span class="block-xs hide-md hide-lg">.col-100-xs</span>
