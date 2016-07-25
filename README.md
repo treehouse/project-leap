@@ -274,28 +274,30 @@ Responsive
 We will utilize a mobile-first approach and apply different responsive styles at our unique breakpoints.
 
 #### Breakpoints
-* [ ] Extra Small (@screen, default mobile-first)
-* [ ] Small ($sm: 480px)
-* [ ] Medium ($md: 680px)
-* [ ] Large ($lg: 960px)
-* [ ] Extra Large ($xl: 1140px)
-  * [ ] Documentation
+* [x] Extra Small (@screen, default mobile-first)
+* [x] Small ($sm: 480px)
+* [x] Medium ($md: 680px)
+* [x] Large ($lg: 960px)
+* [x] Extra Large ($xl: 1140px)
+  * [x] Documentation
 
 #### Prefixable Thing
-* [ ] Text Sizing
-* [ ] Text Alignment
-* [ ] Display
-* [ ] Floats
-* [ ] Overflow
-* [ ] Margin
-* [ ] Padding
-* [ ] Positioning
-* [ ] Position Spacing
-* [ ] Borders
-* [ ] Grid
-* [ ] Grid Offsets
-* [ ] Block Grid
-* [ ] Width and Height
+* [ ] Text Sizing (Add when finished)
+* [x] Text Alignment
+* [x] Display
+* [x] Floats
+* [x] Overflow
+* [x] Margin
+* [x] Padding
+* [x] Positioning
+* [x] Position Spacing
+* [x] Z-Index
+* [x] Borders
+* [x] Grid
+* [x] Grid Offsets
+* [ ] Block Grid (Add when finished)
+* [x] Width and Height
+* [ ] Vertical Alignment
 * [ ] Documentation
 
 
