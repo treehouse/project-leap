@@ -1,15 +1,14 @@
-// Local float variables
-$float-types: left, right, none
-
-
-
 // Creates the style declarations for each float type
 @mixin float-style($suffix)
+  .float
+    &-l-#{$suffix}
+      float: left !important
 
-  // Iterate through each type in $float-types
-  @each $type in $float-types
-    .float-#{$type}-#{$suffix}
-      float: #{$type} !important
+    &-r-#{$suffix}
+      float: right !important
+
+    &-none-#{$suffix}
+      float: none !important
 
 
 

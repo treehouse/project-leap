@@ -1,5 +1,5 @@
 // Local border variables
-$border-types: top, bottom, left, right
+$border-types: (top: t, bottom: b, left: l, right: r)
 $border-values: normal, dark, mid, light
 
 
@@ -33,15 +33,15 @@ $border-values: normal, dark, mid, light
         border: solid 1px border-var($value) !important
 
     // Iterate through each type in $border-types
-    @each $border in $border-types
+    @each $border, $shorthand in $border-types
 
       // We don't want a modifier on the normal style,
       // so we need a conditional to control that
       @if $value == normal
-        .border-#{$border}-#{$suffix}
+        .border-#{$shorthand}-#{$suffix}
           border-#{$border}: solid 1px border-var($value) !important
       @else
-        .border-#{$border}-#{$value}-#{$suffix}
+        .border-#{$shorthand}-#{$value}-#{$suffix}
           border-#{$border}: solid 1px border-var($value) !important
 
 
@@ -54,9 +54,9 @@ $border-values: normal, dark, mid, light
     border: none !important
 
   // Iterate through border sides and create border none styles
-  @each $type in $border-types
-    .border-none-#{$type}-#{$suffix}
-      border-#{$type}: none !important
+  @each $border, $shorthand in $border-types
+    .border-none-#{$shorthand}-#{$suffix}
+      border-#{$border}: none !important
 
 
 
@@ -66,13 +66,13 @@ $border-values: normal, dark, mid, light
   // Create style for border radius classes
   .round
     border-radius: $border-radius !important
-    &-top
+    &-t
       border-radius: $border-radius $border-radius 0 0 !important
-    &-bottom
+    &-b
       border-radius: 0 0 $border-radius $border-radius !important
-    &-left
+    &-l
       border-radius: $border-radius 0 0 $border-radius !important
-    &-right
+    &-r
       border-radius: 0 $border-radius $border-radius 0 !important
 
   // Create the circle class
