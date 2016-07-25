@@ -1,6 +1,7 @@
 // Global Colors
 $dark: #384047;
 $bg: #edeff0;
+$red: #ed5a5a;
 
 // Spacing Units
 //   0   = 0px
@@ -12,14 +13,25 @@ $bg: #edeff0;
 //   5   = 64px
 //   6   = 80px
 $spacing: (
-  0: 0rem,
+  0:   0rem,
   0.5: 0.5rem,
-  1: 1rem,
-  2: 1.5rem,
-  3: 2rem,
-  4: 3rem,
-  5: 4rem,
-  6: 5rem
+  1:   1rem,
+  2:   1.5rem,
+  3:   2rem,
+  4:   3rem,
+  5:   4rem,
+  6:   5rem
+);
+
+// Spacing Sides
+$spacing-sides: (
+  all: all,
+  t: top,
+  b: bottom,
+  l: left,
+  r: right,
+  lr: null,
+  tb: null
 );
 
 // Global Border Variables
@@ -30,5 +42,7 @@ $border-color-light: lighten($dark, 70%);  // #f0f2f4
 $border-radius: 4px;
 
 // Global Responsive Breakpoints
-$desktop: 960px;
-$tablet: 680px;
+$sm: 480px;
+$md: 680px;
+$lg: 960px;
+$xl: 1140px;

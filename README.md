@@ -1,4 +1,4 @@
-Building Blocks
+Building Blocks (Atoms)
 ===
 
 
@@ -7,17 +7,27 @@ Grid
 ---
 Let's utilize a mobile-first approach and have mobile be the default. The rest of the classes will override eachother as they cascade, letting us give alternate styles to override mobile within our responsive breakpoints. Containers won't have gutters by default but we can add a class to the container to do auto gutters. Can also apply padding atoms to individual columns to control gutter with a bit more granularity.
 
-* [ ] Container
-* [ ] Container with auto gutters
-* [ ] Column Default
-* [ ] Nested columns
-* [ ] Centered Columns
-* [ ] Column Sizes (5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100)
-  * [ ] mobile
-  * [ ] mobile + tablet
-  * [ ] tablet
-  * [ ] tablet + desktop
-  * [ ] desktop
+* [x] Column Sizes (5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100)
+  * [x] Documentation
+* [x] Container
+  * [x] Documentation
+* [x] Column Default (xs)
+  * [x] Documentation
+* [x] Nested columns
+  * [x] Documentation
+* [x] Offset Columns
+  * [x] Documentation
+* [x] Centered Columns
+  * [x] Documentation
+* [x] Container with auto gutters
+  * [x] Documentation
+* [x] Responsive Grid (Overriding with each grid size class)
+  * [x] xs
+  * [x] sm
+  * [x] md
+  * [x] lg
+  * [x] xl
+  * [x] Documentation
 
 
 
@@ -30,32 +40,44 @@ We utilize Gotham Rounded for all of our web typography. Maybe we should include
 #### Headers and Sizing
 We can provide styling for default `<h1> - <h6>`, as well as, utility classes for applying different sizes to the default elements so that we can control markup hierarchy while still applying the sizes we want visually.
 * [ ] h1
+  * [ ] Documentation
 * [ ] h2
+  * [ ] Documentation
 * [ ] h3
+  * [ ] Documentation
 * [ ] h4
+  * [ ] Documentation
 * [ ] h5
+  * [ ] Documentation
 * [ ] h6
+  * [ ] Documentation
 
 #### Paragraph Sizing
 * [ ] Default
 * [ ] Size overrides for different breakpoints
+* [ ] Documentation
 
 #### Emphasis
 * [ ] Regular
 * [ ] Strong/Bold
 * [ ] Em/Italic
 * [ ] Caps
+* [ ] Documentation
 
 #### Alignment
 * [ ] Left
 * [ ] Right
 * [ ] Center
 * [ ] Justify
+* [ ] Documentation
 
 #### Lists
 * [ ] Unordered List
+  * [ ] Documentation
 * [ ] Ordered List
+  * [ ] Documentation
 * [ ] Unstyled List
+  * [ ] Documentation
 
 
 
@@ -66,9 +88,13 @@ Colors
 Treehouse utilized colors in various parts of our app. Most of our app is gray, so color is rather important. Stick to the color guidelines at all times.
 
 * [ ] Generic App colors
+  * [ ] Documentation
 * [ ] Topic colors
+  * [ ] Documentation
 * [ ] Text Colors
+  * [ ] Documentation
 * [ ] Border Colors
+  * [ ] Documentation
 
 
 
@@ -79,17 +105,29 @@ Buttons (x-small, small, normal, large, x-large)
 Buttons are important for submitting forms and calling out different CTAs or actions on a page.
 
 * [ ] Default
+  * [ ] Documentation
 * [ ] Primary
+  * [ ] Documentation
 * [ ] Secondary
+  * [ ] Documentation
 * [ ] Alert
+  * [ ] Documentation
 * [ ] Inverse
+  * [ ] Documentation
 * [ ] Disabled
+  * [ ] Documentation
 * [ ] With Icon
+  * [ ] Documentation
 * [ ] Square (Icon Only)
+  * [ ] Documentation
 * [ ] Circle (Icon Only)
+  * [ ] Documentation
 * [ ] Pill Labels
+  * [ ] Documentation
 * [ ] Split Buttons
+  * [ ] Documentation
 * [ ] Button Groups
+  * [ ] Documentation
 
 
 
@@ -100,14 +138,23 @@ Forms
 Forms should always live within a `<form>` element.
 
 * [ ] Labels
+  * [ ] Documentation
 * [ ] Inputs
+  * [ ] Documentation
 * [ ] Textareas
+  * [ ] Documentation
 * [ ] Selects
+  * [ ] Documentation
 * [ ] Radio Buttons
+  * [ ] Documentation
 * [ ] Checkboxes
+  * [ ] Documentation
 * [ ] Form Warnings
+  * [ ] Documentation
 * [ ] Form Errors
+  * [ ] Documentation
 * [ ] Form Success
+  * [ ] Documentation
 
 
 
@@ -119,6 +166,7 @@ Use them for tabular data.
 
 * [ ] Default
 * [ ] Bordered
+* [ ] Documentation
 
 
 
@@ -129,61 +177,70 @@ Layout
 Atomic classes that can be stacked to quickly create layouts, spacing, etc, on any given page or component. All of these have responsive prefixes, defaulting to mobile-first.
 
 #### Margin (0, 0.5, 1, 2, 3, 4, 5, 6)
-* [ ] uniform
-* [ ] top
-* [ ] right
-* [ ] bottom
-* [ ] right  
-* [ ] left and right (x-axis)
-* [ ] top and bottom (y-axis)
-* [ ] auto
+* [x] uniform
+* [x] top
+* [x] right
+* [x] bottom
+* [x] right  
+* [x] left and right (x-axis)
+* [x] top and bottom (y-axis)
+* [x] auto
+* [x] Documentation
 
 #### Padding (0, 0.5, 1, 2, 3, 4, 5, 6)
-* [ ] uniform
-* [ ] top
-* [ ] right
-* [ ] bottom
-* [ ] right  
-* [ ] left and right (x-axis)
-* [ ] top and bottom (y-axis)
+* [x] uniform
+* [x] top
+* [x] right
+* [x] bottom
+* [x] right  
+* [x] left and right (x-axis)
+* [x] top and bottom (y-axis)
+* [x] Documentation
 
 #### Floats
-* [ ] Left
-* [ ] Right
-* [ ] None
+* [x] Left
+* [x] Right
+* [x] None
+* [x] Documentation
 
 #### Display
 * [x] Inline
 * [x] Inline Block
 * [x] Block
 * [x] None
+* [x] Documentation
 
-#### Overflow
-* [ ] Hidden
-* [ ] Auto
-* [ ] Scroll
-* [ ] Visible
+#### Overflow (uniform, x, y)
+* [x] Hidden
+* [x] Auto
+* [x] Scroll
+* [x] Visible
+* [x] Documentation
 
 #### Width and Height
-* [ ] Width 100%
-* [ ] Width Auto
-* [ ] Height 100%
+* [x] Max Width 100%
+* [x] Width 100%
+* [x] Width Auto
+* [x] Height 100%
+* [x] Documentation
 
 #### Positioning
-* [ ] Relative
-* [ ] Absolute
-* [ ] Fixed
-* [ ] Static
-* [ ] Top
-* [ ] Bottom
-* [ ] Right
-* [ ] Left
-* [ ] Z-Index (4 different levels? 100, 200, 300, 400?)
+* [x] Relative
+* [x] Absolute
+* [x] Fixed
+* [x] Static
+* [x] Top
+* [x] Bottom
+* [x] Right
+* [x] Left
+* [x] Z-Index (4 different levels? 100, 200, 300, 400?)
+* [x] Documentation
 
 #### Vertical Alignment
-* [ ] Bottom
-* [ ] Middle
-* [ ] Top
+* [x] Bottom
+* [x] Middle
+* [x] Top
+* [x] Documentation
 
 
 
@@ -193,44 +250,55 @@ Borders
 ---
 Border styles that can be applied to any element
 
-* [ ] Normal
+* [x] Normal
+  * [x] Documentation
 * [x] Dark
-* [ ] Medium
-* [ ] Light
-* [ ] Removing Borders
-* [ ] Rounded Corners
-* [ ] Circles
+  * [x] Documentation
+* [x] Medium
+  * [x] Documentation
+* [x] Light
+  * [x] Documentation
+* [x] Removing Borders
+  * [x] Documentation
+* [x] Rounded Corners
+  * [x] Documentation
+* [x] Circles
+  * [x] Documentation
 
 
 
 
 
-Responsive (mobile, mobile + tablet, tablet, tablet + desktop, desktop)
+Responsive
 ---
 We will utilize a mobile-first approach and apply different responsive styles at our unique breakpoints.
 
 #### Breakpoints
-* [ ] Mobile Down: max-width $mobile-max (< 679px)
-* [ ] Tablet Down: max-width $tablet-max (< 959px)
-* [ ] Tablet Up: min-width $tablet-min (> 680px)
-* [ ] Tablet + Desktop Only min-width $tablet-min max-width $tablet-max (680px - 959px)
-* [ ] Desktop Up: min-width $desktop-min (> 960px)
+* [x] Extra Small (@screen, default mobile-first)
+* [x] Small ($sm: 480px)
+* [x] Medium ($md: 680px)
+* [x] Large ($lg: 960px)
+* [x] Extra Large ($xl: 1140px)
+  * [x] Documentation
 
 #### Prefixable Thing
-* [ ] Text Sizing
-* [ ] Text Alignment
-* [ ] Display
-* [ ] Floats
-* [ ] Overflow
-* [ ] Margin
-* [ ] Padding
-* [ ] Positioning
-* [ ] Position Spacing
-* [ ] Borders
-* [ ] Grid
-* [ ] Grid Offsets
-* [ ] Block Grid
-* [ ] Width and Height
+* [ ] Text Sizing (Add when finished)
+* [x] Text Alignment
+* [x] Display
+* [x] Floats
+* [x] Overflow
+* [x] Margin
+* [x] Padding
+* [x] Positioning
+* [x] Position Spacing
+* [x] Z-Index
+* [x] Borders
+* [x] Grid
+* [x] Grid Offsets
+* [ ] Block Grid (Add when finished)
+* [x] Width and Height
+* [x] Vertical Alignment
+* [ ] Documentation
 
 
 
@@ -241,7 +309,9 @@ Block Grid (1 - 6)
 Used when a layout has a variable number of alike items that need to be presented in a grid. We will only provide options for rows of block from 1 through 6 since those are most common for this type of grid layout. Default to mobile-first and can be overriden by responsive prefixes to get variable layouts between breakpoints.
 
 * [ ] With Gutters
+  * [ ] Documentation
 * [ ] Without Gutters
+  * [ ] Documentation
 
 
 
