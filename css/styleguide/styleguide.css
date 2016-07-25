@@ -4333,6 +4333,71 @@ body {
     max-width: 100% !important;
   }
 }
+@media screen {
+  .align-top-xs {
+    vertical-align: top !important;
+  }
+
+  .align-middle-xs {
+    vertical-align: middle !important;
+  }
+
+  .align-bottom-xs {
+    vertical-align: bottom !important;
+  }
+}
+@media screen and (min-width: 480px) {
+  .align-top-sm {
+    vertical-align: top !important;
+  }
+
+  .align-middle-sm {
+    vertical-align: middle !important;
+  }
+
+  .align-bottom-sm {
+    vertical-align: bottom !important;
+  }
+}
+@media screen and (min-width: 680px) {
+  .align-top-md {
+    vertical-align: top !important;
+  }
+
+  .align-middle-md {
+    vertical-align: middle !important;
+  }
+
+  .align-bottom-md {
+    vertical-align: bottom !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .align-top-lg {
+    vertical-align: top !important;
+  }
+
+  .align-middle-lg {
+    vertical-align: middle !important;
+  }
+
+  .align-bottom-lg {
+    vertical-align: bottom !important;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .align-top-xl {
+    vertical-align: top !important;
+  }
+
+  .align-middle-xl {
+    vertical-align: middle !important;
+  }
+
+  .align-bottom-xl {
+    vertical-align: bottom !important;
+  }
+}
 .guide-banner {
   position: fixed;
   top: 0;
