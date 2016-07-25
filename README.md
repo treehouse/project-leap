@@ -237,10 +237,10 @@ Atomic classes that can be stacked to quickly create layouts, spacing, etc, on a
 * [x] Documentation
 
 #### Vertical Alignment
-* [ ] Bottom
-* [ ] Middle
-* [ ] Top
-* [ ] Documentation
+* [x] Bottom
+* [x] Middle
+* [x] Top
+* [x] Documentation
 
 
 
@@ -297,7 +297,7 @@ We will utilize a mobile-first approach and apply different responsive styles at
 * [x] Grid Offsets
 * [ ] Block Grid (Add when finished)
 * [x] Width and Height
-* [ ] Vertical Alignment
+* [x] Vertical Alignment
 * [ ] Documentation
 
 
