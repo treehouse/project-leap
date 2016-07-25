@@ -1,6 +1,6 @@
 Todo Percentage
 ===
-105 of 235 done
+105 of 235 done (44.6%)
 
 
 Building Blocks (Atoms)
