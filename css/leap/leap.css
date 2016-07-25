@@ -106,7 +106,7 @@ pre {
 
 code, kbd, pre, samp {
   font-family: Monaco, monospace;
-  font-size: 0.875rem;
+  font-size: 16px;
 }
 
 button, input, optgroup, select, textarea {
@@ -203,6 +203,211 @@ html {
 
 body {
   font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #384047;
+  display: block;
+  font-weight: 500;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+@media screen {
+  .h1-xs {
+    font-size: 2.25rem;
+  }
+
+  .h2-xs {
+    font-size: 1.75rem;
+  }
+
+  .h3-xs {
+    font-size: 1.25rem;
+  }
+
+  .h4-xs {
+    font-size: 1.125rem;
+  }
+
+  .h5-xs {
+    font-size: 1rem;
+  }
+
+  .h6-xs {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  .h1-sm {
+    font-size: 2.25rem;
+  }
+
+  .h2-sm {
+    font-size: 1.75rem;
+  }
+
+  .h3-sm {
+    font-size: 1.25rem;
+  }
+
+  .h4-sm {
+    font-size: 1.125rem;
+  }
+
+  .h5-sm {
+    font-size: 1rem;
+  }
+
+  .h6-sm {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .h1-md {
+    font-size: 2.25rem;
+  }
+
+  .h2-md {
+    font-size: 1.75rem;
+  }
+
+  .h3-md {
+    font-size: 1.25rem;
+  }
+
+  .h4-md {
+    font-size: 1.125rem;
+  }
+
+  .h5-md {
+    font-size: 1rem;
+  }
+
+  .h6-md {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .h1-lg {
+    font-size: 2.25rem;
+  }
+
+  .h2-lg {
+    font-size: 1.75rem;
+  }
+
+  .h3-lg {
+    font-size: 1.25rem;
+  }
+
+  .h4-lg {
+    font-size: 1.125rem;
+  }
+
+  .h5-lg {
+    font-size: 1rem;
+  }
+
+  .h6-lg {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .h1-xl {
+    font-size: 2.25rem;
+  }
+
+  .h2-xl {
+    font-size: 1.75rem;
+  }
+
+  .h3-xl {
+    font-size: 1.25rem;
+  }
+
+  .h4-xl {
+    font-size: 1.125rem;
+  }
+
+  .h5-xl {
+    font-size: 1rem;
+  }
+
+  .h6-xl {
+    font-size: 0.875rem;
+  }
+}
+hr {
+  height: 0;
+  margin: 30px 0;
+  border-top: 1px solid #f0f2f4;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+address {
+  font-size: 0.875rem;
+}
+
+a {
+  color: #3f8abf;
+  cursor: pointer;
+  transition: color 300ms 0s ease;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  color: #326e99;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .col {

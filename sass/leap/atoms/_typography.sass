@@ -1,0 +1,106 @@
+// Local header variables
+$headers: (h1: 2.25rem, h2: 1.75rem, h3: 1.25rem, h4: 1.125rem, h5: 1rem, h6: 0.875rem)
+
+
+
+// Headings
+h1, h2, h3, h4, h5, h6
+  color: $dark
+  display: block
+  font-weight: $bold
+  margin: 0
+  text-rendering: optimizeLegibility
+h1
+  font-size: 2.25rem
+h2
+  font-size: 1.75rem
+h3
+  font-size: 1.25rem
+h4
+  font-size: 1.125rem
+h5
+  font-size: 1rem
+h6
+  font-size: 0.875rem
+
+
+
+// Create header size classes
+@mixin header-size($suffix)
+
+  // Iterate through each header and size to create header classes
+  @each $header, $size in $headers
+    .#{$header}-#{$suffix}
+      font-size: #{$size}
+
+
+
+// Adds the media queries to the header mixin
+@mixin header-classes($suffix, $media: null)
+
+  // We want to use @media screen whenever no $media
+  // is passed into the mixin
+  @if length($media) == 2
+    +media($media)
+      +header-size($suffix)
+  @else
+    @media screen
+      +header-size($suffix)
+
+
+
+// Extra Small header classes
++header-classes(xs)
+
+// Small header classes
++header-classes(sm, min-width $sm)
+
+// Medium header classes
++header-classes(md, min-width $md)
+
+// Large header classes
++header-classes(lg, min-width $lg)
+
+// Extra Large header classes
++header-classes(xl, min-width $xl)
+
+
+
+// Horizontal Rule
+hr
+  height: 0
+  margin: 30px 0
+  border-top: 1px solid $border-color-light
+
+
+
+// General text styles
+p
+  font-size: 1rem
+  line-height: 1.5
+  margin: 0
+
+strong
+  font-weight: $bold
+
+code
+  font-family: monospace
+  font-size: 16px
+  font-weight: $bold
+
+address
+  font-size: 0.875rem
+
+a
+  color: $blue
+  cursor: pointer
+  transition: fast(color)
+  text-decoration: none
+  +selected
+    color: darken($blue, 10%)
+
+
+// Text-align Utilities
+@each $direction in left right center
+  .text-#{$direction}
+    text-align: $direction
