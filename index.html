@@ -288,6 +288,76 @@
 
         <section id="positioning">
           <h2>Positioning</h2>
+          <p>Positioning is simple with Leap. Just add <code>.relative-xs</code>, <code>.absolute-xs</code>, <code>.fixed-xs</code>, or <code>.static-xs</code> to control the type of positioning on an element. From there, you can apply values based on our spacing units of 0-6 and a half unit of 05. Use <code>.pos-t-n-xs</code>, where t is the side and n is one of our spacing units.</p>
+          <p><strong>Note:</strong> There is no demo for position fixed because it will always be fixed to the viewport, not a parent container.</p>
+          <div class="col-container">
+            <div class="col col-50-sm">
+              <ul>
+                <li><code>.relative-xs</code> = relative</li>
+                <li><code>.absolute-xs</code> = absolute</li>
+                <li><code>.fixed-xs</code> = fixed</li>
+                <li><code>.static-xs</code> = static</li>
+                <li><code>.pos-t-n-xs</code> = top</li>
+                <li><code>.pos-b-n-xs</code> = bottom</li>
+                <li><code>.pos-l-n-xs</code> = left</li>
+                <li><code>.pos-r-n-xs</code> = right</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>Z-Index</h3>
+          <p>Use a z-index class to assign the stack order of elements. We've created classes for values 1-4, which end up as 100-400 in the property value.</p>
+          <div class="col-container">
+            <div class="col col-50-sm">
+              <ul>
+                <li><code>.z-1-xs</code> = z-index: 100</li>
+                <li><code>.z-2-xs</code> = z-index: 200</li>
+                <li><code>.z-3-xs</code> = z-index: 300</li>
+                <li><code>.z-4-xs</code> = z-index: 400</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border-xs p-2-xs m-b-1-xs">
+            <div class="relative-xs pos-t-2-xs pos-l-5-xs border-dark-xs inline-xs">
+              .relative-xs .pos-t-2-xs .pos-l-5-xs
+            </div>
+          </div>
+          <div class="relative-xs border-xs p-3-xs m-b-1-xs">
+            .relative-xs
+            <div class="absolute-xs pos-t-4-xs pos-l-5-xs border-dark-xs">
+              .absolute-xs .pos-t-4-xs .pos-l-5-xs
+            </div>
+          </div>
+          <div class="relative-xs border-xs p-5-xs">
+            <div class="absolute-xs pos-t-1-xs pos-l-2-xs border-dark-xs p-05-xs z-2-xs" style="background: #fff">
+              .absolute-xs .pos-t-1-xs .pos-l-2-xs
+            </div>
+            <div class="absolute-xs pos-t-4-xs pos-l-4-xs border-dark-xs p-05-xs z-1-xs">
+              .absolute-xs .pos-t-4-xs .pos-l-4-xs
+            </div>
+          </div>
+          <div class="guide-code">
+<pre><code class="language-html">&lt;div class="border-xs p-2-xs m-b-1-xs"&gt;
+  &lt;div class="relative-xs pos-t-2-xs pos-l-5-xs border-dark-xs inline-xs"&gt;
+    .relative-xs .pos-t-2-xs .pos-l-5-xs
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="relative-xs border-xs p-3-xs m-b-1-xs"&gt;
+  .relative-xs
+  &lt;div class="absolute-xs pos-t-4-xs pos-l-5-xs border-dark-xs"&gt;
+    .absolute-xs .pos-t-4-xs .pos-l-5-xs
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="relative-xs border-xs p-5-xs"&gt;
+  &lt;div class="absolute-xs pos-t-1-xs pos-l-2-xs border-dark-xs p-05-xs z-2-xs" style="background: #fff"&gt;
+    .absolute-xs .pos-t-1-xs .pos-l-2-xs
+  &lt;/div&gt;
+  &lt;div class="absolute-xs pos-t-4-xs pos-l-4-xs border-dark-xs p-05-xs z-1-xs"&gt;
+    .absolute-xs .pos-t-4-xs .pos-l-4-xs
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
         </section>
 
 

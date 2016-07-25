@@ -225,16 +225,16 @@ Atomic classes that can be stacked to quickly create layouts, spacing, etc, on a
 * [x] Documentation
 
 #### Positioning
-* [ ] Relative
-* [ ] Absolute
-* [ ] Fixed
-* [ ] Static
-* [ ] Top
-* [ ] Bottom
-* [ ] Right
-* [ ] Left
-* [ ] Z-Index (4 different levels? 100, 200, 300, 400?)
-* [ ] Documentation
+* [x] Relative
+* [x] Absolute
+* [x] Fixed
+* [x] Static
+* [x] Top
+* [x] Bottom
+* [x] Right
+* [x] Left
+* [x] Z-Index (4 different levels? 100, 200, 300, 400?)
+* [x] Documentation
 
 #### Vertical Alignment
 * [ ] Bottom
