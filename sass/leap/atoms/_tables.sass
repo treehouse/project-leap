@@ -1,0 +1,26 @@
+table
+  width: 100%
+  border-collapse: collapse
+  th,
+  td
+    padding: .5rem
+
+
+.border
+  thead
+    border-bottom: 1px solid darken($bg, 5%)
+  tr
+    border-bottom: 1px solid darken($bg, 5%)
+    &:last-child
+      border: none
+  td, th
+    text-align: left
+    &:first-child
+      padding-left: 0
+    &:last-child
+      padding-right: 0
+    &.actions
+      text-align: right
+  th
+    padding-top: 0
+    padding-bottom: 10px
