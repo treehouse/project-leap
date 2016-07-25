@@ -5170,35 +5170,24 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
+table th {
+  font-weight: 600;
+}
 table th,
 table td {
+  text-align: left;
   padding: 0.5rem;
 }
 
-.border thead {
+.table-border {
+  border: 1px solid #dfe3e4;
+}
+.table-border th,
+.table-border td {
   border-bottom: 1px solid #dfe3e4;
 }
-.border tr {
-  border-bottom: 1px solid #dfe3e4;
-}
-.border tr:last-child {
+.table-border tr:last-child td {
   border: none;
-}
-.border td, .border th {
-  text-align: left;
-}
-.border td:first-child, .border th:first-child {
-  padding-left: 0;
-}
-.border td:last-child, .border th:last-child {
-  padding-right: 0;
-}
-.border td.actions, .border th.actions {
-  text-align: right;
-}
-.border th {
-  padding-top: 0;
-  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=leap.css.map */
