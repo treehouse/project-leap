@@ -1,37 +1,32 @@
-// Local header variables
-$headers: (h1: 2.25rem, h2: 1.75rem, h3: 1.25rem, h4: 1.125rem, h5: 1rem, h6: 0.875rem)
+// Local Text Alignment Variables
+$text-alignments: left, right, center, justify
 
 
 
-// Headings
+// Headings shared styles
 h1, h2, h3, h4, h5, h6
   color: $dark
   display: block
-  font-weight: $bold
+  font-weight: bold
   margin: 0
   text-rendering: optimizeLegibility
-h1
-  font-size: 2.25rem
-h2
-  font-size: 1.75rem
-h3
-  font-size: 1.25rem
-h4
-  font-size: 1.125rem
-h5
-  font-size: 1rem
-h6
-  font-size: 0.875rem
 
 
 
-// Create header size classes
+// text sizes for each header
+@for $num from 1 through 6
+  h#{$num}
+    font-size: text-size($num)
+
+
+
+// Create text size classes
 @mixin header-size($suffix)
 
-  // Iterate through each header and size to create header classes
-  @each $header, $size in $headers
-    .#{$header}-#{$suffix}
-      font-size: #{$size}
+  // Iterate through each text-size create text size classes
+  @each $size, $number in $text-size
+    .text-#{$size}-#{$suffix}
+      font-size: #{$number} !important
 
 
 
@@ -80,16 +75,19 @@ p
   line-height: 1.5
   margin: 0
 
-strong
-  font-weight: bold
+.regular
+  font-weight: normal !important
 
-code
-  font-family: monospace
-  font-size: 16px
-  font-weight: $bold
+strong,
+.bold
+  font-weight: bold !important
 
-address
-  font-size: 0.875rem
+em,
+.italic
+  font-style: italic !important
+
+.caps
+  text-transform: uppercase
 
 a
   color: $blue
@@ -99,8 +97,62 @@ a
   +selected
     color: darken($blue, 10%)
 
+code
+  font-family: monospace
+  font-size: 16px
 
-// Text-align Utilities
-@each $direction in left right center
-  .text-#{$direction}
-    text-align: $direction
+address
+  font-size: 0.875rem
+
+
+
+// Creates the text align styles for each alignment style
+@mixin text-align-styles($suffix)
+
+  // Iterate through align types and create the classes
+  @each $type in $text-alignments
+    .text-#{$type}-#{$suffix}
+      text-align: #{$type} !important
+
+
+
+// Adds the media queries to the text align style mixin
+@mixin text-align($suffix, $media: null)
+
+  // We want to use @media screen whenever no $media
+  // is passed into the mixin
+  @if length($media) == 2
+    +media($media)
+      +text-align-styles($suffix)
+  @else
+    @media screen
+      +text-align-styles($suffix)
+
+
+
+// Extra Small text-align classes
++text-align(xs)
+
+// Small text-align classes
++text-align(sm, min-width $sm)
+
+// Medium text-align classes
++text-align(md, min-width $md)
+
+// Large text-align classes
++text-align(lg, min-width $lg)
+
+// Extra Large text-align classes
++text-align(xl, min-width $xl)
+
+
+
+// List styles
+ul,
+ol
+  margin: 0
+  padding: 0 0 0 2rem
+
+.list-unstyled
+  list-style: none
+  padding: 0

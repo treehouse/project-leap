@@ -39,7 +39,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 /* Code blocks */
 pre[class*="language-"] {
   padding: 1rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   overflow: auto;
   background-color: #f5f6f7;
   border-radius: 4px;
@@ -329,7 +329,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #384047;
   display: block;
-  font-weight: 500;
+  font-weight: bold;
   margin: 0;
   text-rendering: optimizeLegibility;
 }
@@ -359,128 +359,128 @@ h6 {
 }
 
 @media screen {
-  .h1-xs {
-    font-size: 2.25rem;
+  .text-1-xs {
+    font-size: 2.25rem !important;
   }
 
-  .h2-xs {
-    font-size: 1.75rem;
+  .text-2-xs {
+    font-size: 1.75rem !important;
   }
 
-  .h3-xs {
-    font-size: 1.25rem;
+  .text-3-xs {
+    font-size: 1.25rem !important;
   }
 
-  .h4-xs {
-    font-size: 1.125rem;
+  .text-4-xs {
+    font-size: 1.125rem !important;
   }
 
-  .h5-xs {
-    font-size: 1rem;
+  .text-5-xs {
+    font-size: 1rem !important;
   }
 
-  .h6-xs {
-    font-size: 0.875rem;
+  .text-6-xs {
+    font-size: 0.875rem !important;
   }
 }
 @media screen and (min-width: 480px) {
-  .h1-sm {
-    font-size: 2.25rem;
+  .text-1-sm {
+    font-size: 2.25rem !important;
   }
 
-  .h2-sm {
-    font-size: 1.75rem;
+  .text-2-sm {
+    font-size: 1.75rem !important;
   }
 
-  .h3-sm {
-    font-size: 1.25rem;
+  .text-3-sm {
+    font-size: 1.25rem !important;
   }
 
-  .h4-sm {
-    font-size: 1.125rem;
+  .text-4-sm {
+    font-size: 1.125rem !important;
   }
 
-  .h5-sm {
-    font-size: 1rem;
+  .text-5-sm {
+    font-size: 1rem !important;
   }
 
-  .h6-sm {
-    font-size: 0.875rem;
+  .text-6-sm {
+    font-size: 0.875rem !important;
   }
 }
 @media screen and (min-width: 680px) {
-  .h1-md {
-    font-size: 2.25rem;
+  .text-1-md {
+    font-size: 2.25rem !important;
   }
 
-  .h2-md {
-    font-size: 1.75rem;
+  .text-2-md {
+    font-size: 1.75rem !important;
   }
 
-  .h3-md {
-    font-size: 1.25rem;
+  .text-3-md {
+    font-size: 1.25rem !important;
   }
 
-  .h4-md {
-    font-size: 1.125rem;
+  .text-4-md {
+    font-size: 1.125rem !important;
   }
 
-  .h5-md {
-    font-size: 1rem;
+  .text-5-md {
+    font-size: 1rem !important;
   }
 
-  .h6-md {
-    font-size: 0.875rem;
+  .text-6-md {
+    font-size: 0.875rem !important;
   }
 }
 @media screen and (min-width: 960px) {
-  .h1-lg {
-    font-size: 2.25rem;
+  .text-1-lg {
+    font-size: 2.25rem !important;
   }
 
-  .h2-lg {
-    font-size: 1.75rem;
+  .text-2-lg {
+    font-size: 1.75rem !important;
   }
 
-  .h3-lg {
-    font-size: 1.25rem;
+  .text-3-lg {
+    font-size: 1.25rem !important;
   }
 
-  .h4-lg {
-    font-size: 1.125rem;
+  .text-4-lg {
+    font-size: 1.125rem !important;
   }
 
-  .h5-lg {
-    font-size: 1rem;
+  .text-5-lg {
+    font-size: 1rem !important;
   }
 
-  .h6-lg {
-    font-size: 0.875rem;
+  .text-6-lg {
+    font-size: 0.875rem !important;
   }
 }
 @media screen and (min-width: 1140px) {
-  .h1-xl {
-    font-size: 2.25rem;
+  .text-1-xl {
+    font-size: 2.25rem !important;
   }
 
-  .h2-xl {
-    font-size: 1.75rem;
+  .text-2-xl {
+    font-size: 1.75rem !important;
   }
 
-  .h3-xl {
-    font-size: 1.25rem;
+  .text-3-xl {
+    font-size: 1.25rem !important;
   }
 
-  .h4-xl {
-    font-size: 1.125rem;
+  .text-4-xl {
+    font-size: 1.125rem !important;
   }
 
-  .h5-xl {
-    font-size: 1rem;
+  .text-5-xl {
+    font-size: 1rem !important;
   }
 
-  .h6-xl {
-    font-size: 0.875rem;
+  .text-6-xl {
+    font-size: 0.875rem !important;
   }
 }
 hr {
@@ -495,18 +495,22 @@ p {
   margin: 0;
 }
 
-strong {
-  font-weight: bold;
+.regular {
+  font-weight: normal !important;
 }
 
-code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 500;
+strong,
+.bold {
+  font-weight: bold !important;
 }
 
-address {
-  font-size: 0.875rem;
+em,
+.italic {
+  font-style: italic !important;
+}
+
+.caps {
+  text-transform: uppercase;
 }
 
 a {
@@ -519,16 +523,109 @@ a:hover, a:active, a:focus {
   color: #326e99;
 }
 
-.text-left {
-  text-align: left;
+code {
+  font-family: monospace;
+  font-size: 16px;
 }
 
-.text-right {
-  text-align: right;
+address {
+  font-size: 0.875rem;
 }
 
-.text-center {
-  text-align: center;
+@media screen {
+  .text-left-xs {
+    text-align: left !important;
+  }
+
+  .text-right-xs {
+    text-align: right !important;
+  }
+
+  .text-center-xs {
+    text-align: center !important;
+  }
+
+  .text-justify-xs {
+    text-align: justify !important;
+  }
+}
+@media screen and (min-width: 480px) {
+  .text-left-sm {
+    text-align: left !important;
+  }
+
+  .text-right-sm {
+    text-align: right !important;
+  }
+
+  .text-center-sm {
+    text-align: center !important;
+  }
+
+  .text-justify-sm {
+    text-align: justify !important;
+  }
+}
+@media screen and (min-width: 680px) {
+  .text-left-md {
+    text-align: left !important;
+  }
+
+  .text-right-md {
+    text-align: right !important;
+  }
+
+  .text-center-md {
+    text-align: center !important;
+  }
+
+  .text-justify-md {
+    text-align: justify !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .text-left-lg {
+    text-align: left !important;
+  }
+
+  .text-right-lg {
+    text-align: right !important;
+  }
+
+  .text-center-lg {
+    text-align: center !important;
+  }
+
+  .text-justify-lg {
+    text-align: justify !important;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .text-left-xl {
+    text-align: left !important;
+  }
+
+  .text-right-xl {
+    text-align: right !important;
+  }
+
+  .text-center-xl {
+    text-align: center !important;
+  }
+
+  .text-justify-xl {
+    text-align: justify !important;
+  }
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0 0 0 2rem;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
 }
 
 .col {

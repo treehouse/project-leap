@@ -36,8 +36,15 @@ $spacing-sides: (
 );
 
 // Type Variables
-$bold: 500;
-$regular: 400;
+$text-size: (
+  1: 2.25rem,
+  2: 1.75rem,
+  3: 1.25rem,
+  4: 1.125rem,
+  5: 1rem,
+  6: 0.875rem
+);
+
 
 // Global Border Variables
 $border-color-dark: lighten($dark, 50%);   // #b7c0c7
