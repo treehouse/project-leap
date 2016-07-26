@@ -44,45 +44,45 @@ We utilize Gotham Rounded for all of our web typography. Maybe we should include
 
 #### Headers and Sizing
 We can provide styling for default `<h1> - <h6>`, as well as, utility classes for applying different sizes to the default elements so that we can control markup hierarchy while still applying the sizes we want visually.
-* [ ] h1
-  * [ ] Documentation
-* [ ] h2
-  * [ ] Documentation
-* [ ] h3
-  * [ ] Documentation
-* [ ] h4
-  * [ ] Documentation
-* [ ] h5
-  * [ ] Documentation
-* [ ] h6
-  * [ ] Documentation
+* [x] h1
+  * [x] Documentation
+* [x] h2
+  * [x] Documentation
+* [x] h3
+  * [x] Documentation
+* [x] h4
+  * [x] Documentation
+* [x] h5
+  * [x] Documentation
+* [x] h6
+  * [x] Documentation
 
 #### Paragraph Sizing
-* [ ] Default
-* [ ] Size overrides for different breakpoints
-* [ ] Documentation
+* [x] Default
+* [x] Size overrides for different breakpoints
+* [x] Documentation
 
 #### Emphasis
-* [ ] Regular
-* [ ] Strong/Bold
-* [ ] Em/Italic
-* [ ] Caps
-* [ ] Documentation
+* [x] Regular
+* [x] Strong/Bold
+* [x] Em/Italic
+* [x] Caps
+* [x] Documentation
 
 #### Alignment
-* [ ] Left
-* [ ] Right
-* [ ] Center
-* [ ] Justify
-* [ ] Documentation
+* [x] Left
+* [x] Right
+* [x] Center
+* [x] Justify
+* [x] Documentation
 
 #### Lists
-* [ ] Unordered List
-  * [ ] Documentation
-* [ ] Ordered List
-  * [ ] Documentation
-* [ ] Unstyled List
-  * [ ] Documentation
+* [x] Unordered List
+  * [x] Documentation
+* [x] Ordered List
+  * [x] Documentation
+* [x] Unstyled List
+  * [x] Documentation
 
 
 
@@ -289,7 +289,7 @@ We will utilize a mobile-first approach and apply different responsive styles at
   * [x] Documentation
 
 #### Prefixable Thing
-* [ ] Text Sizing (Add when finished)
+* [x] Text Sizing
 * [x] Text Alignment
 * [x] Display
 * [x] Floats
