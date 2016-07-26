@@ -53,6 +53,9 @@ $border-color-normal: lighten($dark, 67%); // #e8ebed
 $border-color-light: lighten($dark, 70%);  // #f0f2f4
 $border-radius: 4px;
 
+// Grid max width
+$grid-width: 1200px;
+
 // Global Responsive Breakpoints
 $sm: 480px;
 $md: 680px;

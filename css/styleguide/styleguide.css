@@ -645,6 +645,9 @@ ol {
 .col-container:after {
   clear: both;
 }
+.col-max {
+  max-width: 1200px;
+}
 .col-center {
   float: none;
   margin: 0 auto;
