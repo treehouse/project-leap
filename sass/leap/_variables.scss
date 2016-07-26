@@ -2,6 +2,7 @@
 $dark: #384047;
 $bg: #edeff0;
 $red: #ed5a5a;
+$blue: #3f8abf;
 
 // Spacing Units
 //   0   = 0px
@@ -34,12 +35,26 @@ $spacing-sides: (
   tb: null
 );
 
+// Type Variables
+$text-size: (
+  1: 2.25rem,
+  2: 1.75rem,
+  3: 1.25rem,
+  4: 1.125rem,
+  5: 1rem,
+  6: 0.875rem
+);
+
+
 // Global Border Variables
 $border-color-dark: lighten($dark, 50%);   // #b7c0c7
 $border-color-mid: lighten($dark, 60%);    // #d4d9dd
 $border-color-normal: lighten($dark, 67%); // #e8ebed
 $border-color-light: lighten($dark, 70%);  // #f0f2f4
 $border-radius: 4px;
+
+// Grid max width
+$grid-width: 1200px;
 
 // Global Responsive Breakpoints
 $sm: 480px;

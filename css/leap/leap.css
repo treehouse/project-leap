@@ -106,7 +106,7 @@ pre {
 
 code, kbd, pre, samp {
   font-family: Monaco, monospace;
-  font-size: 0.875rem;
+  font-size: 16px;
 }
 
 button, input, optgroup, select, textarea {
@@ -205,6 +205,308 @@ body {
   font-size: 1rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #384047;
+  display: block;
+  font-weight: bold;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+@media screen {
+  .text-1-xs {
+    font-size: 2.25rem !important;
+  }
+
+  .text-2-xs {
+    font-size: 1.75rem !important;
+  }
+
+  .text-3-xs {
+    font-size: 1.25rem !important;
+  }
+
+  .text-4-xs {
+    font-size: 1.125rem !important;
+  }
+
+  .text-5-xs {
+    font-size: 1rem !important;
+  }
+
+  .text-6-xs {
+    font-size: 0.875rem !important;
+  }
+}
+@media screen and (min-width: 480px) {
+  .text-1-sm {
+    font-size: 2.25rem !important;
+  }
+
+  .text-2-sm {
+    font-size: 1.75rem !important;
+  }
+
+  .text-3-sm {
+    font-size: 1.25rem !important;
+  }
+
+  .text-4-sm {
+    font-size: 1.125rem !important;
+  }
+
+  .text-5-sm {
+    font-size: 1rem !important;
+  }
+
+  .text-6-sm {
+    font-size: 0.875rem !important;
+  }
+}
+@media screen and (min-width: 680px) {
+  .text-1-md {
+    font-size: 2.25rem !important;
+  }
+
+  .text-2-md {
+    font-size: 1.75rem !important;
+  }
+
+  .text-3-md {
+    font-size: 1.25rem !important;
+  }
+
+  .text-4-md {
+    font-size: 1.125rem !important;
+  }
+
+  .text-5-md {
+    font-size: 1rem !important;
+  }
+
+  .text-6-md {
+    font-size: 0.875rem !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .text-1-lg {
+    font-size: 2.25rem !important;
+  }
+
+  .text-2-lg {
+    font-size: 1.75rem !important;
+  }
+
+  .text-3-lg {
+    font-size: 1.25rem !important;
+  }
+
+  .text-4-lg {
+    font-size: 1.125rem !important;
+  }
+
+  .text-5-lg {
+    font-size: 1rem !important;
+  }
+
+  .text-6-lg {
+    font-size: 0.875rem !important;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .text-1-xl {
+    font-size: 2.25rem !important;
+  }
+
+  .text-2-xl {
+    font-size: 1.75rem !important;
+  }
+
+  .text-3-xl {
+    font-size: 1.25rem !important;
+  }
+
+  .text-4-xl {
+    font-size: 1.125rem !important;
+  }
+
+  .text-5-xl {
+    font-size: 1rem !important;
+  }
+
+  .text-6-xl {
+    font-size: 0.875rem !important;
+  }
+}
+hr {
+  height: 0;
+  margin: 30px 0;
+  border-top: 1px solid #f0f2f4;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.regular {
+  font-weight: normal !important;
+}
+
+strong,
+.bold {
+  font-weight: bold !important;
+}
+
+em,
+.italic {
+  font-style: italic !important;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+a {
+  color: #3f8abf;
+  cursor: pointer;
+  transition: color 300ms 0s ease;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  color: #326e99;
+}
+
+code {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+address {
+  font-size: 0.875rem;
+}
+
+@media screen {
+  .text-left-xs {
+    text-align: left !important;
+  }
+
+  .text-right-xs {
+    text-align: right !important;
+  }
+
+  .text-center-xs {
+    text-align: center !important;
+  }
+
+  .text-justify-xs {
+    text-align: justify !important;
+  }
+}
+@media screen and (min-width: 480px) {
+  .text-left-sm {
+    text-align: left !important;
+  }
+
+  .text-right-sm {
+    text-align: right !important;
+  }
+
+  .text-center-sm {
+    text-align: center !important;
+  }
+
+  .text-justify-sm {
+    text-align: justify !important;
+  }
+}
+@media screen and (min-width: 680px) {
+  .text-left-md {
+    text-align: left !important;
+  }
+
+  .text-right-md {
+    text-align: right !important;
+  }
+
+  .text-center-md {
+    text-align: center !important;
+  }
+
+  .text-justify-md {
+    text-align: justify !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .text-left-lg {
+    text-align: left !important;
+  }
+
+  .text-right-lg {
+    text-align: right !important;
+  }
+
+  .text-center-lg {
+    text-align: center !important;
+  }
+
+  .text-justify-lg {
+    text-align: justify !important;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .text-left-xl {
+    text-align: left !important;
+  }
+
+  .text-right-xl {
+    text-align: right !important;
+  }
+
+  .text-center-xl {
+    text-align: center !important;
+  }
+
+  .text-justify-xl {
+    text-align: justify !important;
+  }
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0 0 0 2rem;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+}
+
 .col {
   float: left;
   width: 100%;
@@ -221,6 +523,9 @@ body {
 }
 .col-container:after {
   clear: both;
+}
+.col-max {
+  max-width: 1200px;
 }
 .col-center {
   float: none;

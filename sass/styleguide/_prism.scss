@@ -42,7 +42,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 /* Code blocks */
 pre[class*="language-"] {
     padding: 1rem;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     overflow: auto;
     background-color: lighten($bg, 3%);
     border-radius: $border-radius;

@@ -5,7 +5,6 @@
     <title>Leap</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/styleguide/styleguide.css">
   </head>
   <body>
@@ -46,134 +45,27 @@
           <h3>Form Feedback</h3>
         </section>
 
-        <section id="float">
-          <h2>Default Table</h2>
-          <p>Our base table style should not require any atomic classes. Additionally, the width of columns in tables can be set by using Leap's <a href="grid.html">grid classes</a>.</p>
-
-          <table class="m-b-2-xs col-70-lg">
-            <tbody>
-              <tr>
-                <th class="col-20-xs">Heading 1</th>
-                <th>Heading 2</th>
-                <th>Heading 3</th>
-              </tr>
-              <tr>
-                <td>Cell 1</td>
-                <td>Cell 2</td>
-                <td>Cell 3</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="guide-code">
-          <pre><code class="language-html">&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;th class="col-20-xs"&gt;Heading 1&lt;/th&gt;
-      &lt;th&gt;Heading 2&lt;/th&gt;
-      &lt;th&gt;Heading 3&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Cell 1&lt;/td&gt;
-      &lt;td&gt;Cell 2&lt;/td&gt;
-      &lt;td&gt;Cell 3&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-        </div>
-          <h3>Table with Rows</h3>
-          <p>You can add borders on all the rows in a table by adding the class <code>.table-border-rows</code> class. Additionally, you can change the color of the border by adding an additional modifier to the end of the class <code>.table-border-rows-light</code>.</p>
-
-          <table class="table-border-rows-light m-b-2-xs col-70-lg">
-            <tbody>
-              <tr>
-                <th>Heading 1</th>
-                <th>Heading 2</th>
-                <th>Heading 3</th>
-              </tr>
-              <tr>
-                <td>Cell 1</td>
-                <td>Cell 2</td>
-                <td>Cell 3</td>
-              </tr>
-            </tbody>
-          </table>
-          <pre><code class="language-html">&lt;table class="table-border-rows-light"&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Heading 1&lt;/th&gt;
-      &lt;th&gt;Heading 2&lt;/th&gt;
-      &lt;th&gt;Heading 3&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Cell 1&lt;/td&gt;
-      &lt;td&gt;Cell 2&lt;/td&gt;
-      &lt;td&gt;Cell 3&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-
-          <h3>Table with Columns</h3>
-          <p>You can add borders on all the columns in a table by adding the class <code>.table-border-columns</code> class. Additionally, you can change the color of the border by adding an additional modifier to the end of the class <code>.table-border-columns-dark</code>.</p>
-          <table class="table-border-columns-dark">
-            <tbody>
-              <tr>
-                <th>Heading 1</th>
-                <th>Heading 2</th>
-                <th>Heading 3</th>
-              </tr>
-              <tr>
-                <td>Cell 1</td>
-                <td>Cell 2</td>
-                <td>Cell 3</td>
-              </tr>
-            </tbody>
-          </table>
-          <pre><code class="language-html">&lt;table class="table-border-column-dark"&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Heading 1&lt;/th&gt;
-      &lt;th&gt;Heading 2&lt;/th&gt;
-      &lt;th&gt;Heading 3&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Cell 1&lt;/td&gt;
-      &lt;td&gt;Cell 2&lt;/td&gt;
-      &lt;td&gt;Cell 3&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-
-<h3>Table with Cells</h3>
-<p>You can add borders on all the cells in a table by adding the class <code>.table-border-cells</code> class. If you do not specify a color to use on the borders, it will default to the <code>.border-color-normal</code> variable.</p>
-<table class="table-border-cells">
-  <tbody>
-    <tr>
-      <th>Heading 1</th>
-      <th>Heading 2</th>
-      <th>Heading 3</th>
-    </tr>
-    <tr>
-      <td>Cell 1</td>
-      <td>Cell 2</td>
-      <td>Cell 3</td>
-    </tr>
-  </tbody>
-</table>
-<pre><code class="language-html">&lt;table class="table-border-cells"&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th&gt;Heading 1&lt;/th&gt;
-&lt;th&gt;Heading 2&lt;/th&gt;
-&lt;th&gt;Heading 3&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Cell 1&lt;/td&gt;
-&lt;td&gt;Cell 2&lt;/td&gt;
-&lt;td&gt;Cell 3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-
+        <section id="index">
+          <ul>
+            <li>
+              <a href="type.html">Typography</a>
+            </li>
+            <li>
+              <a href="grid.html">Grid</a>
+            </li>
+            <li>
+              <a href="borders.html">Borders</a>
+            </li>
+            <li>
+              <a href="responsive.html">Responsive</a>
+            </li>
+            <li>
+              <a href="layout.html">Layout</a>
+            </li>
+            <li>
+              <a href="tables.html">Tables</a>
+            </li>
+          </ul>
         </section>
 
 
@@ -185,6 +77,9 @@
       <nav id="navigation" role="navigation" tabindex="-1">
         <ul class="guide-navigation-list">
           <li class="guide-navigation-item">
+            <a class="guide-navigation-link" href="type.html">Typography</a>
+          </li>
+          <li class="guide-navigation-item">
             <a class="guide-navigation-link" href="grid.html">Grid</a>
           </li>
           <li class="guide-navigation-item">
@@ -195,6 +90,9 @@
           </li>
           <li class="guide-navigation-item">
             <a class="guide-navigation-link" href="layout.html">Layout</a>
+          </li>
+          <li class="guide-navigation-item">
+            <a class="guide-navigation-link" href="tables.html">Tables</a>
           </li>
         </ul>
       </nav>
