@@ -169,9 +169,11 @@ Tables
 ---
 Use them for tabular data.
 
-* [ ] Default
-* [ ] Bordered
-* [ ] Documentation
+* [x] Default
+* [x] Rows
+* [x] Columns
+* [x] Cells
+* [x] Documentation
 
 
 
