@@ -59,10 +59,58 @@
     +media(min-width $md)
       margin-left: 15rem
   &-content
-    padding: spacing(3)
-    margin: spacing(3)
+    padding: spacing(3) spacing(5)
   &-main
     min-height: calc(100vh - 8rem)
   &-contentinfo-copy
-    padding: spacing(1) spacing(3)
+    padding: spacing(1) spacing(5)
     margin: 0
+
+  // =========================================
+  // Color Lists
+  // =========================================
+  &-color
+    margin: 0 -1rem
+    &-item
+      > span
+        color: rgba(#fff, 0.9)
+        font-family: Monaco, monospace
+        em
+          color: rgba(#fff, 0.5)
+          font-family: Helvetica, Arial, sans-serif
+        &.topic-bg-python-lightest
+          color: topic-color(python, base)
+          em
+            color: topic-color(python, lighter)
+        &.topic-bg-diglit-lightest
+          color: topic-color(diglit, base)
+          em
+            color: topic-color(diglit, lighter)
+        &.bg-gray,
+        &.bg-disabled-gray,
+        &.bg-bg,
+        &.bg-bg-shade
+          color: gray-color(dark-highlight)
+          em
+            color: lighten(gray-color(dark-highlight), 25%)
+      .bg-white
+        border: 1px solid $border-color-normal
+        color: rgba(#000, 0.7)
+        em
+          color: rgba(#000, 0.4)
+      .bg-light-green
+        color: darken(ui-color(light-green), 50%)
+        em
+          color: darken(ui-color(light-green), 25%)
+      .bg-yellow
+        color: darken(ui-color(yellow), 50%)
+        em
+          color: darken(ui-color(yellow), 25%)
+  &-colors-topic,
+  &-colors-gray,
+  &-colors-text
+    .guide-color-item
+      span:first-child
+        border-radius: $border-radius $border-radius 0 0
+      span:last-child
+        border-radius: 0 0 $border-radius $border-radius

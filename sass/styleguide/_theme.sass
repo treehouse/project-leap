@@ -1,5 +1,5 @@
 body
-  background-color: $bg
+  background-color: ui-color(bg)
 
 .guide
 
@@ -7,7 +7,7 @@ body
   // Guide Banner
   // =========================================
   &-banner
-    background-color: $dark
+    background-color: gray-color(dark)
 
   // =========================================
   // A11y Skip
@@ -30,13 +30,13 @@ body
   // Guide Navigation
   // =========================================
   &-navigation
-    background-color: $dark
+    background-color: gray-color(dark)
     &-link
       color: #fff
       font-size: 0.875rem
       text-decoration: none
       &:hover
-        background-color: darken($dark, 5%)
+        background-color: gray-color(darker)
 
   // =========================================
   // Guide Main

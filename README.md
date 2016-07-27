@@ -309,6 +309,14 @@ We will utilize a mobile-first approach and apply different responsive styles at
 
 
 
+Sass
+---
+Talk about variables, functions, mixins available in Leap
+* [ ] Variables
+* [ ] Functions
+* [ ] Mixins
+* [ ] Documentation
+
 
 
 Block Grid (1 - 6)

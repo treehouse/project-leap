@@ -1,8 +1,213 @@
-// Global Colors
-$dark: #384047;
-$bg: #edeff0;
-$red: #ed5a5a;
-$blue: #3f8abf;
+// Brand Colors
+$brand-colors: (
+  "green": #5fcf80,
+  "gray": #3e474f
+);
+
+// Text Colors
+$text-colors: (
+  "disabled":  #a4afb2,
+  "light":     #7b8b8e,
+  "base":      #576366,
+  "medium":    #4b5658,
+  "dark":      #40484a
+);
+
+// Gray Colors
+$gray-colors: (
+  "dark-shade":     #2d3339,
+  "dark":           #384047,
+  "dark-highlight": #3f4850,
+  "pro-gray":       #575f66,
+  "gray":           #c6ccd2,
+  "disabled-gray":  #e6e8eb,
+  "bg":             #edeff0,
+  "bg-shade":       #f9fafa
+);
+
+// UI Colors
+$ui-colors: (
+  "blue":           #3f8abf,
+  "dark-blue":      #326e99,
+  "dark-green":     #36b55c,
+  "light-green":    #bdebca,
+  "orange":         #ff9f1f,
+  "yellow":         #ffd466,
+  "red":            #ed5a5a,
+  "dark-red":       #e21919,
+  "pink":           #ff5b89,
+  "light-pink":     #ff8eb4,
+  "purple":         #8363b2,
+  "light-purple":   #a083c8,
+  "td-color":       #387BC9,
+  "white":          #fff,
+);
+
+// Topic Colors
+$topic-colors: (
+  "html": (
+    lightest: #8ccfe4,
+    lighter:  #62bedb,
+    light:    #4eb6d6,
+    base:     #39ADD1,
+    dark:     #2da0c3,
+    darker:   #298fae,
+    darkest:  #1f6d85
+  ),
+  "css": (
+    lightest: #6baad6,
+    lighter:  #4494ca,
+    light:    #3687bf,
+    base:     #3079AB,
+    dark:     #2a6b97,
+    darker:   #255d83,
+    darkest:  #1a415b
+  ),
+  "js": (
+    lightest: #dda4b3,
+    lighter:  #d07e94,
+    light:    #c96c85,
+    base:     #c25975,
+    dark:     #bb4665,
+    darker:   #aa3e5b,
+    darkest:  #843147
+  ),
+  "ruby": (
+    lightest: #f0a9ac,
+    lighter:  #e97d82,
+    light:    #e5686d,
+    base:     #e15258,
+    dark:     #dd3c43,
+    darker:   #d9272e,
+    darkest:  #af1e24
+  ),
+  "business": (
+    lightest: #fdcebd,
+    lighter:  #fba98c,
+    light:    #fa9674,
+    base:     #F9845B,
+    dark:     #f87242,
+    darker:   #f75f2a,
+    darkest:  #e64208
+  ),
+  "wordpress": (
+    lightest: #c9cde7,
+    lighter:  #a6add7,
+    light:    #959ccf,
+    base:     #838CC7,
+    dark:     #717cbf,
+    darker:   #606bb7,
+    darkest:  #47529d
+  ),
+  "php": (
+    lightest: #b2a4c6,
+    lighter:  #9885b2,
+    light:    #8a76a8,
+    base:     #7D669E,
+    dark:     #715b90,
+    darker:   #645180,
+    darkest:  #4c3d61
+  ),
+  "ios": (
+    lightest: #9cd8d4,
+    lighter:  #78c9c4,
+    light:    #65c2bc,
+    base:     #53BBB4,
+    dark:     #45afa8,
+    darker:   #3e9d97,
+    darkest:  #307874
+  ),
+  "android": (
+    lightest: #a3d7a5,
+    lighter:  #80c783,
+    light:    #6ec071,
+    base:     #5cb860,
+    dark:     #4cae50,
+    darker:   #449d48,
+    darkest:  #357938
+  ),
+  "design": (
+    lightest: #f3c26b,
+    lighter:  #efaf3c,
+    light:    #eda525,
+    base:     #e59a13,
+    dark:     #cd8a11,
+    darker:   #b67a0f,
+    darkest:  #875b0b
+  ),
+  "devtools": (
+    lightest: #9eadbc,
+    lighter:  #7f94a8,
+    light:    #70879d,
+    base:     #637a91,
+    dark:     #596d82,
+    darker:   #4e6173,
+    darkest:  #3a4754
+  ),
+  "java": (
+    lightest: #5aceab,
+    lighter:  #38bd95,
+    light:    #32aa86,
+    base:     #2c9676,
+    dark:     #268266,
+    darker:   #206f57,
+    darkest:  #154738
+  ),
+  "python": (
+    lightest: #fcecf1,
+    lighter:  #f6bfd0,
+    light:    #f3a8c0,
+    base:     #f092b0,
+    dark:     #ed7ca0,
+    darker:   #ea6590,
+    darkest:  #e4386f
+  ),
+  "diglit": (
+    lightest: #ead6f0,
+    lighter:  #d6b1e2,
+    light:    #cd9fdb,
+    base:     #c38cd4,
+    dark:     #b979cd,
+    darker:   #b067c6,
+    darkest:  #9b44b6
+  ),
+  "gamedev": (
+    lightest: #3fcfd3,
+    lighter:  #29b2b6,
+    light:    #259da1,
+    base:     #20898c,
+    dark:     #1b7577,
+    darker:   #176062,
+    darkest:  #0d3839
+  ),
+  "csharp": (
+    lightest: #c68bb2,
+    lighter:  #b6689c,
+    light:    #ad5791,
+    base:     #9e4d83,
+    dark:     #8d4575,
+    darker:   #7c3c67,
+    darkest:  #592c4a
+  ),
+  "databases": (
+    lightest: #f4b285,
+    lighter:  #ef9557,
+    light:    #ed863f,
+    base:     #eb7728,
+    dark:     #e46915,
+    darker:   #cd5e13,
+    darkest:  #9e490f
+  ),
+  "undefined": (
+    lightest: #a7aeb5,
+    lighter:  #8c959d,
+    light:    #7e8891,
+    base:     #717b85,
+    dark:     #656e77,
+    darker:   #5a6269,
+    darkest:  #42484e
+  )
+);
 
 // Spacing Units
 //   0   = 0px
@@ -27,12 +232,12 @@ $spacing: (
 // Spacing Sides
 $spacing-sides: (
   all: all,
-  t: top,
-  b: bottom,
-  l: left,
-  r: right,
-  lr: null,
-  tb: null
+  t:   top,
+  b:   bottom,
+  l:   left,
+  r:   right,
+  lr:  null,
+  tb:  null
 );
 
 // Type Variables
@@ -47,10 +252,10 @@ $text-size: (
 
 
 // Global Border Variables
-$border-color-dark: lighten($dark, 50%);   // #b7c0c7
-$border-color-mid: lighten($dark, 60%);    // #d4d9dd
-$border-color-normal: lighten($dark, 67%); // #e8ebed
-$border-color-light: lighten($dark, 70%);  // #f0f2f4
+$border-color-dark:   #b7c0c7;
+$border-color-mid:    #d4d9dd;
+$border-color-normal: #e8ebed;
+$border-color-light:  #f0f2f4;
 $border-radius: 4px;
 
 // Grid max width
