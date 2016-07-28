@@ -206,7 +206,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #384047;
+  color: #3f4850;
   display: block;
   font-weight: bold;
   margin: 0;
@@ -849,63 +849,23 @@ ol {
 }
 
 .fill-dark {
-  fill: #384047;
-}
-
-.stroke-dark {
-  stroke: #384047;
-}
-
-.color-dark {
-  color: #384047;
-}
-
-.border-dark {
-  border-color: #384047;
-}
-
-.bg-dark {
-  background-color: #384047;
-}
-
-.fill-dark-highlight {
   fill: #3f4850;
 }
 
-.stroke-dark-highlight {
+.stroke-dark {
   stroke: #3f4850;
 }
 
-.color-dark-highlight {
+.color-dark {
   color: #3f4850;
 }
 
-.border-dark-highlight {
+.border-dark {
   border-color: #3f4850;
 }
 
-.bg-dark-highlight {
+.bg-dark {
   background-color: #3f4850;
-}
-
-.fill-pro-gray {
-  fill: #575f66;
-}
-
-.stroke-pro-gray {
-  stroke: #575f66;
-}
-
-.color-pro-gray {
-  color: #575f66;
-}
-
-.border-pro-gray {
-  border-color: #575f66;
-}
-
-.bg-pro-gray {
-  background-color: #575f66;
 }
 
 .fill-gray {
