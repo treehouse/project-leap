@@ -22,26 +22,90 @@
       <div class="guide-content">
 
         <section id="float">
-          <h2>Forms</h2>
-          <p>Form instructions will go here</p>
+          <h2 class="m-b-1-xs">Forms</h2>
+          <p class="m-b-2-xs">Form instructions will go here</p>
 
-          <h3>Labels</h3>
-          <p>Use the <code>.form-label</code> class to set the default styles on a label.</p>
+          <!-- Labels -->
+          <h3 class="m-b-1-xs">Labels</h3>
+          <p class="m-b-2-xs">Use the <code>.form-label</code> class to set the default styles on a label.</p>
 
-          <form class="m-b-2">
+          <form class="m-b-2-xs">
             <label class="form-label">Form Label</label>
-            <label class="form-label">Required Form Label <span class="required"></span></label>
+            <label class="form-label">Required Form Label <span class="form-label-required">*</span></label>
+          </form>
+          <div class="guide-code m-b-4-xs">
+          <pre><code class="language-html">&lt;form&gt;
+  &lt;label class="form-label"&gt;Form Label&lt;/label&gt;
+  &lt;label class="form-label"&gt;Required Form Label &lt;span class="form-label-required"&gt;*&lt;/span&gt;&lt;/label&gt;
+&lt;/form&gt;</code></pre></div>
+
+          <!-- Text Inputs -->
+          <h3 class="m-b-1-xs">Text Inputs</h3>
+          <p class="m-b-2-xs">Use the <code>.text-input</code> class to apply the default styling for text inputs. Inputs should always be paired with a label to make them accessible. You can use placeholder text for additional context when necessary. DO NOT use placeholder text in place of a label.</p>
+
+          <form class="m-b-2-xs">
+            <label for="form-text-input-1" class="form-label">Text Input Label</label>
+            <input type="text" class="form-text-input" id="form-text-input-1" placeholder="this is placeholder text">
           </form>
 
-          <h3>Helpers</h3>
+          <!-- Helpers -->
+          <h3 class="m-b-1-xs">Helper Text</h3>
+          <p class="m-b-2-xs">When necessary, you can place additional text below the input in a <code>label</code> with a <code>.form-helper</code> to add helper text.</p>
 
-          <h3>Text Inputs</h3>
-          <h3>Text Areas</h3>
-          <h3>Selects</h3>
-          <h3>Radios</h3>
-          <h3>Checkboxes</h3>
-          <h3>Uploads</h3>
+          <!-- Textareas -->
+          <h3 class="m-b-1-xs">Textareas</h3>
+          <p class="m-b-2-xs">Use the <code>.textarea</code> class to get the default styling. When setting a typesize and width, we recommend aiming for a measure of 52-78 characters.</p>
 
+          <form class="m-b-2-xs">
+            <label for="form-textarea-1" class="form-label">Textarea Label</label>
+            <textarea name="form-textarea-1" id="form-textarea-1" class="form-text-area col-50-xs"></textarea>
+          </form>
+
+          <!-- Selects -->
+          <h3 class="m-b-1-xs">Selects</h3>
+          <p class="m-b-2-xs">Use the <code>.textarea</code> class to get the default styling. When setting a typesize and width, we recommend aiming for a measure of 52-78 characters.</p>
+
+          <form class="m-b-2-xs">
+            <label for="form-select-1" class="form-label">Select Label 1</label>
+            <select id="form-select-1" class="form-select">
+              <option value="">Item 1</option>
+              <option value="">Item 2</option>
+              <option value="">Item 3</option>
+              <option value="">Item 4</option>
+            </select>
+            <label for="form-select-2" class="form-label">Select Label 2</label>
+            <select id="form-select-2" class="form-select">
+              <option value="">Item 1</option>
+              <option value="">Item 2</option>
+              <option value="">Item 3</option>
+              <option value="">Item 4</option>
+            </select>
+          </form>
+
+          <!-- Radios -->
+          <h3 class="m-b-1-xs">Radios</h3>
+          <form class="m-b-2-xs">
+            <input type="radio" id="form-radio-1" class="form-radio">
+            <label for="form-radio-1" class="form-label">Radio Label 1</label>
+
+            <input type="radio" id="form-radio-2" class="form-radio">
+            <label for="form-radio-2" class="form-label">Radio Label 2</label>
+          </form>
+
+          <!-- Checkboxes -->
+          <h3 class="m-b-1-xs">Checkboxes</h3>
+          <form class="m-b-2-xs">
+            <input type="checkbox" id="form-checkbox-1" class="form-checkbox">
+            <label for="form-radio-1" class="form-label">Checkbox Label 1</label>
+
+            <input type="checkbox" id="form-checkbox-2" class="form-checkbox">
+            <label for="form-checkbox-2" class="form-label">Checkbox Label 2</label>
+          </form>
+
+          <!-- Uploads -->
+          <h3 class="m-b-1-xs">Uploads</h3>
+
+          <!-- Form Feedback -->
           <h3>Form Feedback</h3>
         </section>
 

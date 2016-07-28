@@ -5617,5 +5617,19 @@ table td {
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+.form-label-required {
+  color: red;
+  font-weight: 600;
+}
+.form-text-input, .form-text-area {
+  margin: 0;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #d4d9dd;
+  border-radius: 4px;
+  box-shadow: 0;
+  box-sizing: border-box;
+}
 
 /*# sourceMappingURL=leap.css.map */
