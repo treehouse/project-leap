@@ -203,11 +203,14 @@ html {
 
 body {
   font-size: 1rem;
+  font-family: "Gotham Rounded A", "Gotham Rounded B";
+  font-style: normal;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
   display: block;
-  font-weight: bold;
+  font-weight: 500;
   margin: 0;
   text-rendering: optimizeLegibility;
 }
@@ -380,7 +383,7 @@ p {
 
 strong,
 .bold {
-  font-weight: bold !important;
+  font-weight: 500 !important;
 }
 
 em,
