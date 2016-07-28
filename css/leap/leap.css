@@ -888,26 +888,6 @@ ol {
   background-color: #c6ccd2;
 }
 
-.fill-disabled-gray {
-  fill: #e6e8eb;
-}
-
-.stroke-disabled-gray {
-  stroke: #e6e8eb;
-}
-
-.color-disabled-gray {
-  color: #e6e8eb;
-}
-
-.border-disabled-gray {
-  border-color: #e6e8eb;
-}
-
-.bg-disabled-gray {
-  background-color: #e6e8eb;
-}
-
 .fill-bg {
   fill: #edeff0;
 }

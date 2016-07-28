@@ -1009,26 +1009,6 @@ ol {
   background-color: #c6ccd2;
 }
 
-.fill-disabled-gray {
-  fill: #e6e8eb;
-}
-
-.stroke-disabled-gray {
-  stroke: #e6e8eb;
-}
-
-.color-disabled-gray {
-  color: #e6e8eb;
-}
-
-.border-disabled-gray {
-  border-color: #e6e8eb;
-}
-
-.bg-disabled-gray {
-  background-color: #e6e8eb;
-}
-
 .fill-bg {
   fill: #edeff0;
 }
@@ -8956,7 +8936,7 @@ table td {
 }
 
 #grayColorData:before {
-  content: '{"dark-shade":"#2d3339","dark":"#3f4850","gray":"#c6ccd2","disabled-gray":"#e6e8eb","bg":"#edeff0","bg-shade":"#f9fafa"}';
+  content: '{"dark-shade":"#2d3339","dark":"#3f4850","gray":"#c6ccd2","bg":"#edeff0","bg-shade":"#f9fafa"}';
   height: 0;
   opacity: 0;
   font-size: 0;
