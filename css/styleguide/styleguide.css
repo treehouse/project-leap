@@ -330,6 +330,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #40484a;
   display: block;
   font-weight: 500;
   margin: 0;
@@ -7465,18 +7466,28 @@ table td {
   display: block;
 }
 .form-label {
-  font-weight: 600;
+  color: #40484a;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 .form-label-required {
   color: red;
-  font-weight: 600;
+  font-weight: 500;
 }
 .form-helper {
-  color: gray;
-  font-weight: 400;
+  color: #7b8b8e;
+  font-weight: normal;
   font-size: 0.9rem;
   margin-top: 0.5rem;
+}
+.form-text-input, .form-text-area {
+  background-color: #f9fafa;
+  border-color: #d4d9dd;
+  transition: 0.2s;
+}
+.form-text-input:focus, .form-text-area:focus {
+  background-color: #fff;
+  border-color: #b7c0c7;
 }
 .form-text-input, .form-text-area {
   margin: 0;
@@ -7490,9 +7501,11 @@ table td {
 }
 .form-select {
   -webkit-appearance: none !important;
-  background: #fff;
+  background-color: #fff;
   border: 2px solid #d4d9dd;
   border-radius: 4px;
+  font-weight: 500;
+  color: #576366;
   padding: 0.5rem 1rem;
   padding-right: 3rem;
 }

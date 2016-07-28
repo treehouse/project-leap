@@ -1,24 +1,33 @@
 .form
   &-fieldset
     padding: 0
-  // Text Around Forms
+  // Labels
   &-label,
   &-helper
     display: block
   &-label
-    font-weight: 600
+    color: text-color(dark)
+    font-weight: $bold
     margin-bottom: .5rem
     &-required
       color: red
-      font-weight: 600
+      font-weight: $bold
   &-helper
-    color: gray
-    font-weight: 400
+    color: text-color(light)
+    font-weight: normal
     font-size: .9rem
     margin-top: .5rem
 
-  // Types of Inputs
+  // Inputs
   &-text
+    &-input,
+    &-area
+      background-color: gray-color(gray-lighter)
+      border-color: $border-color-mid
+      transition: .2s
+      &:focus
+        background-color: #fff
+        border-color: $border-color-dark
     &-input,
     &-area
       margin: 0
@@ -31,9 +40,11 @@
       box-sizing: border-box
   &-select
     -webkit-appearance: none !important
-    background: #fff
+    background-color: #fff
     border: 2px solid $border-color-mid
     border-radius: $border-radius
+    font-weight: $bold
+    color: text-color(base)
     padding: .5rem 1rem
     padding-right: 3rem
   &-radio
