@@ -17,13 +17,13 @@ $properties: fill stroke color border-color background-color
     // Else just use the regular property name
     @if $property == background-color
       .brand-bg-#{$color-name}
-        #{$property}: brand-color($color-name)
+        #{$property}: brand-color($color-name) !important
     @else if $property == border-color
       .brand-border-#{$color-name}
-        #{$property}: brand-color($color-name)
+        #{$property}: brand-color($color-name) !important
     @else
       .brand-#{$property}-#{$color-name}
-        #{$property}: brand-color($color-name)
+        #{$property}: brand-color($color-name) !important
 
 
 
@@ -42,13 +42,13 @@ $properties: fill stroke color border-color background-color
     // Else just use the regular property name
     @if $property == background-color
       .bg-#{$color-name}
-        #{$property}: ui-color($color-name)
+        #{$property}: ui-color($color-name) !important
     @else if $property == border-color
       .border-#{$color-name}
-        #{$property}: ui-color($color-name)
+        #{$property}: ui-color($color-name) !important
     @else
       .#{$property}-#{$color-name}
-        #{$property}: ui-color($color-name)
+        #{$property}: ui-color($color-name) !important
 
 
 
@@ -67,13 +67,13 @@ $properties: fill stroke color border-color background-color
     // Else just use the regular property name
     @if $property == background-color
       .bg-#{$color-name}
-        #{$property}: gray-color($color-name)
+        #{$property}: gray-color($color-name) !important
     @else if $property == border-color
       .border-#{$color-name}
-        #{$property}: gray-color($color-name)
+        #{$property}: gray-color($color-name) !important
     @else
       .#{$property}-#{$color-name}
-        #{$property}: gray-color($color-name)
+        #{$property}: gray-color($color-name) !important
 
 
 
@@ -91,14 +91,14 @@ $properties: fill stroke color border-color background-color
     //
     // Else just use the regular property name
     @if $property == background-color
-      .bg-#{$color-name}
-        #{$property}: text-color($color-name)
+      .text-bg-#{$color-name}
+        #{$property}: text-color($color-name) !important
     @else if $property == border-color
-      .border-#{$color-name}
-        #{$property}: text-color($color-name)
+      .text-border-#{$color-name}
+        #{$property}: text-color($color-name) !important
     @else
-      .#{$property}-#{$color-name}
-        #{$property}: text-color($color-name)
+      .text-#{$property}-#{$color-name}
+        #{$property}: text-color($color-name) !important
 
 
 
@@ -118,10 +118,10 @@ $properties: fill stroke color border-color background-color
       // Else just use the regular property name
       @if $property == background-color
         .topic-bg-#{$color-name}-#{$color-value}
-          #{$property}: map-get($color, $color-value)
+          #{$property}: map-get($color, $color-value) !important
       @else if $property == border-color
         .topic-border-#{$color-name}-#{$color-value}
-          #{$property}: map-get($color, $color-value)
+          #{$property}: map-get($color, $color-value) !important
       @else
         .topic-#{$property}-#{$color-name}-#{$color-value}
-          #{$property}: map-get($color, $color-value)
+          #{$property}: map-get($color, $color-value) !important
