@@ -5,7 +5,7 @@ $text-alignments: left, right, center, justify
 
 // Headings shared styles
 h1, h2, h3, h4, h5, h6
-  color: $dark
+  color: gray-color(dark)
   display: block
   font-weight: bold
   margin: 0
@@ -71,6 +71,7 @@ hr
 
 // General text styles
 p
+  color: text-color(base)
   font-size: 1rem
   line-height: 1.5
   margin: 0
@@ -90,12 +91,12 @@ em,
   text-transform: uppercase
 
 a
-  color: $blue
+  color: ui-color(blue)
   cursor: pointer
   transition: fast(color)
   text-decoration: none
   +selected
-    color: darken($blue, 10%)
+    color: ui-color(dark-blue)
 
 code
   font-family: monospace
