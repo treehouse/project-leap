@@ -1,6 +1,6 @@
 Todo Percentage
 ===
-142 of 235 done (60.4%)
+152 of 243 done (62.5%)
 
 
 Building Blocks (Atoms)
@@ -92,14 +92,16 @@ Colors
 ---
 Treehouse utilized colors in various parts of our app. Most of our app is gray, so color is rather important. Stick to the color guidelines at all times.
 
-* [ ] Generic App colors
-  * [ ] Documentation
-* [ ] Topic colors
-  * [ ] Documentation
-* [ ] Text Colors
-  * [ ] Documentation
-* [ ] Border Colors
-  * [ ] Documentation
+* [x] Brand colors
+  * [x] Documentation
+* [x] UI colors
+  * [x] Documentation
+* [x] Topic colors
+  * [x] Documentation
+* [x] Text Colors
+  * [x] Documentation
+* [x] Gray Colors
+  * [x] Documentation
 
 
 
