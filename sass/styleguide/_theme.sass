@@ -1,5 +1,5 @@
 body
-  background-color: ui-color(bg)
+  background-color: gray-color(gray-light)
 
 .guide
 
@@ -7,7 +7,7 @@ body
   // Guide Banner
   // =========================================
   &-banner
-    background-color: gray-color(dark)
+    background-color: gray-color(gray-dark)
 
   // =========================================
   // A11y Skip
@@ -30,13 +30,13 @@ body
   // Guide Navigation
   // =========================================
   &-navigation
-    background-color: gray-color(dark)
+    background-color: gray-color(gray-dark)
     &-link
       color: #fff
       font-size: 0.875rem
       text-decoration: none
       &:hover
-        background-color: gray-color(darker)
+        background-color: gray-color(gray-darker)
 
   // =========================================
   // Guide Main
@@ -44,3 +44,51 @@ body
   &-content
     background-color: #fff
     border-radius: $border-radius
+
+  // =========================================
+  // Color Lists
+  // =========================================
+  &-color
+    margin: 0 -1rem
+    &-item
+      > span
+        color: rgba(#fff, 0.9)
+        font-family: Monaco, monospace
+        em
+          color: rgba(#fff, 0.5)
+          font-family: Helvetica, Arial, sans-serif
+        &.topic-bg-python-lightest
+          color: topic-color(python, base)
+          em
+            color: topic-color(python, lighter)
+        &.topic-bg-diglit-lightest
+          color: topic-color(diglit, base)
+          em
+            color: topic-color(diglit, lighter)
+        &.bg-gray,
+        &.bg-gray-light,
+        &.bg-gray-lighter
+          color: gray-color(gray-dark)
+          em
+            color: lighten(gray-color(gray-dark), 25%)
+      .bg-white
+        border: 1px solid $border-color-normal
+        color: rgba(#000, 0.7)
+        em
+          color: rgba(#000, 0.4)
+      .bg-light-green
+        color: darken(ui-color(light-green), 50%)
+        em
+          color: darken(ui-color(light-green), 25%)
+      .bg-yellow
+        color: darken(ui-color(yellow), 50%)
+        em
+          color: darken(ui-color(yellow), 25%)
+  &-colors-topic,
+  &-colors-gray,
+  &-colors-text
+    .guide-color-item
+      span:first-child
+        border-radius: $border-radius $border-radius 0 0
+      span:last-child
+        border-radius: 0 0 $border-radius $border-radius

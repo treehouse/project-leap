@@ -1,43 +1,42 @@
 // Brand Colors
 $brand-colors: (
   "green": #5fcf80,
-  "gray": #3e474f
+  "gray":  #3e474f
 );
 
 // Text Colors
 $text-colors: (
-  "disabled":  #a4afb2,
-  "light":     #7b8b8e,
-  "base":      #576366,
-  "medium":    #4b5658,
-  "dark":      #40484a
+  "dark":     #40484a,
+  "medium":   #4b5658,
+  "base":     #576366,
+  "light":    #7b8b8e
 );
 
 // Gray Colors
 $gray-colors: (
-  "dark-shade":     #2d3339,
-  "dark":           #3f4850,
-  "gray":           #c6ccd2,
-  "bg":             #edeff0,
-  "bg-shade":       #f9fafa
+  "gray-darker":  #2d3339,
+  "gray-dark":    #3f4850,
+  "gray":         #c6ccd2,
+  "gray-light":   #edeff0,
+  "gray-lighter": #f9fafa
 );
 
 // UI Colors
 $ui-colors: (
-  "blue":           #3f8abf,
-  "dark-blue":      #326e99,
-  "dark-green":     #36b55c,
-  "light-green":    #bdebca,
-  "orange":         #ff9f1f,
-  "yellow":         #ffd466,
-  "red":            #ed5a5a,
-  "dark-red":       #e21919,
-  "pink":           #ff5b89,
-  "light-pink":     #ff8eb4,
-  "purple":         #8363b2,
-  "light-purple":   #a083c8,
-  "td-color":       #387BC9,
-  "white":          #fff,
+  "blue":         #3f8abf,
+  "dark-blue":    #326e99,
+  "dark-green":   #36b55c,
+  "light-green":  #bdebca,
+  "orange":       #ff9f1f,
+  "yellow":       #ffd466,
+  "red":          #ed5a5a,
+  "dark-red":     #e21919,
+  "pink":         #ff5b89,
+  "light-pink":   #ff8eb4,
+  "purple":       #8363b2,
+  "light-purple": #a083c8,
+  "td-color":     #387BC9,
+  "white":        #fff,
 );
 
 // Topic Colors
