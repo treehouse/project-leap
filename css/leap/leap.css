@@ -398,6 +398,9 @@ a {
   transition: color 300ms 0s ease;
   text-decoration: none;
 }
+a:hover, a:active, a:focus {
+  color: #326e99;
+}
 
 code {
   font-family: monospace;
