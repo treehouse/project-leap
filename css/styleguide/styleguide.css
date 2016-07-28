@@ -7186,13 +7186,14 @@ table td {
   }
 }
 .guide-content {
-  padding: 2rem 4rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
 }
 .guide-main {
   min-height: calc(100vh - 8rem);
 }
 .guide-contentinfo-copy {
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   margin: 0;
 }
 
