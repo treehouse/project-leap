@@ -311,15 +311,6 @@ We will utilize a mobile-first approach and apply different responsive styles at
 
 
 
-Sass
----
-Talk about variables, functions, mixins available in Leap
-* [ ] Variables
-* [ ] Functions
-* [ ] Mixins
-* [ ] Documentation
-
-
 
 Block Grid (1 - 6)
 ---
@@ -337,6 +328,15 @@ Used when a layout has a variable number of alike items that need to be presente
 Components
 ===
 
+
+
+Sass
+---
+Talk about variables, functions, mixins available in Leap
+* [ ] Variables
+* [ ] Functions
+* [ ] Mixins
+* [ ] Documentation
 
 
 
