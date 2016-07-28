@@ -7551,8 +7551,9 @@ body {
   font-size: 0.875rem;
   text-decoration: none;
 }
-.guide-navigation-link:hover {
+.guide-navigation-link:hover, .guide-navigation-link--active {
   background-color: #2d3339;
+  color: #fff;
 }
 .guide-content {
   background-color: #fff;
