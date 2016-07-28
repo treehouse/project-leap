@@ -24,184 +24,103 @@ $gray-colors: (
 // UI Colors
 $ui-colors: (
   "blue":         #3f8abf,
-  "dark-blue":    #326e99,
-  "dark-green":   #36b55c,
-  "light-green":  #bdebca,
-  "orange":       #ff9f1f,
+  "green":        #36b55c,
   "yellow":       #ffd466,
-  "red":          #ed5a5a,
-  "dark-red":     #e21919,
-  "pink":         #ff5b89,
-  "light-pink":   #ff8eb4,
-  "purple":       #8363b2,
-  "light-purple": #a083c8,
-  "td-color":     #387BC9,
-  "white":        #fff,
+  "orange":       #ff9f1f,
+  "red":          #ed5a5a
 );
 
 // Topic Colors
 $topic-colors: (
   "html": (
-    lightest: #8ccfe4,
-    lighter:  #62bedb,
-    light:    #4eb6d6,
+    light:  #62bedb,
     base:     #39ADD1,
-    dark:     #2da0c3,
-    darker:   #298fae,
-    darkest:  #1f6d85
+    dark:   #298fae,
   ),
   "css": (
-    lightest: #6baad6,
-    lighter:  #4494ca,
-    light:    #3687bf,
+    light:  #4494ca,
     base:     #3079AB,
-    dark:     #2a6b97,
-    darker:   #255d83,
-    darkest:  #1a415b
+    dark:   #255d83,
   ),
   "js": (
-    lightest: #dda4b3,
-    lighter:  #d07e94,
-    light:    #c96c85,
+    light:  #d07e94,
     base:     #c25975,
-    dark:     #bb4665,
-    darker:   #aa3e5b,
-    darkest:  #843147
+    dark:   #aa3e5b,
   ),
   "ruby": (
-    lightest: #f0a9ac,
-    lighter:  #e97d82,
-    light:    #e5686d,
+    light:  #e97d82,
     base:     #e15258,
-    dark:     #dd3c43,
-    darker:   #d9272e,
-    darkest:  #af1e24
+    dark:   #d9272e,
   ),
   "business": (
-    lightest: #fdcebd,
-    lighter:  #fba98c,
-    light:    #fa9674,
+    light:  #fba98c,
     base:     #F9845B,
-    dark:     #f87242,
-    darker:   #f75f2a,
-    darkest:  #e64208
+    dark:   #f75f2a,
   ),
   "wordpress": (
-    lightest: #c9cde7,
-    lighter:  #a6add7,
-    light:    #959ccf,
+    light:  #a6add7,
     base:     #838CC7,
-    dark:     #717cbf,
-    darker:   #606bb7,
-    darkest:  #47529d
+    dark:   #606bb7,
   ),
   "php": (
-    lightest: #b2a4c6,
-    lighter:  #9885b2,
-    light:    #8a76a8,
+    light:  #9885b2,
     base:     #7D669E,
-    dark:     #715b90,
-    darker:   #645180,
-    darkest:  #4c3d61
+    dark:   #645180,
   ),
   "ios": (
-    lightest: #9cd8d4,
-    lighter:  #78c9c4,
-    light:    #65c2bc,
+    light:  #78c9c4,
     base:     #53BBB4,
-    dark:     #45afa8,
-    darker:   #3e9d97,
-    darkest:  #307874
+    dark:   #3e9d97,
   ),
   "android": (
-    lightest: #a3d7a5,
-    lighter:  #80c783,
-    light:    #6ec071,
+    light:  #80c783,
     base:     #5cb860,
-    dark:     #4cae50,
-    darker:   #449d48,
-    darkest:  #357938
+    dark:   #449d48,
   ),
   "design": (
-    lightest: #f3c26b,
-    lighter:  #efaf3c,
-    light:    #eda525,
+    light:  #efaf3c,
     base:     #e59a13,
-    dark:     #cd8a11,
-    darker:   #b67a0f,
-    darkest:  #875b0b
+    dark:   #b67a0f,
   ),
   "devtools": (
-    lightest: #9eadbc,
-    lighter:  #7f94a8,
-    light:    #70879d,
+    light:  #7f94a8,
     base:     #637a91,
-    dark:     #596d82,
-    darker:   #4e6173,
-    darkest:  #3a4754
+    dark:   #4e6173,
   ),
   "java": (
-    lightest: #5aceab,
-    lighter:  #38bd95,
-    light:    #32aa86,
+    light:  #38bd95,
     base:     #2c9676,
-    dark:     #268266,
-    darker:   #206f57,
-    darkest:  #154738
+    dark:   #206f57,
   ),
   "python": (
-    lightest: #fcecf1,
-    lighter:  #f6bfd0,
-    light:    #f3a8c0,
+    light:  #f6bfd0,
     base:     #f092b0,
-    dark:     #ed7ca0,
-    darker:   #ea6590,
-    darkest:  #e4386f
+    dark:   #ea6590,
   ),
   "diglit": (
-    lightest: #ead6f0,
-    lighter:  #d6b1e2,
-    light:    #cd9fdb,
+    light:  #d6b1e2,
     base:     #c38cd4,
-    dark:     #b979cd,
-    darker:   #b067c6,
-    darkest:  #9b44b6
+    dark:   #b067c6,
   ),
   "gamedev": (
-    lightest: #3fcfd3,
-    lighter:  #29b2b6,
-    light:    #259da1,
+    light:  #29b2b6,
     base:     #20898c,
-    dark:     #1b7577,
-    darker:   #176062,
-    darkest:  #0d3839
+    dark:   #176062,
   ),
   "csharp": (
-    lightest: #c68bb2,
-    lighter:  #b6689c,
-    light:    #ad5791,
+    light:  #b6689c,
     base:     #9e4d83,
-    dark:     #8d4575,
-    darker:   #7c3c67,
-    darkest:  #592c4a
+    dark:   #7c3c67,
   ),
   "databases": (
-    lightest: #f4b285,
-    lighter:  #ef9557,
-    light:    #ed863f,
+    light:  #ef9557,
     base:     #eb7728,
-    dark:     #e46915,
-    darker:   #cd5e13,
-    darkest:  #9e490f
+    dark:   #cd5e13,
   ),
   "undefined": (
-    lightest: #a7aeb5,
-    lighter:  #8c959d,
-    light:    #7e8891,
+    light:  #8c959d,
     base:     #717b85,
-    dark:     #656e77,
-    darker:   #5a6269,
-    darkest:  #42484e
+    dark:   #5a6269,
   )
 );
 
