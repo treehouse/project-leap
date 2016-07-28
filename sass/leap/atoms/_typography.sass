@@ -5,9 +5,9 @@ $text-alignments: left, right, center, justify
 
 // Headings shared styles
 h1, h2, h3, h4, h5, h6
-  color: $dark
+  color: gray-color(dark)
   display: block
-  font-weight: bold
+  font-weight: $bold
   margin: 0
   text-rendering: optimizeLegibility
 
@@ -71,6 +71,7 @@ hr
 
 // General text styles
 p
+  color: text-color(base)
   font-size: 1rem
   line-height: 1.5
   margin: 0
@@ -80,7 +81,7 @@ p
 
 strong,
 .bold
-  font-weight: bold !important
+  font-weight: $bold !important
 
 em,
 .italic
@@ -90,12 +91,12 @@ em,
   text-transform: uppercase
 
 a
-  color: $blue
+  color: ui-color(blue)
   cursor: pointer
   transition: fast(color)
   text-decoration: none
   +selected
-    color: darken($blue, 10%)
+    color: darken(ui-color(blue), 10%)
 
 code
   font-family: monospace

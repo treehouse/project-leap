@@ -1,6 +1,6 @@
 Todo Percentage
 ===
-142 of 235 done (60.4%)
+158 of 243 done (65%)
 
 
 Building Blocks (Atoms)
@@ -92,14 +92,16 @@ Colors
 ---
 Treehouse utilized colors in various parts of our app. Most of our app is gray, so color is rather important. Stick to the color guidelines at all times.
 
-* [ ] Generic App colors
-  * [ ] Documentation
-* [ ] Topic colors
-  * [ ] Documentation
-* [ ] Text Colors
-  * [ ] Documentation
-* [ ] Border Colors
-  * [ ] Documentation
+* [x] Brand colors
+  * [x] Documentation
+* [x] UI colors
+  * [x] Documentation
+* [x] Topic colors
+  * [x] Documentation
+* [x] Text Colors
+  * [x] Documentation
+* [x] Gray Colors
+  * [x] Documentation
 
 
 
@@ -302,11 +304,10 @@ We will utilize a mobile-first approach and apply different responsive styles at
 * [x] Borders
 * [x] Grid
 * [x] Grid Offsets
-* [ ] Block Grid (Add when finished)
+* [x] Block Grid (Add when finished)
 * [x] Width and Height
 * [x] Vertical Alignment
-* [ ] Documentation
-
+* [x] Documentation
 
 
 
@@ -315,10 +316,10 @@ Block Grid (1 - 6)
 ---
 Used when a layout has a variable number of alike items that need to be presented in a grid. We will only provide options for rows of block from 1 through 6 since those are most common for this type of grid layout. Default to mobile-first and can be overriden by responsive prefixes to get variable layouts between breakpoints.
 
-* [ ] With Gutters
-  * [ ] Documentation
-* [ ] Without Gutters
-  * [ ] Documentation
+* [x] With Gutters
+  * [x] Documentation
+* [x] Without Gutters
+  * [x] Documentation
 
 
 
@@ -327,6 +328,15 @@ Used when a layout has a variable number of alike items that need to be presente
 Components
 ===
 
+
+
+Sass
+---
+Talk about variables, functions, mixins available in Leap
+* [ ] Variables
+* [ ] Functions
+* [ ] Mixins
+* [ ] Documentation
 
 
 
