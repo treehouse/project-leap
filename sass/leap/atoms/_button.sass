@@ -1,0 +1,285 @@
+.button
+  +appearance(none)
+  +user-select(none)
+  background-color: transparent
+  border-radius: $border-radius
+  border: solid 2px brand-color(green)
+  color: brand-color(green)
+  cursor: pointer
+  display: inline-block
+  font-family: $gotham
+  font-size: text-size(5)
+  font-weight: $bold
+  height: 40px
+  line-height: 36px
+  padding: 0 15px
+  position: relative
+  margin: 0 10px 0 0
+  text-align: center
+  text-decoration: none
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease
+  vertical-align: baseline
+  white-space: nowrap
+  +selected
+    color: darken(brand-color(green), 15%)
+    border-color: darken(brand-color(green), 15%)
+    svg
+      fill: darken(brand-color(green), 15%)
+  &:last-child
+    margin-right: 0
+  svg
+    fill: brand-color(green)
+
+  // Topic color buttons
+  @each $topic, $name in $topic-colors
+    &.topic-#{$topic},
+    .#{$topic} &
+      border-color: topic-color(#{$topic}, base)
+      color: topic-color(#{$topic}, base)
+      svg
+        fill: topic-color(#{$topic}, base)
+      +selected
+        border-color: darken(topic-color(#{$topic}, base), 10%)
+        color: darken(topic-color(#{$topic}, base), 10%)
+        svg
+          fill: darken(topic-color(#{$topic}, base), 10%)
+      &.primary,
+      &.button-primary
+        background-color: topic-color(#{$topic}, base)
+        border-color: topic-color(#{$topic}, base)
+        +selected
+          background-color: darken(topic-color(#{$topic}, base), 10%)
+          border-color: darken(topic-color(#{$topic}, base), 10%)
+          svg
+            fill: #fff
+
+  // Primary buttons
+  &.primary,
+  &-primary
+    background-color: brand-color(green)
+    border-color: brand-color(green)
+    color: #fff
+    svg
+      fill: #fff
+    +selected
+      background-color: darken(brand-color(green), 10%)
+      border-color: darken(brand-color(green), 10%)
+      color: #fff
+
+  // Secondary buttons
+  &.secondary,
+  &-secondary
+    background-color: transparent
+    border-color: $border-color-normal
+    color: text-color(base)
+    svg
+      fill: text-color(base)
+    +selected
+      border-color: darken($border-color-normal, 15%)
+      color: darken(text-color(base), 3%)
+
+  // Alert buttons
+  &.alert,
+  &-alert
+    background-color: transparent
+    border-color: ui-color(red)
+    color: ui-color(red)
+    svg
+      fill: ui-color(red)
+    +selected
+      border-color: darken(ui-color(red), 20%)
+      color: darken(ui-color(red), 20%)
+
+  // Default disabled buttons
+  &.disabled,
+  &-disabled
+    background-color: transparent
+    border-color: $border-color-normal
+    color: text-color(light)
+    svg
+      fill: text-color(light)
+    +selected
+      background-color: transparent
+      border-color: $border-color-normal
+      color: text-color(light)
+      svg
+        fill: text-color(base)
+
+  // Inverse buttons
+  &.inverse,
+  &-inverse
+    border-color: #fff
+    color: #fff
+    opacity: 0.88
+    svg
+      fill: #fff
+    +selected
+      opacity: 1
+
+    &.alert,
+    .button-alert
+      border-color: ui-color(red)
+      color: ui-color(red)
+      opacity: 1
+      svg
+        fill: ui-color(red)
+      +selected
+        border-color: #fff
+        color: #fff
+        svg
+          fill: #fff
+
+    &.primary,
+    .button-primary
+      background-color: #fff
+      border-color: #fff
+      color: text-color(medium)
+      svg
+        fill: text-color(medium)
+
+    &.secondary,
+    .button-secondary
+      opacity: 0.5
+      +selected
+        border-color: #fff
+        color: #fff
+        opacity: 1
+
+    &.disabled,
+    .button-disabled
+      opacity: 0.15
+      +selected
+        border-color: #fff
+        color: #fff
+        opacity: 0.15
+
+  // Large Buttons
+  &.x-large,
+  &x-large
+    font-size: 18px
+    height: 58px
+    line-height: 54px
+    padding: 0 28px
+    &.square
+      width: 58px
+
+  // Large Buttons
+  &.large,
+  &-large
+    font-size: 16px
+    height: 50px
+    line-height: 46px
+    padding: 0 22px
+    &.square
+      width: 50px
+    svg
+      top: -2px
+
+  // Small Buttons
+  &.small,
+  &-small
+    font-size: 12px
+    height: 34px
+    line-height: 30px
+    padding: 0 12px
+    &.square
+      width: 34px
+
+  // Extra Small Buttons
+  &.x-small,
+  &-x-small
+    font-size: 12px
+    height: 30px
+    line-height: 26px
+    padding: 0 10px
+    &.square
+      width: 30px
+
+
+
+  //
+  // NOTE:
+  // button sizes across breakpoints?
+  //
+  //
+  // // Button Size Overrides
+  // +media(max-width $mobile-max)
+  //   &.default-on-mobile
+  //     font-size: 14px
+  //     height: 40px
+  //     line-height: 36px
+  //     padding: 0 15px
+  //     &.square
+  //       width: 50px
+  //
+  //   &.small-on-mobile
+  //     font-size: 12px
+  //     height: 34px
+  //     line-height: 30px
+  //     padding: 0 12px
+  //     &.square
+  //       width: 34px
+  //
+  //   &.x-small-on-mobile
+  //     font-size: 12px
+  //     height: 30px
+  //     line-height: 26px
+  //     padding: 0 10px
+  //     &.square
+  //       width: 30px
+
+
+
+  // Close buttons
+  &.close,
+  &-close
+    padding: 0
+    margin: 0
+    width: 28px
+    height: 28px
+    line-height: 22px
+    text-align: center
+    z-index: 2
+    .close-icon
+      margin: 0
+      top: 0
+
+  // Square class for icon-only buttons with default size
+  &.square
+    padding: 0
+    width: 40px
+
+  // Buttons /w Icons
+  &.icon-on-left svg
+    margin: 0 5px 0 0
+  &.icon-on-right svg
+    margin: 0 0 0 5px
+
+  // Split Buttons
+  .split-button &
+    &.text,
+    &.action
+      float: left
+      z-index: 1
+      margin: 0
+      +selected
+        z-index: 2
+    &.text
+      border-radius: 4px 0 0 4px
+      padding: 0 20px
+      &.primary,
+      .button-primary
+        border-right-color: rgba(#000, 0.1)
+    &.action
+      border-radius: 0 4px 4px 0
+      padding: 0 10px
+      margin-left: -2px
+      min-width: 40px
+      &.primary,
+      .button-primary
+        border-left-color: rgba(#000, 0.1)
+
+.split-button
+  +clearfix
+  display: inline-block
+  margin: 0 15px 0 0

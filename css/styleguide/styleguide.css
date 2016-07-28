@@ -330,6 +330,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #40484a;
   display: block;
   font-weight: 500;
   margin: 0;
@@ -2634,6 +2635,739 @@ ol {
 
 .topic-bg-undefined-dark {
   background-color: #5a6269 !important;
+}
+
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border-radius: 4px;
+  border: solid 2px #5fcf80;
+  color: #5fcf80;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Gotham Rounded A", "Gotham Rounded B", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 40px;
+  line-height: 36px;
+  padding: 0 15px;
+  position: relative;
+  margin: 0 10px 0 0;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.button:hover, .button:active, .button:focus {
+  color: #34ad58;
+  border-color: #34ad58;
+}
+.button:hover svg, .button:active svg, .button:focus svg {
+  fill: #34ad58;
+}
+.button:last-child {
+  margin-right: 0;
+}
+.button svg {
+  fill: #5fcf80;
+}
+.button.topic-html, .html .button {
+  border-color: #39ADD1;
+  color: #39ADD1;
+}
+.button.topic-html svg, .html .button svg {
+  fill: #39ADD1;
+}
+.button.topic-html:hover, .button.topic-html:active, .button.topic-html:focus, .html .button:hover, .html .button:active, .html .button:focus {
+  border-color: #298fae;
+  color: #298fae;
+}
+.button.topic-html:hover svg, .button.topic-html:active svg, .button.topic-html:focus svg, .html .button:hover svg, .html .button:active svg, .html .button:focus svg {
+  fill: #298fae;
+}
+.button.topic-html.primary, .button.topic-html.button-primary, .html .button.primary, .html .button.button-primary {
+  background-color: #39ADD1;
+  border-color: #39ADD1;
+}
+.button.topic-html.primary:hover, .button.topic-html.primary:active, .button.topic-html.primary:focus, .button.topic-html.button-primary:hover, .button.topic-html.button-primary:active, .button.topic-html.button-primary:focus, .html .button.primary:hover, .html .button.primary:active, .html .button.primary:focus, .html .button.button-primary:hover, .html .button.button-primary:active, .html .button.button-primary:focus {
+  background-color: #298fae;
+  border-color: #298fae;
+}
+.button.topic-html.primary:hover svg, .button.topic-html.primary:active svg, .button.topic-html.primary:focus svg, .button.topic-html.button-primary:hover svg, .button.topic-html.button-primary:active svg, .button.topic-html.button-primary:focus svg, .html .button.primary:hover svg, .html .button.primary:active svg, .html .button.primary:focus svg, .html .button.button-primary:hover svg, .html .button.button-primary:active svg, .html .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-css, .css .button {
+  border-color: #3079AB;
+  color: #3079AB;
+}
+.button.topic-css svg, .css .button svg {
+  fill: #3079AB;
+}
+.button.topic-css:hover, .button.topic-css:active, .button.topic-css:focus, .css .button:hover, .css .button:active, .css .button:focus {
+  border-color: #255d83;
+  color: #255d83;
+}
+.button.topic-css:hover svg, .button.topic-css:active svg, .button.topic-css:focus svg, .css .button:hover svg, .css .button:active svg, .css .button:focus svg {
+  fill: #255d83;
+}
+.button.topic-css.primary, .button.topic-css.button-primary, .css .button.primary, .css .button.button-primary {
+  background-color: #3079AB;
+  border-color: #3079AB;
+}
+.button.topic-css.primary:hover, .button.topic-css.primary:active, .button.topic-css.primary:focus, .button.topic-css.button-primary:hover, .button.topic-css.button-primary:active, .button.topic-css.button-primary:focus, .css .button.primary:hover, .css .button.primary:active, .css .button.primary:focus, .css .button.button-primary:hover, .css .button.button-primary:active, .css .button.button-primary:focus {
+  background-color: #255d83;
+  border-color: #255d83;
+}
+.button.topic-css.primary:hover svg, .button.topic-css.primary:active svg, .button.topic-css.primary:focus svg, .button.topic-css.button-primary:hover svg, .button.topic-css.button-primary:active svg, .button.topic-css.button-primary:focus svg, .css .button.primary:hover svg, .css .button.primary:active svg, .css .button.primary:focus svg, .css .button.button-primary:hover svg, .css .button.button-primary:active svg, .css .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-js, .js .button {
+  border-color: #c25975;
+  color: #c25975;
+}
+.button.topic-js svg, .js .button svg {
+  fill: #c25975;
+}
+.button.topic-js:hover, .button.topic-js:active, .button.topic-js:focus, .js .button:hover, .js .button:active, .js .button:focus {
+  border-color: #aa3e5b;
+  color: #aa3e5b;
+}
+.button.topic-js:hover svg, .button.topic-js:active svg, .button.topic-js:focus svg, .js .button:hover svg, .js .button:active svg, .js .button:focus svg {
+  fill: #aa3e5b;
+}
+.button.topic-js.primary, .button.topic-js.button-primary, .js .button.primary, .js .button.button-primary {
+  background-color: #c25975;
+  border-color: #c25975;
+}
+.button.topic-js.primary:hover, .button.topic-js.primary:active, .button.topic-js.primary:focus, .button.topic-js.button-primary:hover, .button.topic-js.button-primary:active, .button.topic-js.button-primary:focus, .js .button.primary:hover, .js .button.primary:active, .js .button.primary:focus, .js .button.button-primary:hover, .js .button.button-primary:active, .js .button.button-primary:focus {
+  background-color: #aa3e5b;
+  border-color: #aa3e5b;
+}
+.button.topic-js.primary:hover svg, .button.topic-js.primary:active svg, .button.topic-js.primary:focus svg, .button.topic-js.button-primary:hover svg, .button.topic-js.button-primary:active svg, .button.topic-js.button-primary:focus svg, .js .button.primary:hover svg, .js .button.primary:active svg, .js .button.primary:focus svg, .js .button.button-primary:hover svg, .js .button.button-primary:active svg, .js .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-ruby, .ruby .button {
+  border-color: #e15258;
+  color: #e15258;
+}
+.button.topic-ruby svg, .ruby .button svg {
+  fill: #e15258;
+}
+.button.topic-ruby:hover, .button.topic-ruby:active, .button.topic-ruby:focus, .ruby .button:hover, .ruby .button:active, .ruby .button:focus {
+  border-color: #d9272e;
+  color: #d9272e;
+}
+.button.topic-ruby:hover svg, .button.topic-ruby:active svg, .button.topic-ruby:focus svg, .ruby .button:hover svg, .ruby .button:active svg, .ruby .button:focus svg {
+  fill: #d9272e;
+}
+.button.topic-ruby.primary, .button.topic-ruby.button-primary, .ruby .button.primary, .ruby .button.button-primary {
+  background-color: #e15258;
+  border-color: #e15258;
+}
+.button.topic-ruby.primary:hover, .button.topic-ruby.primary:active, .button.topic-ruby.primary:focus, .button.topic-ruby.button-primary:hover, .button.topic-ruby.button-primary:active, .button.topic-ruby.button-primary:focus, .ruby .button.primary:hover, .ruby .button.primary:active, .ruby .button.primary:focus, .ruby .button.button-primary:hover, .ruby .button.button-primary:active, .ruby .button.button-primary:focus {
+  background-color: #d9272e;
+  border-color: #d9272e;
+}
+.button.topic-ruby.primary:hover svg, .button.topic-ruby.primary:active svg, .button.topic-ruby.primary:focus svg, .button.topic-ruby.button-primary:hover svg, .button.topic-ruby.button-primary:active svg, .button.topic-ruby.button-primary:focus svg, .ruby .button.primary:hover svg, .ruby .button.primary:active svg, .ruby .button.primary:focus svg, .ruby .button.button-primary:hover svg, .ruby .button.button-primary:active svg, .ruby .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-business, .business .button {
+  border-color: #F9845B;
+  color: #F9845B;
+}
+.button.topic-business svg, .business .button svg {
+  fill: #F9845B;
+}
+.button.topic-business:hover, .button.topic-business:active, .button.topic-business:focus, .business .button:hover, .business .button:active, .business .button:focus {
+  border-color: #f75f2a;
+  color: #f75f2a;
+}
+.button.topic-business:hover svg, .button.topic-business:active svg, .button.topic-business:focus svg, .business .button:hover svg, .business .button:active svg, .business .button:focus svg {
+  fill: #f75f2a;
+}
+.button.topic-business.primary, .button.topic-business.button-primary, .business .button.primary, .business .button.button-primary {
+  background-color: #F9845B;
+  border-color: #F9845B;
+}
+.button.topic-business.primary:hover, .button.topic-business.primary:active, .button.topic-business.primary:focus, .button.topic-business.button-primary:hover, .button.topic-business.button-primary:active, .button.topic-business.button-primary:focus, .business .button.primary:hover, .business .button.primary:active, .business .button.primary:focus, .business .button.button-primary:hover, .business .button.button-primary:active, .business .button.button-primary:focus {
+  background-color: #f75f2a;
+  border-color: #f75f2a;
+}
+.button.topic-business.primary:hover svg, .button.topic-business.primary:active svg, .button.topic-business.primary:focus svg, .button.topic-business.button-primary:hover svg, .button.topic-business.button-primary:active svg, .button.topic-business.button-primary:focus svg, .business .button.primary:hover svg, .business .button.primary:active svg, .business .button.primary:focus svg, .business .button.button-primary:hover svg, .business .button.button-primary:active svg, .business .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-wordpress, .wordpress .button {
+  border-color: #838CC7;
+  color: #838CC7;
+}
+.button.topic-wordpress svg, .wordpress .button svg {
+  fill: #838CC7;
+}
+.button.topic-wordpress:hover, .button.topic-wordpress:active, .button.topic-wordpress:focus, .wordpress .button:hover, .wordpress .button:active, .wordpress .button:focus {
+  border-color: #606bb7;
+  color: #606bb7;
+}
+.button.topic-wordpress:hover svg, .button.topic-wordpress:active svg, .button.topic-wordpress:focus svg, .wordpress .button:hover svg, .wordpress .button:active svg, .wordpress .button:focus svg {
+  fill: #606bb7;
+}
+.button.topic-wordpress.primary, .button.topic-wordpress.button-primary, .wordpress .button.primary, .wordpress .button.button-primary {
+  background-color: #838CC7;
+  border-color: #838CC7;
+}
+.button.topic-wordpress.primary:hover, .button.topic-wordpress.primary:active, .button.topic-wordpress.primary:focus, .button.topic-wordpress.button-primary:hover, .button.topic-wordpress.button-primary:active, .button.topic-wordpress.button-primary:focus, .wordpress .button.primary:hover, .wordpress .button.primary:active, .wordpress .button.primary:focus, .wordpress .button.button-primary:hover, .wordpress .button.button-primary:active, .wordpress .button.button-primary:focus {
+  background-color: #606bb7;
+  border-color: #606bb7;
+}
+.button.topic-wordpress.primary:hover svg, .button.topic-wordpress.primary:active svg, .button.topic-wordpress.primary:focus svg, .button.topic-wordpress.button-primary:hover svg, .button.topic-wordpress.button-primary:active svg, .button.topic-wordpress.button-primary:focus svg, .wordpress .button.primary:hover svg, .wordpress .button.primary:active svg, .wordpress .button.primary:focus svg, .wordpress .button.button-primary:hover svg, .wordpress .button.button-primary:active svg, .wordpress .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-php, .php .button {
+  border-color: #7D669E;
+  color: #7D669E;
+}
+.button.topic-php svg, .php .button svg {
+  fill: #7D669E;
+}
+.button.topic-php:hover, .button.topic-php:active, .button.topic-php:focus, .php .button:hover, .php .button:active, .php .button:focus {
+  border-color: #645180;
+  color: #645180;
+}
+.button.topic-php:hover svg, .button.topic-php:active svg, .button.topic-php:focus svg, .php .button:hover svg, .php .button:active svg, .php .button:focus svg {
+  fill: #645180;
+}
+.button.topic-php.primary, .button.topic-php.button-primary, .php .button.primary, .php .button.button-primary {
+  background-color: #7D669E;
+  border-color: #7D669E;
+}
+.button.topic-php.primary:hover, .button.topic-php.primary:active, .button.topic-php.primary:focus, .button.topic-php.button-primary:hover, .button.topic-php.button-primary:active, .button.topic-php.button-primary:focus, .php .button.primary:hover, .php .button.primary:active, .php .button.primary:focus, .php .button.button-primary:hover, .php .button.button-primary:active, .php .button.button-primary:focus {
+  background-color: #645180;
+  border-color: #645180;
+}
+.button.topic-php.primary:hover svg, .button.topic-php.primary:active svg, .button.topic-php.primary:focus svg, .button.topic-php.button-primary:hover svg, .button.topic-php.button-primary:active svg, .button.topic-php.button-primary:focus svg, .php .button.primary:hover svg, .php .button.primary:active svg, .php .button.primary:focus svg, .php .button.button-primary:hover svg, .php .button.button-primary:active svg, .php .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-ios, .ios .button {
+  border-color: #53BBB4;
+  color: #53BBB4;
+}
+.button.topic-ios svg, .ios .button svg {
+  fill: #53BBB4;
+}
+.button.topic-ios:hover, .button.topic-ios:active, .button.topic-ios:focus, .ios .button:hover, .ios .button:active, .ios .button:focus {
+  border-color: #3e9d97;
+  color: #3e9d97;
+}
+.button.topic-ios:hover svg, .button.topic-ios:active svg, .button.topic-ios:focus svg, .ios .button:hover svg, .ios .button:active svg, .ios .button:focus svg {
+  fill: #3e9d97;
+}
+.button.topic-ios.primary, .button.topic-ios.button-primary, .ios .button.primary, .ios .button.button-primary {
+  background-color: #53BBB4;
+  border-color: #53BBB4;
+}
+.button.topic-ios.primary:hover, .button.topic-ios.primary:active, .button.topic-ios.primary:focus, .button.topic-ios.button-primary:hover, .button.topic-ios.button-primary:active, .button.topic-ios.button-primary:focus, .ios .button.primary:hover, .ios .button.primary:active, .ios .button.primary:focus, .ios .button.button-primary:hover, .ios .button.button-primary:active, .ios .button.button-primary:focus {
+  background-color: #3e9d97;
+  border-color: #3e9d97;
+}
+.button.topic-ios.primary:hover svg, .button.topic-ios.primary:active svg, .button.topic-ios.primary:focus svg, .button.topic-ios.button-primary:hover svg, .button.topic-ios.button-primary:active svg, .button.topic-ios.button-primary:focus svg, .ios .button.primary:hover svg, .ios .button.primary:active svg, .ios .button.primary:focus svg, .ios .button.button-primary:hover svg, .ios .button.button-primary:active svg, .ios .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-android, .android .button {
+  border-color: #5cb860;
+  color: #5cb860;
+}
+.button.topic-android svg, .android .button svg {
+  fill: #5cb860;
+}
+.button.topic-android:hover, .button.topic-android:active, .button.topic-android:focus, .android .button:hover, .android .button:active, .android .button:focus {
+  border-color: #449d48;
+  color: #449d48;
+}
+.button.topic-android:hover svg, .button.topic-android:active svg, .button.topic-android:focus svg, .android .button:hover svg, .android .button:active svg, .android .button:focus svg {
+  fill: #449d48;
+}
+.button.topic-android.primary, .button.topic-android.button-primary, .android .button.primary, .android .button.button-primary {
+  background-color: #5cb860;
+  border-color: #5cb860;
+}
+.button.topic-android.primary:hover, .button.topic-android.primary:active, .button.topic-android.primary:focus, .button.topic-android.button-primary:hover, .button.topic-android.button-primary:active, .button.topic-android.button-primary:focus, .android .button.primary:hover, .android .button.primary:active, .android .button.primary:focus, .android .button.button-primary:hover, .android .button.button-primary:active, .android .button.button-primary:focus {
+  background-color: #449d48;
+  border-color: #449d48;
+}
+.button.topic-android.primary:hover svg, .button.topic-android.primary:active svg, .button.topic-android.primary:focus svg, .button.topic-android.button-primary:hover svg, .button.topic-android.button-primary:active svg, .button.topic-android.button-primary:focus svg, .android .button.primary:hover svg, .android .button.primary:active svg, .android .button.primary:focus svg, .android .button.button-primary:hover svg, .android .button.button-primary:active svg, .android .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-design, .design .button {
+  border-color: #e59a13;
+  color: #e59a13;
+}
+.button.topic-design svg, .design .button svg {
+  fill: #e59a13;
+}
+.button.topic-design:hover, .button.topic-design:active, .button.topic-design:focus, .design .button:hover, .design .button:active, .design .button:focus {
+  border-color: #b67a0f;
+  color: #b67a0f;
+}
+.button.topic-design:hover svg, .button.topic-design:active svg, .button.topic-design:focus svg, .design .button:hover svg, .design .button:active svg, .design .button:focus svg {
+  fill: #b67a0f;
+}
+.button.topic-design.primary, .button.topic-design.button-primary, .design .button.primary, .design .button.button-primary {
+  background-color: #e59a13;
+  border-color: #e59a13;
+}
+.button.topic-design.primary:hover, .button.topic-design.primary:active, .button.topic-design.primary:focus, .button.topic-design.button-primary:hover, .button.topic-design.button-primary:active, .button.topic-design.button-primary:focus, .design .button.primary:hover, .design .button.primary:active, .design .button.primary:focus, .design .button.button-primary:hover, .design .button.button-primary:active, .design .button.button-primary:focus {
+  background-color: #b67a0f;
+  border-color: #b67a0f;
+}
+.button.topic-design.primary:hover svg, .button.topic-design.primary:active svg, .button.topic-design.primary:focus svg, .button.topic-design.button-primary:hover svg, .button.topic-design.button-primary:active svg, .button.topic-design.button-primary:focus svg, .design .button.primary:hover svg, .design .button.primary:active svg, .design .button.primary:focus svg, .design .button.button-primary:hover svg, .design .button.button-primary:active svg, .design .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-devtools, .devtools .button {
+  border-color: #637a91;
+  color: #637a91;
+}
+.button.topic-devtools svg, .devtools .button svg {
+  fill: #637a91;
+}
+.button.topic-devtools:hover, .button.topic-devtools:active, .button.topic-devtools:focus, .devtools .button:hover, .devtools .button:active, .devtools .button:focus {
+  border-color: #4e6173;
+  color: #4e6173;
+}
+.button.topic-devtools:hover svg, .button.topic-devtools:active svg, .button.topic-devtools:focus svg, .devtools .button:hover svg, .devtools .button:active svg, .devtools .button:focus svg {
+  fill: #4e6173;
+}
+.button.topic-devtools.primary, .button.topic-devtools.button-primary, .devtools .button.primary, .devtools .button.button-primary {
+  background-color: #637a91;
+  border-color: #637a91;
+}
+.button.topic-devtools.primary:hover, .button.topic-devtools.primary:active, .button.topic-devtools.primary:focus, .button.topic-devtools.button-primary:hover, .button.topic-devtools.button-primary:active, .button.topic-devtools.button-primary:focus, .devtools .button.primary:hover, .devtools .button.primary:active, .devtools .button.primary:focus, .devtools .button.button-primary:hover, .devtools .button.button-primary:active, .devtools .button.button-primary:focus {
+  background-color: #4e6173;
+  border-color: #4e6173;
+}
+.button.topic-devtools.primary:hover svg, .button.topic-devtools.primary:active svg, .button.topic-devtools.primary:focus svg, .button.topic-devtools.button-primary:hover svg, .button.topic-devtools.button-primary:active svg, .button.topic-devtools.button-primary:focus svg, .devtools .button.primary:hover svg, .devtools .button.primary:active svg, .devtools .button.primary:focus svg, .devtools .button.button-primary:hover svg, .devtools .button.button-primary:active svg, .devtools .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-java, .java .button {
+  border-color: #2c9676;
+  color: #2c9676;
+}
+.button.topic-java svg, .java .button svg {
+  fill: #2c9676;
+}
+.button.topic-java:hover, .button.topic-java:active, .button.topic-java:focus, .java .button:hover, .java .button:active, .java .button:focus {
+  border-color: #206f57;
+  color: #206f57;
+}
+.button.topic-java:hover svg, .button.topic-java:active svg, .button.topic-java:focus svg, .java .button:hover svg, .java .button:active svg, .java .button:focus svg {
+  fill: #206f57;
+}
+.button.topic-java.primary, .button.topic-java.button-primary, .java .button.primary, .java .button.button-primary {
+  background-color: #2c9676;
+  border-color: #2c9676;
+}
+.button.topic-java.primary:hover, .button.topic-java.primary:active, .button.topic-java.primary:focus, .button.topic-java.button-primary:hover, .button.topic-java.button-primary:active, .button.topic-java.button-primary:focus, .java .button.primary:hover, .java .button.primary:active, .java .button.primary:focus, .java .button.button-primary:hover, .java .button.button-primary:active, .java .button.button-primary:focus {
+  background-color: #206f57;
+  border-color: #206f57;
+}
+.button.topic-java.primary:hover svg, .button.topic-java.primary:active svg, .button.topic-java.primary:focus svg, .button.topic-java.button-primary:hover svg, .button.topic-java.button-primary:active svg, .button.topic-java.button-primary:focus svg, .java .button.primary:hover svg, .java .button.primary:active svg, .java .button.primary:focus svg, .java .button.button-primary:hover svg, .java .button.button-primary:active svg, .java .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-python, .python .button {
+  border-color: #f092b0;
+  color: #f092b0;
+}
+.button.topic-python svg, .python .button svg {
+  fill: #f092b0;
+}
+.button.topic-python:hover, .button.topic-python:active, .button.topic-python:focus, .python .button:hover, .python .button:active, .python .button:focus {
+  border-color: #ea6590;
+  color: #ea6590;
+}
+.button.topic-python:hover svg, .button.topic-python:active svg, .button.topic-python:focus svg, .python .button:hover svg, .python .button:active svg, .python .button:focus svg {
+  fill: #ea6590;
+}
+.button.topic-python.primary, .button.topic-python.button-primary, .python .button.primary, .python .button.button-primary {
+  background-color: #f092b0;
+  border-color: #f092b0;
+}
+.button.topic-python.primary:hover, .button.topic-python.primary:active, .button.topic-python.primary:focus, .button.topic-python.button-primary:hover, .button.topic-python.button-primary:active, .button.topic-python.button-primary:focus, .python .button.primary:hover, .python .button.primary:active, .python .button.primary:focus, .python .button.button-primary:hover, .python .button.button-primary:active, .python .button.button-primary:focus {
+  background-color: #ea6590;
+  border-color: #ea6590;
+}
+.button.topic-python.primary:hover svg, .button.topic-python.primary:active svg, .button.topic-python.primary:focus svg, .button.topic-python.button-primary:hover svg, .button.topic-python.button-primary:active svg, .button.topic-python.button-primary:focus svg, .python .button.primary:hover svg, .python .button.primary:active svg, .python .button.primary:focus svg, .python .button.button-primary:hover svg, .python .button.button-primary:active svg, .python .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-diglit, .diglit .button {
+  border-color: #c38cd4;
+  color: #c38cd4;
+}
+.button.topic-diglit svg, .diglit .button svg {
+  fill: #c38cd4;
+}
+.button.topic-diglit:hover, .button.topic-diglit:active, .button.topic-diglit:focus, .diglit .button:hover, .diglit .button:active, .diglit .button:focus {
+  border-color: #b067c6;
+  color: #b067c6;
+}
+.button.topic-diglit:hover svg, .button.topic-diglit:active svg, .button.topic-diglit:focus svg, .diglit .button:hover svg, .diglit .button:active svg, .diglit .button:focus svg {
+  fill: #b067c6;
+}
+.button.topic-diglit.primary, .button.topic-diglit.button-primary, .diglit .button.primary, .diglit .button.button-primary {
+  background-color: #c38cd4;
+  border-color: #c38cd4;
+}
+.button.topic-diglit.primary:hover, .button.topic-diglit.primary:active, .button.topic-diglit.primary:focus, .button.topic-diglit.button-primary:hover, .button.topic-diglit.button-primary:active, .button.topic-diglit.button-primary:focus, .diglit .button.primary:hover, .diglit .button.primary:active, .diglit .button.primary:focus, .diglit .button.button-primary:hover, .diglit .button.button-primary:active, .diglit .button.button-primary:focus {
+  background-color: #b067c6;
+  border-color: #b067c6;
+}
+.button.topic-diglit.primary:hover svg, .button.topic-diglit.primary:active svg, .button.topic-diglit.primary:focus svg, .button.topic-diglit.button-primary:hover svg, .button.topic-diglit.button-primary:active svg, .button.topic-diglit.button-primary:focus svg, .diglit .button.primary:hover svg, .diglit .button.primary:active svg, .diglit .button.primary:focus svg, .diglit .button.button-primary:hover svg, .diglit .button.button-primary:active svg, .diglit .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-gamedev, .gamedev .button {
+  border-color: #20898c;
+  color: #20898c;
+}
+.button.topic-gamedev svg, .gamedev .button svg {
+  fill: #20898c;
+}
+.button.topic-gamedev:hover, .button.topic-gamedev:active, .button.topic-gamedev:focus, .gamedev .button:hover, .gamedev .button:active, .gamedev .button:focus {
+  border-color: #176062;
+  color: #176062;
+}
+.button.topic-gamedev:hover svg, .button.topic-gamedev:active svg, .button.topic-gamedev:focus svg, .gamedev .button:hover svg, .gamedev .button:active svg, .gamedev .button:focus svg {
+  fill: #176062;
+}
+.button.topic-gamedev.primary, .button.topic-gamedev.button-primary, .gamedev .button.primary, .gamedev .button.button-primary {
+  background-color: #20898c;
+  border-color: #20898c;
+}
+.button.topic-gamedev.primary:hover, .button.topic-gamedev.primary:active, .button.topic-gamedev.primary:focus, .button.topic-gamedev.button-primary:hover, .button.topic-gamedev.button-primary:active, .button.topic-gamedev.button-primary:focus, .gamedev .button.primary:hover, .gamedev .button.primary:active, .gamedev .button.primary:focus, .gamedev .button.button-primary:hover, .gamedev .button.button-primary:active, .gamedev .button.button-primary:focus {
+  background-color: #176062;
+  border-color: #176062;
+}
+.button.topic-gamedev.primary:hover svg, .button.topic-gamedev.primary:active svg, .button.topic-gamedev.primary:focus svg, .button.topic-gamedev.button-primary:hover svg, .button.topic-gamedev.button-primary:active svg, .button.topic-gamedev.button-primary:focus svg, .gamedev .button.primary:hover svg, .gamedev .button.primary:active svg, .gamedev .button.primary:focus svg, .gamedev .button.button-primary:hover svg, .gamedev .button.button-primary:active svg, .gamedev .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-csharp, .csharp .button {
+  border-color: #9e4d83;
+  color: #9e4d83;
+}
+.button.topic-csharp svg, .csharp .button svg {
+  fill: #9e4d83;
+}
+.button.topic-csharp:hover, .button.topic-csharp:active, .button.topic-csharp:focus, .csharp .button:hover, .csharp .button:active, .csharp .button:focus {
+  border-color: #7c3c67;
+  color: #7c3c67;
+}
+.button.topic-csharp:hover svg, .button.topic-csharp:active svg, .button.topic-csharp:focus svg, .csharp .button:hover svg, .csharp .button:active svg, .csharp .button:focus svg {
+  fill: #7c3c67;
+}
+.button.topic-csharp.primary, .button.topic-csharp.button-primary, .csharp .button.primary, .csharp .button.button-primary {
+  background-color: #9e4d83;
+  border-color: #9e4d83;
+}
+.button.topic-csharp.primary:hover, .button.topic-csharp.primary:active, .button.topic-csharp.primary:focus, .button.topic-csharp.button-primary:hover, .button.topic-csharp.button-primary:active, .button.topic-csharp.button-primary:focus, .csharp .button.primary:hover, .csharp .button.primary:active, .csharp .button.primary:focus, .csharp .button.button-primary:hover, .csharp .button.button-primary:active, .csharp .button.button-primary:focus {
+  background-color: #7c3c67;
+  border-color: #7c3c67;
+}
+.button.topic-csharp.primary:hover svg, .button.topic-csharp.primary:active svg, .button.topic-csharp.primary:focus svg, .button.topic-csharp.button-primary:hover svg, .button.topic-csharp.button-primary:active svg, .button.topic-csharp.button-primary:focus svg, .csharp .button.primary:hover svg, .csharp .button.primary:active svg, .csharp .button.primary:focus svg, .csharp .button.button-primary:hover svg, .csharp .button.button-primary:active svg, .csharp .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-databases, .databases .button {
+  border-color: #eb7728;
+  color: #eb7728;
+}
+.button.topic-databases svg, .databases .button svg {
+  fill: #eb7728;
+}
+.button.topic-databases:hover, .button.topic-databases:active, .button.topic-databases:focus, .databases .button:hover, .databases .button:active, .databases .button:focus {
+  border-color: #cd5e13;
+  color: #cd5e13;
+}
+.button.topic-databases:hover svg, .button.topic-databases:active svg, .button.topic-databases:focus svg, .databases .button:hover svg, .databases .button:active svg, .databases .button:focus svg {
+  fill: #cd5e13;
+}
+.button.topic-databases.primary, .button.topic-databases.button-primary, .databases .button.primary, .databases .button.button-primary {
+  background-color: #eb7728;
+  border-color: #eb7728;
+}
+.button.topic-databases.primary:hover, .button.topic-databases.primary:active, .button.topic-databases.primary:focus, .button.topic-databases.button-primary:hover, .button.topic-databases.button-primary:active, .button.topic-databases.button-primary:focus, .databases .button.primary:hover, .databases .button.primary:active, .databases .button.primary:focus, .databases .button.button-primary:hover, .databases .button.button-primary:active, .databases .button.button-primary:focus {
+  background-color: #cd5e13;
+  border-color: #cd5e13;
+}
+.button.topic-databases.primary:hover svg, .button.topic-databases.primary:active svg, .button.topic-databases.primary:focus svg, .button.topic-databases.button-primary:hover svg, .button.topic-databases.button-primary:active svg, .button.topic-databases.button-primary:focus svg, .databases .button.primary:hover svg, .databases .button.primary:active svg, .databases .button.primary:focus svg, .databases .button.button-primary:hover svg, .databases .button.button-primary:active svg, .databases .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.topic-undefined, .undefined .button {
+  border-color: #717b85;
+  color: #717b85;
+}
+.button.topic-undefined svg, .undefined .button svg {
+  fill: #717b85;
+}
+.button.topic-undefined:hover, .button.topic-undefined:active, .button.topic-undefined:focus, .undefined .button:hover, .undefined .button:active, .undefined .button:focus {
+  border-color: #5a6269;
+  color: #5a6269;
+}
+.button.topic-undefined:hover svg, .button.topic-undefined:active svg, .button.topic-undefined:focus svg, .undefined .button:hover svg, .undefined .button:active svg, .undefined .button:focus svg {
+  fill: #5a6269;
+}
+.button.topic-undefined.primary, .button.topic-undefined.button-primary, .undefined .button.primary, .undefined .button.button-primary {
+  background-color: #717b85;
+  border-color: #717b85;
+}
+.button.topic-undefined.primary:hover, .button.topic-undefined.primary:active, .button.topic-undefined.primary:focus, .button.topic-undefined.button-primary:hover, .button.topic-undefined.button-primary:active, .button.topic-undefined.button-primary:focus, .undefined .button.primary:hover, .undefined .button.primary:active, .undefined .button.primary:focus, .undefined .button.button-primary:hover, .undefined .button.button-primary:active, .undefined .button.button-primary:focus {
+  background-color: #5a6269;
+  border-color: #5a6269;
+}
+.button.topic-undefined.primary:hover svg, .button.topic-undefined.primary:active svg, .button.topic-undefined.primary:focus svg, .button.topic-undefined.button-primary:hover svg, .button.topic-undefined.button-primary:active svg, .button.topic-undefined.button-primary:focus svg, .undefined .button.primary:hover svg, .undefined .button.primary:active svg, .undefined .button.primary:focus svg, .undefined .button.button-primary:hover svg, .undefined .button.button-primary:active svg, .undefined .button.button-primary:focus svg {
+  fill: #fff;
+}
+.button.primary, .button-primary {
+  background-color: #5fcf80;
+  border-color: #5fcf80;
+  color: #fff;
+}
+.button.primary svg, .button-primary svg {
+  fill: #fff;
+}
+.button.primary:hover, .button.primary:active, .button.primary:focus, .button-primary:hover, .button-primary:active, .button-primary:focus {
+  background-color: #3ac162;
+  border-color: #3ac162;
+  color: #fff;
+}
+.button.secondary, .button-secondary {
+  background-color: transparent;
+  border-color: #e8ebed;
+  color: #576366;
+}
+.button.secondary svg, .button-secondary svg {
+  fill: #576366;
+}
+.button.secondary:hover, .button.secondary:active, .button.secondary:focus, .button-secondary:hover, .button-secondary:active, .button-secondary:focus {
+  border-color: #bdc6cb;
+  color: #505b5e;
+}
+.button.alert, .button-alert {
+  background-color: transparent;
+  border-color: #ed5a5a;
+  color: #ed5a5a;
+}
+.button.alert svg, .button-alert svg {
+  fill: #ed5a5a;
+}
+.button.alert:hover, .button.alert:active, .button.alert:focus, .button-alert:hover, .button-alert:active, .button-alert:focus {
+  border-color: #cb1616;
+  color: #cb1616;
+}
+.button.disabled, .button-disabled {
+  background-color: transparent;
+  border-color: #e8ebed;
+  color: #7b8b8e;
+}
+.button.disabled svg, .button-disabled svg {
+  fill: #7b8b8e;
+}
+.button.disabled:hover, .button.disabled:active, .button.disabled:focus, .button-disabled:hover, .button-disabled:active, .button-disabled:focus {
+  background-color: transparent;
+  border-color: #e8ebed;
+  color: #7b8b8e;
+}
+.button.disabled:hover svg, .button.disabled:active svg, .button.disabled:focus svg, .button-disabled:hover svg, .button-disabled:active svg, .button-disabled:focus svg {
+  fill: #576366;
+}
+.button.inverse, .button-inverse {
+  border-color: #fff;
+  color: #fff;
+  opacity: 0.88;
+}
+.button.inverse svg, .button-inverse svg {
+  fill: #fff;
+}
+.button.inverse:hover, .button.inverse:active, .button.inverse:focus, .button-inverse:hover, .button-inverse:active, .button-inverse:focus {
+  opacity: 1;
+}
+.button.inverse.alert,
+.button.inverse .button-alert, .button-inverse.alert,
+.button-inverse .button-alert {
+  border-color: #ed5a5a;
+  color: #ed5a5a;
+  opacity: 1;
+}
+.button.inverse.alert svg,
+.button.inverse .button-alert svg, .button-inverse.alert svg,
+.button-inverse .button-alert svg {
+  fill: #ed5a5a;
+}
+.button.inverse.alert:hover, .button.inverse.alert:active, .button.inverse.alert:focus,
+.button.inverse .button-alert:hover,
+.button.inverse .button-alert:active,
+.button.inverse .button-alert:focus, .button-inverse.alert:hover, .button-inverse.alert:active, .button-inverse.alert:focus,
+.button-inverse .button-alert:hover,
+.button-inverse .button-alert:active,
+.button-inverse .button-alert:focus {
+  border-color: #fff;
+  color: #fff;
+}
+.button.inverse.alert:hover svg, .button.inverse.alert:active svg, .button.inverse.alert:focus svg,
+.button.inverse .button-alert:hover svg,
+.button.inverse .button-alert:active svg,
+.button.inverse .button-alert:focus svg, .button-inverse.alert:hover svg, .button-inverse.alert:active svg, .button-inverse.alert:focus svg,
+.button-inverse .button-alert:hover svg,
+.button-inverse .button-alert:active svg,
+.button-inverse .button-alert:focus svg {
+  fill: #fff;
+}
+.button.inverse.primary,
+.button.inverse .button-primary, .button-inverse.primary,
+.button-inverse .button-primary {
+  background-color: #fff;
+  border-color: #fff;
+  color: #4b5658;
+}
+.button.inverse.primary svg,
+.button.inverse .button-primary svg, .button-inverse.primary svg,
+.button-inverse .button-primary svg {
+  fill: #4b5658;
+}
+.button.inverse.secondary,
+.button.inverse .button-secondary, .button-inverse.secondary,
+.button-inverse .button-secondary {
+  opacity: 0.5;
+}
+.button.inverse.secondary:hover, .button.inverse.secondary:active, .button.inverse.secondary:focus,
+.button.inverse .button-secondary:hover,
+.button.inverse .button-secondary:active,
+.button.inverse .button-secondary:focus, .button-inverse.secondary:hover, .button-inverse.secondary:active, .button-inverse.secondary:focus,
+.button-inverse .button-secondary:hover,
+.button-inverse .button-secondary:active,
+.button-inverse .button-secondary:focus {
+  border-color: #fff;
+  color: #fff;
+  opacity: 1;
+}
+.button.inverse.disabled,
+.button.inverse .button-disabled, .button-inverse.disabled,
+.button-inverse .button-disabled {
+  opacity: 0.15;
+}
+.button.inverse.disabled:hover, .button.inverse.disabled:active, .button.inverse.disabled:focus,
+.button.inverse .button-disabled:hover,
+.button.inverse .button-disabled:active,
+.button.inverse .button-disabled:focus, .button-inverse.disabled:hover, .button-inverse.disabled:active, .button-inverse.disabled:focus,
+.button-inverse .button-disabled:hover,
+.button-inverse .button-disabled:active,
+.button-inverse .button-disabled:focus {
+  border-color: #fff;
+  color: #fff;
+  opacity: 0.15;
+}
+.button.x-large, .buttonx-large {
+  font-size: 18px;
+  height: 58px;
+  line-height: 54px;
+  padding: 0 28px;
+}
+.button.x-large.square, .buttonx-large.square {
+  width: 58px;
+}
+.button.large, .button-large {
+  font-size: 16px;
+  height: 50px;
+  line-height: 46px;
+  padding: 0 22px;
+}
+.button.large.square, .button-large.square {
+  width: 50px;
+}
+.button.large svg, .button-large svg {
+  top: -2px;
+}
+.button.small, .button-small {
+  font-size: 12px;
+  height: 34px;
+  line-height: 30px;
+  padding: 0 12px;
+}
+.button.small.square, .button-small.square {
+  width: 34px;
+}
+.button.x-small, .button-x-small {
+  font-size: 12px;
+  height: 30px;
+  line-height: 26px;
+  padding: 0 10px;
+}
+.button.x-small.square, .button-x-small.square {
+  width: 30px;
+}
+.button.close, .button-close {
+  padding: 0;
+  margin: 0;
+  width: 28px;
+  height: 28px;
+  line-height: 22px;
+  text-align: center;
+  z-index: 2;
+}
+.button.close .close-icon, .button-close .close-icon {
+  margin: 0;
+  top: 0;
+}
+.button.square {
+  padding: 0;
+  width: 40px;
+}
+.button.icon-on-left svg {
+  margin: 0 5px 0 0;
+}
+.button.icon-on-right svg {
+  margin: 0 0 0 5px;
+}
+.split-button .button.text, .split-button .button.action {
+  float: left;
+  z-index: 1;
+  margin: 0;
+}
+.split-button .button.text:hover, .split-button .button.text:active, .split-button .button.text:focus, .split-button .button.action:hover, .split-button .button.action:active, .split-button .button.action:focus {
+  z-index: 2;
+}
+.split-button .button.text {
+  border-radius: 4px 0 0 4px;
+  padding: 0 20px;
+}
+.split-button .button.text.primary,
+.split-button .button.text .button-primary {
+  border-right-color: rgba(0, 0, 0, 0.1);
+}
+.split-button .button.action {
+  border-radius: 0 4px 4px 0;
+  padding: 0 10px;
+  margin-left: -2px;
+  min-width: 40px;
+}
+.split-button .button.action.primary,
+.split-button .button.action .button-primary {
+  border-left-color: rgba(0, 0, 0, 0.1);
+}
+
+.split-button {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+.split-button:before, .split-button:after {
+  content: " ";
+  display: table;
+}
+.split-button:after {
+  clear: both;
 }
 
 .col {
