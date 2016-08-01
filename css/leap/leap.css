@@ -7359,34 +7359,134 @@ table td {
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
-.form-text-input, .form-text-area {
+.form-text-input, .form-textarea {
   background-color: #f9fafa;
   border-color: #d4d9dd;
   transition: 0.2s;
-}
-.form-text-input:focus, .form-text-area:focus {
-  background-color: #fff;
-  border-color: #b7c0c7;
-}
-.form-text-input, .form-text-area {
   margin: 0;
   font-size: 1rem;
   padding: 0.75rem 1rem;
-  outline: 0;
+  outline: none;
   border: 2px solid #d4d9dd;
   border-radius: 4px;
   box-shadow: 0;
   box-sizing: border-box;
+  color: #4b5658;
+}
+.form-text-input::-webkit-input-placeholder, .form-textarea::-webkit-input-placeholder {
+  color: #7b8b8e;
+}
+.form-text-input:-moz-placeholder, .form-textarea:-moz-placeholder {
+  color: #7b8b8e;
+}
+.form-text-input::-moz-placeholder, .form-textarea::-moz-placeholder {
+  color: #7b8b8e;
+}
+.form-text-input:-ms-input-placeholder, .form-textarea:-ms-input-placeholder {
+  color: #7b8b8e;
+}
+.form-text-input .placeholder, .form-textarea .placeholder {
+  color: #7b8b8e;
+}
+.form-text-input:focus, .form-textarea:focus {
+  background-color: #fff;
+  border-color: #8c9aa6;
 }
 .form-select {
   -webkit-appearance: none !important;
-  background-color: #fff;
+  -moz-appearance: none !important;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2010%22%3E%0D%0A%09%3Cpath%20fill%3D%22%237b8b8e%22%20d%3D%22M10%2C9.6c-0.4%2C0-0.7-0.1-1-0.4L2%2C3.1C1.4%2C2.6%2C1.3%2C1.6%2C1.9%2C1C2.4%2C0.4%2C3.4%2C0.3%2C4%2C0.9l6%2C5.3l6-5.3%0D%0A%09%09c0.6-0.5%2C1.6-0.5%2C2.1%2C0.1c0.5%2C0.6%2C0.5%2C1.6-0.1%2C2.1l-7%2C6.1C10.7%2C9.5%2C10.4%2C9.6%2C10%2C9.6z%22%2F%3E%0D%0A%3C%2Fsvg%3E");
+  background-size: 0.9rem;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1rem) center;
+  background-color: #f9fafa;
   border: 2px solid #d4d9dd;
   border-radius: 4px;
   font-weight: 500;
-  color: #576366;
+  color: #7b8b8e;
+  outline: none;
   padding: 0.5rem 1rem;
   padding-right: 3rem;
+}
+.form-select:focus {
+  background-color: #fff;
+  border: 2px solid #8c9aa6;
+}
+.form-radio, .form-checkbox {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.form-radio + .form-label, .form-checkbox + .form-label {
+  display: block;
+  font-weight: normal;
+  color: #7b8b8e;
+  padding: 0.25rem 0;
+}
+.form-radio + .form-label:before, .form-checkbox + .form-label:before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  bottom: -2px;
+  margin-right: 0.25rem;
+}
+.form-radio:checked + .form-label, .form-checkbox:checked + .form-label {
+  color: #4b5658;
+}
+.form-radio + .form-label:before {
+  border-radius: 50%;
+  border: 1px solid #d4d9dd;
+}
+.form-radio:checked + .form-label:before {
+  border: 5px solid #3f8abf;
+}
+.form-checkbox + .form-label:before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 4px;
+  border: 1px solid #d4d9dd;
+}
+.form-checkbox:checked + .form-label:before {
+  border: none;
+  background-color: #3f8abf;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%0D%0A%09%3Cpath%20fill%3D%27%23FFFFFF%27%20d%3D%27M7%2C11c-0.3%2C0-0.5-0.1-0.7-0.3l-3-3c-0.4-0.4-0.4-1%2C0-1.4s1-0.4%2C1.4%2C0l2.2%2C2.2l4.3-5.2%0D%0A%09%09c0.4-0.4%2C1-0.5%2C1.4-0.1c0.4%2C0.4%2C0.5%2C1%2C0.1%2C1.4l-5%2C6C7.6%2C10.9%2C7.3%2C11%2C7%2C11C7%2C11%2C7%2C11%2C7%2C11z%27%2F%3E%0D%0A%3C%2Fsvg%3E");
+  background-repeat: none;
+  background-position: center 1px;
+}
+.form-upload {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.form-upload + .form-label {
+  background-color: #f9fafa;
+  color: #7b8b8e;
+  display: inline-block;
+  border: 2px solid #d4d9dd;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.form-upload:focus + .form-label, .form-upload + .form-label:hover {
+  background-color: #fff;
+  border: 2px solid #8c9aa6;
+  color: #4b5658;
+}
+.form-upload:focus + .form-label {
+  background-color: #fff;
+  border: 2px solid #8c9aa6;
+  color: #4b5658;
 }
 
 /*# sourceMappingURL=leap.css.map */

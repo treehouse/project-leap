@@ -1,3 +1,15 @@
+// Non-Active State Styling Defaults
+$form-background-inactive: gray-color(gray-lighter)
+$form-border-inactive: $border-color-mid
+$form-color-inactive: text-color(light)
+
+// Active State Styling Defaults
+$form-background-active: #fff
+$form-border-active: darken($border-color-dark, 15%)
+$form-color-active: text-color(medium)
+
+
+
 .form
   &-fieldset
     padding: 0
@@ -21,36 +33,122 @@
   // Inputs
   &-text
     &-input,
-    &-area
-      background-color: gray-color(gray-lighter)
-      border-color: $border-color-mid
+    &area
+      background-color: $form-background-inactive
+      border-color: $form-border-inactive
       transition: .2s
-      &:focus
-        background-color: #fff
-        border-color: $border-color-dark
-    &-input,
-    &-area
       margin: 0
       font-size: 1rem
       padding: .75rem 1rem
-      outline: 0
-      border: 2px solid $border-color-mid
+      outline: none
+      border: 2px solid $form-border-inactive
       border-radius: $border-radius
       box-shadow: 0
       box-sizing: border-box
+      color: $form-color-active
+      +placeholder-style
+        color: $form-color-inactive
+      &:focus
+        background-color: $form-background-active
+        border-color: $form-border-active
+  // Overriding the deault Select & Radio Styles
   &-select
     -webkit-appearance: none !important
-    background-color: #fff
-    border: 2px solid $border-color-mid
+    -moz-appearance: none !important
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2010%22%3E%0D%0A%09%3Cpath%20fill%3D%22%237b8b8e%22%20d%3D%22M10%2C9.6c-0.4%2C0-0.7-0.1-1-0.4L2%2C3.1C1.4%2C2.6%2C1.3%2C1.6%2C1.9%2C1C2.4%2C0.4%2C3.4%2C0.3%2C4%2C0.9l6%2C5.3l6-5.3%0D%0A%09%09c0.6-0.5%2C1.6-0.5%2C2.1%2C0.1c0.5%2C0.6%2C0.5%2C1.6-0.1%2C2.1l-7%2C6.1C10.7%2C9.5%2C10.4%2C9.6%2C10%2C9.6z%22%2F%3E%0D%0A%3C%2Fsvg%3E")
+    background-size: .9rem
+    background-repeat: no-repeat
+    background-position: calc(100% - 1rem) center
+    background-color: $form-background-inactive
+    border: 2px solid $form-border-inactive
     border-radius: $border-radius
     font-weight: $bold
-    color: text-color(base)
+    color: $form-color-inactive
+    outline: none
     padding: .5rem 1rem
     padding-right: 3rem
-  &-radio
+    &:focus
+      background-color: $form-background-active
+      border: 2px solid $form-border-active
+  &-radio,
   &-checkbox
+    width: 0.1px
+    height: 0.1px
+    opacity: 0
+    overflow: hidden
+    position: absolute
+    z-index: -1
+    &+.form-label
+      display: block
+      font-weight: normal
+      color: $form-color-inactive
+      padding: .25rem 0
+  // Overriding the deault Select & Radio Styles
+  &-radio,
+  &-checkbox
+    &+.form-label
+      &:before
+        content: ''
+        display: inline-block
+        width: 1rem
+        height: 1rem
+        position: relative
+        bottom: -2px
+        margin-right: .25rem
+    &:checked
+      &+.form-label
+        color: $form-color-active
+  &-radio
+    &+.form-label
+      &:before
+        border-radius: 50%
+        border: 1px solid $border-color-mid
+    &:checked
+      &+.form-label
+        &:before
+          border: 5px solid ui-color(blue)
+  &-checkbox
+    &+.form-label
+      &:before
+        content: ''
+        display: inline-block
+        width: 1rem
+        height: 1rem
+        border-radius: $border-radius
+        border: 1px solid $border-color-mid
+    &:checked
+      &+.form-label
+        &:before
+          border: none
+          background-color: ui-color(blue)
+          background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%0D%0A%09%3Cpath%20fill%3D%27%23FFFFFF%27%20d%3D%27M7%2C11c-0.3%2C0-0.5-0.1-0.7-0.3l-3-3c-0.4-0.4-0.4-1%2C0-1.4s1-0.4%2C1.4%2C0l2.2%2C2.2l4.3-5.2%0D%0A%09%09c0.4-0.4%2C1-0.5%2C1.4-0.1c0.4%2C0.4%2C0.5%2C1%2C0.1%2C1.4l-5%2C6C7.6%2C10.9%2C7.3%2C11%2C7%2C11C7%2C11%2C7%2C11%2C7%2C11z%27%2F%3E%0D%0A%3C%2Fsvg%3E")
+          background-repeat: none
+          background-position: center 1px
   &-upload
-
+    width: 0.1px
+    height: 0.1px
+    opacity: 0
+    overflow: hidden
+    position: absolute
+    z-index: -1
+    & + .form-label
+      background-color: $form-background-inactive
+      color: $form-color-inactive
+      display: inline-block
+      border: 2px solid $form-border-inactive
+      border-radius: $border-radius
+      padding: .75rem 1rem
+      cursor: pointer
+      transition: .2s
+    &:focus + .form-label,
+    & + .form-label:hover
+      background-color: $form-background-active
+      border: 2px solid $form-border-active
+      color: $form-color-active
+    &:focus + .form-label
+      background-color: $form-background-active
+      border: 2px solid $form-border-active
+      color: $form-color-active
   // Feedback
   &-feedback
     &-error

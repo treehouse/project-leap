@@ -61,11 +61,11 @@
 
           <!-- Textareas -->
           <h3 class="m-b-1-xs">Textareas</h3>
-          <p class="m-b-2-xs">Use the <code>.textarea</code> class to get the default styling. When setting a typesize and width, we recommend aiming for a measure of 52-78 characters.</p>
+          <p class="m-b-2-xs">Use the <code>.form-textarea</code> class to get the default styling. When setting a typesize and width, we recommend aiming for a measure of 52-78 characters.</p>
 
           <form class="m-b-2-xs">
             <label for="form-textarea-1" class="form-label">Textarea Label</label>
-            <textarea name="form-textarea-1" id="form-textarea-1" class="form-text-area col-50-xs"></textarea>
+            <textarea name="form-textarea-1" id="form-textarea-1" class="form-textarea col-50-xs"></textarea>
           </form>
 
           <!-- Selects -->
@@ -92,25 +92,39 @@
           <!-- Radios -->
           <h3 class="m-b-1-xs">Radios</h3>
           <form class="m-b-2-xs">
-            <input type="radio" id="form-radio-1" class="form-radio">
-            <label for="form-radio-1" class="form-label">Radio Label 1</label>
+            <input type="radio" id="form-radio-1" class="form-radio" name="radio" checked="checked">
+            <label for="form-radio-1" class="form-label">
+              Radio Label 1
+            </label>
 
-            <input type="radio" id="form-radio-2" class="form-radio">
-            <label for="form-radio-2" class="form-label">Radio Label 2</label>
+            <input type="radio" id="form-radio-2" class="form-radio" name="radio">
+            <label for="form-radio-2" class="form-label">
+              Radio Label 2
+            </label>
           </form>
 
           <!-- Checkboxes -->
           <h3 class="m-b-1-xs">Checkboxes</h3>
           <form class="m-b-2-xs">
             <input type="checkbox" id="form-checkbox-1" class="form-checkbox">
-            <label for="form-radio-1" class="form-label">Checkbox Label 1</label>
+            <label for="form-checkbox-1" class="form-label">
+              Checkbox Label 1
+            </label>
 
             <input type="checkbox" id="form-checkbox-2" class="form-checkbox">
-            <label for="form-checkbox-2" class="form-label">Checkbox Label 2</label>
+            <label for="form-checkbox-2" class="form-label">
+              Checkbox Label 2
+            </label>
           </form>
 
           <!-- Uploads -->
           <h3 class="m-b-1-xs">Uploads</h3>
+
+          <form>
+            <input type="file" class="form-upload" id="form-upload-1">
+            <label for="form-upload-1" class="form-label">Upload File...</label>
+
+          </form>
 
           <!-- Form Feedback -->
           <h3>Form Feedback</h3>
