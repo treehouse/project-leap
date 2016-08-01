@@ -1,6 +1,6 @@
 Todo Percentage
 ===
-158 of 243 done (65%)
+174 of 241 done (72.1%)
 
 
 Building Blocks (Atoms)
@@ -111,30 +111,29 @@ Buttons (x-small, small, normal, large, x-large)
 ---
 Buttons are important for submitting forms and calling out different CTAs or actions on a page.
 
-* [ ] Default
-  * [ ] Documentation
-* [ ] Primary
-  * [ ] Documentation
-* [ ] Secondary
-  * [ ] Documentation
-* [ ] Alert
-  * [ ] Documentation
-* [ ] Inverse
-  * [ ] Documentation
-* [ ] Disabled
-  * [ ] Documentation
-* [ ] With Icon
+* [x] Default
+  * [x] Documentation
+* [x] Primary
+  * [x] Documentation
+* [x] Secondary
+  * [x] Documentation
+* [x] Alert
+  * [x] Documentation
+* [x] Inverse
+  * [x] Documentation
+* [x] Disabled
+  * [x] Documentation
+* [x] Pill Labels
+  * [x] Documentation
+* [x] Split Buttons
+  * [x] Documentation
+* [ ] With Icon (left/right)
   * [ ] Documentation
 * [ ] Square (Icon Only)
   * [ ] Documentation
 * [ ] Circle (Icon Only)
   * [ ] Documentation
-* [ ] Pill Labels
-  * [ ] Documentation
-* [ ] Split Buttons
-  * [ ] Documentation
-* [ ] Button Groups
-  * [ ] Documentation
+
 
 
 

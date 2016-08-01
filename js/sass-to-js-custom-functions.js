@@ -165,7 +165,7 @@ var textColors = function(elementId, $elementId, guideClass) {
 
     // Create span to hold color
     var colorSpan = document.createElement('span');
-    colorSpan.className = 'p-2-xs m-lr-1-xs block-xs bg-' + colorClass;
+    colorSpan.className = 'p-2-xs m-lr-1-xs block-xs text-bg-' + colorClass;
 
     // Create code element to hold var function and hex
     var nameSpan = document.createElement('span');
