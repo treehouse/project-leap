@@ -13,6 +13,8 @@ $form-color-active: text-color(medium)
 .form
   &-fieldset
     padding: 0
+    border: 0
+    margin: 0
   // Labels
   &-label,
   &-helper
@@ -24,6 +26,12 @@ $form-color-active: text-color(medium)
     &-required
       color: red
       font-weight: $bold
+    .form-feedback-success &
+      color: ui-color(green)
+    .form-feedback-warning &
+      color: ui-color(orange)
+    .form-feedback-error &
+      color: ui-color(red)
   &-helper
     color: text-color(light)
     font-weight: normal
@@ -51,11 +59,22 @@ $form-color-active: text-color(medium)
       &:focus
         background-color: $form-background-active
         border-color: $form-border-active
+      .form-feedback-success &,
+      .form-feedback-warning &,
+      .form-feedback-error &
+        background-color: $form-background-active
+      .form-feedback-success &
+        border-color: ui-color(green)
+      .form-feedback-warning &
+        border-color: ui-color(orange)
+      .form-feedback-error &
+        border-color: ui-color(red)
+
   // Overriding the deault Select & Radio Styles
   &-select
     -webkit-appearance: none !important
     -moz-appearance: none !important
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2010%22%3E%0D%0A%09%3Cpath%20fill%3D%22%237b8b8e%22%20d%3D%22M10%2C9.6c-0.4%2C0-0.7-0.1-1-0.4L2%2C3.1C1.4%2C2.6%2C1.3%2C1.6%2C1.9%2C1C2.4%2C0.4%2C3.4%2C0.3%2C4%2C0.9l6%2C5.3l6-5.3%0D%0A%09%09c0.6-0.5%2C1.6-0.5%2C2.1%2C0.1c0.5%2C0.6%2C0.5%2C1.6-0.1%2C2.1l-7%2C6.1C10.7%2C9.5%2C10.4%2C9.6%2C10%2C9.6z%22%2F%3E%0D%0A%3C%2Fsvg%3E")
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2010%22%3E%0D%0A%09%3Cpath%20fill%3D%22%237b8b8e%22%20d%3D%22M9.5%2C9.5c-0.4%2C0-0.7-0.1-1-0.4L2%2C3.1C1.4%2C2.5%2C1.3%2C1.6%2C1.9%2C1C2.5%2C0.4%2C3.4%2C0.3%2C4%2C0.9L9.5%2C6L15%2C0.9%0D%0A%09%09c0.6-0.6%2C1.6-0.5%2C2.1%2C0.1c0.6%2C0.6%2C0.5%2C1.6-0.1%2C2.1l-6.5%2C6C10.2%2C9.4%2C9.9%2C9.5%2C9.5%2C9.5z%22%2F%3E%0D%0A%3C%2Fsvg%3E")
     background-size: .9rem
     background-repeat: no-repeat
     background-position: calc(100% - 1rem) center
@@ -83,6 +102,12 @@ $form-color-active: text-color(medium)
       font-weight: normal
       color: $form-color-inactive
       padding: .25rem 0
+      .form-feedback-success &
+        color: ui-color(green)
+      .form-feedback-warning &
+        color: ui-color(orange)
+      .form-feedback-error &
+        color: ui-color(red)
   // Overriding the deault Select & Radio Styles
   &-radio,
   &-checkbox
@@ -149,8 +174,15 @@ $form-color-active: text-color(medium)
       background-color: $form-background-active
       border: 2px solid $form-border-active
       color: $form-color-active
+
   // Feedback
   &-feedback
-    &-error
-    &-warning
-    &-success
+    display: block
+    margin-top: .5rem
+    font-size: .9rem
+    .form-feedback-success &
+      color: ui-color(green)
+    .form-feedback-warning &
+      color: ui-color(orange)
+    .form-feedback-error &
+      color: ui-color(red)

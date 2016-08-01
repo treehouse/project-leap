@@ -7340,6 +7340,8 @@ table td {
 
 .form-fieldset {
   padding: 0;
+  border: 0;
+  margin: 0;
 }
 .form-label, .form-helper {
   display: block;
@@ -7352,6 +7354,15 @@ table td {
 .form-label-required {
   color: red;
   font-weight: 500;
+}
+.form-feedback-success .form-label {
+  color: #36b55c;
+}
+.form-feedback-warning .form-label {
+  color: #ff9f1f;
+}
+.form-feedback-error .form-label {
+  color: #ed5a5a;
 }
 .form-helper {
   color: #7b8b8e;
@@ -7392,10 +7403,22 @@ table td {
   background-color: #fff;
   border-color: #8c9aa6;
 }
+.form-feedback-success .form-text-input, .form-feedback-warning .form-text-input, .form-feedback-error .form-text-input, .form-feedback-success .form-textarea, .form-feedback-warning .form-textarea, .form-feedback-error .form-textarea {
+  background-color: #fff;
+}
+.form-feedback-success .form-text-input, .form-feedback-success .form-textarea {
+  border-color: #36b55c;
+}
+.form-feedback-warning .form-text-input, .form-feedback-warning .form-textarea {
+  border-color: #ff9f1f;
+}
+.form-feedback-error .form-text-input, .form-feedback-error .form-textarea {
+  border-color: #ed5a5a;
+}
 .form-select {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2010%22%3E%0D%0A%09%3Cpath%20fill%3D%22%237b8b8e%22%20d%3D%22M10%2C9.6c-0.4%2C0-0.7-0.1-1-0.4L2%2C3.1C1.4%2C2.6%2C1.3%2C1.6%2C1.9%2C1C2.4%2C0.4%2C3.4%2C0.3%2C4%2C0.9l6%2C5.3l6-5.3%0D%0A%09%09c0.6-0.5%2C1.6-0.5%2C2.1%2C0.1c0.5%2C0.6%2C0.5%2C1.6-0.1%2C2.1l-7%2C6.1C10.7%2C9.5%2C10.4%2C9.6%2C10%2C9.6z%22%2F%3E%0D%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2010%22%3E%0D%0A%09%3Cpath%20fill%3D%22%237b8b8e%22%20d%3D%22M9.5%2C9.5c-0.4%2C0-0.7-0.1-1-0.4L2%2C3.1C1.4%2C2.5%2C1.3%2C1.6%2C1.9%2C1C2.5%2C0.4%2C3.4%2C0.3%2C4%2C0.9L9.5%2C6L15%2C0.9%0D%0A%09%09c0.6-0.6%2C1.6-0.5%2C2.1%2C0.1c0.6%2C0.6%2C0.5%2C1.6-0.1%2C2.1l-6.5%2C6C10.2%2C9.4%2C9.9%2C9.5%2C9.5%2C9.5z%22%2F%3E%0D%0A%3C%2Fsvg%3E");
   background-size: 0.9rem;
   background-repeat: no-repeat;
   background-position: calc(100% - 1rem) center;
@@ -7425,6 +7448,15 @@ table td {
   font-weight: normal;
   color: #7b8b8e;
   padding: 0.25rem 0;
+}
+.form-feedback-success .form-radio + .form-label, .form-feedback-success .form-checkbox + .form-label {
+  color: #36b55c;
+}
+.form-feedback-warning .form-radio + .form-label, .form-feedback-warning .form-checkbox + .form-label {
+  color: #ff9f1f;
+}
+.form-feedback-error .form-radio + .form-label, .form-feedback-error .form-checkbox + .form-label {
+  color: #ed5a5a;
 }
 .form-radio + .form-label:before, .form-checkbox + .form-label:before {
   content: "";
@@ -7487,6 +7519,20 @@ table td {
   background-color: #fff;
   border: 2px solid #8c9aa6;
   color: #4b5658;
+}
+.form-feedback {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.form-feedback-success .form-feedback {
+  color: #36b55c;
+}
+.form-feedback-warning .form-feedback {
+  color: #ff9f1f;
+}
+.form-feedback-error .form-feedback {
+  color: #ed5a5a;
 }
 
 /*# sourceMappingURL=leap.css.map */

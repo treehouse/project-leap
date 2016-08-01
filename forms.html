@@ -42,12 +42,17 @@
 
           <!-- Text Inputs -->
           <h3 class="m-b-1-xs">Text Inputs</h3>
-          <p class="m-b-2-xs">Use the <code>.text-input</code> class to apply the default styling for text inputs. Inputs should always be paired with a label to make them accessible. You can use placeholder text for additional context when necessary. DO NOT use placeholder text in place of a label.</p>
+          <p class="m-b-2-xs">Use the <code>.text-input</code> class to apply the default styling for text inputs. Inputs should always be paired with a label to make them accessible. You can use placeholder text for additional context when necessary. <strong>NEVER</strong> use placeholder text in place of a label.</p>
 
           <form class="m-b-2-xs">
             <label for="form-text-input-1" class="form-label">Text Input Label</label>
             <input type="text" class="form-text-input" id="form-text-input-1" placeholder="this is placeholder text">
           </form>
+
+          <pre><code class="language-html">&lt;form&gt;
+  &lt;label for="form-text-input-1" class="form-label"&gt;Text Input Label&lt;/label&gt;
+  &lt;input type="text" class="form-text-input" id="form-text-input-1" placeholder="this is placeholder text"&gt;
+&lt;/form&gt;</code></pre>
 
           <!-- Helpers -->
           <h3 class="m-b-1-xs">Helper Text</h3>
@@ -59,6 +64,12 @@
             <label class="form-helper">You don't need to include http://</label>
           </form>
 
+          <pre><code class="language-html">&lt;form&gt;
+  &lt;label for="form-text-input-1" class="form-label"&gt;Text Input Label&lt;/label&gt;
+  &lt;input type="text" class="form-text-input" id="form-text-input-1" placeholder="this is placeholder text"&gt;
+&lt;/form&gt;
+&lt;label class="form-helper"&gt;You don't need to include http://&lt;/label&gt;</code></pre>
+
           <!-- Textareas -->
           <h3 class="m-b-1-xs">Textareas</h3>
           <p class="m-b-2-xs">Use the <code>.form-textarea</code> class to get the default styling. When setting a typesize and width, we recommend aiming for a measure of 52-78 characters.</p>
@@ -68,20 +79,18 @@
             <textarea name="form-textarea-1" id="form-textarea-1" class="form-textarea col-50-xs"></textarea>
           </form>
 
+          <pre><code class="language-html">&lt;form&gt;
+  &lt;label for="form-textarea-1" class="form-label"&gt;Textarea Label&lt;/label&gt;
+  &lt;textarea name="form-textarea-1" id="form-textarea-1" class="form-textarea col-50-xs"&gt;&lt;/textarea&gt;
+&lt;/form&gt;</code></pre>
+
           <!-- Selects -->
           <h3 class="m-b-1-xs">Selects</h3>
-          <p class="m-b-2-xs">Use the <code>.textarea</code> class to get the default styling. When setting a typesize and width, we recommend aiming for a measure of 52-78 characters.</p>
+          <p class="m-b-2-xs">Use the <code>.form-select</code> class to get the default styling.</p>
 
           <form class="m-b-2-xs">
             <label for="form-select-1" class="form-label">Select Label 1</label>
             <select id="form-select-1" class="form-select">
-              <option value="">Item 1</option>
-              <option value="">Item 2</option>
-              <option value="">Item 3</option>
-              <option value="">Item 4</option>
-            </select>
-            <label for="form-select-2" class="form-label">Select Label 2</label>
-            <select id="form-select-2" class="form-select">
               <option value="">Item 1</option>
               <option value="">Item 2</option>
               <option value="">Item 3</option>
@@ -127,7 +136,35 @@
           </form>
 
           <!-- Form Feedback -->
-          <h3>Form Feedback</h3>
+          <h3 class="m-b-1-xs">Form Success</h3>
+
+          <form class="m-b-2-xs">
+            <fieldset class="form-feedback-success form-fieldset">
+              <label for="" class="form-label">Input Label</label>
+              <input type="text" class="form-text-input">
+              <span class="form-feedback">Hasta La Vista, Baby!</span>
+            </fieldset>
+          </form>
+
+          <h3 class="m-b-1-xs">Form Warnings</h3>
+
+          <form class="m-b-2-xs">
+            <fieldset class="form-feedback-warning form-fieldset">
+              <label for="" class="form-label">Input Label</label>
+              <input type="text" class="form-text-input">
+              <span class="form-feedback">It's not a tumor</span>
+            </fieldset>
+          </form>
+
+          <h3 class="m-b-1-xs">Form Error</h3>
+
+          <form class="m-b-2-xs">
+            <fieldset class="form-feedback-error form-fieldset">
+              <label for="" class="form-label">Input Label</label>
+              <input type="text" class="form-text-input">
+              <span class="form-feedback">Get to the chopper!</span>
+            </fieldset>
+          </form>
         </section>
 
       </div>
