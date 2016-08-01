@@ -95,7 +95,7 @@
 
 <section id="width-height">
   <h2 class="m-b-1-xs">Width &amp; Height</h2>
-  <p class="m-b-3-xs">Most widths will be set using our grid layout. However, Leap provides <code>.w-fit-xs</code> to set an elements max-width to 100%, additionally it has <code>.h-full-xs</code> and <code>.h-full-xs</code> to set an elements width to 100%. You can use <code>.w-auto-xs</code> to set an elements width to auto.</p>
+  <p class="m-b-3-xs">Most widths will be set using our grid layout. However, Leap provides <code>.w-fit-xs</code> to set an elements max-width to 100%, additionally it has <code>.w-full-xs</code> and <code>.h-full-xs</code> to set an elements width to 100%. You can use <code>.w-auto-xs</code> to set an elements width to auto.</p>
   <div class="w-fit-xs border-dark-xs p-1-xs m-b-1-xs">.w-fit-xs</div>
   <div class="w-full-xs border-dark-xs p-1-xs m-b-1-xs">.w-full-xs</div>
   <div class="border-xs p-05-xs m-b-1-xs" style="height: 100px">

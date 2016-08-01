@@ -184,4 +184,16 @@
   <ul class="list-unstyled guide-color guide-colors-topic overflow-hidden-xs"></ul><!-- List items built by JS -->
 </section>
 
+
+<!-- Sass to JS goodness -->
+<div id="brandColorData"></div>
+<div id="uiColorData"></div>
+<div id="grayColorData"></div>
+<div id="textColorData"></div>
+<div id="topicColorData"></div>
+
+<script src="js/prism.js"></script>
+<script src="js/sass-to-js.js"></script>
+<script src="js/sass-to-js-custom-functions.js"></script>
+
 <?php include_once('shared/_foot.php'); ?>

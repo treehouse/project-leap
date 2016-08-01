@@ -30,32 +30,10 @@
   svg
     fill: brand-color(green)
 
-  // Topic color buttons
-  @each $topic, $name in $topic-colors
-    &.topic-#{$topic},
-    .#{$topic} &
-      border-color: topic-color(#{$topic}, base)
-      color: topic-color(#{$topic}, base)
-      svg
-        fill: topic-color(#{$topic}, base)
-      +selected
-        border-color: darken(topic-color(#{$topic}, base), 10%)
-        color: darken(topic-color(#{$topic}, base), 10%)
-        svg
-          fill: darken(topic-color(#{$topic}, base), 10%)
-      &.primary,
-      &.button-primary
-        background-color: topic-color(#{$topic}, base)
-        border-color: topic-color(#{$topic}, base)
-        +selected
-          background-color: darken(topic-color(#{$topic}, base), 10%)
-          border-color: darken(topic-color(#{$topic}, base), 10%)
-          svg
-            fill: #fff
+
 
   // Primary buttons
-  &.primary,
-  &-primary
+  &--primary
     background-color: brand-color(green)
     border-color: brand-color(green)
     color: #fff
@@ -66,9 +44,10 @@
       border-color: darken(brand-color(green), 10%)
       color: #fff
 
+
+
   // Secondary buttons
-  &.secondary,
-  &-secondary
+  &--secondary
     background-color: transparent
     border-color: $border-color-normal
     color: text-color(base)
@@ -78,9 +57,10 @@
       border-color: darken($border-color-normal, 15%)
       color: darken(text-color(base), 3%)
 
+
+
   // Alert buttons
-  &.alert,
-  &-alert
+  &--alert
     background-color: transparent
     border-color: ui-color(red)
     color: ui-color(red)
@@ -90,9 +70,10 @@
       border-color: darken(ui-color(red), 20%)
       color: darken(ui-color(red), 20%)
 
+
+
   // Default disabled buttons
-  &.disabled,
-  &-disabled
+  &--disabled
     background-color: transparent
     border-color: $border-color-normal
     color: text-color(light)
@@ -105,9 +86,10 @@
       svg
         fill: text-color(base)
 
+
+
   // Inverse buttons
-  &.inverse,
-  &-inverse
+  &--inverse
     border-color: #fff
     color: #fff
     opacity: 0.88
@@ -116,8 +98,7 @@
     +selected
       opacity: 1
 
-    &.alert,
-    .button-alert
+    .button--alert
       border-color: ui-color(red)
       color: ui-color(red)
       opacity: 1
@@ -129,71 +110,122 @@
         svg
           fill: #fff
 
-    &.primary,
-    .button-primary
+    .button--primary
       background-color: #fff
       border-color: #fff
       color: text-color(medium)
       svg
         fill: text-color(medium)
 
-    &.secondary,
-    .button-secondary
+    .button--secondary
       opacity: 0.5
       +selected
         border-color: #fff
         color: #fff
         opacity: 1
 
-    &.disabled,
-    .button-disabled
+    .button--disabled
       opacity: 0.15
       +selected
         border-color: #fff
         color: #fff
         opacity: 0.15
 
-  // Large Buttons
-  &.x-large,
-  &x-large
-    font-size: 18px
-    height: 58px
-    line-height: 54px
-    padding: 0 28px
-    &.square
-      width: 58px
 
-  // Large Buttons
-  &.large,
-  &-large
-    font-size: 16px
-    height: 50px
-    line-height: 46px
-    padding: 0 22px
-    &.square
-      width: 50px
-    svg
-      top: -2px
 
-  // Small Buttons
-  &.small,
-  &-small
-    font-size: 12px
-    height: 34px
-    line-height: 30px
-    padding: 0 12px
-    &.square
-      width: 34px
+  // Button size style maps
+  $button-sizes: (xlarge: (font-size: 18px, height: 58px, padding: 28px), large: (font-size: 16px, height: 50px, padding: 22px), normal: (font-size: 16px, height: 40px, padding: 15px), small: (font-size: 12px, height: 34px, padding: 12px), xsmall: (font-size: 12px, height: 30px, padding: 10px))
 
-  // Extra Small Buttons
-  &.x-small,
-  &-x-small
-    font-size: 12px
-    height: 30px
-    line-height: 26px
-    padding: 0 10px
-    &.square
-      width: 30px
+  // Create button sizes classes to use across breakpoints
+  @mixin button-size($suffix)
+
+    // Iterate through each size map to create appropriate styles
+    @each $size, $property in $button-sizes
+      &--#{$size}-#{$suffix}
+        font-size: map-get($property, font-size) !important
+        height: map-get($property, height) !important
+        line-height: map-get($property, height) - 4px !important
+        padding: 0 map-get($property, padding) !important
+        &.square
+          width: map-get($property, height) !important
+        @if $size == large
+          svg
+            top: -2px
+
+
+
+  // Adds the media queries to the button-size mixin
+  @mixin button($suffix, $media: null)
+
+    // We want to use @media screen whenever no $media
+    // is passed into the mixin
+    @if length($media) == 2
+      +media($media)
+        +button-size($suffix)
+    @else
+      @media screen
+        +button-size($suffix)
+
+
+
+  // Extra Small button classes
+  +button(xs)
+
+  // Small button classes
+  +button(sm, min-width $sm)
+
+  // Medium button classes
+  +button(md, min-width $md)
+
+  // Large button classes
+  +button(lg, min-width $lg)
+
+  // Extra Large button classes
+  +button(xl, min-width $xl)
+
+  // Topic color buttons
+  @each $topic, $name in $topic-colors
+    &--topic-#{$topic},
+      border-color: topic-color(#{$topic}, base) !important
+      color: topic-color(#{$topic}, base) !important
+      svg
+        fill: topic-color(#{$topic}, base) !important
+      +selected
+        border-color: darken(topic-color(#{$topic}, base), 10%) !important
+        color: darken(topic-color(#{$topic}, base), 10%) !important
+        svg
+          fill: darken(topic-color(#{$topic}, base), 10%) !important
+      &.button--primary
+        background-color: topic-color(#{$topic}, base) !important
+        border-color: topic-color(#{$topic}, base) !important
+        color: #fff !important
+        +selected
+          background-color: darken(topic-color(#{$topic}, base), 10%) !important
+          border-color: darken(topic-color(#{$topic}, base), 10%) !important
+          svg
+            fill: #fff !important
+
+  // Split Buttons
+  .split-button &
+    float: left
+    z-index: 1
+    margin: 0 !important
+    border-radius: $border-radius 0 0 $border-radius
+    padding: 0 20px
+    +selected
+      z-index: 2
+    &.button--primary
+      border-right-color: rgba(#000, 0.1)
+    + .button
+      border-radius: 0 $border-radius $border-radius 0
+      margin-left: -2px !important
+      &.button--primary
+        border-left-color: rgba(#000, 0.1)
+
+.split-button
+  +clearfix
+  display: inline-block
+  margin: 0 15px 0 0
 
 
 
@@ -231,55 +263,25 @@
 
 
   // Close buttons
-  &.close,
-  &-close
-    padding: 0
-    margin: 0
-    width: 28px
-    height: 28px
-    line-height: 22px
-    text-align: center
-    z-index: 2
-    .close-icon
-      margin: 0
-      top: 0
+  // &--close
+  //   padding: 0
+  //   margin: 0
+  //   width: 28px
+  //   height: 28px
+  //   line-height: 22px
+  //   text-align: center
+  //   z-index: 2
+  //   .close-icon
+  //     margin: 0
+  //     top: 0
 
   // Square class for icon-only buttons with default size
-  &.square
-    padding: 0
-    width: 40px
+  // &--square
+  //   padding: 0
+  //   width: 40px
 
   // Buttons /w Icons
-  &.icon-on-left svg
-    margin: 0 5px 0 0
-  &.icon-on-right svg
-    margin: 0 0 0 5px
-
-  // Split Buttons
-  .split-button &
-    &.text,
-    &.action
-      float: left
-      z-index: 1
-      margin: 0
-      +selected
-        z-index: 2
-    &.text
-      border-radius: 4px 0 0 4px
-      padding: 0 20px
-      &.primary,
-      .button-primary
-        border-right-color: rgba(#000, 0.1)
-    &.action
-      border-radius: 0 4px 4px 0
-      padding: 0 10px
-      margin-left: -2px
-      min-width: 40px
-      &.primary,
-      .button-primary
-        border-left-color: rgba(#000, 0.1)
-
-.split-button
-  +clearfix
-  display: inline-block
-  margin: 0 15px 0 0
+  // &--icon-on-left svg
+  //   margin: 0 5px 0 0
+  // &--icon-on-right svg
+  //   margin: 0 0 0 5px

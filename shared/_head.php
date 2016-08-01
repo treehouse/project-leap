@@ -1,5 +1,5 @@
 <?php
-  $nav_items = array('typography', 'colors', 'grid', 'block grid', 'borders', 'responsive', 'layout', 'tables');
+  $nav_items = array('typography', 'colors', 'grid', 'block grid', 'borders', 'buttons', 'responsive', 'layout', 'tables');
 ?>
 
 <!DOCTYPE html>
