@@ -8411,6 +8411,15 @@ table td {
   display: block;
   padding: 0.5rem 2rem;
 }
+#index .guide-navigation {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: auto;
+}
+#index .guide-navigation-link {
+  padding: 0;
+}
 @media screen and (min-width: 680px) {
   .guide-main, .guide-contentinfo {
     margin-left: 15rem;
@@ -8457,6 +8466,16 @@ body {
 .guide-navigation-link:hover, .guide-navigation-link--active {
   background-color: #2d3339;
   color: #fff;
+}
+#index .guide-navigation {
+  background-color: transparent;
+}
+#index .guide-navigation-link {
+  color: #3f8abf;
+}
+#index .guide-navigation-link:hover {
+  background-color: transparent;
+  color: #3f8abf;
 }
 .guide-content {
   background-color: #fff;
