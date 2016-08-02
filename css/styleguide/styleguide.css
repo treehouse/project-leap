@@ -8225,6 +8225,20 @@ ol {
   border: 0;
   margin: 0;
 }
+.form-feedback {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.form-feedback-success .form-feedback {
+  color: #36b55c;
+}
+.form-feedback-warning .form-feedback {
+  color: #ff9f1f;
+}
+.form-feedback-error .form-feedback {
+  color: #ed5a5a;
+}
 .form-label, .form-helper {
   display: block;
 }
@@ -8281,10 +8295,6 @@ ol {
 .form-text-input .placeholder, .form-textarea .placeholder {
   color: #7b8b8e;
 }
-.form-text-input:focus, .form-textarea:focus {
-  background-color: #fff;
-  border-color: #8c9aa6;
-}
 .form-feedback-success .form-text-input, .form-feedback-warning .form-text-input, .form-feedback-error .form-text-input, .form-feedback-success .form-textarea, .form-feedback-warning .form-textarea, .form-feedback-error .form-textarea {
   background-color: #fff;
 }
@@ -8296,6 +8306,22 @@ ol {
 }
 .form-feedback-error .form-text-input, .form-feedback-error .form-textarea {
   border-color: #ed5a5a;
+}
+.form-text-input:focus, .form-textarea:focus {
+  background-color: #fff;
+  border-color: #8c9aa6;
+}
+.form-feedback-success .form-text-input:focus, .form-feedback-warning .form-text-input:focus, .form-feedback-error .form-text-input:focus, .form-feedback-success .form-textarea:focus, .form-feedback-warning .form-textarea:focus, .form-feedback-error .form-textarea:focus {
+  background-color: #fff;
+}
+.form-feedback-success .form-text-input:focus, .form-feedback-success .form-textarea:focus {
+  border-color: #288644;
+}
+.form-feedback-warning .form-text-input:focus, .form-feedback-warning .form-textarea:focus {
+  border-color: #e18000;
+}
+.form-feedback-error .form-text-input:focus, .form-feedback-error .form-textarea:focus {
+  border-color: #e72323;
 }
 .form-select {
   -webkit-appearance: none !important;
@@ -8331,15 +8357,6 @@ ol {
   color: #7b8b8e;
   padding: 0.25rem 0;
 }
-.form-feedback-success .form-radio + .form-label, .form-feedback-success .form-checkbox + .form-label {
-  color: #36b55c;
-}
-.form-feedback-warning .form-radio + .form-label, .form-feedback-warning .form-checkbox + .form-label {
-  color: #ff9f1f;
-}
-.form-feedback-error .form-radio + .form-label, .form-feedback-error .form-checkbox + .form-label {
-  color: #ed5a5a;
-}
 .form-radio + .form-label:before, .form-checkbox + .form-label:before {
   content: "";
   display: inline-block;
@@ -8347,7 +8364,7 @@ ol {
   height: 1rem;
   position: relative;
   bottom: -2px;
-  margin-right: 0.25rem;
+  margin-right: 0.5rem;
 }
 .form-radio:checked + .form-label, .form-checkbox:checked + .form-label {
   color: #4b5658;
@@ -8397,25 +8414,39 @@ ol {
   padding: 0.75rem 1rem;
   cursor: pointer;
   transition: 0.2s;
+  margin-bottom: 0;
+}
+.form-feedback-success .form-upload + .form-label, .form-feedback-warning .form-upload + .form-label, .form-feedback-error .form-upload + .form-label {
+  background-color: #fff;
+}
+.form-feedback-success .form-upload + .form-label {
+  color: #36b55c;
+  border-color: #36b55c;
+}
+.form-feedback-warning .form-upload + .form-label {
+  color: #ff9f1f;
+  border-color: #ff9f1f;
+}
+.form-feedback-error .form-upload + .form-label {
+  color: #ed5a5a;
+  border-color: #ed5a5a;
 }
 .form-upload:focus + .form-label, .form-upload + .form-label:hover {
   background-color: #fff;
   border: 2px solid #8c9aa6;
   color: #4b5658;
 }
-.form-feedback {
-  display: block;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+.form-feedback-success .form-upload:focus + .form-label, .form-feedback-success .form-upload + .form-label:hover {
+  color: #288644;
+  border-color: #288644;
 }
-.form-feedback-success .form-feedback {
-  color: #36b55c;
+.form-feedback-warning .form-upload:focus + .form-label, .form-feedback-warning .form-upload + .form-label:hover {
+  color: #e18000;
+  border-color: #e18000;
 }
-.form-feedback-warning .form-feedback {
-  color: #ff9f1f;
-}
-.form-feedback-error .form-feedback {
-  color: #ed5a5a;
+.form-feedback-error .form-upload:focus + .form-label, .form-feedback-error .form-upload + .form-label:hover {
+  color: #e72323;
+  border-color: #e72323;
 }
 
 table {
