@@ -8,13 +8,17 @@ $form-background-active: #fff
 $form-border-active: darken($border-color-dark, 15%)
 $form-color-active: text-color(medium)
 
-
+// Form Feedback Defaults
+$form-feedback-success: ui-color(green)
+$form-feedback-warning: ui-color(orange)
+$form-feedback-error: ui-color(red)
 
 .form
   &-fieldset
     padding: 0
     border: 0
     margin: 0
+
   // Labels
   &-label,
   &-helper
@@ -38,7 +42,7 @@ $form-color-active: text-color(medium)
     font-size: .9rem
     margin-top: .5rem
 
-  // Inputs
+  // Inputs & Textareas
   &-text
     &-input,
     &area
@@ -64,13 +68,13 @@ $form-color-active: text-color(medium)
       .form-feedback-error &
         background-color: $form-background-active
       .form-feedback-success &
-        border-color: ui-color(green)
+        border-color: $form-feedback-success
       .form-feedback-warning &
-        border-color: ui-color(orange)
+        border-color: $form-feedback-warning
       .form-feedback-error &
-        border-color: ui-color(red)
+        border-color: $form-feedback-error
 
-  // Overriding the deault Select & Radio Styles
+  // Select Styles
   &-select
     -webkit-appearance: none !important
     -moz-appearance: none !important
@@ -89,8 +93,11 @@ $form-color-active: text-color(medium)
     &:focus
       background-color: $form-background-active
       border: 2px solid $form-border-active
+
+  // Radio & Checkboxes
   &-radio,
   &-checkbox
+    // Visually hiding the default elements
     width: 0.1px
     height: 0.1px
     opacity: 0
@@ -108,10 +115,7 @@ $form-color-active: text-color(medium)
         color: ui-color(orange)
       .form-feedback-error &
         color: ui-color(red)
-  // Overriding the deault Select & Radio Styles
-  &-radio,
-  &-checkbox
-    &+.form-label
+      // Building stylized elements to replace defaults
       &:before
         content: ''
         display: inline-block
@@ -123,39 +127,45 @@ $form-color-active: text-color(medium)
     &:checked
       &+.form-label
         color: $form-color-active
+    // Adding in focus states for accessibility
+    &:focus+.form-label
+      color: $form-color-active
+      &:before
+        border: 2px solid $form-border-active
+  // Default Radio Styles
   &-radio
-    &+.form-label
-      &:before
-        border-radius: 50%
-        border: 1px solid $border-color-mid
-    &:checked
-      &+.form-label
-        &:before
-          border: 5px solid ui-color(blue)
+    &+.form-label:before
+      border-radius: 50%
+      border: 1px solid $border-color-mid
+    // Selected Radio Styles
+    &:checked+.form-label:before
+      border: 5px solid ui-color(blue)
+  // Default Checkbox Styles
   &-checkbox
-    &+.form-label
-      &:before
-        content: ''
-        display: inline-block
-        width: 1rem
-        height: 1rem
-        border-radius: $border-radius
-        border: 1px solid $border-color-mid
-    &:checked
-      &+.form-label
-        &:before
-          border: none
-          background-color: ui-color(blue)
-          background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%0D%0A%09%3Cpath%20fill%3D%27%23FFFFFF%27%20d%3D%27M7%2C11c-0.3%2C0-0.5-0.1-0.7-0.3l-3-3c-0.4-0.4-0.4-1%2C0-1.4s1-0.4%2C1.4%2C0l2.2%2C2.2l4.3-5.2%0D%0A%09%09c0.4-0.4%2C1-0.5%2C1.4-0.1c0.4%2C0.4%2C0.5%2C1%2C0.1%2C1.4l-5%2C6C7.6%2C10.9%2C7.3%2C11%2C7%2C11C7%2C11%2C7%2C11%2C7%2C11z%27%2F%3E%0D%0A%3C%2Fsvg%3E")
-          background-repeat: none
-          background-position: center 1px
+    &+.form-label:before
+      content: ''
+      display: inline-block
+      width: 1rem
+      height: 1rem
+      border-radius: $border-radius
+      border: 1px solid $border-color-mid
+    // Slected Checkbox Styles
+    &:checked+.form-label:before
+      border: none
+      background-color: ui-color(blue)
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%0D%0A%09%3Cpath%20fill%3D%27%23FFFFFF%27%20d%3D%27M7%2C11c-0.3%2C0-0.5-0.1-0.7-0.3l-3-3c-0.4-0.4-0.4-1%2C0-1.4s1-0.4%2C1.4%2C0l2.2%2C2.2l4.3-5.2%0D%0A%09%09c0.4-0.4%2C1-0.5%2C1.4-0.1c0.4%2C0.4%2C0.5%2C1%2C0.1%2C1.4l-5%2C6C7.6%2C10.9%2C7.3%2C11%2C7%2C11C7%2C11%2C7%2C11%2C7%2C11z%27%2F%3E%0D%0A%3C%2Fsvg%3E")
+      background-repeat: none
+      background-position: center 1px
+  // Upload Styles
   &-upload
+    // Visually hiding the default file upload input
     width: 0.1px
     height: 0.1px
     opacity: 0
     overflow: hidden
     position: absolute
     z-index: -1
+    // Overlaying the input label on top of the file upload input
     & + .form-label
       background-color: $form-background-inactive
       color: $form-color-inactive
@@ -165,17 +175,14 @@ $form-color-active: text-color(medium)
       padding: .75rem 1rem
       cursor: pointer
       transition: .2s
+    // Adding in focus & hover states
     &:focus + .form-label,
     & + .form-label:hover
       background-color: $form-background-active
       border: 2px solid $form-border-active
       color: $form-color-active
-    &:focus + .form-label
-      background-color: $form-background-active
-      border: 2px solid $form-border-active
-      color: $form-color-active
 
-  // Feedback
+  // Form Feedback
   &-feedback
     display: block
     margin-top: .5rem

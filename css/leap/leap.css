@@ -8231,6 +8231,12 @@ ol {
 .form-radio:checked + .form-label, .form-checkbox:checked + .form-label {
   color: #4b5658;
 }
+.form-radio:focus + .form-label, .form-checkbox:focus + .form-label {
+  color: #4b5658;
+}
+.form-radio:focus + .form-label:before, .form-checkbox:focus + .form-label:before {
+  border: 2px solid #8c9aa6;
+}
 .form-radio + .form-label:before {
   border-radius: 50%;
   border: 1px solid #d4d9dd;
@@ -8272,11 +8278,6 @@ ol {
   transition: 0.2s;
 }
 .form-upload:focus + .form-label, .form-upload + .form-label:hover {
-  background-color: #fff;
-  border: 2px solid #8c9aa6;
-  color: #4b5658;
-}
-.form-upload:focus + .form-label {
   background-color: #fff;
   border: 2px solid #8c9aa6;
   color: #4b5658;

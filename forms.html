@@ -101,7 +101,7 @@ navigation_weight: 10
   <h2 class="m-b-1-xs">Radios</h2>
 
   <form class="m-b-2-xs">
-    <input type="radio" id="form-radio-1" class="form-radio" name="radio" checked="checked">
+    <input type="radio" id="form-radio-1" class="form-radio" name="radio">
     <label for="form-radio-1" class="form-label">
       Radio Label 1
     </label>
@@ -171,11 +171,11 @@ navigation_weight: 10
   </form>
   <div class="guide-code m-b-4-xs">
   <pre><code class="language-html">&lt;form&gt;
-&lt;fieldset class="form-feedback-success form-fieldset"&gt;
-&lt;label for="" class="form-label"&gt;Input Label&lt;/label&gt;
-&lt;input type="text" class="form-text-input"&gt;
-&lt;span class="form-feedback"&gt;Hasta La Vista, Baby!&lt;/span&gt;
-&lt;/fieldset&gt;
+  &lt;fieldset class="form-feedback-success form-fieldset"&gt;
+  &lt;label for="" class="form-label"&gt;Input Label&lt;/label&gt;
+  &lt;input type="text" class="form-text-input"&gt;
+  &lt;span class="form-feedback"&gt;Hasta La Vista, Baby!&lt;/span&gt;
+  &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
   </div>
 
@@ -184,18 +184,18 @@ navigation_weight: 10
 
   <form class="m-b-2-xs">
     <fieldset class="form-feedback-warning form-fieldset">
-      <label for="" class="form-label">Input Label</label>
-      <input type="text" class="form-text-input">
+      <input type="file" class="form-upload" id="form-upload-1">
+      <label for="form-upload-1" class="form-label">Upload File...</label>
       <span class="form-feedback">It's not a tumor</span>
     </fieldset>
   </form>
   <div class="guide-code m-b-4-xs">
   <pre><code class="language-html">&lt;form&gt;
-&lt;fieldset class="form-feedback-warning form-fieldset"&gt;
-&lt;label for="" class="form-label"&gt;Input Label&lt;/label&gt;
-&lt;input type="text" class="form-text-input"&gt;
-&lt;span class="form-feedback"&gt;It's not a tumor&lt;/span&gt;
-&lt;/fieldset&gt;
+  &lt;fieldset class="form-feedback-warning form-fieldset"&gt;
+  &lt;label for="" class="form-label"&gt;Input Label&lt;/label&gt;
+  &lt;input type="text" class="form-text-input"&gt;
+  &lt;span class="form-feedback"&gt;It's not a tumor&lt;/span&gt;
+  &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
   </div>
 
@@ -204,8 +204,15 @@ navigation_weight: 10
 
   <form class="m-b-2-xs">
     <fieldset class="form-feedback-error form-fieldset">
-      <label for="" class="form-label">Input Label</label>
-      <input type="text" class="form-text-input">
+      <input type="checkbox" id="form-checkbox-1" class="form-checkbox">
+      <label for="form-checkbox-1" class="form-label">
+        Checkbox Label 1
+      </label>
+
+      <input type="checkbox" id="form-checkbox-2" class="form-checkbox">
+      <label for="form-checkbox-2" class="form-label">
+        Checkbox Label 2
+      </label>
       <span class="form-feedback">Get to the chopper!</span>
     </fieldset>
   </form>
@@ -216,7 +223,7 @@ navigation_weight: 10
   &lt;input type="text" class="form-text-input"&gt;
   &lt;span class="form-feedback"&gt;Get to the chopper!&lt;/span&gt;
   &lt;/fieldset&gt;
-  &lt;/form&gt;</code></pre>
+&lt;/form&gt;</code></pre>
   </div>
 
 </section>
