@@ -8420,16 +8420,16 @@ ol {
   background-color: #fff;
 }
 .form-feedback-success .form-upload + .form-label {
-  color: #36b55c;
   border-color: #36b55c;
+  color: #36b55c;
 }
 .form-feedback-warning .form-upload + .form-label {
-  color: #ff9f1f;
   border-color: #ff9f1f;
+  color: #ff9f1f;
 }
 .form-feedback-error .form-upload + .form-label {
-  color: #ed5a5a;
   border-color: #ed5a5a;
+  color: #ed5a5a;
 }
 .form-upload:focus + .form-label, .form-upload + .form-label:hover {
   background-color: #fff;
@@ -8437,16 +8437,16 @@ ol {
   color: #4b5658;
 }
 .form-feedback-success .form-upload:focus + .form-label, .form-feedback-success .form-upload + .form-label:hover {
-  color: #288644;
   border-color: #288644;
+  color: #288644;
 }
 .form-feedback-warning .form-upload:focus + .form-label, .form-feedback-warning .form-upload + .form-label:hover {
-  color: #e18000;
   border-color: #e18000;
+  color: #e18000;
 }
 .form-feedback-error .form-upload:focus + .form-label, .form-feedback-error .form-upload + .form-label:hover {
-  color: #e72323;
   border-color: #e72323;
+  color: #e72323;
 }
 
 table {

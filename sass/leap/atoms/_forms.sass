@@ -16,6 +16,31 @@ $form-feedback-active-success: darken(ui-color(green), 12%)
 $form-feedback-active-warning: darken(ui-color(orange), 12%)
 $form-feedback-active-error: darken(ui-color(red), 12%)
 
+// Form States
+$form-states: success, warning, error
+
+// Mixin for creating form-feedback styles
+@mixin form-feedback($properties...)
+  @each $state in $form-states
+    .form-feedback-#{$state} &
+      @each $prop in $properties
+        #{$prop}: form-feedback-var($state)
+
+// Mixin for creating form-feedback-active styles
+@mixin form-feedback-active($properties...)
+  @each $state in $form-states
+    .form-feedback-#{$state} &
+      @each $prop in $properties
+        #{$prop}: form-feedback-var-active($state)
+
+// Mixin for creating uniform bg across all form states
+@mixin form-feedback-bg-active
+  .form-feedback-success &,
+  .form-feedback-warning &,
+  .form-feedback-error &
+    background-color: $form-background-active
+
+
 
 .form
   &-fieldset
@@ -28,12 +53,7 @@ $form-feedback-active-error: darken(ui-color(red), 12%)
     display: block
     margin-top: .5rem
     font-size: .9rem
-    .form-feedback-success &
-      color: $form-feedback-success
-    .form-feedback-warning &
-      color: $form-feedback-warning
-    .form-feedback-error &
-      color: $form-feedback-error
+    +form-feedback(color)
 
   // Labels
   &-label,
@@ -46,12 +66,8 @@ $form-feedback-active-error: darken(ui-color(red), 12%)
     &-required
       color: red
       font-weight: $bold
-    .form-feedback-success &
-      color: ui-color(green)
-    .form-feedback-warning &
-      color: ui-color(orange)
-    .form-feedback-error &
-      color: ui-color(red)
+    +form-feedback(color)
+
   // Helper Text
   &-helper
     color: text-color(light)
@@ -78,31 +94,15 @@ $form-feedback-active-error: darken(ui-color(red), 12%)
       +placeholder-style
         color: $form-color-inactive
       // Input & Textarea Form Feedback Styles
-      .form-feedback-success &,
-      .form-feedback-warning &,
-      .form-feedback-error &
-        background-color: $form-background-active
-      .form-feedback-success &
-        border-color: $form-feedback-success
-      .form-feedback-warning &
-        border-color: $form-feedback-warning
-      .form-feedback-error &
-        border-color: $form-feedback-error
+      +form-feedback-bg-active
+      +form-feedback(border-color)
       // Default Focus State
       &:focus
         background-color: $form-background-active
         border-color: $form-border-active
         // Focus & Hover States for Form Feedback
-        .form-feedback-success &,
-        .form-feedback-warning &,
-        .form-feedback-error &
-          background-color: $form-background-active
-        .form-feedback-success &
-          border-color: $form-feedback-active-success
-        .form-feedback-warning &
-          border-color: $form-feedback-active-warning
-        .form-feedback-error &
-          border-color: $form-feedback-active-error
+        +form-feedback-bg-active
+        +form-feedback-active(border-color)
 
   // Select Styles
   &-select
@@ -201,19 +201,8 @@ $form-feedback-active-error: darken(ui-color(red), 12%)
       transition: .2s
       margin-bottom: 0
       // Feedback Styles
-      .form-feedback-success &,
-      .form-feedback-warning &,
-      .form-feedback-error &
-        background-color: $form-background-active
-      .form-feedback-success &
-        color: $form-feedback-success
-        border-color: $form-feedback-success
-      .form-feedback-warning &
-        color: $form-feedback-warning
-        border-color: $form-feedback-warning
-      .form-feedback-error &
-        color: $form-feedback-error
-        border-color: $form-feedback-error
+      +form-feedback-bg-active
+      +form-feedback(border-color, color)
     // Adding in focus & hover states
     &:focus + .form-label,
     & + .form-label:hover
@@ -221,12 +210,4 @@ $form-feedback-active-error: darken(ui-color(red), 12%)
       border: 2px solid $form-border-active
       color: $form-color-active
       // Focused & Hover states for form feedback
-      .form-feedback-success &
-        color: $form-feedback-active-success
-        border-color: $form-feedback-active-success
-      .form-feedback-warning &
-        color: $form-feedback-active-warning
-        border-color: $form-feedback-active-warning
-      .form-feedback-error &
-        color: $form-feedback-active-error
-        border-color: $form-feedback-active-error
+      +form-feedback-active(border-color, color)
