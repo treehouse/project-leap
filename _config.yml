@@ -24,6 +24,4 @@ exclude:
     - node_modules
 
 # Build settings
-markdown: kramdown
-
-# environment: development
+# markdown: kramdown
