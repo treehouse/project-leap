@@ -353,7 +353,18 @@ Talk about variables, functions, mixins available in Leap
 * [ ] Documentation
 
 
+Library Sprint List
+---
+We are going to take 2 weeks to try and build out the library page as a proof of concept.
 
+* [ ] Alert Banners
+* [ ] Control Bar
+* [ ] Welcome Banners
+* [ ] Cards
+* [ ] Tool Tips
+* [ ] Coming soon Pills (add to buttons Atom)
+* [ ] Modals
+* [ ] Topic Icons
 
 Extensive Lists
 ---
