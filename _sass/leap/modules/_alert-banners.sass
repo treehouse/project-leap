@@ -1,0 +1,37 @@
+.alert
+  &-banner
+    background-color: gray-color(gray)
+    border-radius: $border-radius
+    padding: 1rem
+    position: relative
+    &-success
+      background-color: ui-color(green)
+    &-warning
+      background-color: ui-color(yellow)
+    &-error
+      background-color: ui-color(red)
+  &-icon
+    width: 1.5rem
+    height: 1.5rem
+    vertical-align: middle
+    display: inline-block
+    background-color: #fff
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
+
+    & + .alert-message
+      padding-left: 2.5rem
+
+  &-message
+    display: inline-block
+    color: text-color(dark)
+  &-action
+    +appearance(none)
+    background-color: transparent
+    border: none
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
