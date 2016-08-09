@@ -1,9 +1,34 @@
+// Alert Default Colors
+$alert-default-background: gray-color(gray)
+$alert-default-text: text-color(dark)
+$alert-default-background-active: darken(gray-color(gray), 8%)
+
+// Alert Success Colors
+$alert-success-background: ui-color(green)
+$alert-success-text: #fff
+$alert-success-background-active: desaturate(darken(ui-color(green), 7%), 5%)
+
+// Alert Warning Colors
+$alert-warning-background: ui-color(yellow)
+$alert-warning-text: darken(ui-color(yellow), 45%)
+$alert-warning-background-active: desaturate(darken(ui-color(yellow), 10%), 20%)
+
+// Alert Error Colors
+$alert-error-background: ui-color(red)
+$alert-error-text: #fff
+$alert-error-background-active: desaturate(darken(ui-color(red), 10%), 20%)
+
+// Alert States
+$alert-states: success, warning, error
+
+
 .alert
   &__banner
     background-color: gray-color(gray)
     border-radius: $border-radius
     padding: 1rem
     position: relative
+    overflow: hidden
     &--success
       background-color: ui-color(green)
     &--warning
@@ -23,14 +48,14 @@
       padding-left: 2.5rem
   &__message
     display: inline-block
-    color: text-color(dark)
+    color: $alert-default-text
     padding-right: 200px
     max-width: 1100px
     .alert__banner--success &,
     .alert__banner--error &
-      color: #fff
+      color: $alert-success-text
     .alert__banner--warning &
-      color: darken(ui-color(yellow), 45%)
+      color: $alert-warning-text
   // Styling if there is an action
   // This can either be a close icon, or a normal button
   &__action
@@ -40,6 +65,15 @@
       bottom: 0
       right: 0
       width: 160px
+      transition: .2s
+      &:hover
+        background-color: $alert-default-background-active
+        .alert__banner--success &
+          background-color: $alert-success-background-active
+        .alert__banner--warning &
+          background-color: $alert-warning-background-active
+        .alert__banner--error &
+          background-color: $alert-error-background-active
       &:before
         content: ''
         position: absolute
@@ -47,14 +81,15 @@
         bottom: 0
         left: -1px
         width: 2px
-        background-color: darken(gray-color(gray), 10%)
+        background-color: $alert-default-background-active
         .alert__banner--success &
-          background-color: desaturate(darken(ui-color(green), 5%), 5%)
+          background-color: $alert-success-background-active
         .alert__banner--warning &
-          background-color: desaturate(darken(ui-color(yellow), 10%), 20%)
+          background-color: $alert-warning-background-active
         .alert__banner--error &
-          background-color: desaturate(darken(ui-color(red), 10%), 20%)
+          background-color: $alert-error-background-active
     &--text
+      color: $alert-default-text
       top: 50%
       position: absolute
       transform: translateY(-50%)
@@ -62,9 +97,9 @@
       text-align: center
       .alert__banner--success &,
       .alert__banner--error &
-        color: #fff
+        color: $alert-success-text
       .alert__banner--warning &
-        color: darken(ui-color(yellow), 45%)
+        color: $alert-warning-text
     // Styling for Close Icon
     &--close
       background-color: transparent
