@@ -19,16 +19,13 @@
     position: absolute
     top: 50%
     transform: translateY(-50%)
-
-
     & + .alert__message
       padding-left: 2.5rem
-
   &__message
     display: inline-block
     color: text-color(dark)
-    padding-right: 5rem
-    max-width: 900px
+    padding-right: 200px
+    max-width: 1100px
     .alert__banner--success &,
     .alert__banner--error &
       color: #fff
@@ -37,16 +34,37 @@
   // Styling if there is an action
   // This can either be a close icon, or a normal button
   &__action
-    position: absolute
-    top: 50%
-    right: 1.5rem
-    transform: translateY(-50%)
-    display: block
-    .alert-banner-success &,
-    .alert-banner-error &
-      color: #fff
-    .alert-banner-warning &
-      color: darken(ui-color(yellow), 45%)
+    &--fixed
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      width: 160px
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        left: -1px
+        width: 2px
+        background-color: darken(gray-color(gray), 10%)
+        .alert__banner--success &
+          background-color: desaturate(darken(ui-color(green), 5%), 5%)
+        .alert__banner--warning &
+          background-color: desaturate(darken(ui-color(yellow), 10%), 20%)
+        .alert__banner--error &
+          background-color: desaturate(darken(ui-color(red), 10%), 20%)
+    &--text
+      top: 50%
+      position: absolute
+      transform: translateY(-50%)
+      width: 100%
+      text-align: center
+      .alert__banner--success &,
+      .alert__banner--error &
+        color: #fff
+      .alert__banner--warning &
+        color: darken(ui-color(yellow), 45%)
     // Styling for Close Icon
     &--close
       background-color: transparent
@@ -54,6 +72,3 @@
       position: absolute
       top: 0
       right: 0
-      bottom: 0
-      display: block
-      vertical-align: middle
