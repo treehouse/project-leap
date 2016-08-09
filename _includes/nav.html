@@ -2,7 +2,7 @@
 {% for p in navigation_pages %}
   {% if p.navigation_weight %}
     <li class="guide-navigation-item">
-      <a href="{{ site.baseurl }}/{{ p.url }}" {% if p.url == page.url %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
+      <a href="{{ site.baseurl }}{{ p.url }}" {% if p.url == page.url %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
         {{ p.title }}
       </a>
     </li>
