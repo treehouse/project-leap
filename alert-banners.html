@@ -7,36 +7,49 @@ navigation_weight: 12
 <section id="alert-banners">
 
   <!-- Labels -->
-  <h2 class="m-b-1-xs">Alert Banners</h2>
   <p class="m-b-2-xs">Alerts are used to give deliver success, warning, or error messages to users on a page. They are designed to deliver short, useful messages. The <code>.alert__action--close</code> and <code>.alert__action--fixed</code> are optional elements that can be used.</p>
 
-  <p class="m-b-2-xs">The <code>.alert__message</code> element is set with a right padding of 200px to allow space for the close and fixed actions. You can use Leap's Atom classes to expand the width of the fixed action and right padding if necessary.</p>
+  <p class="m-b-2-xs">The <code>.alert__message</code> element has by default a right padding of 200px to allow space for the close and fixed actions. You can use Leap's Atom classes to expand the width of the fixed action and the message element's right padding when necessary.</p>
 
+  <h2 class="m-b-1-xs">Default Alert</h2>
+  <p class="m-b-1-xs">To get Leap's default alert style use the <code>.alert__banner</code> class.</p>
   <div class="alert__banner">
     <p class="alert__message"><strong>Alert!</strong> This is an alert banner with no status set.</p>
   </div>
-  <pre><code class="language-html">&lt;div class="alert__banner"&gt;
-  &lt;p class="alert__message"&gt;&lt;strong&gt;Alert!&lt;/strong&gt; This is an alert banner with no status set.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+  <div class="guide-code m-b-4-xs">
+    <pre><code class="language-html">&lt;div class="alert__banner"&gt;
+    &lt;p class="alert__message"&gt;&lt;strong&gt;Alert!&lt;/strong&gt; This is an alert banner with no status set.&lt;/p&gt;
+  &lt;/div&gt;</code></pre>
+  </div>
 
+  <h2 class="m-b-1-xs">Success Alert</h2>
+  <p class="m-b-1-xs">Use the <code>.alert__banner--success</code> to get the styles for Leap's alert success state.</p>
   <div class="alert__banner alert__banner--success">
     <p class="alert__message"><strong>Success!</strong> This alert is green to communicate success!</p>
   </div>
-  <pre><code class="language-html">&lt;div class="alert__banner alert__banner--success"&gt;
+  <div class="guide-code m-b-4-xs">
+    <pre><code class="language-html">&lt;div class="alert__banner alert__banner--success"&gt;
   &lt;p class="alert__message"&gt;&lt;strong&gt;Success!&lt;/strong&gt; This alert is green to communicate success!&lt;/p&gt;
 &lt;/div&gt;</code></pre>
+  </div>
 
+  <h2 class="m-b-1-xs">Warning Alert</h2>
+  <p class="m-b-1-xs">Use the <code>.alert__banner--warning</code> to get the styles for Leap's alert warning state. You can prepend the message with <code>.alert__icon</code> to add an icon to the banner.</p>
   <div class="alert__banner alert__banner--warning">
     <span class="alert__icon circle"></span>
     <p class="alert__message"><strong>Warning!</strong> This yellow to communicate caution. It has the close action.</p>
     <a class="alert__action--close">X</a>
   </div>
-  <pre><code class="language-html">&lt;div class="alert__banner alert__banner--warning"&gt;
+  <div class="guide-code m-b-4-xs">
+    <pre><code class="language-html">&lt;div class="alert__banner alert__banner--warning"&gt;
   &lt;span class="alert__icon"&gt;&lt;/span&gt;
   &lt;p class="alert__message"&gt;&lt;strong&gt;Warning!&lt;/strong&gt; This yellow to communicate caution. It has the close action.&lt;/p&gt;
   &lt;a class="alert__action--close"&gt;X&lt;/a&gt;
 &lt;/div&gt;</code></pre>
+  </div>
 
+  <h2 class="m-b-1-xs">Error Alert</h2>
+  <p class="m-b-1-xs">Use the <code>.alert__banner--warning</code> to get the styles for Leap's alert error state.</p>
   <div class="alert__banner alert__banner--error">
     <span class="alert__icon circle"></span>
     <p class="alert__message"><strong>Error!</strong> This is an error alert to communicate failure. It also has a fixed action and has text that will span multiple lines to demonstrate how the alert breaks down.</p>
@@ -44,6 +57,7 @@ navigation_weight: 12
       <span class="alert__action--text">Alert Action</span>
     </a>
   </div>
+  <div class="guide-code m-b-4-xs">
   <pre><code class="language-html">&lt;div class="alert__banner alert__banner--error"&gt;
   &lt;span class="alert__icon circle"&gt;&lt;/span&gt;
   &lt;p class="alert__message"&gt;&lt;strong&gt;Error!&lt;/strong&gt; This is an error alert to communicate failure. It also has a fixed action and has text that will span multiple lines to demonstrate how the alert breaks down.&lt;/p&gt;
@@ -51,6 +65,7 @@ navigation_weight: 12
     &lt;span class="alert__action--text"&gt;Alert Action&lt;/span&gt;
   &lt;/a&gt;
 &lt;/div&gt;</code></pre>
+  </div>
 
 
 </section>
