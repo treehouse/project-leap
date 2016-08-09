@@ -27,11 +27,25 @@
   &-message
     display: inline-block
     color: text-color(dark)
+    padding-right: 5rem
+    .alert-banner-success &,
+    .alert-banner-error &
+      color: #fff
+    .alert-banner-warning &
+      color: darken(ui-color(yellow), 45%)
+  // Styling if there is an action
+  // This can either be a close icon, or a normal button
   &-action
-    +appearance(none)
-    background-color: transparent
-    border: none
     position: absolute
-    top: 0
-    right: 0
-    bottom: 0
+    top: 50%
+    right: 1rem
+    transform: translateY(-50%)
+    display: block
+    &-close
+      background-color: transparent
+      border: none
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      display: block
