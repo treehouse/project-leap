@@ -1,16 +1,16 @@
 .alert
-  &-banner
+  &__banner
     background-color: gray-color(gray)
     border-radius: $border-radius
     padding: 1rem
     position: relative
-    &-success
+    &--success
       background-color: ui-color(green)
-    &-warning
+    &--warning
       background-color: ui-color(yellow)
-    &-error
+    &--error
       background-color: ui-color(red)
-  &-icon
+  &__icon
     width: 1.5rem
     height: 1.5rem
     vertical-align: middle
@@ -21,27 +21,34 @@
     transform: translateY(-50%)
 
 
-    & + .alert-message
+    & + .alert__message
       padding-left: 2.5rem
 
-  &-message
+  &__message
     display: inline-block
     color: text-color(dark)
     padding-right: 5rem
+    max-width: 900px
+    .alert__banner--success &,
+    .alert__banner--error &
+      color: #fff
+    .alert__banner--warning &
+      color: darken(ui-color(yellow), 45%)
+  // Styling if there is an action
+  // This can either be a close icon, or a normal button
+  &__action
+    position: absolute
+    top: 50%
+    right: 1.5rem
+    transform: translateY(-50%)
+    display: block
     .alert-banner-success &,
     .alert-banner-error &
       color: #fff
     .alert-banner-warning &
       color: darken(ui-color(yellow), 45%)
-  // Styling if there is an action
-  // This can either be a close icon, or a normal button
-  &-action
-    position: absolute
-    top: 50%
-    right: 1rem
-    transform: translateY(-50%)
-    display: block
-    &-close
+    // Styling for Close Icon
+    &--close
       background-color: transparent
       border: none
       position: absolute
@@ -49,3 +56,4 @@
       right: 0
       bottom: 0
       display: block
+      vertical-align: middle
