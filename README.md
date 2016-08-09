@@ -15,7 +15,7 @@ Way to go, nerd. You should be up and running now!
 
 Todo Percentage
 ===
-174 of 241 done (72.1%)
+196 of 241 done (81.3%)
 
 
 Building Blocks (Atoms)
@@ -158,24 +158,24 @@ Forms
 ---
 Forms should always live within a `<form>` element.
 
-* [ ] Labels
-  * [ ] Documentation
-* [ ] Inputs
-  * [ ] Documentation
-* [ ] Textareas
-  * [ ] Documentation
-* [ ] Selects
-  * [ ] Documentation
-* [ ] Radio Buttons
-  * [ ] Documentation
-* [ ] Checkboxes
-  * [ ] Documentation
-* [ ] Form Warnings
-  * [ ] Documentation
-* [ ] Form Errors
-  * [ ] Documentation
-* [ ] Form Success
-  * [ ] Documentation
+* [x] Labels
+  * [x] Documentation
+* [x] Inputs
+  * [x] Documentation
+* [x] Textareas
+  * [x] Documentation
+* [x] Selects
+  * [x] Documentation
+* [x] Radio Buttons
+  * [x] Documentation
+* [x] Checkboxes
+  * [x] Documentation
+* [x] Form Warnings
+  * [x] Documentation
+* [x] Form Errors
+  * [x] Documentation
+* [x] Form Success
+  * [x] Documentation
 
 
 
@@ -347,10 +347,10 @@ Components
 Sass
 ---
 Talk about variables, functions, mixins available in Leap
-* [ ] Variables
-* [ ] Functions
-* [ ] Mixins
-* [ ] Documentation
+* [x] Variables
+* [x] Functions
+* [x] Mixins
+* [x] Documentation
 
 
 Library Sprint List
