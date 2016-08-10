@@ -6,7 +6,7 @@ navigation_weight: 11
 
 <section id="icons">
 
-  <h2 class="m-b-1-xs">Common UI Icons</h2>
+  <h2 class="m-b-1-xs inline-block-xs">Common UI Icons</h2><span class="button button--small-xs circle relative-xs pos-t-05-xs pos-l-1-xs">WIP: Only use in docs</span>
   <p class="m-b-2-xs">Currently, Leap only comes with a few basic icons that will cover a lot of common UI pieces. For all other icons, continue using our rails helper that is built into the Treehouse app.</p>
   <table class="table-border-rows m-b-4-xs">
     <thead>
@@ -78,21 +78,5 @@ navigation_weight: 11
       </tr>
     </tbody>
   </table>
-
-  <h3 class="m-b-1-xs">App Icons</h3>
-  <p class="m-b-2-xs">We already have a lot of icons and a handy rails helper in the Treehouse app, here's how to use it.</p>
-  <p class="bold m-b-1-xs">Displaying an icon:</p>
-  <ul class="m-b-3-xs">
-    <li>Locate the unique id of the icon, which is the filename of the icon itself. (e.g. <code>#logo</code>)</li>
-    <li>In most cases, using the icon helper with the unique id will work just fine. (e.g. <code><%= icon('#logo') %></code>)</li>
-    <li>In some cases, you may need to add styles/color to several paths inside of the icon. In this case, you'll need inject the svg/html of the icon directly into the page by using the path to the icon file. (e.g. <code><%= icon('layouts/treehouse/ipad') %></code>)</li>
-  </ul>
-
-  <p class="bold m-b-1-xs">Styling an icon:</p>
-  <ul>
-    <li>To change the color of an icon, simply apply the following css: <code>.logo-icon { fill: #fff }</code></li>
-    <li>To add a drop-shadow to the icon, simply add: <code>.logo-icon { box-shadow: 0 1px 0 rgba(#000,.5) }</code></li>
-    <li>To change the size of an icon, simply add: <code>.logo-icon { width: 100px; height: 100px }</code></li>
-  </ul>
 
 </section>
