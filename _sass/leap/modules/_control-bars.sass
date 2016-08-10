@@ -5,25 +5,27 @@
   box-shadow: 0 2px 0 rgba(#000,.1)
   position: relative
   padding: 0 1.5rem
-  display: table
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: space-between
+  width: 100%
 
 // Search
 .search
-  display: table-cell
-  width: 100%
+  flex-grow: 2
   &__form
-    position: absolute
-    left: 1.25rem
-    top: .5rem
-    bottom: .5rem
-    width: 100%
     display: table
+    width: 100%
+    margin: .5rem 0
   &__label
-    margin-right: .5rem
     display: table-cell
+    width: 16px
+    height: 16px
   &__icon
     width: 16px
     height: 16px
+    margin-right: .5rem
     display: inline-block
     vertical-align: middle
     background-color: gray-color(gray-light)
@@ -33,9 +35,11 @@
   &__input
     border: none
     outline: none
+    padding-right: 3rem
     line-height: 2.4rem
     width: 100%
     display: table-cell
+    color: text-color(base)
 
 
 //Filters
@@ -51,6 +55,10 @@
     display: block
     font-size: 1rem
     padding: 1rem .5rem
+    color: text-color(base)
+    transition: .2s
+    &:hover
+      color: text-color(medium)
   &__items
     display: none
     padding: 0
