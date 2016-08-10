@@ -25,6 +25,8 @@ body
     font-size: 2rem
     font-weight: $bold
     text-decoration: none
+    +selected
+      color: #fff
 
   // =========================================
   // Guide Navigation
@@ -36,6 +38,8 @@ body
       font-size: 0.875rem
       text-decoration: none
       &:hover,
+      &:active,
+      &:focus,
       &--active
         background-color: gray-color(gray-darker)
         color: #fff
