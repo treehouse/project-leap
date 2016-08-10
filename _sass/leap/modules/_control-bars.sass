@@ -1,0 +1,63 @@
+// Control Bar
+.control-bar
+  background-color: #fff
+  border-radius: $border-radius
+  box-shadow: 0 2px 0 rgba(#000,.1)
+  position: relative
+  padding: 0 1.5rem
+  display: table
+
+// Search
+.search
+  display: table-cell
+  width: 100%
+  &__form
+    position: absolute
+    left: 1.25rem
+    top: .5rem
+    bottom: .5rem
+    width: 100%
+    display: table
+  &__label
+    margin-right: .5rem
+    display: table-cell
+  &__icon
+    width: 16px
+    height: 16px
+    display: inline-block
+    vertical-align: middle
+    background-color: gray-color(gray-light)
+    &--search
+    &--loading
+      display: none
+  &__input
+    border: none
+    outline: none
+    line-height: 2.4rem
+    width: 100%
+    display: table-cell
+
+
+//Filters
+.filter
+  position: relative
+  display: inline-block
+  &__container
+    list-style: none
+    padding: 0
+    text-align: right
+    display: table-cell
+  &__label
+    display: block
+    font-size: 1rem
+    padding: 1rem .5rem
+  &__items
+    display: none
+    padding: 0
+    list-style: none
+    position: absolute
+    top: 100%
+    left: 0
+  &__item
+  &__value
+    &--selected
