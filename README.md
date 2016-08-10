@@ -12,6 +12,10 @@ To get Jekyll running follow these steps:
 Way to go, nerd. You should be up and running now!
 
 
+SVG Icon Sprites
+===
+The technique we're using can be found here: [https://www.sitepoint.com/a-working-svg-workflow-for-accessible-icons/](https://www.sitepoint.com/a-working-svg-workflow-for-accessible-icons/)
+
 
 Todo Percentage
 ===
