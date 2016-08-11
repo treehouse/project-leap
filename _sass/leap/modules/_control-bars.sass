@@ -6,14 +6,19 @@
   position: relative
   padding: 0 1.5rem
   display: flex
-  flex-direction: row
-  flex-wrap: nowrap
-  justify-content: space-between
   width: 100%
+  @media screen
+    flex-direction: column
+  +media (min-width $md)
+    flex-direction: row
+
 
 // Search
 .search
-  flex-grow: 2
+  @media screen
+    flex-grow: 1
+  +media (min-width $md)
+    flex-grow: 2
   &__form
     display: table
     width: 100%
@@ -35,37 +40,86 @@
   &__input
     border: none
     outline: none
-    padding-right: 3rem
     line-height: 2.4rem
     width: 100%
     display: table-cell
     color: text-color(base)
-
+    +placeholder-style
+      color: text-color(light)
+    +media(min-width $md)
+      padding-right: 3rem
 
 //Filters
 .filter
   position: relative
-  display: inline-block
+  @media screen
+    display: block
+    border-top: 1px solid $border-color-light
+  +media (min-width $md)
+    display: inline-block
   &__container
     list-style: none
     padding: 0
-    text-align: right
-    display: table-cell
+    +media (min-width $md)
+      display: table-cell
+      text-align: right
   &__label
     display: block
     font-size: 1rem
-    padding: 1rem .5rem
+    font-weight: $bold
     color: text-color(base)
     transition: .2s
+    @media screen
+      padding: 1rem 0
+    +media (min-width $md)
+      padding: 1rem .5rem
+      margin-left: .5rem
     &:hover
       color: text-color(medium)
+      .filter__label--icon
+        fill: text-color(medium)
+    &--icon
+      width: 12px
+      height: auto
+      fill: gray-color(gray)
+      vertical-align: middle
+      margin: 0 .25rem
+      transition: .2s
+      position: relative
+      top: -1px
+  &__item
+    text-align: left
+    .topic__circle
+      margin-right: 1rem
   &__items
     display: none
     padding: 0
     list-style: none
     position: absolute
     top: 100%
-    left: 0
-  &__item
+    right: 0
+    background-color: #fff
+    border: 1px solid $border-color-light
+    border-radius: $border-radius
+    padding: .25rem 0
+    width: auto
+    min-width: 120px
+    max-width: 300px
   &__value
+    display: block
+    color: text-color(base)
+    padding: .25rem 1.5rem .25rem 2.5rem
+    white-space: nowrap
+    &:hover
+      background-color: gray-color(gray-lighter)
+      color: text-color(base)
     &--selected
+
+
+// Topic Circles
+.topic
+  &__circle
+    &--small
+      display: inline-block
+      width: .5rem
+      height: .5rem
