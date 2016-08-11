@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Getting Started
-navigation_weight: 0
 ---
 
 <section id="getting-started">
@@ -15,7 +14,7 @@ navigation_weight: 0
   <h3 class="m-b-1-xs">Block</h3>
   <p class="m-b-2-xs">A block represents the main component. If you were building a tasty sandwich, the class name would be <code>.sandwich</code>. All the properties that would be shared by all different sandwiches would be included within <code>.sandwich</code>.</p>
   <h3 class="m-b-1-xs">Element</h3>
-  <p class="m-b-2-xs">An element is part of the main component and its class name is separated by two underscores. The bread of the sandwich would be reprented by the class <code>.sandwich__bread</code>. The cheese would be <code>.sandwich__cheese</code>. Be on the look out for smaller component possibilities within a larger component. If we were to take a look at sandwich condiments, which can be used on other things outside of sandwiches. We'd want to avoid a class name such as <code>.sandwich__condiment__mayo</code>. We could use something like <code>.sandwich__condiment-mayo</code> because a single dash doesn't represent anything in BEM. But, since condiments can be used on things other than sandwiches, we could make this a component in an of itself. In that case, we could name it <code>.condiment__mayo</code> and use that inside the sandwich element.</p>
+  <p class="m-b-2-xs">An element is part of the main component and its class name is separated by two underscores. The bread of the sandwich would be reprented by the class <code>.sandwich__bread</code>. The cheese would be <code>.sandwich__cheese</code>. Be on the look out for smaller component possibilities within a larger component. If we were to take a look at sandwich condiments, which can be used on other things outside of sandwiches. We'd want to avoid a class name such as <code>.sandwich__condiment__mayo</code>. We could use something like <code>.sandwich__condiment--mayo</code> because a single dash doesn't represent anything in BEM. But, since condiments can be used on things other than sandwiches, we could make this a component in an of itself. In that case, we could name it <code>.condiment__mayo</code> and use that inside the sandwich element.</p>
   <h3 class="m-b-1-xs">Modifier</h3>
   <p class="m-b-2-xs">A modifier is a component or element variation that only slightly differes from the main element. The variation can be applied to the entire element or just a part of it. Since the properties that should apply to every sandwich are placed on the main <code>.sandwich</code> class, all sandwiches receive the <code>.sandwich</code> class as the base. If there is a variation of a sandwich &mdash; maybe it has wheat bread &mdash; the <code>.sandwich--wheat</code> class would be added the component in addition to the <code>.sandwich</code> class.</p>
   <p class="m-b-4-xs">If the sandwich has swiss cheese, a variation can be placed on the cheese element itself, like <code>.sandwich__cheese--swiss</code>.</p>
