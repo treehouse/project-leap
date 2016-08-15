@@ -48,7 +48,10 @@ subnav:
     <pre><code class="language-html">&lt;div class="alert__banner alert__banner--warning"&gt;
   &lt;span class="alert__icon"&gt;&lt;/span&gt;
   &lt;p class="alert__message"&gt;&lt;strong&gt;Warning!&lt;/strong&gt; This yellow to communicate caution. It has the close action.&lt;/p&gt;
-  &lt;a class="alert__action--close"&gt;X&lt;/a&gt;
+  &lt;a class="alert__action--close"&gt;
+    &lt;!-- Make sure to use the in-app rails helper instead --&gt;
+    {&#37; include icon.html icon="add" class="rotate-45-xs" &#37;}
+  &lt;/a&gt;
 &lt;/div&gt;</code></pre>
   </div>
 
