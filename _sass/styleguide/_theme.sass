@@ -42,28 +42,39 @@ body
     &-item-parent
       &--active
         background-color: gray-color(gray-darker)
+        .guide-navigation-list-child
+          display: block
     &-item-child
       background-color: lighten(gray-color(gray-dark), 7%)
     &-list-child
       list-style: none
+      display: none
     &-link
       color: #fff
       font-size: 0.875rem
       text-decoration: none
+      position: relative
+      &:focus
+        color: #fff
       &:hover,
       &:active,
-      &:focus,
       &--active
         background-color: gray-color(gray-darker)
         color: #fff
       &-child
         font-size: 0.8125rem
+        &:focus
+          color: #fff
         &:hover,
-        &:active,
-        &:focus,
-        &--active
+        &:active
           background-color: gray-color(gray-dark)
           color: #fff
+        &--active
+          background-color: lighten(gray-color(gray-dark), 3%)
+          color: #fff
+    &-chevron svg
+      width: 12px
+      +absolute(right 1rem top 12px)
 
   // =========================================
   // Guide Main
@@ -139,7 +150,8 @@ body
     cursor: pointer
     position: absolute
     right: 2rem
-    top: 26px
+    top: 0
+    padding: 26px 0
     height: 30px
     width: 30px
     z-index: 1
@@ -164,3 +176,20 @@ body
       .hamburger::before,
       .hamburger::after
         transition: background 300ms 0s ease, transform 300ms 0.2s ease, top 300ms 0s ease, bottom 300ms 0s ease
+
+// =========================================
+// Subnav
+// =========================================
+.subnav
+  &-container
+    margin-top: - spacing(4) !important
+    &--fixed
+      +fixed(top spacing(4) right -3px)
+  &-item
+    line-height: 1.7
+  &-link
+    font-size: text-size(6)
+    &:focus
+      font-weight: bold
+    &--active
+      font-weight: bold

@@ -1,8 +1,0 @@
-filename: modules
-name: Modules
-pages:
-  - slug: /typography.html
-    name: Typography
-
-  - slug: /grid.html
-    name: Grid

@@ -15,9 +15,11 @@
 </li>
 {% for p in site.data.navs %}
 {% assign nav = p[1] %}
-  <li class="guide-navigation-item guide-navigation-item-parent guide-navigation-item-parent--active">
-    <a href="#" class="guide-navigation-link">
+  <li class="guide-navigation-item guide-navigation-item-parent">
+    <a href="javascript:void(0)" class="guide-navigation-link">
       {{ nav.name }}
+      {{ n.pages }}
+      <span class="guide-navigation-chevron fill-gray">{% include icon.html icon="chevron" class="rotate-90-xs" %}</span>
     </a>
     <ul class="guide-navigation-list-child">
       {% for sub_p in nav.pages %}

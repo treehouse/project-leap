@@ -1,10 +1,22 @@
 ---
 layout: default
 title: Buttons
+subnav:
+  - Default
+  - Primary
+  - Secondary
+  - Alert
+  - Inverse
+  - Disabled
+  - X-Large
+  - Topics
+  - Full
+  - Pill
+  - Split
 ---
 
 <section id="Buttons">
-  <h2 class="m-b-1-xs" id="default">Default</h2>
+  <h2 id="Default" class="m-b-1-xs" id="default">Default</h2>
   <p class="m-b-3-xs">Use the class, <code>button</code> for this default style button. If you are using the <code>&lt;button&gt;</code> element, always specify a <code>type</code>. When using the <code>&lt;a&gt;</code> tag, include <code>role="button"</code> for accessibility. Each button is available in multiple sizes, take note of examples for classes.</p>
   <a class="m-b-05-xs button button--large-xs" href>Large</a>
   <a class="m-b-05-xs button" href>Normal</a>
@@ -31,7 +43,7 @@ title: Buttons
 
 
 
-  <h2 class="m-b-1-xs" id="primary">Primary</h2>
+  <h2 id="Primary" class="m-b-1-xs" id="primary">Primary</h2>
   <p class="m-b-3-xs">Primary buttons are used to indicate a <em>primary</em> action on the page. Use the class, <code>.button.button--primary</code>, to get a primary button on your page.</p>
     <a class="m-b-05-xs button button--primary button--large-xs" href>Large</a>
     <a class="m-b-05-xs button button--primary" href>Normal</a>
@@ -46,7 +58,7 @@ title: Buttons
 
 
 
-  <h2 class="m-b-1-xs" id="secondary">Secondary</h2>
+  <h2 id="Secondary" class="m-b-1-xs" id="secondary">Secondary</h2>
   <p class="m-b-3-xs">Secondary buttons are used to indicate a <em>secondary</em> action on the page. To access these styles, use the class, <code>.button.button--secondary</code>.</p>
     <a class="m-b-05-xs button button--secondary button--large-xs" href>Large</a>
     <a class="m-b-05-xs button button--secondary" href>Normal</a>
@@ -61,7 +73,7 @@ title: Buttons
 
 
 
-  <h2 class="m-b-1-xs" id="alert">Alert</h2>
+  <h2 id="Alert" class="m-b-1-xs" id="alert">Alert</h2>
   <p class="m-b-3-xs">Alert buttons are used to indicate a urgent or negative action on the page. To access these styles, use the class, <code>.button.button--alert</code>.</p>
     <a class="m-b-05-xs button button--alert button--large-xs" href>Large</a>
     <a class="m-b-05-xs button button--alert" href>Normal</a>
@@ -76,7 +88,7 @@ title: Buttons
 
 
 
-  <h2 class="m-b-1-xs" id="inverse">Inverse</h2>
+  <h2 id='Inverse' class="m-b-1-xs" id="inverse">Inverse</h2>
   <p class="m-b-3-xs">Inverse buttons are used when the background color a container is too dark for normal buttons to have enough contrast. Invert the style of any button (to white) with the class, <code>.button.button--inverse</code>.</p>
   <div class="bg-gray-darker p-2-xs">
     <a class="m-b-05-xs button button--inverse button--large-xs" href>Large</a>
@@ -93,7 +105,7 @@ title: Buttons
 
 
 
-  <h2 class="m-b-1-xs" id="disabled">Disabled</h2>
+  <h2 id="Disabled" class="m-b-1-xs" id="disabled">Disabled</h2>
   <p class="m-b-3-xs">Disabled buttons are used when the action on the page is blocked to the user. Get this button on a page by using the class, <code>.button.button--disabled</code>.</p>
     <a class="m-b-05-xs button button--disabled button--large-xs" href>Large</a>
     <a class="m-b-05-xs button button--disabled" href>Normal</a>
@@ -108,7 +120,7 @@ title: Buttons
 
 
 
-  <h2 class="m-b-1-xs" id="disabled">Extra Large Buttons</h2>
+  <h2 id="X-Large" class="m-b-1-xs" id="disabled">Extra Large Buttons</h2>
   <p class="m-b-3-xs">These buttons should typically be reserved for marketing pages since the scale is pretty large and works better visually on marketing layouts.</p>
   <a class="m-b-05-xs button button--xlarge" href>Default</a>
   <a class="m-b-05-xs button button--primary button--xlarge" href>Primary</a>
@@ -125,7 +137,7 @@ title: Buttons
 
 
 
-  <h2 class="m-b-1-xs" id="topic-color-button">Topic Color Buttons</h2>
+  <h2 id="Topics" class="m-b-1-xs" id="topic-color-button">Topic Color Buttons</h2>
   <p class="m-b-3-xs">Each button supports the full array of topic colors by adding the name of the topic to the class. Use classes like, <code>button--topic-css</code>, in conjunction with any other button class combo to set it as a topic color. By default, this will effect the border and text color of the button. To use the primary button style with topic colors apply the topic color class in conjunction with the <code>button--primary</code> class.</p>
   <div class="m-b-05-xs">
     <a class="m-b-05-xs button button--topic-html">HTML</a>
@@ -172,7 +184,7 @@ title: Buttons
 
 
 
-  <h2 class="m-b-1-xs" id="disabled">Full Width</h2>
+  <h2 id="Full" class="m-b-1-xs" id="disabled">Full Width</h2>
   <p class="m-b-3-xs">Make any button span the full width of its container by using the class, <code>w-full-xs</code>. The padding and text size will be controlled by whichever size class you add. You can control the full-width aspect of the button with breakpoint suffixes.</p>
     <a class="m-b-05-xs button w-full-xs m-b-05-xs" href>Button</a>
     <a class="m-b-05-xs button w-full-xs button--primary m-b-05-xs" href>Button</a>
@@ -196,7 +208,7 @@ title: Buttons
 &lt;a class="m-b-05-xs button w-full-xs w-auto-lg button--alert m-b-05-xs" href&gt;Button&lt;/a&gt;</code></pre>
   </div>
 
-  <h2 class="m-b-1-xs" id="disabled">Pill Buttons (Tags)</h2>
+  <h2 id="Pill" class="m-b-1-xs" id="disabled">Pill Buttons (Tags)</h2>
   <p class="m-b-3-xs">Any button can become a pill button by adding the class <code>circle</code> alongside button classes.</p>
     <a class="m-b-05-xs button circle m-b-05-xs" href>Button</a>
     <a class="m-b-05-xs button circle button--primary m-b-05-xs" href>Button</a>
@@ -209,7 +221,7 @@ title: Buttons
 &lt;a class="m-b-05-xs button circle button--alert m-b-05-xs" href&gt;Button&lt;/a&gt;</code></pre>
   </div>
 
-  <h2 class="m-b-1-xs" id="split-buttons">Split Buttons</h2>
+  <h2 id="Split" class="m-b-1-xs" id="split-buttons">Split Buttons</h2>
   <p class="m-b-3-xs">Split buttons are used when you need a button that contains two actions. To accomplish this, wrap your buttons in <code>&lt;div class="split-button"&gt;</code>.</p>
   <div class="split-button">
     <a class="m-b-05-xs button" href>Add</a>

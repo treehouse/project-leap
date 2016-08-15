@@ -15,6 +15,7 @@
       width: 13rem
       padding: 2rem 2rem
       line-height: 1
+      z-index: 50
 
   // =========================================
   // A11y Skip
@@ -39,20 +40,22 @@
   // =========================================
   &-navigation
     padding-top: 0
-    height: 0
-    padding-top: 0
-    transition: height 300ms ease
+    transition: height 300ms ease, padding 300ms ease
     @media screen
       +fixed(top 0 bottom 0)
-      padding-top: 3.25rem
+      height: 0
+      padding-top: 0
       width: 100%
       z-index: 50
     +media(min-width $lg)
       +fixed(top 6rem bottom 0)
       padding-top: 0
       width: 13rem
+      height: auto
+      z-index: 51
     &-active
       height: 100%
+      padding-top: 3.25rem
     nav
       position: absolute
       height: 100%
