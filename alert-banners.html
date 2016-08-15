@@ -1,7 +1,11 @@
 ---
 layout: default
 title: Alert Banners
-navigation_weight: 12
+subnav:
+  - Default
+  - Success
+  - Warning
+  - Error
 ---
 
 <section id="alert-banners">
@@ -11,7 +15,7 @@ navigation_weight: 12
 
   <p class="m-b-2-xs">The <code>.alert__message</code> element has by default a right padding of 200px to allow space for the close and fixed actions. You can use Leap's Atom classes to expand the width of the fixed action and the message element's right padding when necessary.</p>
 
-  <h2 class="m-b-1-xs">Default Alert</h2>
+  <h2 id="Default" class="m-b-1-xs">Default Alert</h2>
   <p class="m-b-1-xs">To get Leap's default alert style use the <code>.alert__banner</code> class.</p>
   <div class="alert__banner">
     <p class="alert__message"><strong>Alert!</strong> This is an alert banner with no status set.</p>
@@ -22,7 +26,7 @@ navigation_weight: 12
   &lt;/div&gt;</code></pre>
   </div>
 
-  <h2 class="m-b-1-xs">Success Alert</h2>
+  <h2 id="Success" class="m-b-1-xs">Success Alert</h2>
   <p class="m-b-1-xs">Use the <code>.alert__banner--success</code> to get the styles for Leap's alert success state.</p>
   <div class="alert__banner alert__banner--success">
     <p class="alert__message"><strong>Success!</strong> This alert is green to communicate success!</p>
@@ -33,7 +37,7 @@ navigation_weight: 12
 &lt;/div&gt;</code></pre>
   </div>
 
-  <h2 class="m-b-1-xs">Warning Alert</h2>
+  <h2 id="Warning" class="m-b-1-xs">Warning Alert</h2>
   <p class="m-b-1-xs">Use the <code>.alert__banner--warning</code> to get the styles for Leap's alert warning state. You can prepend the message with <code>.alert__icon</code> to add an icon to the banner.</p>
   <div class="alert__banner alert__banner--warning">
     <span class="alert__icon circle"></span>
@@ -48,7 +52,7 @@ navigation_weight: 12
 &lt;/div&gt;</code></pre>
   </div>
 
-  <h2 class="m-b-1-xs">Error Alert</h2>
+  <h2 id="Error" class="m-b-1-xs">Error Alert</h2>
   <p class="m-b-1-xs">Use the <code>.alert__banner--warning</code> to get the styles for Leap's alert error state.</p>
   <div class="alert__banner alert__banner--error">
     <span class="alert__icon circle"></span>
