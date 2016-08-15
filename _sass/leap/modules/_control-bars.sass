@@ -123,26 +123,12 @@
         right: 0
   &__item
     text-align: left
-    position: relative
     .topic__circle
       margin-right: .75rem
       position: relative
       top: -1px
-    &--selected
-      &:before
-        content: ''
-        width: 14px
-        height: 12px
-        display: block
-        position: absolute
-        top: 10px
-        left: 16px
-        // Using Data URI to add the checkmark for the selected state.
-        background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22%235cc17a%22%20d%3D%22M6.4%2C13.4a1.6%2C1.6%2C0%2C0%2C1-1.13-.47L.47%2C8.13A1.6%2C1.6%2C0%2C1%2C1%2C2.73%2C5.87L6.29%2C9.43l6.88-8.25a1.6%2C1.6%2C0%2C0%2C1%2C2.46%2C2l-8%2C9.6a1.6%2C1.6%2C0%2C0%2C1-1.16.57Z%22%2F%3E%3C%2Fsvg%3E")
-        background-repeat: no-repeat
-        background-position: center center
   &__items
-    display: none
+    // display: none
     padding: 0
     list-style: none
     position: absolute
@@ -161,10 +147,35 @@
     color: text-color(base)
     padding: .25rem 1.5rem .25rem 2.5rem
     white-space: nowrap
+    position: relative
     &:hover
       background-color: gray-color(gray-lighter)
       color: text-color(base)
+      &:before
+        content: ''
+        width: 14px
+        height: 12px
+        display: block
+        position: absolute
+        top: 10px
+        left: 16px
+        // Using Data URI to add the checkmark for the selected state.
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22%23c6ccd2%22%20d%3D%22M6.4%2C13.4a1.6%2C1.6%2C0%2C0%2C1-1.13-.47L.47%2C8.13A1.6%2C1.6%2C0%2C1%2C1%2C2.73%2C5.87L6.29%2C9.43l6.88-8.25a1.6%2C1.6%2C0%2C0%2C1%2C2.46%2C2l-8%2C9.6a1.6%2C1.6%2C0%2C0%2C1-1.16.57Z%22%2F%3E%3C%2Fsvg%3E")
+        background-repeat: no-repeat
+        background-position: center center
     &--selected
+      &:before
+        content: ''
+        width: 14px
+        height: 12px
+        display: block
+        position: absolute
+        top: 10px
+        left: 16px
+        // Using Data URI to add the checkmark for the selected state.
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22%235cc17a%22%20d%3D%22M6.4%2C13.4a1.6%2C1.6%2C0%2C0%2C1-1.13-.47L.47%2C8.13A1.6%2C1.6%2C0%2C1%2C1%2C2.73%2C5.87L6.29%2C9.43l6.88-8.25a1.6%2C1.6%2C0%2C0%2C1%2C2.46%2C2l-8%2C9.6a1.6%2C1.6%2C0%2C0%2C1-1.16.57Z%22%2F%3E%3C%2Fsvg%3E")
+        background-repeat: no-repeat
+        background-position: center center
 
 
 // Topic Circles
