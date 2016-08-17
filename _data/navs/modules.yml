@@ -1,8 +1,5 @@
 filename: modules
 name: Modules
 pages:
-  - slug: /alert-banners.html
-    name: Alert Banners
-
-  - slug: /control-bars.html
-    name: Control Bars
+  - slug: /#
+    name: Coming Soon
