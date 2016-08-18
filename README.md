@@ -1,7 +1,8 @@
 # [Leap](http://treehouse.github.io/project-leap)
+Leap is an internal CSS library made for Treehouse. It contains immutable utility classes that enable rapid front-end prototyping.
 
 
-## Running Leap Docs Locally
+## Running Docs Locally
 The Leap docs are built with Jekyll. This means you'll need to get Jekyll up and running in order to view and edit the docs on your own machine. Jekyll will handle rendering the pages and compiling Sass, so no need to run `sass --watch` or anything like that.
 
 To get Jekyll running follow these steps:
