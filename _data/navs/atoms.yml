@@ -13,6 +13,9 @@ pages:
   - slug: /layout.html
     name: Layout
 
+  - slug: /flexbox.html
+    name: Flex Box
+
   - slug: /buttons.html
     name: Buttons
 
