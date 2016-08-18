@@ -361,12 +361,12 @@ Library Sprint List
 ---
 We are going to take 2 weeks to try and build out the library page as a proof of concept.
 
-* [ ] Alert Banners
+* [ ] Flash Banners
 * [ ] Control Bar
 * [ ] Welcome Banners
 * [ ] Cards
 * [ ] Tool Tips
-* [ ] Coming soon Pills (add to buttons Atom)
+* [ ] Coming-Soon Pills (add to buttons Atom)
 * [ ] Modals
 * [ ] Topic Icons
 
@@ -375,7 +375,7 @@ Extensive Lists
 Starting off by building a list of components that are found in the app. We can get more detailed as we dig into the parts and variations of each.
 
 * [ ] Boxes (Header, Content, Footer)
-* [ ] Alert Banners
+* [ ] Flash Banners
 * [ ] Welcome Banners
 * [ ] Cards
 * [ ] Modals

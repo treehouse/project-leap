@@ -1,0 +1,120 @@
+---
+layout: default
+title: Control Bars
+subnav:
+ - Default
+---
+
+<section>
+
+  <!-- Labels -->
+  <p id="Default" class="m-b-2-xs">A control bar is used to give users the ability to search and filter through a collection of content. The collection can be in card, grid, or table form. It is built to be modular. The <code>.search</code> and <code>.filter</code> elements are designed to be able to live outside the <code>.control-bar</code> elements can be used in tandem, or on their own. Additionally, you can change the style of a control bar so that it appears to be attached to the element directly after it by using the class <code>.control-bar--attached</code></p>
+
+
+  <div class="control-bar border-light-xs">
+    <div class="search">
+      <form action="" class="search__form">
+        <label for="" class="search__label">
+          {% include icon.html icon="search" class="search__icon search__icon--search" %}
+          <span class="search__icon search__icon--loading circle"></span>
+        </label>
+        <input type="text" class="search__input" placeholder="Search Courses, Conferences and Teachers...">
+      </form>
+    </div>
+
+    <ul class="filter__container">
+      <!-- Filter -->
+      <li class="filter">
+        <a href="" class="filter__label">Filter Label {% include icon.html icon="chevron" class="filter__label--icon rotate-180-xs" %}</a>
+        <ul class="filter__items">
+          <li class="filter__item">
+            <a href="" class="filter__value">Filter Item</a>
+          </li>
+          <li class="filter__item">
+            <a href="" class="filter__value filter__value--selected">Filter Item</a>
+          </li>
+          <li class="filter__item">
+            <a href="" class="filter__value">Filter Item</a>
+          </li>
+          <li class="filter__item">
+            <a href="" class="filter__value">Filter Item</a>
+          </li>
+        </ul>
+      </li>
+      <!-- Filter -->
+      <li class="filter">
+        <a href="" class="filter__label">Filter Label {% include icon.html icon="chevron" class="filter__label--icon rotate-180-xs" %}</a>
+        <ul class="filter__items">
+          <li class="filter__item filter__item--topic">
+            <a href="" class="filter__value"><span class="topic__circle topic__circle--small topic-bg-android-base circle"></span>Android</a>
+          </li>
+          <li class="filter__item filter__item--topic">
+            <a href="" class="filter__value"><span class="topic__circle topic__circle--small topic-bg-html-base circle"></span>HTML</a>
+          </li>
+          <li class="filter__item filter__item--active filter__item--topic">
+            <a href="" class="filter__value"><span class="topic__circle topic__circle--small topic-bg-css-base circle"></span>CSS</a>
+          </li>
+          <li class="filter__item filter__item--topic">
+            <a href="" class="filter__value"><span class="topic__circle topic__circle--small topic-bg-js-base circle"></span>JavaScript</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="guide-code m-b-4-xs">
+    <pre><code class="language-html">&lt;div class="control-bar"&gt;
+  &lt;!-- Search --&gt;
+  &lt;div class="search"&gt;
+    &lt;form action="" class="search__form"&gt;
+      &lt;label for="" class="search__label"&gt;
+        &lt;!-- Use Treehouse's Native Icon Helper --&gt;
+        &#123;% include icon.html icon="search" class="search__icon search__icon--search" %&#125;
+      &lt;/label&gt;
+      &lt;input type="text" class="search__input" placeholder="Search Courses, Conferences and Teachers..."&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Filters --&gt;
+  &lt;ul class="filter__container"&gt;
+    &lt;!-- Filter --&gt;
+    &lt;li class="filter"&gt;
+      &lt;a href="" class="filter__label"&gt;Filter Label &#123;% include icon.html icon="chevron" class="filter__label--icon rotate-180-xs" %&#125;&lt;/a&gt;
+      &lt;ul class="filter__items"&gt;
+        &lt;li class="filter__item"&gt;
+          &lt;a href="" class="filter__value"&gt;Filter Item&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="filter__item"&gt;
+          &lt;a href="" class="filter__value filter__value--selected"&gt;Filter Item&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="filter__item"&gt;
+          &lt;a href="" class="filter__value"&gt;Filter Item&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="filter__item"&gt;
+          &lt;a href="" class="filter__value"&gt;Filter Item&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;!-- Filter --&gt;
+    &lt;li class="filter"&gt;
+      &lt;a href="" class="filter__label"&gt;Filter Label &#123;% include icon.html icon="chevron" class="filter__label--icon rotate-180-xs" %&#125;&lt;/a&gt;
+      &lt;ul class="filter__items"&gt;
+        &lt;li class="filter__item filter__item--topic"&gt;
+          &lt;a href="" class="filter__value"&gt;&lt;span class="topic__circle topic__circle--small topic-bg-android-base circle"&gt;&lt;/span&gt;Android&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="filter__item filter__item--topic"&gt;
+          &lt;a href="" class="filter__value"&gt;&lt;span class="topic__circle topic__circle--small topic-bg-html-base circle"&gt;&lt;/span&gt;HTML&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="filter__item filter__item--active filter__item--topic"&gt;
+          &lt;a href="" class="filter__value"&gt;&lt;span class="topic__circle topic__circle--small topic-bg-css-base circle"&gt;&lt;/span&gt;CSS&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="filter__item filter__item--topic"&gt;
+          &lt;a href="" class="filter__value"&gt;&lt;span class="topic__circle topic__circle--small topic-bg-js-base circle"&gt;&lt;/span&gt;JavaScript&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre></div>
+
+
+</section>

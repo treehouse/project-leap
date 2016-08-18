@@ -1,0 +1,187 @@
+// Control Bar
+.control-bar
+  background-color: #fff
+  border-radius: $border-radius
+  box-shadow: 0 2px 0 rgba(#000,.1)
+  position: relative
+  padding: 0 1.5rem
+  display: flex
+  width: 100%
+  // using flex-direction to switch between
+  // a stacked and side-by-side layout
+  @media screen
+    flex-direction: column
+  +media (min-width $lg)
+    flex-direction: row
+
+// Search
+.search
+  @media screen
+    flex-grow: 1
+  +media (min-width $lg)
+    // using flex-grow to make the width of the search on larger screens
+    // area fill out evenly based on what filters are used
+    flex-grow: 2
+    margin-right: 3rem
+  &__form
+    display: table
+    width: 100%
+    margin: .5rem 0
+    position: relative
+    // using a gradient to visually fade out the long placeholder text
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      right: 0
+      top: 0
+      bottom: 0
+      width: 20px
+      background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,1)))
+      background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+      background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+      background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 )
+      z-index: 1
+  &__label
+    // using table-cell to get the label and input to play nice
+    display: table-cell
+    width: 16px
+    height: 16px
+  &__icon
+    margin-right: .5rem
+    display: inline-block
+    vertical-align: middle
+    &--search
+      width: 16px
+      height: 16px
+      fill: text-color(light)
+    &--loading
+      display: none
+  &__input
+    border: none
+    outline: none
+    line-height: 2.4rem
+    width: 100%
+    display: table-cell
+    color: text-color(base)
+    position: relative
+    top: 1px
+    +placeholder-style
+      color: text-color(light)
+
+//Filters
+.filter
+  position: relative
+  @media screen
+    display: block
+    border-top: 1px solid $border-color-light
+  +media (min-width $lg)
+    display: inline-block
+    border-top: none
+  &__container
+    list-style: none
+    padding: 0
+    // getting the filter-container to play nice
+    +media (min-width $lg)
+      display: table-cell
+      text-align: right
+  // Have to apply the hover styles here in order to
+  // keep them active when selecting items in the drop down
+  &:hover
+    .filter__label
+      color: text-color(medium)
+      .filter__label--icon
+        fill: text-color(medium)
+  &__label
+    display: block
+    font-size: 1rem
+    font-weight: $bold
+    color: text-color(light)
+    transition: .2s
+    @media screen
+      padding: 1rem 0
+    +media (min-width $lg)
+      padding: 1rem .5rem
+      margin-left: .5rem
+    &--icon
+      width: 12px
+      height: auto
+      fill: gray-color(gray)
+      transition: .2s
+      @media screen
+        position: absolute
+        top: 21px
+        right: 5px
+      +media (min-width $lg)
+        vertical-align: middle
+        margin: 0 .25rem
+        position: relative
+        top: -1px
+        right: 0
+  &__item
+    text-align: left
+    .topic__circle
+      margin-right: .75rem
+      position: relative
+      top: -1px
+  &__items
+    // display: none
+    padding: 0
+    list-style: none
+    position: absolute
+    top: 80%
+    z-index: 100
+    right: 0
+    background-color: #fff
+    border: 1px solid $border-color-light
+    border-radius: $border-radius
+    padding: .25rem 0
+    width: auto
+    min-width: 120px
+    max-width: 300px
+  &__value
+    display: block
+    color: text-color(base)
+    padding: .25rem 1.5rem .25rem 2.5rem
+    white-space: nowrap
+    position: relative
+    &:hover
+      background-color: gray-color(gray-lighter)
+      color: text-color(base)
+      &:before
+        content: ''
+        width: 14px
+        height: 12px
+        display: block
+        position: absolute
+        top: 10px
+        left: 16px
+        // Using Data URI to add the checkmark for the selected state.
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22%23c6ccd2%22%20d%3D%22M6.4%2C13.4a1.6%2C1.6%2C0%2C0%2C1-1.13-.47L.47%2C8.13A1.6%2C1.6%2C0%2C1%2C1%2C2.73%2C5.87L6.29%2C9.43l6.88-8.25a1.6%2C1.6%2C0%2C0%2C1%2C2.46%2C2l-8%2C9.6a1.6%2C1.6%2C0%2C0%2C1-1.16.57Z%22%2F%3E%3C%2Fsvg%3E")
+        background-repeat: no-repeat
+        background-position: center center
+    &--selected
+      &:before
+        content: ''
+        width: 14px
+        height: 12px
+        display: block
+        position: absolute
+        top: 10px
+        left: 16px
+        // Using Data URI to add the checkmark for the selected state.
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22%235cc17a%22%20d%3D%22M6.4%2C13.4a1.6%2C1.6%2C0%2C0%2C1-1.13-.47L.47%2C8.13A1.6%2C1.6%2C0%2C1%2C1%2C2.73%2C5.87L6.29%2C9.43l6.88-8.25a1.6%2C1.6%2C0%2C0%2C1%2C2.46%2C2l-8%2C9.6a1.6%2C1.6%2C0%2C0%2C1-1.16.57Z%22%2F%3E%3C%2Fsvg%3E")
+        background-repeat: no-repeat
+        background-position: center center
+
+
+// Topic Circles
+.topic
+  &__circle
+    &--small
+      display: inline-block
+      width: .5rem
+      height: .5rem
