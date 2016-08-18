@@ -12,7 +12,6 @@ url: "https://treehouse.github.io" # the base hostname & protocol for your site
 
 sass:
   sass_dir: _sass
-  # style: expanded
   style: compressed
 
 # Speed up Jekyll since we dont need any of the modules
