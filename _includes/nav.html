@@ -1,15 +1,15 @@
 <li class="guide-navigation-item">
-  <a href="getting-started.html" class="guide-navigation-link">
+  <a href="getting-started.html" {% if page.title == "Getting Started" %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
     Getting Started
   </a>
 </li>
 <li class="guide-navigation-item">
-  <a href="sass.html" class="guide-navigation-link">
+  <a href="sass.html" {% if page.title == "Sass" %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
     Sass
   </a>
 </li>
 <li class="guide-navigation-item">
-  <a href="responsive.html" class="guide-navigation-link">
+  <a href="responsive.html" {% if page.title == "Responsive" %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
     Responsive
   </a>
 </li>
@@ -18,7 +18,6 @@
   <li class="guide-navigation-item guide-navigation-item-parent">
     <a href="javascript:void(0)" class="guide-navigation-link">
       {{ nav.name }}
-      {{ n.pages }}
       <span class="guide-navigation-chevron fill-gray">{% include icon.html icon="chevron" class="rotate-90-xs" %}</span>
     </a>
     <ul class="guide-navigation-list-child">
@@ -32,3 +31,8 @@
     </ul>
   </li>
 {% endfor %}
+<li class="guide-navigation-item">
+  <a href="release-notes.html" {% if page.title == "Release Notes" %}class="guide-navigation-link guide-navigation-link--active"{% else %}class="guide-navigation-link"{% endif %}>
+    Release Notes
+  </a>
+</li>
