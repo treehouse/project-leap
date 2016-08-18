@@ -1,7 +1,7 @@
 
 Todo Percentage
 ===
-196 of 247 done (79.3%)
+200 of 247 done (80.9%)
 
 
 Building Blocks (Atoms)
@@ -257,10 +257,10 @@ Flexbox Layouts
 ---
 Flexbox is perfect for aligning items inside components. It typically isn't used for large scale layouts but for smaller parts of a page or component.
 
-* [ ] Parent
-  * [ ] Documentation
-* [ ] Child
-  * [ ] Documentation  
+* [x] Parent
+  * [x] Documentation
+* [x] Child
+  * [x] Documentation  
 
 
 

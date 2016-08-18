@@ -1,133 +1,168 @@
-// Flex Container
-.flex-block-xs
-  display: flex !important
-.flex-inline-xs
-  display: flex-inline !important
+// Adds flex and flex-inline classes
+@mixin flex-container($suffix)
+  .flex
+    &-block-#{$suffix}
+      display: flex !important
+    &-inline-#{$suffix}
+      display: flex-inline !important
 
-.flex-row-xs
-  flex-direction: row !important
-.flex-row-reverse-xs
-  flex-direction: row-reverse !important
-.flex-col-xs
-  flex-direction: column !important
-.flex-col-reverse-xs
-  flex-direction: column-reverse !important
+// Adds flex direction classes
+@mixin flex-direction($suffix)
+  @each $direction in row, row-reverse, column, column-reverse
+    .flex-#{$direction}-#{$suffix}
+      flex-direction: $direction !important
 
-.flex-wrap-xs
-  flex-wrap: wrap !important
-.flex-nowrap-xs
-  flex-wrap: nowrap !important
-.flex-wrap-reverse-xs
-  flex-wrap: wrap-reverse !important
+// Adds flex wrap classes
+@mixin flex-wrap($suffix)
+  @each $type in wrap, nowrap, wrap-reverse
+    .flex-#{$type}-#{$suffix}
+      flex-wrap: $type !important
 
-.flex-justify-start-xs
-  justify-content: flex-start !important
-.flex-justify-end-xs
-  justify-content: flex-end !important
-.flex-justify-center-xs
-  justify-content: center !important
-.flex-justify-between-xs
-  justify-content: space-between !important
-.flex-justify-around-xs
-  justify-content: space-around !important
+// Adds justify-content classes
+@mixin flex-justify-content($suffix)
+  .flex-justify
+    &-start-#{$suffix}
+      justify-content: flex-start !important
+    &-end-#{$suffix}
+      justify-content: flex-end !important
+    &-center-#{$suffix}
+      justify-content: center !important
+    &-between-#{$suffix}
+      justify-content: space-between !important
+    &-around-#{$suffix}
+      justify-content: space-around !important
 
-.flex-item-start-xs
-  align-items: flex-start !important
-.flex-item-end-xs
-  align-items: flex-end !important
-.flex-item-center-xs
-  align-items: center !important
-.flex-item-stretch-xs
-  align-items: stretch !important
-.flex-item-baseline-xs
-  align-items: baseline !important
+// Adds align-items classes
+@mixin flex-align-items($suffix)
+  .flex-item
+    &-start-#{$suffix}
+      align-items: flex-start !important
+    &-end-#{$suffix}
+      align-items: flex-end !important
+    &-center-#{$suffix}
+      align-items: center !important
+    &-stretch-#{$suffix}
+      align-items: stretch !important
+    &-baseline-#{$suffix}
+      align-items: baseline !important
 
-.flex-content-start-xs
-  align-content: flex-start !important
-.flex-content-end-xs
-  align-content: flex-end !important
-.flex-content-center-xs
-  align-content: center !important
-.flex-content-around-xs
-  align-content: space-around !important
-.flex-content-between-xs
-  align-content: space-between !important
-.flex-content-stretch-xs
-  align-content: stretch !important
+// Adds align-content classes
+@mixin flex-align-content($suffix)
+  .flex-content
+    &-start-#{$suffix}
+      align-content: flex-start !important
+    &-end-#{$suffix}
+      align-content: flex-end !important
+    &-center-#{$suffix}
+      align-content: center !important
+    &-around-#{$suffix}
+      align-content: space-around !important
+    &-between-#{$suffix}
+      align-content: space-between !important
+    &-stretch-#{$suffix}
+      align-content: stretch !important
+
+// Adds flex-order classes
+@mixin flex-order($suffix)
+  @each $num in 1,2,3,4,5,6
+    .flex-order-#{$num}-#{$suffix}
+      order: $num !important
+
+// Adds flex-grow classes
+@mixin flex-grow($suffix)
+  @each $num in 0,1,2,3,4,5,6
+    .flex-grow-#{$num}-#{$suffix}
+      flex-grow: $num !important
+
+// Adds flex-shrink classes
+@mixin flex-shrink($suffix)
+  @each $num in 1,2,3,4,5,6
+    .flex-shrink-#{$num}-#{$suffix}
+      flex-shrink: $num !important
+
+// Adds flex-basis classes
+@mixin flex-basis($suffix)
+  $widths: 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, auto
+  @each $width in $widths
+    @if $width == auto
+      .flex-basis-auto-#{$suffix}
+        flex-basis: $width !important
+    @else
+      .flex-basis-#{$width}-#{$suffix}
+        flex-basis: percentage($width/100) !important
+  @each $unit, $value in $spacing
+    // We don't want a class of "0.5" so we use a conditional to
+    // let us rename is at "05" in this instance
+    @if $unit == 0.5
+      .flex-basis-s05-#{$suffix}
+        flex-basis: spacing($unit) !important
+    @else
+      .flex-basis-s#{$unit}-#{$suffix}
+        flex-basis: spacing($unit) !important
+
+// Adds align-self classes
+@mixin flex-align-self($suffix)
+  .flex-self
+    &-auto-#{$suffix}
+      align-self: auto !important
+    &-start-#{$suffix}
+      align-self: flex-start !important
+    &-end-#{$suffix}
+      align-self: flex-end !important
+    &-center-#{$suffix}
+      align-self: center !important
+    &-stretch-#{$suffix}
+      align-self: stretch !important
+    &-baseline-#{$suffix}
+      align-self: baseline !important
 
 
 
-// Flex Items
-.flex-order-1-xs
-  order: 1 !important
-.flex-order-2-xs
-  order: 2 !important
-.flex-order-3-xs
-  order: 3 !important
-.flex-order-4-xs
-  order: 4 !important
-.flex-order-5-xs
-  order: 5 !important
-.flex-order-6-xs
-  order: 6 !important
+// Adds the media queries to all flex box mixins
+@mixin flex($suffix, $media: null)
 
-.flex-grow-0-xs
-  flex-grow: 0 !important
-.flex-grow-1-xs
-  flex-grow: 1 !important
-.flex-grow-2-xs
-  flex-grow: 2 !important
-.flex-grow-3-xs
-  flex-grow: 3 !important
-.flex-grow-4-xs
-  flex-grow: 4 !important
-.flex-grow-5-xs
-  flex-grow: 5 !important
-.flex-grow-6-xs
-  flex-grow: 6 !important
-
-.flex-shrink-1-xs
-  flex-shrink: 1 !important
-.flex-shrink-2-xs
-  flex-shrink: 2 !important
-.flex-shrink-3-xs
-  flex-shrink: 3 !important
-.flex-shrink-4-xs
-  flex-shrink: 4 !important
-.flex-shrink-5-xs
-  flex-shrink: 5 !important
-.flex-shrink-6-xs
-  flex-shrink: 6 !important
-
-$widths: 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100, auto
-
-@each $width in $widths
-  @if $width == auto
-    .flex-basis-auto-xs
-      flex-basis: $width !important
+  // We want to use @media screen whenever no $media
+  // is passed into the mixin
+  @if length($media) == 2
+    +media($media)
+      +flex-container($suffix)
+      +flex-direction($suffix)
+      +flex-wrap($suffix)
+      +flex-justify-content($suffix)
+      +flex-align-items($suffix)
+      +flex-align-content($suffix)
+      +flex-order($suffix)
+      +flex-grow($suffix)
+      +flex-shrink($suffix)
+      +flex-basis($suffix)
+      +flex-align-self($suffix)
   @else
-    .flex-basis-#{$width}-xs
-      flex-basis: percentage($width/100) !important
+    @media screen
+      +flex-container($suffix)
+      +flex-direction($suffix)
+      +flex-wrap($suffix)
+      +flex-justify-content($suffix)
+      +flex-align-items($suffix)
+      +flex-align-content($suffix)
+      +flex-order($suffix)
+      +flex-grow($suffix)
+      +flex-shrink($suffix)
+      +flex-basis($suffix)
+      +flex-align-self($suffix)
 
-@each $unit, $value in $spacing
-  // We don't want a class of "0.5" so we use a conditional to
-  // let us rename is at "05" in this instance
-  @if $unit == 0.5
-    .flex-basis-s05-xs
-      flex-basis: spacing($unit) !important
-  @else
-    .flex-basis-s#{$unit}-xs
-      flex-basis: spacing($unit) !important
 
-.flex-self-auto-xs
-  align-self: auto !important
-.flex-self-start-xs
-  align-self: flex-start !important
-.flex-self-end-xs
-  align-self: flex-end !important
-.flex-self-center-xs
-  align-self: center !important
-.flex-self-stretch-xs
-  align-self: stretch !important
-.flex-self-baseline-xs
-  align-self: baseline !important
+
+// Extra Small flex classes
++flex(xs)
+
+// Small flex classes
++flex(sm, min-width $sm)
+
+// Medium flex classes
++flex(md, min-width $md)
+
+// Large flex classes
++flex(lg, min-width $lg)
+
+// Extra Large flex classes
++flex(xl, min-width $xl)
