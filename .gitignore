@@ -3,4 +3,5 @@ _site
 .jekyll-metadata
 .DS_Store
 css/leap/leap.css.map
+css/*.css.map
 css/styleguide/styleguide.css.map
