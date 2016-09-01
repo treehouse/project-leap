@@ -92,48 +92,42 @@
 
   // Inverse buttons
   &--inverse
-    border-color: #fff
-    color: #fff
-    opacity: 0.88
+    border-color: #fff !important
+    color: #fff !important
+    opacity: 0.88 !important
     svg
-      fill: #fff
+      fill: #fff !important
     +selected
-      border-color: #fff
-      color: #fff
-      opacity: 1
+      border-color: #fff !important
+      color: #fff !important
+      opacity: 1 !important
 
-    .button--alert
-      border-color: ui-color(red)
-      color: ui-color(red)
-      opacity: 1
+    &-primary
+      background-color: #fff !important
+      border-color: #fff !important
+      color: text-color(medium) !important
       svg
-        fill: ui-color(red)
-      +selected
-        border-color: #fff
-        color: #fff
-        svg
-          fill: #fff
+        fill: text-color(medium) !important
 
-    .button--primary
-      background-color: #fff
-      border-color: #fff
-      color: text-color(medium)
-      svg
-        fill: text-color(medium)
-
-    .button--secondary
-      opacity: 0.5
+    &-disabled
+      border-color: #fff !important
+      color: #fff !important
+      opacity: 0.15 !important
       +selected
-        border-color: #fff
-        color: #fff
-        opacity: 1
+        border-color: #fff !important
+        color: #fff !important
+        opacity: 0.15 !important
 
-    .button--disabled
-      opacity: 0.15
+    &-primary-disabled
+      background-color: #fff !important
+      border-color: #fff !important
+      color: text-color(medium) !important
+      opacity: 0.15 !important
       +selected
-        border-color: #fff
-        color: #fff
-        opacity: 0.15
+        background-color: #fff !important
+        border-color: #fff !important
+        color: text-color(medium) !important
+        opacity: 0.15 !important
 
 
 
