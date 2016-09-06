@@ -1,4 +1,4 @@
-/*! Leap Version 0.1.0 */
+/*! Leap Version 0.2.0 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -214,34 +214,43 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   font-weight: 500;
   margin: 0;
+  line-height: 1.3 !important;
   text-rendering: optimizeLegibility;
 }
 
+h0 {
+  font-size: 3rem !important;
+}
+
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.25rem !important;
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.75rem !important;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.125rem !important;
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 h6 {
-  font-size: 0.875rem;
+  font-size: 0.875rem !important;
 }
 
 @media screen {
+  .text-0-xs {
+    font-size: 3rem !important;
+  }
+
   .text-1-xs {
     font-size: 2.25rem !important;
   }
@@ -267,6 +276,10 @@ h6 {
   }
 }
 @media screen and (min-width: 480px) {
+  .text-0-sm {
+    font-size: 3rem !important;
+  }
+
   .text-1-sm {
     font-size: 2.25rem !important;
   }
@@ -292,6 +305,10 @@ h6 {
   }
 }
 @media screen and (min-width: 680px) {
+  .text-0-md {
+    font-size: 3rem !important;
+  }
+
   .text-1-md {
     font-size: 2.25rem !important;
   }
@@ -317,6 +334,10 @@ h6 {
   }
 }
 @media screen and (min-width: 960px) {
+  .text-0-lg {
+    font-size: 3rem !important;
+  }
+
   .text-1-lg {
     font-size: 2.25rem !important;
   }
@@ -342,6 +363,10 @@ h6 {
   }
 }
 @media screen and (min-width: 1140px) {
+  .text-0-xl {
+    font-size: 3rem !important;
+  }
+
   .text-1-xl {
     font-size: 2.25rem !important;
   }
@@ -1441,6 +1466,26 @@ ol {
 
 .text-bg-light {
   background-color: #7b8b8e !important;
+}
+
+.text-fill-white {
+  fill: #fff !important;
+}
+
+.text-stroke-white {
+  stroke: #fff !important;
+}
+
+.text-color-white {
+  color: #fff !important;
+}
+
+.text-border-white {
+  border-color: #fff !important;
+}
+
+.text-bg-white {
+  background-color: #fff !important;
 }
 
 .topic-fill-html-light {
@@ -2549,7 +2594,7 @@ ol {
   margin: 0 10px 0 0;
   text-align: center;
   text-decoration: none;
-  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+  transition: color .3s ease, background-color .3s ease, border-color .3s ease, width .3s ease, opacity .3s ease;
   vertical-align: baseline;
   white-space: nowrap;
   overflow: hidden;
@@ -2622,56 +2667,51 @@ ol {
   fill: #576366;
 }
 .button--inverse {
-  border-color: #fff;
-  color: #fff;
-  opacity: 0.88;
+  border-color: #fff !important;
+  color: #fff !important;
+  opacity: .88 !important;
 }
 .button--inverse svg {
-  fill: #fff;
+  fill: #fff !important;
 }
 .button--inverse:hover, .button--inverse:active, .button--inverse:focus {
-  border-color: #fff;
-  color: #fff;
-  opacity: 1;
+  border-color: #fff !important;
+  color: #fff !important;
+  opacity: 1 !important;
 }
-.button--inverse .button--alert {
-  border-color: #ed5a5a;
-  color: #ed5a5a;
-  opacity: 1;
+.button--inverse-primary {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #4b5658 !important;
+  opacity: .88;
 }
-.button--inverse .button--alert svg {
-  fill: #ed5a5a;
+.button--inverse-primary svg {
+  fill: #4b5658 !important;
 }
-.button--inverse .button--alert:hover, .button--inverse .button--alert:active, .button--inverse .button--alert:focus {
-  border-color: #fff;
-  color: #fff;
+.button--inverse-primary:hover, .button--inverse-primary:active, .button--inverse-primary:focus {
+  opacity: 1 !important;
 }
-.button--inverse .button--alert:hover svg, .button--inverse .button--alert:active svg, .button--inverse .button--alert:focus svg {
-  fill: #fff;
+.button--inverse-disabled {
+  border-color: #fff !important;
+  color: #fff !important;
+  opacity: .15 !important;
 }
-.button--inverse .button--primary {
-  background-color: #fff;
-  border-color: #fff;
-  color: #4b5658;
+.button--inverse-disabled:hover, .button--inverse-disabled:active, .button--inverse-disabled:focus {
+  border-color: #fff !important;
+  color: #fff !important;
+  opacity: .15 !important;
 }
-.button--inverse .button--primary svg {
-  fill: #4b5658;
+.button--inverse-primary-disabled {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #4b5658 !important;
+  opacity: .15 !important;
 }
-.button--inverse .button--secondary {
-  opacity: 0.5;
-}
-.button--inverse .button--secondary:hover, .button--inverse .button--secondary:active, .button--inverse .button--secondary:focus {
-  border-color: #fff;
-  color: #fff;
-  opacity: 1;
-}
-.button--inverse .button--disabled {
-  opacity: 0.15;
-}
-.button--inverse .button--disabled:hover, .button--inverse .button--disabled:active, .button--inverse .button--disabled:focus {
-  border-color: #fff;
-  color: #fff;
-  opacity: 0.15;
+.button--inverse-primary-disabled:hover, .button--inverse-primary-disabled:active, .button--inverse-primary-disabled:focus {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #4b5658 !important;
+  opacity: .15 !important;
 }
 @media screen {
   .button--xlarge-xs {
@@ -3425,8 +3465,8 @@ ol {
 }
 
 .col {
-  float: left;
-  width: 100%;
+  float: left !important;
+  width: 100% !important;
 }
 .col-gutters {
   margin: 0 -15px;
@@ -3442,11 +3482,27 @@ ol {
   clear: both;
 }
 .col-max {
-  max-width: 1200px;
+  max-width: 1260px !important;
+  margin: 0 auto !important;
+}
+@media screen {
+  .col-max {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 680px) {
+  .col-max {
+    padding: 0 5px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .col-max {
+    padding: 0 15px;
+  }
 }
 .col-center {
-  float: none;
-  margin: 0 auto;
+  float: none !important;
+  margin: 0 auto !important;
 }
 @media screen {
   .col-5-xs {
