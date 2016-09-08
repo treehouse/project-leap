@@ -1,4 +1,4 @@
-/*! Leap Version 0.2.0 */
+/*! Leap Version 0.3.0 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -2614,17 +2614,17 @@ ol {
   fill: #5fcf80;
 }
 .button--primary {
-  background-color: #5fcf80;
-  border-color: #5fcf80;
-  color: #fff;
+  background-color: #5fcf80 !important;
+  border-color: #5fcf80 !important;
+  color: #fff !important;
 }
 .button--primary svg {
-  fill: #fff;
+  fill: #fff !important;
 }
 .button--primary:hover, .button--primary:active, .button--primary:focus {
-  background-color: #3ac162;
-  border-color: #3ac162;
-  color: #fff;
+  background-color: #3ac162 !important;
+  border-color: #3ac162 !important;
+  color: #fff !important;
 }
 .button--secondary {
   background-color: transparent;
@@ -3542,10 +3542,10 @@ ol {
     margin-left: 30% !important;
   }
   .col-33-xs {
-    width: 33% !important;
+    width: 33.3% !important;
   }
   .col-offset-33-xs {
-    margin-left: 33% !important;
+    margin-left: 33.3% !important;
   }
   .col-35-xs {
     width: 35% !important;
@@ -3670,10 +3670,10 @@ ol {
     margin-left: 30% !important;
   }
   .col-33-sm {
-    width: 33% !important;
+    width: 33.3% !important;
   }
   .col-offset-33-sm {
-    margin-left: 33% !important;
+    margin-left: 33.3% !important;
   }
   .col-35-sm {
     width: 35% !important;
@@ -3798,10 +3798,10 @@ ol {
     margin-left: 30% !important;
   }
   .col-33-md {
-    width: 33% !important;
+    width: 33.3% !important;
   }
   .col-offset-33-md {
-    margin-left: 33% !important;
+    margin-left: 33.3% !important;
   }
   .col-35-md {
     width: 35% !important;
@@ -3926,10 +3926,10 @@ ol {
     margin-left: 30% !important;
   }
   .col-33-lg {
-    width: 33% !important;
+    width: 33.3% !important;
   }
   .col-offset-33-lg {
-    margin-left: 33% !important;
+    margin-left: 33.3% !important;
   }
   .col-35-lg {
     width: 35% !important;
@@ -4054,10 +4054,10 @@ ol {
     margin-left: 30% !important;
   }
   .col-33-xl {
-    width: 33% !important;
+    width: 33.3% !important;
   }
   .col-offset-33-xl {
-    margin-left: 33% !important;
+    margin-left: 33.3% !important;
   }
   .col-35-xl {
     width: 35% !important;

@@ -17,6 +17,18 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "config.yml",
+    "_data",
+    "_includes",
+    "_layout",
+    "*.html",
+    "favicon.ico",
+    "fonts",
+    "Gemfile",
+    "Gemfile.lock",
+    "img",
+    "js",
+    "*.md"
   ]
 }
