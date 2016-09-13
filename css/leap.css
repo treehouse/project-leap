@@ -1,4 +1,4 @@
-/*! Leap Version 0.3.0 */
+/*! Leap Version 0.4.0 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -2627,44 +2627,44 @@ ol {
   color: #fff !important;
 }
 .button--secondary {
-  background-color: transparent;
-  border-color: #e8ebed;
-  color: #576366;
+  background-color: transparent !important;
+  border-color: #e8ebed !important;
+  color: #576366 !important;
 }
 .button--secondary svg {
-  fill: #576366;
+  fill: #576366 !important;
 }
 .button--secondary:hover, .button--secondary:active, .button--secondary:focus {
-  border-color: #bdc6cb;
-  color: #505b5e;
+  border-color: #bdc6cb !important;
+  color: #505b5e !important;
 }
 .button--alert {
-  background-color: transparent;
-  border-color: #ed5a5a;
-  color: #ed5a5a;
+  background-color: transparent !important;
+  border-color: #ed5a5a !important;
+  color: #ed5a5a !important;
 }
 .button--alert svg {
-  fill: #ed5a5a;
+  fill: #ed5a5a !important;
 }
 .button--alert:hover, .button--alert:active, .button--alert:focus {
-  border-color: #cb1616;
-  color: #cb1616;
+  border-color: #cb1616 !important;
+  color: #cb1616 !important;
 }
 .button--disabled {
-  background-color: transparent;
-  border-color: #e8ebed;
-  color: #7b8b8e;
+  background-color: transparent !important;
+  border-color: #e8ebed !important;
+  color: #7b8b8e !important;
 }
 .button--disabled svg {
-  fill: #7b8b8e;
+  fill: #7b8b8e !important;
 }
 .button--disabled:hover, .button--disabled:active, .button--disabled:focus {
-  background-color: transparent;
-  border-color: #e8ebed;
-  color: #7b8b8e;
+  background-color: transparent !important;
+  border-color: #e8ebed !important;
+  color: #7b8b8e !important;
 }
 .button--disabled:hover svg, .button--disabled:active svg, .button--disabled:focus svg {
-  fill: #576366;
+  fill: #576366 !important;
 }
 .button--inverse {
   border-color: #fff !important;

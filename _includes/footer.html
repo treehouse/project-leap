@@ -50,12 +50,12 @@
                  pageName == "control-bar";
 
   if (isAtom) {
-    nav[0].classList.toggle('guide-navigation-item-parent--active');
-    nav[0].getElementsByTagName('svg')[0].classList.toggle('rotate-180-xs');
-  }
-  else if (isModule) {
     nav[1].classList.toggle('guide-navigation-item-parent--active');
     nav[1].getElementsByTagName('svg')[0].classList.toggle('rotate-180-xs');
+  }
+  else if (isModule) {
+    nav[0].classList.toggle('guide-navigation-item-parent--active');
+    nav[0].getElementsByTagName('svg')[0].classList.toggle('rotate-180-xs');
   }
 
   // Subnav Scrolly Fun

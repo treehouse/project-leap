@@ -21,7 +21,7 @@
     "config.yml",
     "_data",
     "_includes",
-    "_layout",
+    "_layouts",
     "*.html",
     "favicon.ico",
     "fonts",
@@ -29,6 +29,7 @@
     "Gemfile.lock",
     "img",
     "js",
-    "*.md"
+    "*.md",
+    "_config.yml"
   ]
 }
