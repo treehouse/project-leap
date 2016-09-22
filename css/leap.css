@@ -1,4 +1,4 @@
-/*! Leap Version 0.4.0 */
+/*! Leap Version 0.5.0 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -8280,7 +8280,7 @@ ol {
   font-weight: 500;
   color: #7b8b8e;
   outline: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   padding-right: 3rem;
 }
 .form-select:focus {
