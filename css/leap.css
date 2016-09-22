@@ -1,4 +1,4 @@
-/*! Leap Version 0.5.1 */
+/*! Leap Version 0.5.2 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -8286,6 +8286,11 @@ ol {
 }
 .safari .form-select {
   padding: .85rem 1rem;
+  padding-right: 3rem;
+}
+.ff .form-select {
+  padding: .688rem 1rem;
+  padding-right: 3rem;
 }
 .form-select:focus {
   background-color: #fff;
