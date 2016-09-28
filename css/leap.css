@@ -1,4 +1,4 @@
-/*! Leap Version 0.5.2 */
+/*! Leap Version 0.6.0 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -2712,6 +2712,12 @@ ol {
   border-color: #fff !important;
   color: #4b5658 !important;
   opacity: .15 !important;
+}
+.button--inline {
+  margin-top: 24px !important;
+  padding: 0 26px !important;
+  height: 47px !important;
+  line-height: 43px !important;
 }
 @media screen {
   .button--xlarge-xs {

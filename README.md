@@ -4,7 +4,7 @@ Leap is an internal CSS library made for Treehouse. It contains immutable utilit
 ## Quick Start
 Several options are available for installing Leap into your project.
 
-* [Download the latest release](https://github.com/treehouse/project-leap/archive/v0.5.2.zip)
+* [Download the latest release](https://github.com/treehouse/project-leap/archive/v0.6.0.zip)
 * Clone the repo: `git clone https://github.com/treehouse/project-leap.git`
 * Install with [Bower](http://bower.io)
 
