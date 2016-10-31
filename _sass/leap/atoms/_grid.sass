@@ -33,8 +33,11 @@ $widths: 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 
     float: none !important
     margin: 0 auto !important
 
-
-
+  // Column gutters when using in forms
+  &-form
+    margin: 0 -6px !important
+    > .col
+      padding: 0 6px
   // Creates style declarations for each grid width
   @mixin col-width($suffix)
     @each $width in $widths

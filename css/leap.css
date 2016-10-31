@@ -1,4 +1,4 @@
-/*! Leap Version 0.6.0 */
+/*! Leap Version 0.7.0 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -3509,6 +3509,12 @@ ol {
 .col-center {
   float: none !important;
   margin: 0 auto !important;
+}
+.col-form {
+  margin: 0 -6px !important;
+}
+.col-form > .col {
+  padding: 0 6px;
 }
 @media screen {
   .col-5-xs {
@@ -8286,7 +8292,7 @@ ol {
   font-weight: 500;
   color: #7b8b8e;
   outline: none;
-  padding: .75rem 1rem;
+  padding: .844rem 1rem;
   padding-right: 3rem;
   line-height: 1;
 }
@@ -8296,7 +8302,7 @@ ol {
 }
 .ff .form-select {
   padding: .688rem 1rem;
-  padding-right: 3rem;
+  padding-right: 2rem;
 }
 .form-select:focus {
   background-color: #fff;
