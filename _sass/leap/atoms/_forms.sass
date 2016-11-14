@@ -1,12 +1,12 @@
 // Non-Active State Styling Defaults
 $form-background-inactive: gray-color(gray-lighter)
 $form-border-inactive: $border-color-mid
-$form-color-inactive: text-color(light)
+$form-color-inactive: text-color(medium)
 
 // Active State Styling Defaults
 $form-background-active: #fff
 $form-border-active: darken($border-color-dark, 15%)
-$form-color-active: text-color(medium)
+$form-color-active: text-color(dark)
 
 // Form Feedback Defaults
 $form-feedback-success: ui-color(green)
@@ -63,6 +63,7 @@ $form-states: success, warning, error
     color: text-color(dark)
     font-weight: $bold
     margin-bottom: .5rem
+    line-height: 1.3
     &-required
       color: red
       font-weight: $bold
@@ -155,6 +156,11 @@ $form-states: success, warning, error
         position: relative
         bottom: -2px
         margin-right: .5rem
+      // Input used for "other" input in radio element label
+      > .form-text-input
+        height: 24px
+        line-height: 24px
+        padding-left: 0.25rem
     &:checked
       &+.form-label
         color: $form-color-active

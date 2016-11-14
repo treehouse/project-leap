@@ -1,4 +1,4 @@
-/*! Leap Version 0.7.0 */
+/*! Leap Version 0.8.0 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -8183,8 +8183,8 @@ ol {
 }
 .form-feedback {
   display: block;
-  margin-top: .5rem;
-  font-size: .9rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 .form-feedback-success .form-feedback {
   color: #36b55c;
@@ -8201,7 +8201,8 @@ ol {
 .form-label {
   color: #40484a;
   font-weight: 500;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
 }
 .form-label-required {
   color: red;
@@ -8219,37 +8220,37 @@ ol {
 .form-helper {
   color: #7b8b8e;
   font-weight: normal;
-  font-size: .9rem;
-  margin-top: .5rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 .form-text-input, .form-textarea {
   background-color: #f9fafa;
   border-color: #d4d9dd;
-  transition: .2s;
+  transition: 0.2s;
   margin: 0;
   font-size: 1rem;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   outline: none;
   border: 2px solid #d4d9dd;
   border-radius: 4px;
   box-shadow: 0;
   box-sizing: border-box;
-  color: #4b5658;
+  color: #40484a;
 }
 .form-text-input::-webkit-input-placeholder, .form-textarea::-webkit-input-placeholder {
-  color: #7b8b8e;
+  color: #4b5658;
 }
 .form-text-input:-moz-placeholder, .form-textarea:-moz-placeholder {
-  color: #7b8b8e;
+  color: #4b5658;
 }
 .form-text-input::-moz-placeholder, .form-textarea::-moz-placeholder {
-  color: #7b8b8e;
+  color: #4b5658;
 }
 .form-text-input:-ms-input-placeholder, .form-textarea:-ms-input-placeholder {
-  color: #7b8b8e;
+  color: #4b5658;
 }
 .form-text-input .placeholder, .form-textarea .placeholder {
-  color: #7b8b8e;
+  color: #4b5658;
 }
 .form-feedback-success .form-text-input, .form-feedback-warning .form-text-input, .form-feedback-error .form-text-input, .form-feedback-success .form-textarea, .form-feedback-warning .form-textarea, .form-feedback-error .form-textarea {
   background-color: #fff;
@@ -8283,25 +8284,25 @@ ol {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2010%22%3E%0D%0A%09%3Cpath%20fill%3D%22%237b8b8e%22%20d%3D%22M9.5%2C9.5c-0.4%2C0-0.7-0.1-1-0.4L2%2C3.1C1.4%2C2.5%2C1.3%2C1.6%2C1.9%2C1C2.5%2C0.4%2C3.4%2C0.3%2C4%2C0.9L9.5%2C6L15%2C0.9%0D%0A%09%09c0.6-0.6%2C1.6-0.5%2C2.1%2C0.1c0.6%2C0.6%2C0.5%2C1.6-0.1%2C2.1l-6.5%2C6C10.2%2C9.4%2C9.9%2C9.5%2C9.5%2C9.5z%22%2F%3E%0D%0A%3C%2Fsvg%3E");
-  background-size: .9rem;
+  background-size: 0.9rem;
   background-repeat: no-repeat;
   background-position: calc(100% - 1rem) center;
   background-color: #f9fafa;
   border: 2px solid #d4d9dd;
   border-radius: 4px;
   font-weight: 500;
-  color: #7b8b8e;
+  color: #4b5658;
   outline: none;
-  padding: .844rem 1rem;
+  padding: 0.844rem 1rem;
   padding-right: 3rem;
   line-height: 1;
 }
 .safari .form-select {
-  padding: .85rem 1rem;
+  padding: 0.85rem 1rem;
   padding-right: 3rem;
 }
 .ff .form-select {
-  padding: .688rem 1rem;
+  padding: 0.688rem 1rem;
   padding-right: 2rem;
 }
 .form-select:focus {
@@ -8309,8 +8310,8 @@ ol {
   border: 2px solid #8c9aa6;
 }
 .form-radio, .form-checkbox {
-  width: .1px;
-  height: .1px;
+  width: 0.1px;
+  height: 0.1px;
   opacity: 0;
   overflow: hidden;
   position: absolute;
@@ -8319,8 +8320,8 @@ ol {
 .form-radio + .form-label, .form-checkbox + .form-label {
   display: block;
   font-weight: normal;
-  color: #7b8b8e;
-  padding: .25rem 0;
+  color: #4b5658;
+  padding: 0.25rem 0;
 }
 .form-radio + .form-label:before, .form-checkbox + .form-label:before {
   content: "";
@@ -8329,13 +8330,18 @@ ol {
   height: 1rem;
   position: relative;
   bottom: -2px;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
+}
+.form-radio + .form-label > .form-text-input, .form-checkbox + .form-label > .form-text-input {
+  height: 24px;
+  line-height: 24px;
+  padding-left: 0.25rem;
 }
 .form-radio:checked + .form-label, .form-checkbox:checked + .form-label {
-  color: #4b5658;
+  color: #40484a;
 }
 .form-radio:focus + .form-label, .form-checkbox:focus + .form-label {
-  color: #4b5658;
+  color: #40484a;
 }
 .form-radio:focus + .form-label:before, .form-checkbox:focus + .form-label:before {
   border: 2px solid #8c9aa6;
@@ -8363,8 +8369,8 @@ ol {
   background-position: center 1px;
 }
 .form-upload {
-  width: .1px;
-  height: .1px;
+  width: 0.1px;
+  height: 0.1px;
   opacity: 0;
   overflow: hidden;
   position: absolute;
@@ -8372,13 +8378,13 @@ ol {
 }
 .form-upload + .form-label {
   background-color: #f9fafa;
-  color: #7b8b8e;
+  color: #4b5658;
   display: inline-block;
   border: 2px solid #d4d9dd;
   border-radius: 4px;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
   margin-bottom: 0;
 }
 .form-feedback-success .form-upload + .form-label, .form-feedback-warning .form-upload + .form-label, .form-feedback-error .form-upload + .form-label {
@@ -8399,7 +8405,7 @@ ol {
 .form-upload:focus + .form-label, .form-upload + .form-label:hover {
   background-color: #fff;
   border: 2px solid #8c9aa6;
-  color: #4b5658;
+  color: #40484a;
 }
 .form-feedback-success .form-upload:focus + .form-label, .form-feedback-success .form-upload + .form-label:hover {
   border-color: #288644;
