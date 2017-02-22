@@ -1,4 +1,4 @@
-/*! Leap Version 0.8.1 */
+/*! Leap Version 0.8.2 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -2508,63 +2508,63 @@ ol {
   background-color: #cd5e13 !important;
 }
 
-.topic-fill-vr-light {
+.topic-fill-virtual-reality-light {
   fill: #b5e296 !important;
 }
 
-.topic-stroke-vr-light {
+.topic-stroke-virtual-reality-light {
   stroke: #b5e296 !important;
 }
 
-.topic-color-vr-light {
+.topic-color-virtual-reality-light {
   color: #b5e296 !important;
 }
 
-.topic-border-vr-light {
+.topic-border-virtual-reality-light {
   border-color: #b5e296 !important;
 }
 
-.topic-bg-vr-light {
+.topic-bg-virtual-reality-light {
   background-color: #b5e296 !important;
 }
 
-.topic-fill-vr-base {
+.topic-fill-virtual-reality-base {
   fill: #95D26C !important;
 }
 
-.topic-stroke-vr-base {
+.topic-stroke-virtual-reality-base {
   stroke: #95D26C !important;
 }
 
-.topic-color-vr-base {
+.topic-color-virtual-reality-base {
   color: #95D26C !important;
 }
 
-.topic-border-vr-base {
+.topic-border-virtual-reality-base {
   border-color: #95D26C !important;
 }
 
-.topic-bg-vr-base {
+.topic-bg-virtual-reality-base {
   background-color: #95D26C !important;
 }
 
-.topic-fill-vr-dark {
+.topic-fill-virtual-reality-dark {
   fill: #6c9e4a !important;
 }
 
-.topic-stroke-vr-dark {
+.topic-stroke-virtual-reality-dark {
   stroke: #6c9e4a !important;
 }
 
-.topic-color-vr-dark {
+.topic-color-virtual-reality-dark {
   color: #6c9e4a !important;
 }
 
-.topic-border-vr-dark {
+.topic-border-virtual-reality-dark {
   border-color: #6c9e4a !important;
 }
 
-.topic-bg-vr-dark {
+.topic-bg-virtual-reality-dark {
   background-color: #6c9e4a !important;
 }
 
@@ -3471,30 +3471,30 @@ ol {
 .button--topic-databases.button--primary:hover svg, .button--topic-databases.button--primary:active svg, .button--topic-databases.button--primary:focus svg {
   fill: #fff !important;
 }
-.button--topic-vr {
+.button--topic-virtual-reality {
   border-color: #95D26C !important;
   color: #95D26C !important;
 }
-.button--topic-vr svg {
+.button--topic-virtual-reality svg {
   fill: #95D26C !important;
 }
-.button--topic-vr:hover, .button--topic-vr:active, .button--topic-vr:focus {
+.button--topic-virtual-reality:hover, .button--topic-virtual-reality:active, .button--topic-virtual-reality:focus {
   border-color: #79c645 !important;
   color: #79c645 !important;
 }
-.button--topic-vr:hover svg, .button--topic-vr:active svg, .button--topic-vr:focus svg {
+.button--topic-virtual-reality:hover svg, .button--topic-virtual-reality:active svg, .button--topic-virtual-reality:focus svg {
   fill: #79c645 !important;
 }
-.button--topic-vr.button--primary {
+.button--topic-virtual-reality.button--primary {
   background-color: #95D26C !important;
   border-color: #95D26C !important;
   color: #fff !important;
 }
-.button--topic-vr.button--primary:hover, .button--topic-vr.button--primary:active, .button--topic-vr.button--primary:focus {
+.button--topic-virtual-reality.button--primary:hover, .button--topic-virtual-reality.button--primary:active, .button--topic-virtual-reality.button--primary:focus {
   background-color: #79c645 !important;
   border-color: #79c645 !important;
 }
-.button--topic-vr.button--primary:hover svg, .button--topic-vr.button--primary:active svg, .button--topic-vr.button--primary:focus svg {
+.button--topic-virtual-reality.button--primary:hover svg, .button--topic-virtual-reality.button--primary:active svg, .button--topic-virtual-reality.button--primary:focus svg {
   fill: #fff !important;
 }
 .button--topic-undefined {
