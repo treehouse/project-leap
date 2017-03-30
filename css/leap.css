@@ -1,4 +1,4 @@
-/*! Leap Version 0.8.2 */
+/*! Leap Version 0.8.3 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -2568,6 +2568,66 @@ ol {
   background-color: #6c9e4a !important;
 }
 
+.topic-fill-apis-light {
+  fill: #c36479 !important;
+}
+
+.topic-stroke-apis-light {
+  stroke: #c36479 !important;
+}
+
+.topic-color-apis-light {
+  color: #c36479 !important;
+}
+
+.topic-border-apis-light {
+  border-color: #c36479 !important;
+}
+
+.topic-bg-apis-light {
+  background-color: #c36479 !important;
+}
+
+.topic-fill-apis-base {
+  fill: #993c50 !important;
+}
+
+.topic-stroke-apis-base {
+  stroke: #993c50 !important;
+}
+
+.topic-color-apis-base {
+  color: #993c50 !important;
+}
+
+.topic-border-apis-base {
+  border-color: #993c50 !important;
+}
+
+.topic-bg-apis-base {
+  background-color: #993c50 !important;
+}
+
+.topic-fill-apis-dark {
+  fill: #712e3d !important;
+}
+
+.topic-stroke-apis-dark {
+  stroke: #712e3d !important;
+}
+
+.topic-color-apis-dark {
+  color: #712e3d !important;
+}
+
+.topic-border-apis-dark {
+  border-color: #712e3d !important;
+}
+
+.topic-bg-apis-dark {
+  background-color: #712e3d !important;
+}
+
 .topic-fill-undefined-light {
   fill: #8c959d !important;
 }
@@ -3495,6 +3555,32 @@ ol {
   border-color: #79c645 !important;
 }
 .button--topic-virtual-reality.button--primary:hover svg, .button--topic-virtual-reality.button--primary:active svg, .button--topic-virtual-reality.button--primary:focus svg {
+  fill: #fff !important;
+}
+.button--topic-apis {
+  border-color: #993c50 !important;
+  color: #993c50 !important;
+}
+.button--topic-apis svg {
+  fill: #993c50 !important;
+}
+.button--topic-apis:hover, .button--topic-apis:active, .button--topic-apis:focus {
+  border-color: #742e3d !important;
+  color: #742e3d !important;
+}
+.button--topic-apis:hover svg, .button--topic-apis:active svg, .button--topic-apis:focus svg {
+  fill: #742e3d !important;
+}
+.button--topic-apis.button--primary {
+  background-color: #993c50 !important;
+  border-color: #993c50 !important;
+  color: #fff !important;
+}
+.button--topic-apis.button--primary:hover, .button--topic-apis.button--primary:active, .button--topic-apis.button--primary:focus {
+  background-color: #742e3d !important;
+  border-color: #742e3d !important;
+}
+.button--topic-apis.button--primary:hover svg, .button--topic-apis.button--primary:active svg, .button--topic-apis.button--primary:focus svg {
   fill: #fff !important;
 }
 .button--topic-undefined {
