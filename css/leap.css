@@ -1,4 +1,4 @@
-/*! Leap Version 0.8.3 */
+/*! Leap Version 0.8.4 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -2628,6 +2628,66 @@ ol {
   background-color: #712e3d !important;
 }
 
+.topic-fill-data-analysis-light {
+  fill: #8d81ab !important;
+}
+
+.topic-stroke-data-analysis-light {
+  stroke: #8d81ab !important;
+}
+
+.topic-color-data-analysis-light {
+  color: #8d81ab !important;
+}
+
+.topic-border-data-analysis-light {
+  border-color: #8d81ab !important;
+}
+
+.topic-bg-data-analysis-light {
+  background-color: #8d81ab !important;
+}
+
+.topic-fill-data-analysis-base {
+  fill: #645a7e !important;
+}
+
+.topic-stroke-data-analysis-base {
+  stroke: #645a7e !important;
+}
+
+.topic-color-data-analysis-base {
+  color: #645a7e !important;
+}
+
+.topic-border-data-analysis-base {
+  border-color: #645a7e !important;
+}
+
+.topic-bg-data-analysis-base {
+  background-color: #645a7e !important;
+}
+
+.topic-fill-data-analysis-dark {
+  fill: #4f4667 !important;
+}
+
+.topic-stroke-data-analysis-dark {
+  stroke: #4f4667 !important;
+}
+
+.topic-color-data-analysis-dark {
+  color: #4f4667 !important;
+}
+
+.topic-border-data-analysis-dark {
+  border-color: #4f4667 !important;
+}
+
+.topic-bg-data-analysis-dark {
+  background-color: #4f4667 !important;
+}
+
 .topic-fill-undefined-light {
   fill: #8c959d !important;
 }
@@ -3581,6 +3641,32 @@ ol {
   border-color: #742e3d !important;
 }
 .button--topic-apis.button--primary:hover svg, .button--topic-apis.button--primary:active svg, .button--topic-apis.button--primary:focus svg {
+  fill: #fff !important;
+}
+.button--topic-data-analysis {
+  border-color: #645a7e !important;
+  color: #645a7e !important;
+}
+.button--topic-data-analysis svg {
+  fill: #645a7e !important;
+}
+.button--topic-data-analysis:hover, .button--topic-data-analysis:active, .button--topic-data-analysis:focus {
+  border-color: #4c4560 !important;
+  color: #4c4560 !important;
+}
+.button--topic-data-analysis:hover svg, .button--topic-data-analysis:active svg, .button--topic-data-analysis:focus svg {
+  fill: #4c4560 !important;
+}
+.button--topic-data-analysis.button--primary {
+  background-color: #645a7e !important;
+  border-color: #645a7e !important;
+  color: #fff !important;
+}
+.button--topic-data-analysis.button--primary:hover, .button--topic-data-analysis.button--primary:active, .button--topic-data-analysis.button--primary:focus {
+  background-color: #4c4560 !important;
+  border-color: #4c4560 !important;
+}
+.button--topic-data-analysis.button--primary:hover svg, .button--topic-data-analysis.button--primary:active svg, .button--topic-data-analysis.button--primary:focus svg {
   fill: #fff !important;
 }
 .button--topic-undefined {
