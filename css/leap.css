@@ -1,4 +1,4 @@
-/*! Leap Version 0.8.4 */
+/*! Leap Version 0.8.5 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -2688,6 +2688,66 @@ ol {
   background-color: #4f4667 !important;
 }
 
+.topic-fill-security-light {
+  fill: #D1897D !important;
+}
+
+.topic-stroke-security-light {
+  stroke: #D1897D !important;
+}
+
+.topic-color-security-light {
+  color: #D1897D !important;
+}
+
+.topic-border-security-light {
+  border-color: #D1897D !important;
+}
+
+.topic-bg-security-light {
+  background-color: #D1897D !important;
+}
+
+.topic-fill-security-base {
+  fill: #C66C5D !important;
+}
+
+.topic-stroke-security-base {
+  stroke: #C66C5D !important;
+}
+
+.topic-color-security-base {
+  color: #C66C5D !important;
+}
+
+.topic-border-security-base {
+  border-color: #C66C5D !important;
+}
+
+.topic-bg-security-base {
+  background-color: #C66C5D !important;
+}
+
+.topic-fill-security-dark {
+  fill: #955146 !important;
+}
+
+.topic-stroke-security-dark {
+  stroke: #955146 !important;
+}
+
+.topic-color-security-dark {
+  color: #955146 !important;
+}
+
+.topic-border-security-dark {
+  border-color: #955146 !important;
+}
+
+.topic-bg-security-dark {
+  background-color: #955146 !important;
+}
+
 .topic-fill-undefined-light {
   fill: #8c959d !important;
 }
@@ -3667,6 +3727,32 @@ ol {
   border-color: #4c4560 !important;
 }
 .button--topic-data-analysis.button--primary:hover svg, .button--topic-data-analysis.button--primary:active svg, .button--topic-data-analysis.button--primary:focus svg {
+  fill: #fff !important;
+}
+.button--topic-security {
+  border-color: #C66C5D !important;
+  color: #C66C5D !important;
+}
+.button--topic-security svg {
+  fill: #C66C5D !important;
+}
+.button--topic-security:hover, .button--topic-security:active, .button--topic-security:focus {
+  border-color: #955146 !important;
+  color: #955146 !important;
+}
+.button--topic-security:hover svg, .button--topic-security:active svg, .button--topic-security:focus svg {
+  fill: #955146 !important;
+}
+.button--topic-security.button--primary {
+  background-color: #C66C5D !important;
+  border-color: #C66C5D !important;
+  color: #fff !important;
+}
+.button--topic-security.button--primary:hover, .button--topic-security.button--primary:active, .button--topic-security.button--primary:focus {
+  background-color: #955146 !important;
+  border-color: #955146 !important;
+}
+.button--topic-security.button--primary:hover svg, .button--topic-security.button--primary:active svg, .button--topic-security.button--primary:focus svg {
   fill: #fff !important;
 }
 .button--topic-undefined {
