@@ -1,4 +1,4 @@
-/*! Leap Version 0.8.5 */
+/*! Leap Version 0.8.6 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -52,7 +52,7 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: .67em 0;
 }
 
 mark {
@@ -171,7 +171,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: .35em .625em .75em;
 }
 
 legend {
@@ -2628,6 +2628,66 @@ ol {
   background-color: #712e3d !important;
 }
 
+.topic-fill-go-light {
+  fill: #4371cf !important;
+}
+
+.topic-stroke-go-light {
+  stroke: #4371cf !important;
+}
+
+.topic-color-go-light {
+  color: #4371cf !important;
+}
+
+.topic-border-go-light {
+  border-color: #4371cf !important;
+}
+
+.topic-bg-go-light {
+  background-color: #4371cf !important;
+}
+
+.topic-fill-go-base {
+  fill: #375eab !important;
+}
+
+.topic-stroke-go-base {
+  stroke: #375eab !important;
+}
+
+.topic-color-go-base {
+  color: #375eab !important;
+}
+
+.topic-border-go-base {
+  border-color: #375eab !important;
+}
+
+.topic-bg-go-base {
+  background-color: #375eab !important;
+}
+
+.topic-fill-go-dark {
+  fill: #284683 !important;
+}
+
+.topic-stroke-go-dark {
+  stroke: #284683 !important;
+}
+
+.topic-color-go-dark {
+  color: #284683 !important;
+}
+
+.topic-border-go-dark {
+  border-color: #284683 !important;
+}
+
+.topic-bg-go-dark {
+  background-color: #284683 !important;
+}
+
 .topic-fill-data-analysis-light {
   fill: #8d81ab !important;
 }
@@ -3703,6 +3763,32 @@ ol {
 .button--topic-apis.button--primary:hover svg, .button--topic-apis.button--primary:active svg, .button--topic-apis.button--primary:focus svg {
   fill: #fff !important;
 }
+.button--topic-go {
+  border-color: #375eab !important;
+  color: #375eab !important;
+}
+.button--topic-go svg {
+  fill: #375eab !important;
+}
+.button--topic-go:hover, .button--topic-go:active, .button--topic-go:focus {
+  border-color: #2b4984 !important;
+  color: #2b4984 !important;
+}
+.button--topic-go:hover svg, .button--topic-go:active svg, .button--topic-go:focus svg {
+  fill: #2b4984 !important;
+}
+.button--topic-go.button--primary {
+  background-color: #375eab !important;
+  border-color: #375eab !important;
+  color: #fff !important;
+}
+.button--topic-go.button--primary:hover, .button--topic-go.button--primary:active, .button--topic-go.button--primary:focus {
+  background-color: #2b4984 !important;
+  border-color: #2b4984 !important;
+}
+.button--topic-go.button--primary:hover svg, .button--topic-go.button--primary:active svg, .button--topic-go.button--primary:focus svg {
+  fill: #fff !important;
+}
 .button--topic-data-analysis {
   border-color: #645a7e !important;
   color: #645a7e !important;
@@ -3737,11 +3823,11 @@ ol {
   fill: #C66C5D !important;
 }
 .button--topic-security:hover, .button--topic-security:active, .button--topic-security:focus {
-  border-color: #955146 !important;
-  color: #955146 !important;
+  border-color: #b24f3e !important;
+  color: #b24f3e !important;
 }
 .button--topic-security:hover svg, .button--topic-security:active svg, .button--topic-security:focus svg {
-  fill: #955146 !important;
+  fill: #b24f3e !important;
 }
 .button--topic-security.button--primary {
   background-color: #C66C5D !important;
@@ -3749,8 +3835,8 @@ ol {
   color: #fff !important;
 }
 .button--topic-security.button--primary:hover, .button--topic-security.button--primary:active, .button--topic-security.button--primary:focus {
-  background-color: #955146 !important;
-  border-color: #955146 !important;
+  background-color: #b24f3e !important;
+  border-color: #b24f3e !important;
 }
 .button--topic-security.button--primary:hover svg, .button--topic-security.button--primary:active svg, .button--topic-security.button--primary:focus svg {
   fill: #fff !important;
@@ -8774,7 +8860,7 @@ table th {
 table th,
 table td {
   text-align: left;
-  padding: 0.5rem;
+  padding: .5rem;
 }
 
 .table-border-rows {
