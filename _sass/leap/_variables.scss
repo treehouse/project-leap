@@ -1,4 +1,4 @@
-$leap-version: "0.8.6";
+$leap-version: "0.8.7";
 
 // Brand Colors
 $brand-colors: (
@@ -144,6 +144,11 @@ $topic-colors: (
     light:  #D1897D,
     base:   #C66C5D,
     dark:   #955146,
+  ),
+  "quality-assurance": (
+    light:  #A560B5,
+    base:   #80438E,
+    dark:   #60226F,
   ),
   "undefined": (
     light:  #8c959d,
