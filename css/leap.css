@@ -1,4 +1,4 @@
-/*! Leap Version 0.8.6 */
+/*! Leap Version 0.8.7 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -2808,6 +2808,66 @@ ol {
   background-color: #955146 !important;
 }
 
+.topic-fill-quality-assurance-light {
+  fill: #A560B5 !important;
+}
+
+.topic-stroke-quality-assurance-light {
+  stroke: #A560B5 !important;
+}
+
+.topic-color-quality-assurance-light {
+  color: #A560B5 !important;
+}
+
+.topic-border-quality-assurance-light {
+  border-color: #A560B5 !important;
+}
+
+.topic-bg-quality-assurance-light {
+  background-color: #A560B5 !important;
+}
+
+.topic-fill-quality-assurance-base {
+  fill: #80438E !important;
+}
+
+.topic-stroke-quality-assurance-base {
+  stroke: #80438E !important;
+}
+
+.topic-color-quality-assurance-base {
+  color: #80438E !important;
+}
+
+.topic-border-quality-assurance-base {
+  border-color: #80438E !important;
+}
+
+.topic-bg-quality-assurance-base {
+  background-color: #80438E !important;
+}
+
+.topic-fill-quality-assurance-dark {
+  fill: #60226F !important;
+}
+
+.topic-stroke-quality-assurance-dark {
+  stroke: #60226F !important;
+}
+
+.topic-color-quality-assurance-dark {
+  color: #60226F !important;
+}
+
+.topic-border-quality-assurance-dark {
+  border-color: #60226F !important;
+}
+
+.topic-bg-quality-assurance-dark {
+  background-color: #60226F !important;
+}
+
 .topic-fill-undefined-light {
   fill: #8c959d !important;
 }
@@ -3839,6 +3899,32 @@ ol {
   border-color: #b24f3e !important;
 }
 .button--topic-security.button--primary:hover svg, .button--topic-security.button--primary:active svg, .button--topic-security.button--primary:focus svg {
+  fill: #fff !important;
+}
+.button--topic-quality-assurance {
+  border-color: #80438E !important;
+  color: #80438E !important;
+}
+.button--topic-quality-assurance svg {
+  fill: #80438E !important;
+}
+.button--topic-quality-assurance:hover, .button--topic-quality-assurance:active, .button--topic-quality-assurance:focus {
+  border-color: #61336b !important;
+  color: #61336b !important;
+}
+.button--topic-quality-assurance:hover svg, .button--topic-quality-assurance:active svg, .button--topic-quality-assurance:focus svg {
+  fill: #61336b !important;
+}
+.button--topic-quality-assurance.button--primary {
+  background-color: #80438E !important;
+  border-color: #80438E !important;
+  color: #fff !important;
+}
+.button--topic-quality-assurance.button--primary:hover, .button--topic-quality-assurance.button--primary:active, .button--topic-quality-assurance.button--primary:focus {
+  background-color: #61336b !important;
+  border-color: #61336b !important;
+}
+.button--topic-quality-assurance.button--primary:hover svg, .button--topic-quality-assurance.button--primary:active svg, .button--topic-quality-assurance.button--primary:focus svg {
   fill: #fff !important;
 }
 .button--topic-undefined {
