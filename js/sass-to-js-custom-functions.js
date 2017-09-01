@@ -14,7 +14,7 @@ var brandColors = function(elementId, $elementId, guideClass) {
 
     // Create LI and add class name to it
     var li = document.createElement("li");
-    li.className = 'guide-color-item float-l-xs m-b-3-xs col-100-sm col-50-lg col-33-xl';
+    li.className = 'guide-color-item thl-float-l-xs m-b-3-xs col-100-sm col-50-lg col-33-xl';
 
     // Create span to hold color
     var colorSpan = document.createElement('span');
@@ -63,7 +63,7 @@ var uiColors = function(elementId, $elementId, guideClass) {
 
     // Create LI and add class name to it
     var li = document.createElement("li");
-    li.className = 'guide-color-item float-l-xs m-b-3-xs col-100-sm col-33-lg col-20-xl';
+    li.className = 'guide-color-item thl-float-l-xs m-b-3-xs col-100-sm col-33-lg col-20-xl';
 
     // Create span to hold color
     var colorSpan = document.createElement('span');
@@ -108,7 +108,7 @@ var grayColors = function(elementId, $elementId, guideClass) {
 
   // Create LI and add class name to it
   var li = document.createElement("li");
-  li.className = 'guide-color-item float-l-xs m-b-3-xs col-100-sm col-50-lg col-33-xl';
+  li.className = 'guide-color-item thl-float-l-xs m-b-3-xs col-100-sm col-50-lg col-33-xl';
 
   for (var colorClass in colorJSON) {
     var colorObj = colorJSON[colorClass];
@@ -157,7 +157,7 @@ var textColors = function(elementId, $elementId, guideClass) {
 
   // Create LI and add class name to it
   var li = document.createElement("li");
-  li.className = 'guide-color-item float-l-xs m-b-3-xs col-100-sm col-50-lg col-33-xl';
+  li.className = 'guide-color-item thl-float-l-xs m-b-3-xs col-100-sm col-50-lg col-33-xl';
 
   for (var colorClass in colorJSON) {
     var colorObj = colorJSON[colorClass];
@@ -209,7 +209,7 @@ var topicColors = function(elementId, $elementId, guideClass) {
 
       // Create LI and add class name to it
       var li = document.createElement("li");
-      li.className = 'guide-color-item float-l-xs m-b-3-xs col-100-sm col-50-lg col-33-xl';
+      li.className = 'guide-color-item thl-float-l-xs m-b-3-xs col-100-sm col-50-lg col-33-xl';
 
       for (var subProp in colorObj) {
         var colorHexValue = colorObj[subProp];
