@@ -18,15 +18,15 @@ var brandColors = function(elementId, $elementId, guideClass) {
 
     // Create span to hold color
     var colorSpan = document.createElement('span');
-    colorSpan.className = 'p-2-xs m-lr-1-xs block-xs thl-round thl-brand-bg-' + colorClass;
+    colorSpan.className = 'p-2-xs m-lr-1-xs thl-block-xs thl-round thl-brand-bg-' + colorClass;
 
     // Create code element to hold var function and hex
     var nameSpan = document.createElement('span');
-    nameSpan.className = 'block-xs text-6-xs';
+    nameSpan.className = 'thl-block-xs text-6-xs';
 
     // Create em to hold hex value
     var hexSpan = document.createElement('em');
-    hexSpan.className = 'block-xs text-6-xs thl-color-text-color';
+    hexSpan.className = 'thl-block-xs text-6-xs thl-color-text-color';
 
     // Create var function for nameSpan
     var colorName = document.createTextNode(colorClass);
@@ -67,15 +67,15 @@ var uiColors = function(elementId, $elementId, guideClass) {
 
     // Create span to hold color
     var colorSpan = document.createElement('span');
-    colorSpan.className = 'p-2-xs m-lr-1-xs block-xs thl-round thl-bg-' + colorClass;
+    colorSpan.className = 'p-2-xs m-lr-1-xs thl-block-xs thl-round thl-bg-' + colorClass;
 
     // Create code element to hold var function and hex
     var nameSpan = document.createElement('span');
-    nameSpan.className = 'block-xs text-6-xs';
+    nameSpan.className = 'thl-block-xs text-6-xs';
 
     // Create em to hold hex value
     var hexSpan = document.createElement('em');
-    hexSpan.className = 'block-xs text-6-xs thl-color-text-color';
+    hexSpan.className = 'thl-block-xs text-6-xs thl-color-text-color';
 
     // Create var function for nameSpan
     var colorName = document.createTextNode(colorClass);
@@ -116,15 +116,15 @@ var grayColors = function(elementId, $elementId, guideClass) {
 
     // Create span to hold color
     var colorSpan = document.createElement('span');
-    colorSpan.className = 'p-2-xs m-lr-1-xs block-xs thl-bg-' + colorClass;
+    colorSpan.className = 'p-2-xs m-lr-1-xs thl-block-xs thl-bg-' + colorClass;
 
     // Create code element to hold var function and hex
     var nameSpan = document.createElement('span');
-    nameSpan.className = 'block-xs text-6-xs';
+    nameSpan.className = 'thl-block-xs text-6-xs';
 
     // Create em to hold hex value
     var hexSpan = document.createElement('em');
-    hexSpan.className = 'block-xs text-6-xs thl-color-text-color';
+    hexSpan.className = 'thl-block-xs text-6-xs thl-color-text-color';
 
     // Create var function for nameSpan
     var colorName = document.createTextNode(colorClass);
@@ -165,15 +165,15 @@ var textColors = function(elementId, $elementId, guideClass) {
 
     // Create span to hold color
     var colorSpan = document.createElement('span');
-    colorSpan.className = 'p-2-xs m-lr-1-xs block-xs thl-text-bg-' + colorClass;
+    colorSpan.className = 'p-2-xs m-lr-1-xs thl-block-xs thl-text-bg-' + colorClass;
 
     // Create code element to hold var function and hex
     var nameSpan = document.createElement('span');
-    nameSpan.className = 'block-xs text-6-xs';
+    nameSpan.className = 'thl-block-xs text-6-xs';
 
     // Create em to hold hex value
     var hexSpan = document.createElement('em');
-    hexSpan.className = 'block-xs text-6-xs thl-color-text-color';
+    hexSpan.className = 'thl-block-xs text-6-xs thl-color-text-color';
 
     // Create var function for nameSpan
     var colorName = document.createTextNode(colorClass);
@@ -216,15 +216,15 @@ var topicColors = function(elementId, $elementId, guideClass) {
 
         // Create span to hold color
         var colorSpan = document.createElement('span');
-        colorSpan.className = 'p-2-xs m-lr-1-xs block-xs thl-topic-bg-' + colorClass + '-' + subProp;
+        colorSpan.className = 'p-2-xs m-lr-1-xs thl-block-xs thl-topic-bg-' + colorClass + '-' + subProp;
 
         // Create code element to hold var function and hex
         var nameSpan = document.createElement('span');
-        nameSpan.className = 'block-xs text-6-xs';
+        nameSpan.className = 'thl-block-xs text-6-xs';
 
         // Create em to hold hex value
         var hexSpan = document.createElement('em');
-        hexSpan.className = 'block-xs text-6-xs thl-color-text-color';
+        hexSpan.className = 'thl-block-xs text-6-xs thl-color-text-color';
 
         // Create var function for nameSpan
         var colorName = document.createTextNode(colorClass + '-' + subProp);
