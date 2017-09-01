@@ -1,5 +1,5 @@
 // Block grid structures
-.block
+.#{$leap-prefix}-block
   &-grid
     padding: 0 !important
     list-style: none !important
@@ -7,10 +7,10 @@
     display: block !important
     overflow: hidden !important
     margin-bottom: 2rem !important
-    
+
     &-gutters
       margin: -1rem -1rem 1rem -1rem !important
-      .block-grid__item
+      .#{$leap-prefix}-block-grid__item
         padding: 1rem !important
 
     &__item
@@ -25,7 +25,7 @@
 
   // Iterate from 1-6 to create different block division classes
   @for $num from 1 through 6
-    .block-#{$num}-#{$suffix} .block-grid__item
+    .#{$leap-prefix}-block-#{$num}-#{$suffix} .#{$leap-prefix}-block-grid__item
       width: 100%/$num !important
 
       // If we aren't a block-1 we need to reset and set clear
