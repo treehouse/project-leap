@@ -1,4 +1,4 @@
-.button
+.#{$leap-prefix}-button
   +appearance(none)
   +user-select(none)
   background-color: transparent
@@ -205,7 +205,7 @@
         color: darken(topic-color(#{$topic}, base), 10%) !important
         svg
           fill: darken(topic-color(#{$topic}, base), 10%) !important
-      &.button--primary
+      &.#{$leap-prefix}-button--primary
         background-color: topic-color(#{$topic}, base) !important
         border-color: topic-color(#{$topic}, base) !important
         color: #fff !important
@@ -216,7 +216,7 @@
             fill: #fff !important
 
   // Split Buttons
-  .split-button &
+  .#{$leap-prefix}-split-button &
     float: left
     z-index: 1
     margin: 0 !important
@@ -224,15 +224,15 @@
     padding: 0 20px
     +selected
       z-index: 2
-    &.button--primary
+    &.#{$leap-prefix}-button--primary
       border-right-color: rgba(#000, 0.1)
-    + .button
+    + .#{$leap-prefix}-button
       border-radius: 0 $border-radius $border-radius 0
       margin-left: -2px !important
-      &.button--primary
+      &.#{$leap-prefix}-button--primary
         border-left-color: rgba(#000, 0.1)
 
-.split-button
+.#{$leap-prefix}-split-button
   +clearfix
   display: inline-block
   margin: 0 15px 0 0
