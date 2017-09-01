@@ -14,11 +14,11 @@ var brandColors = function(elementId, $elementId, guideClass) {
 
     // Create LI and add class name to it
     var li = document.createElement("li");
-    li.className = 'guide-color-item thl-float-l-xs m-b-3-xs thl-col-100-sm thl-col-50-lg thl-col-33-xl';
+    li.className = 'guide-color-item thl-float-l-xs thl-m-b-3-xs thl-col-100-sm thl-col-50-lg thl-col-33-xl';
 
     // Create span to hold color
     var colorSpan = document.createElement('span');
-    colorSpan.className = 'p-2-xs m-lr-1-xs thl-block-xs thl-round thl-brand-bg-' + colorClass;
+    colorSpan.className = 'p-2-xs thl-m-lr-1-xs thl-block-xs thl-round thl-brand-bg-' + colorClass;
 
     // Create code element to hold var function and hex
     var nameSpan = document.createElement('span');
@@ -63,11 +63,11 @@ var uiColors = function(elementId, $elementId, guideClass) {
 
     // Create LI and add class name to it
     var li = document.createElement("li");
-    li.className = 'guide-color-item thl-float-l-xs m-b-3-xs thl-col-100-sm thl-col-33-lg thl-col-20-xl';
+    li.className = 'guide-color-item thl-float-l-xs thl-m-b-3-xs thl-col-100-sm thl-col-33-lg thl-col-20-xl';
 
     // Create span to hold color
     var colorSpan = document.createElement('span');
-    colorSpan.className = 'p-2-xs m-lr-1-xs thl-block-xs thl-round thl-bg-' + colorClass;
+    colorSpan.className = 'p-2-xs thl-m-lr-1-xs thl-block-xs thl-round thl-bg-' + colorClass;
 
     // Create code element to hold var function and hex
     var nameSpan = document.createElement('span');
@@ -108,7 +108,7 @@ var grayColors = function(elementId, $elementId, guideClass) {
 
   // Create LI and add class name to it
   var li = document.createElement("li");
-  li.className = 'guide-color-item thl-float-l-xs m-b-3-xs thl-col-100-sm thl-col-50-lg thl-col-33-xl';
+  li.className = 'guide-color-item thl-float-l-xs thl-m-b-3-xs thl-col-100-sm thl-col-50-lg thl-col-33-xl';
 
   for (var colorClass in colorJSON) {
     var colorObj = colorJSON[colorClass];
@@ -116,7 +116,7 @@ var grayColors = function(elementId, $elementId, guideClass) {
 
     // Create span to hold color
     var colorSpan = document.createElement('span');
-    colorSpan.className = 'p-2-xs m-lr-1-xs thl-block-xs thl-bg-' + colorClass;
+    colorSpan.className = 'p-2-xs thl-m-lr-1-xs thl-block-xs thl-bg-' + colorClass;
 
     // Create code element to hold var function and hex
     var nameSpan = document.createElement('span');
@@ -157,7 +157,7 @@ var textColors = function(elementId, $elementId, guideClass) {
 
   // Create LI and add class name to it
   var li = document.createElement("li");
-  li.className = 'guide-color-item thl-float-l-xs m-b-3-xs thl-col-100-sm thl-col-50-lg thl-col-33-xl';
+  li.className = 'guide-color-item thl-float-l-xs thl-m-b-3-xs thl-col-100-sm thl-col-50-lg thl-col-33-xl';
 
   for (var colorClass in colorJSON) {
     var colorObj = colorJSON[colorClass];
@@ -165,7 +165,7 @@ var textColors = function(elementId, $elementId, guideClass) {
 
     // Create span to hold color
     var colorSpan = document.createElement('span');
-    colorSpan.className = 'p-2-xs m-lr-1-xs thl-block-xs thl-text-bg-' + colorClass;
+    colorSpan.className = 'p-2-xs thl-m-lr-1-xs thl-block-xs thl-text-bg-' + colorClass;
 
     // Create code element to hold var function and hex
     var nameSpan = document.createElement('span');
@@ -209,14 +209,14 @@ var topicColors = function(elementId, $elementId, guideClass) {
 
       // Create LI and add class name to it
       var li = document.createElement("li");
-      li.className = 'guide-color-item thl-float-l-xs m-b-3-xs thl-col-100-sm thl-col-50-lg thl-col-33-xl';
+      li.className = 'guide-color-item thl-float-l-xs thl-m-b-3-xs thl-col-100-sm thl-col-50-lg thl-col-33-xl';
 
       for (var subProp in colorObj) {
         var colorHexValue = colorObj[subProp];
 
         // Create span to hold color
         var colorSpan = document.createElement('span');
-        colorSpan.className = 'p-2-xs m-lr-1-xs thl-block-xs thl-topic-bg-' + colorClass + '-' + subProp;
+        colorSpan.className = 'p-2-xs thl-m-lr-1-xs thl-block-xs thl-topic-bg-' + colorClass + '-' + subProp;
 
         // Create code element to hold var function and hex
         var nameSpan = document.createElement('span');
