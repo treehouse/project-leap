@@ -29,15 +29,15 @@ $form-states: success, warning, error
 // Mixin for creating form-feedback-active styles
 @mixin form-feedback-active($properties...)
   @each $state in $form-states
-    .form-feedback-#{$state} &
+    .#{$leap-prefix}-form-feedback-#{$state} &
       @each $prop in $properties
         #{$prop}: form-feedback-var-active($state)
 
 // Mixin for creating uniform bg across all form states
 @mixin form-feedback-bg-active
-  .form-feedback-success &,
-  .form-feedback-warning &,
-  .form-feedback-error &
+  .#{$leap-prefix}-form-feedback-success &,
+  .#{$leap-prefix}-form-feedback-warning &,
+  .#{$leap-prefix}-form-feedback-error &
     background-color: $form-background-active
 
 
@@ -142,7 +142,7 @@ $form-states: success, warning, error
     overflow: hidden
     position: absolute
     z-index: -1
-    &+.form-label
+    &+.#{$leap-prefix}-form-label
       display: block
       font-weight: normal
       color: $form-color-inactive
@@ -157,29 +157,29 @@ $form-states: success, warning, error
         bottom: -2px
         margin-right: .5rem
       // Input used for "other" input in radio element label
-      > .form-text-input
+      > .#{$leap-prefix}-form-text-input
         height: 24px
         line-height: 24px
         padding-left: 0.25rem
     &:checked
-      &+.form-label
+      &+.#{$leap-prefix}-form-label
         color: $form-color-active
     // Adding in focus states for accessibility
-    &:focus+.form-label
+    &:focus+.#{$leap-prefix}-form-label
       color: $form-color-active
       &:before
         border: 2px solid $form-border-active
   // Default Radio Styles
   &-radio
-    &+.form-label:before
+    &+.#{$leap-prefix}-form-label:before
       border-radius: 50%
       border: 1px solid $border-color-mid
     // Selected Radio Styles
-    &:checked+.form-label:before
+    &:checked+.#{$leap-prefix}-form-label:before
       border: 5px solid ui-color(blue)
   // Default Checkbox Styles
   &-checkbox
-    &+.form-label:before
+    &+.#{$leap-prefix}-form-label:before
       content: ''
       display: inline-block
       width: 1rem
@@ -187,7 +187,7 @@ $form-states: success, warning, error
       border-radius: $border-radius
       border: 1px solid $border-color-mid
     // Slected Checkbox Styles
-    &:checked+.form-label:before
+    &:checked+.#{$leap-prefix}-form-label:before
       border: none
       background-color: ui-color(blue)
       background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%0D%0A%09%3Cpath%20fill%3D%27%23FFFFFF%27%20d%3D%27M7%2C11c-0.3%2C0-0.5-0.1-0.7-0.3l-3-3c-0.4-0.4-0.4-1%2C0-1.4s1-0.4%2C1.4%2C0l2.2%2C2.2l4.3-5.2%0D%0A%09%09c0.4-0.4%2C1-0.5%2C1.4-0.1c0.4%2C0.4%2C0.5%2C1%2C0.1%2C1.4l-5%2C6C7.6%2C10.9%2C7.3%2C11%2C7%2C11C7%2C11%2C7%2C11%2C7%2C11z%27%2F%3E%0D%0A%3C%2Fsvg%3E")
@@ -203,7 +203,7 @@ $form-states: success, warning, error
     position: absolute
     z-index: -1
     // Overlaying the input label on top of the file upload input
-    & + .form-label
+    & + .#{$leap-prefix}-form-label
       background-color: $form-background-inactive
       color: $form-color-inactive
       display: inline-block
@@ -217,8 +217,8 @@ $form-states: success, warning, error
       +form-feedback-bg-active
       +form-feedback(border-color, color)
     // Adding in focus & hover states
-    &:focus + .form-label,
-    & + .form-label:hover
+    &:focus + .#{$leap-prefix}-form-label,
+    & + .#{$leap-prefix}-form-label:hover
       background-color: $form-background-active
       border: 2px solid $form-border-active
       color: $form-color-active
