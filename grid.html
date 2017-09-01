@@ -43,7 +43,7 @@ subnav:
   <p class="thl-m-b-3-xs">Each column in our grid can hold another set of columns inside of it. To make things work properly nest another <code>.thl-col-container</code> inside the <code>.thl-col</code>.</p>
   <div class="thl-col-container">
     <div class="thl-col thl-col-50-xs border-xs">
-      <span class="block-xs thl-m-b-1-xs">.thl-col .thl-col-50-xs</span>
+      <span class="thl-block-xs thl-m-b-1-xs">.thl-col .thl-col-50-xs</span>
       <div class="thl-col-container">
         <div class="thl-col thl-col-30-xs border-dark-xs">.thl-col .thl-col-30-xs</div>
         <div class="thl-col thl-col-30-xs border-dark-xs">.thl-col .thl-col-30-xs</div>
@@ -51,7 +51,7 @@ subnav:
       </div>
     </div>
     <div class="thl-col thl-col-50-xs border-xs">
-      <span class="block-xs thl-m-b-1-xs">.thl-col .thl-col-50-xs</span>
+      <span class="thl-block-xs thl-m-b-1-xs">.thl-col .thl-col-50-xs</span>
       <div class="thl-col-container">
         <div class="thl-col thl-col-20-xs border-dark-xs">.thl-col .thl-col-20-xs</div>
         <div class="thl-col thl-col-60-xs border-dark-xs">.thl-col .thl-col-60-xs</div>
@@ -62,7 +62,7 @@ subnav:
   <div class="guide-code thl-m-b-4-xs">
 <pre><code class="language-html">&lt;div class="thl-col-container"&gt;
 &lt;div class="thl-col thl-col-50-xs border-xs"&gt;
-&lt;span class="block-xs thl-m-b-1-xs"&gt;.thl-col .thl-col-50-xs&lt;/span&gt;
+&lt;span class="thl-block-xs thl-m-b-1-xs"&gt;.thl-col .thl-col-50-xs&lt;/span&gt;
 &lt;div class="thl-col-container"&gt;
 &lt;div class="thl-col thl-col-30-xs border-dark-xs"&gt;.thl-col .thl-col-30-xs&lt;/div&gt;
 &lt;div class="thl-col thl-col-30-xs border-dark-xs"&gt;.thl-col .thl-col-30-xs&lt;/div&gt;
@@ -70,7 +70,7 @@ subnav:
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="thl-col thl-col-50-xs border-xs"&gt;
-&lt;span class="block-xs thl-m-b-1-xs"&gt;.thl-col .thl-col-50-xs&lt;/span&gt;
+&lt;span class="thl-block-xs thl-m-b-1-xs"&gt;.thl-col .thl-col-50-xs&lt;/span&gt;
 &lt;div class="thl-col-container"&gt;
 &lt;div class="thl-col thl-col-20-xs border-dark-xs"&gt;.thl-col .thl-col-20-xs&lt;/div&gt;
 &lt;div class="thl-col thl-col-60-xs border-dark-xs"&gt;.thl-col .thl-col-60-xs&lt;/div&gt;
@@ -173,47 +173,47 @@ subnav:
   <p class="thl-m-b-3-xs">Our mobile first grid comes with a set of breakpoint class suffixes that can be used to override columns across breakpoints. For example, if a div needs to take up the full width of the page across all display sizes, use <code>.thl-col-100-xs</code>. If that same div needs to be half width at the medium breakpoint and a quarter at our large breakpoints, add <code>.thl-col-50-md</code> and <code>.thl-col-33-lg</code>. Resize the browser to see the effect in action. Note that there are also suffixes for small and extra large. You can learn more about the breakpoints in our <a href="responsive.html">responsive documentation</a></p>
   <div class="thl-col-container">
     <div class="thl-col thl-col-100-xs thl-col-50-md thl-col-25-lg border-dark-xs">
-      <span class="block-xs thl-hide-md thl-hide-lg">.thl-col-100-xs</span>
-      <span class="thl-hide-xs block-md thl-hide-lg">.thl-col-50-md</span>
-      <span class="thl-hide-xs block-lg">.thl-col-25-lg</span>
+      <span class="thl-block-xs thl-hide-md thl-hide-lg">.thl-col-100-xs</span>
+      <span class="thl-hide-xs thl-block-md thl-hide-lg">.thl-col-50-md</span>
+      <span class="thl-hide-xs thl-block-lg">.thl-col-25-lg</span>
     </div>
     <div class="thl-col thl-col-100-xs thl-col-50-md thl-col-25-lg border-dark-xs">
-      <span class="block-xs thl-hide-md thl-hide-lg">.thl-col-100-xs</span>
-      <span class="thl-hide-xs block-md thl-hide-lg">.thl-col-50-md</span>
-      <span class="thl-hide-xs block-lg">.thl-col-25-lg</span>
+      <span class="thl-block-xs thl-hide-md thl-hide-lg">.thl-col-100-xs</span>
+      <span class="thl-hide-xs thl-block-md thl-hide-lg">.thl-col-50-md</span>
+      <span class="thl-hide-xs thl-block-lg">.thl-col-25-lg</span>
     </div>
     <div class="thl-col thl-col-100-xs thl-col-50-md thl-col-25-lg border-dark-xs">
-      <span class="block-xs thl-hide-md thl-hide-lg">.thl-col-100-xs</span>
-      <span class="thl-hide-xs block-md thl-hide-lg">.thl-col-50-md</span>
-      <span class="thl-hide-xs block-lg">.thl-col-25-lg</span>
+      <span class="thl-block-xs thl-hide-md thl-hide-lg">.thl-col-100-xs</span>
+      <span class="thl-hide-xs thl-block-md thl-hide-lg">.thl-col-50-md</span>
+      <span class="thl-hide-xs thl-block-lg">.thl-col-25-lg</span>
     </div>
     <div class="thl-col thl-col-100-xs thl-col-50-md thl-col-25-lg border-dark-xs">
-      <span class="block-xs thl-hide-md thl-hide-lg">.thl-col-100-xs</span>
-      <span class="thl-hide-xs block-md thl-hide-lg">.thl-col-50-md</span>
-      <span class="thl-hide-xs block-lg">.thl-col-25-lg</span>
+      <span class="thl-block-xs thl-hide-md thl-hide-lg">.thl-col-100-xs</span>
+      <span class="thl-hide-xs thl-block-md thl-hide-lg">.thl-col-50-md</span>
+      <span class="thl-hide-xs thl-block-lg">.thl-col-25-lg</span>
     </div>
   </div>
   <div class="guide-code">
 <pre><code class="language-html">&lt;div class="thl-col-container"&gt;
 &lt;div class="thl-col thl-col-100-xs thl-col-50-md thl-col-25-lg border-dark-xs"&gt;
-&lt;span class="block-xs thl-hide-md thl-hide-lg"&gt;.thl-col-100-xs&lt;/span&gt;
-&lt;span class="thl-hide-xs block-md thl-hide-lg"&gt;.thl-col-50-md&lt;/span&gt;
-&lt;span class="thl-hide-xs block-lg"&gt;.thl-col-25-lg&lt;/span&gt;
+&lt;span class="thl-block-xs thl-hide-md thl-hide-lg"&gt;.thl-col-100-xs&lt;/span&gt;
+&lt;span class="thl-hide-xs thl-block-md thl-hide-lg"&gt;.thl-col-50-md&lt;/span&gt;
+&lt;span class="thl-hide-xs thl-block-lg"&gt;.thl-col-25-lg&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class="thl-col thl-col-100-xs thl-col-50-md thl-col-25-lg border-dark-xs"&gt;
-&lt;span class="block-xs thl-hide-md thl-hide-lg"&gt;.thl-col-100-xs&lt;/span&gt;
-&lt;span class="thl-hide-xs block-md thl-hide-lg"&gt;.thl-col-50-md&lt;/span&gt;
-&lt;span class="thl-hide-xs block-lg"&gt;.thl-col-25-lg&lt;/span&gt;
+&lt;span class="thl-block-xs thl-hide-md thl-hide-lg"&gt;.thl-col-100-xs&lt;/span&gt;
+&lt;span class="thl-hide-xs thl-block-md thl-hide-lg"&gt;.thl-col-50-md&lt;/span&gt;
+&lt;span class="thl-hide-xs thl-block-lg"&gt;.thl-col-25-lg&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class="thl-col thl-col-100-xs thl-col-50-md thl-col-25-lg border-dark-xs"&gt;
-&lt;span class="block-xs thl-hide-md thl-hide-lg"&gt;.thl-col-100-xs&lt;/span&gt;
-&lt;span class="thl-hide-xs block-md thl-hide-lg"&gt;.thl-col-50-md&lt;/span&gt;
-&lt;span class="thl-hide-xs block-lg"&gt;.thl-col-25-lg&lt;/span&gt;
+&lt;span class="thl-block-xs thl-hide-md thl-hide-lg"&gt;.thl-col-100-xs&lt;/span&gt;
+&lt;span class="thl-hide-xs thl-block-md thl-hide-lg"&gt;.thl-col-50-md&lt;/span&gt;
+&lt;span class="thl-hide-xs thl-block-lg"&gt;.thl-col-25-lg&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class="thl-col thl-col-100-xs thl-col-50-md thl-col-25-lg border-dark-xs"&gt;
-&lt;span class="block-xs thl-hide-md thl-hide-lg"&gt;.thl-col-100-xs&lt;/span&gt;
-&lt;span class="thl-hide-xs block-md thl-hide-lg"&gt;.thl-col-50-md&lt;/span&gt;
-&lt;span class="thl-hide-xs block-lg"&gt;.thl-col-25-lg&lt;/span&gt;
+&lt;span class="thl-block-xs thl-hide-md thl-hide-lg"&gt;.thl-col-100-xs&lt;/span&gt;
+&lt;span class="thl-hide-xs thl-block-md thl-hide-lg"&gt;.thl-col-50-md&lt;/span&gt;
+&lt;span class="thl-hide-xs thl-block-lg"&gt;.thl-col-25-lg&lt;/span&gt;
 &lt;/div&gt;
 &lt;/div&gt;</code></pre>
   </div>
