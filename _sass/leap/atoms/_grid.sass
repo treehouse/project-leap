@@ -2,22 +2,22 @@ $widths: 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 
 
 
 
-// Default column class that needs to be applied to all columns within .col-container
-.col
+// Default column class that needs to be applied to all columns within .#{$leap-prefix}-col-container
+.#{$leap-prefix}-col
   float: left !important
   width: 100% !important
 
-  // Add auto gutters to columns by applying this next to .col-container
+  // Add auto gutters to columns by applying this next to .#{$leap-prefix}-col-container
   &-gutters
     margin: 0 -15px
-    > .col
+    > .#{$leap-prefix}-col
       padding: 0 15px
 
-  // Wrap each set of columns that adds up to 100 within .col-container
+  // Wrap each set of columns that adds up to 100 within .#{$leap-prefix}-col-container
   &-container
     +clearfix
 
-  // Include this alongside .col-container to add our default max-width
+  // Include this alongside .#{$leap-prefix}-col-container to add our default max-width
   &-max
     max-width: $grid-width !important
     margin: 0 auto !important
@@ -28,7 +28,7 @@ $widths: 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 
     +media(min-width $lg)
       padding: 0 15px
 
-  // Center a single column inside of a .col-container
+  // Center a single column inside of a .#{$leap-prefix}-col-container
   &-center
     float: none !important
     margin: 0 auto !important
@@ -36,7 +36,7 @@ $widths: 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 
   // Column gutters when using in forms
   &-form
     margin: 0 -6px !important
-    > .col
+    > .#{$leap-prefix}-col
       padding: 0 6px
   // Creates style declarations for each grid width
   @mixin col-width($suffix)
