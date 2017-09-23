@@ -13,10 +13,10 @@ $border-values: normal, dark, mid, light
     // We don't want a modifier on the normal style,
     // so we need a conditional to control that
     @if $value == normal
-      .border-#{$suffix}
+      .#{$leap-prefix}-border-#{$suffix}
         border: solid 1px border-var($value) !important
     @else
-      .border-#{$value}-#{$suffix}
+      .#{$leap-prefix}-border-#{$value}-#{$suffix}
         border: solid 1px border-var($value) !important
 
     // Iterate through each type in $border-types
@@ -25,10 +25,10 @@ $border-values: normal, dark, mid, light
       // We don't want a modifier on the normal style,
       // so we need a conditional to control that
       @if $value == normal
-        .border-#{$shorthand}-#{$suffix}
+        .#{$leap-prefix}-border-#{$shorthand}-#{$suffix}
           border-#{$border}: solid 1px border-var($value) !important
       @else
-        .border-#{$shorthand}-#{$value}-#{$suffix}
+        .#{$leap-prefix}-border-#{$shorthand}-#{$value}-#{$suffix}
           border-#{$border}: solid 1px border-var($value) !important
 
 
@@ -37,12 +37,12 @@ $border-values: normal, dark, mid, light
 @mixin border-none($suffix)
 
   // Create style for border none on all sides
-  .border-none-#{$suffix}
+  .#{$leap-prefix}-border-none-#{$suffix}
     border: none !important
 
   // Iterate through border sides and create border none styles
   @each $border, $shorthand in $border-types
-    .border-none-#{$shorthand}-#{$suffix}
+    .#{$leap-prefix}-border-none-#{$shorthand}-#{$suffix}
       border-#{$border}: none !important
 
 
@@ -51,7 +51,7 @@ $border-values: normal, dark, mid, light
 @mixin border-radius
 
   // Create style for border radius classes
-  .round
+  .#{$leap-prefix}-round
     border-radius: $border-radius !important
     &-t
       border-radius: $border-radius $border-radius 0 0 !important
@@ -63,7 +63,7 @@ $border-values: normal, dark, mid, light
       border-radius: 0 $border-radius $border-radius 0 !important
 
   // Create the circle class
-  .circle
+  .#{$leap-prefix}-circle
     border-radius: 9999px !important
 
 

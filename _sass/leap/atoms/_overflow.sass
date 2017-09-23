@@ -6,7 +6,7 @@ $overflow-types: hidden, auto, scroll, visible
 
   // Iterate through each type in $overflow-types
   @each $type in $overflow-types
-    .overflow-#{$type}-#{$suffix}
+    .#{$leap-prefix}-overflow-#{$type}-#{$suffix}
       overflow: #{$type} !important
 
 
