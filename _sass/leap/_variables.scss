@@ -1,4 +1,4 @@
-$leap-version: "0.8.7";
+$leap-version: "0.8.9";
 
 // Brand Colors
 $brand-colors: (
@@ -149,6 +149,11 @@ $topic-colors: (
     light:  #A560B5,
     base:   #80438E,
     dark:   #60226F,
+  ),
+  "machine-learning": (
+    light:  #459F7F,
+    base:   #2D6853,
+    dark:   #214d3d,
   ),
   "undefined": (
     light:  #8c959d,

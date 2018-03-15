@@ -4,7 +4,7 @@ Leap is an internal CSS library made for Treehouse. It contains immutable utilit
 ## Quick Start
 Several options are available for installing Leap into your project.
 
-* [Download the latest release](https://github.com/treehouse/project-leap/archive/v0.8.7.zip)
+* [Download the latest release](https://github.com/treehouse/project-leap/archive/v0.8.9.zip)
 * Clone the repo: `git clone https://github.com/treehouse/project-leap.git`
 * Install with [Bower](http://bower.io)
 
@@ -23,4 +23,4 @@ To get Jekyll running follow these steps:
 Way to go, nerd. You should be up and running now!
 
 ## Copyright and license
-Code and documentation copyright 2016 Treehouse Island, Inc. Code released under the [MIT license](https://github.com/treehouse/project-leap/LICENSE).
+Code and documentation copyright 2018 Treehouse Island, Inc. Code released under the [MIT license](https://github.com/treehouse/project-leap/LICENSE).
