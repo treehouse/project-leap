@@ -181,6 +181,10 @@ $form-states: success, warning, error
       &:before
         border: 2px solid $form-border-active
         cursor: pointer
+    // Making the hover state stand out on forms over dark backgrounds
+    &:hover+.text-color-white
+      &:before
+        border: 2px solid #fff
   // Default Radio Styles
   &-radio
     &+.form-label:before

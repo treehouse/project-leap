@@ -114,18 +114,37 @@ subnav:
   <p class="m-b-1-xs">Use <code>.form-radio</code> immediately following a <code>label</code> to get Leap's default radio button style.</p>
 
   <form class="m-b-2-xs">
-    <input type="radio" id="form-radio-1" class="form-radio" name="radio">
+    <input type="radio" id="form-radio-1" class="form-radio" name="radio" checked="checked">
     <label for="form-radio-1" class="form-label">A really long radio label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.</label>
 
     <input type="radio" id="form-radio-2" class="form-radio" name="radio">
     <label for="form-radio-2" class="form-label">A short radio label.</label>
   </form>
+
   <div class="guide-code m-b-4-xs">
   <pre><code class="language-html">&lt;form&gt;
   &lt;input type="radio" id="form-radio-1" class="form-radio" name="radio" checked="checked"&gt;
   &lt;label for="form-radio-1" class="form-label"&gt;Radio Label 1&lt;/label&gt;
   &lt;input type="radio" id="form-radio-2" class="form-radio" name="radio"&gt;
   &lt;label for="form-radio-2" class="form-label"&gt;Radio Label 2&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+  <p class="m-b-1-xs">Forms with white text on dark backgrounds have a lighter hover state. To enable this, <code>.text-color-white</code> must be a class alongside <code>.form-label</code>.</p>
+
+  <form class="p-2-xs m-b-2-xs bg-gray-darker round">
+    <input type="radio" id="form-radio-3" class="form-radio" name="radio" checked="checked">
+    <label for="form-radio-3" class="form-label text-color-white">A radio label on a dark background.</label>
+    <input type="radio" id="form-radio-4" class="form-radio" name="radio">
+    <label for="form-radio-4" class="form-label text-color-white m-b-0-xs">Another radio label on a dark background.</label>
+  </form>
+
+  <div class="guide-code m-b-4-xs">
+  <pre><code class="language-html">&lt;form class="p-2-xs m-b-2-xs bg-gray-darker round"&gt;
+  &lt;input type="radio" id="form-radio-3" class="form-radio" name="radio" checked="checked"&gt;
+  &lt;label for="form-radio-3" class="form-label text-color-white"&gt;A radio label on a dark background.&lt;/label&gt;
+  &lt;input type="radio" id="form-radio-4" class="form-radio" name="radio"&gt;
+  &lt;label for="form-radio-4" class="form-label text-color-white m-b-0-xs"&gt;Another radio label on a dark background.&lt;/label&gt;
 &lt;/form&gt;</code></pre>
   </div>
 
@@ -141,6 +160,7 @@ subnav:
     <input type="checkbox" id="form-checkbox-2" class="form-checkbox">
     <label for="form-checkbox-2" class="form-label">A short checkbox label.</label>
   </form>
+
   <div class="guide-code m-b-4-xs">
   <pre><code class="language-html">&lt;form&gt;
   &lt;input type="checkbox" id="form-checkbox-1" class="form-checkbox"&gt;
@@ -150,6 +170,23 @@ subnav:
 &lt;/form&gt;</code></pre>
   </div>
 
+<p class="m-b-1-xs">Forms with white text on dark backgrounds have a lighter hover state. To enable this, <code>.text-color-white</code> must be a class alongside <code>.form-label</code>.</p>
+
+  <form class="p-2-xs m-b-2-xs bg-gray-darker round">
+    <input type="checkbox" id="form-checkbox-3" class="form-checkbox">
+    <label for="form-checkbox-3" class="form-label text-color-white">A checkbox label on a dark background.</label>
+    <input type="checkbox" id="form-checkbox-4" class="form-checkbox">
+    <label for="form-checkbox-4" class="form-label text-color-white m-b-0-xs">Another checkbox label on a dark background.</label>
+  </form>
+
+  <div class="guide-code m-b-4-xs">
+  <pre><code class="language-html">&lt;form class="p-2-xs m-b-2-xs bg-gray-darker round"&gt;
+  &lt;input type="checkbox" id="form-checkbox-3" class="form-checkbox"&gt;
+  &lt;label for="form-checkbox-3" class="form-label text-color-white"&gt;A checkbox label on a dark background.&lt;/label&gt;
+  &lt;input type="checkbox" id="form-checkbox-4" class="form-checkbox"&gt;
+  &lt;label for="form-checkbox-4" class="form-label text-color-white m-b-0-xs"&gt;Another checkbox label on a dark background.&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+  </div>
 
   <!-- Uploads -->
   <h2 id="Uploads" class="m-b-1-xs">Uploads</h2>
