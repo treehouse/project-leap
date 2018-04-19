@@ -128,9 +128,15 @@ $form-states: success, warning, error
     .ff &
       padding: .688rem 1rem
       padding-right: 2rem
+    // Adding in focus & hover states
     &:focus
       background-color: $form-background-active
       border: 2px solid $form-border-active
+    &:hover
+      background-color: $form-background-active
+      border: 2px solid $form-border-active
+      color: $form-color-active
+
 
   // Radio & Checkboxes
   &-radio,
@@ -147,6 +153,7 @@ $form-states: success, warning, error
       font-weight: normal
       color: $form-color-inactive
       padding: .25rem 0
+      margin-left: 25px !important
       // Building stylized elements to replace defaults
       &:before
         content: ''
@@ -169,14 +176,25 @@ $form-states: success, warning, error
       color: $form-color-active
       &:before
         border: 2px solid $form-border-active
+    // Hover states for radio and checkboxes
+    &:hover+.form-label
+      &:before
+        border: 2px solid $form-border-active
+        cursor: pointer
+    // Making the hover state stand out on forms over dark backgrounds
+    &:hover+.text-color-white, &:focus+.text-color-white
+      &:before
+        border: 2px solid #fff
   // Default Radio Styles
   &-radio
     &+.form-label:before
       border-radius: 50%
-      border: 1px solid $border-color-mid
+      border: 2px solid $border-color-mid
+      margin-left: -25px
     // Selected Radio Styles
     &:checked+.form-label:before
       border: 5px solid ui-color(blue)
+      background-color: #fff
   // Default Checkbox Styles
   &-checkbox
     &+.form-label:before
@@ -185,8 +203,9 @@ $form-states: success, warning, error
       width: 1rem
       height: 1rem
       border-radius: $border-radius
-      border: 1px solid $border-color-mid
-    // Slected Checkbox Styles
+      border: 2px solid $border-color-mid
+      margin-left: -25px !important
+    // Selected Checkbox Styles
     &:checked+.form-label:before
       border: none
       background-color: ui-color(blue)
