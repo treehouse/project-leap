@@ -128,9 +128,15 @@ $form-states: success, warning, error
     .ff &
       padding: .688rem 1rem
       padding-right: 2rem
+    // Adding in focus & hover states
     &:focus
       background-color: $form-background-active
       border: 2px solid $form-border-active
+    &:hover
+      background-color: $form-background-active
+      border: 2px solid $form-border-active
+      color: $form-color-active
+
 
   // Radio & Checkboxes
   &-radio,
@@ -171,6 +177,12 @@ $form-states: success, warning, error
       &:before
         border: 2px solid $form-border-active
         background-color: #fff
+    // Hover states for radio and checkboxes
+    &:hover+.form-label
+      &:before
+        border: 2px solid $form-border-active
+        background-color: #fff
+        cursor: pointer
   // Default Radio Styles
   &-radio
     &+.form-label:before
