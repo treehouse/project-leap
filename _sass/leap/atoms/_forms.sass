@@ -11,7 +11,7 @@ $form-color-active: text-color(dark)
 // Form Feedback Defaults
 $form-feedback-success: ui-color(green)
 $form-feedback-warning: ui-color(orange)
-$form-feedback-error: ui-color(red)
+$form-feedback-error: ui-color(error-red)
 $form-feedback-active-success: darken(ui-color(green), 12%)
 $form-feedback-active-warning: darken(ui-color(orange), 12%)
 $form-feedback-active-error: darken(ui-color(red), 12%)
@@ -65,7 +65,7 @@ $form-states: success, warning, error
     margin-bottom: .5rem
     line-height: 1.3
     &-required
-      color: red
+      color: ui-color(error-red)
       font-weight: $bold
     +form-feedback(color)
 

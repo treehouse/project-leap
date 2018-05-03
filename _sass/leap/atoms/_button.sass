@@ -36,6 +36,17 @@
 
   // Primary buttons
   &--primary
+    background-color: brand-color(green) !important
+    border-color: brand-color(green) !important
+    color: #fff !important
+    svg
+      fill: #fff !important
+    +selected
+      background-color: darken(brand-color(green), 15%) !important
+      border-color: darken(brand-color(green), 15%) !important
+      color: #fff !important
+
+  &--primaryblue
     background-color: brand-color(blue-light) !important
     border-color: brand-color(blue-light) !important
     color: #fff !important
@@ -45,7 +56,6 @@
       background-color: brand-color(blue-medium) !important
       border-color: brand-color(blue-medium) !important
       color: #fff !important
-
 
 
   // Secondary buttons
