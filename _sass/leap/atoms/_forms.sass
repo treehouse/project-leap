@@ -266,14 +266,45 @@ $form-states: success, warning, error
           color: #fff
           font-size: 12px
           display: block
-          padding: .5em 1em 1em 1em
+          padding: 1em
           margin-top: 0px
           font-weight: 500
           background-color: #be4a4a
           border-bottom-left-radius: 4px
           border-bottom-right-radius: 4px
+        .form-feedback-arrow
+          color: #fff
+          font-size: 12px
+          display: inline-block
+          position: relative
+          padding: 1em
+          margin-top: 0px
+          font-weight: 500
+          background-color: #be4a4a
+          border-radius: 4px
+          &:after
+            bottom: 100%
+            left: 15px
+            border: solid transparent
+            content: " "
+            height: 0
+            width: 0
+            position: absolute
+            pointer-events: none
+            border-color: rgba(190, 74, 74, 0)
+            border-bottom-color: #be4a4a
+            border-width: 8px
+            margin-left: -8px
+        // Styling form feedback differently for Upload buttons
+        .form-upload ~ .form-feedback-arrow
+          display: block
+          float: left
+          clear: both
+          top: 15px
         .form-upload+.form-label
           border: 2px solid ui-color(error-red)
+          display: block
+          float: left
           &:focus
             border: 2px solid #fff
         input, select, textarea
