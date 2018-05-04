@@ -14,7 +14,7 @@ $form-feedback-warning: ui-color(orange)
 $form-feedback-error: ui-color(error-red)
 $form-feedback-active-success: darken(ui-color(green), 12%)
 $form-feedback-active-warning: darken(ui-color(orange), 12%)
-$form-feedback-active-error: darken(ui-color(red), 12%)
+$form-feedback-active-error: ui-color(error-red)
 
 // Form States
 $form-states: success, warning, error
@@ -258,6 +258,32 @@ $form-states: success, warning, error
       font-size: .9rem
       +form-feedback(color)
 
+      &-error
+        .form-feedback
+          color: #fff
+          font-size: 12px
+          display: block
+          padding: .5em 1em 1em 1em
+          margin-top: 0px
+          font-weight: 500
+          background-color: #be4a4a
+          border-bottom-left-radius: 4px
+          border-bottom-right-radius: 4px
+        input
+          border: 2px solid ui-color(error-red)
+          border-bottom-left-radius: 0px
+          border-bottom-right-radius: 0px
+          /* Look into this; don't think it's working fully */
+          &:hover, :focus
+            -webkit-box-shadow: none
+            -moz-box-shadow: none
+            box-shadow: none
+        label
+          &:hover, :focus
+          -webkit-box-shadow: none
+          -moz-box-shadow: none
+          box-shadow: none
+
     // Labels
     &-label,
     &-helper
@@ -308,7 +334,6 @@ $form-states: success, warning, error
           color: $form-color-inactive
         // Input & Textarea Form Feedback Styles
         +form-feedback-bg-active
-        +form-feedback(border-color)
         // Default Hover and Focus States
         &:hover, &:focus
           -webkit-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.3)
@@ -316,7 +341,6 @@ $form-states: success, warning, error
           box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.3)
           // Focus & Hover States for Form Feedback
           +form-feedback-bg-active
-          +form-feedback-active(border-color)
 
     // Select Styles
     &-select
@@ -459,4 +483,3 @@ $form-states: success, warning, error
         box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.3)
         color: $form-color-active
         // Focused & Hover states for form feedback
-        +form-feedback-active(border-color, color)
