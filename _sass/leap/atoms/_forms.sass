@@ -104,6 +104,9 @@ $form-states: success, warning, error
         // Focus & Hover States for Form Feedback
         +form-feedback-bg-active
         +form-feedback-active(border-color)
+    // Getting rid of extra spacing that appears below textarea; size varies among browsers.
+    &area
+      vertical-align: top
 
   // Select Styles
   &-select
@@ -269,20 +272,22 @@ $form-states: success, warning, error
           background-color: #be4a4a
           border-bottom-left-radius: 4px
           border-bottom-right-radius: 4px
-        input
+        .form-upload+.form-label
+          border: 2px solid ui-color(error-red)
+          &:focus
+            border: 2px solid #fff
+        input, select, textarea
           border: 2px solid ui-color(error-red)
           border-bottom-left-radius: 0px
           border-bottom-right-radius: 0px
-          /* Look into this; don't think it's working fully */
-          &:hover, :focus
-            -webkit-box-shadow: none
-            -moz-box-shadow: none
-            box-shadow: none
+          &:focus
+            border: 2px solid #fff
         label
-          &:hover, :focus
+          &:hover, &:focus
           -webkit-box-shadow: none
           -moz-box-shadow: none
           box-shadow: none
+
 
     // Labels
     &-label,
@@ -341,6 +346,9 @@ $form-states: success, warning, error
           box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.3)
           // Focus & Hover States for Form Feedback
           +form-feedback-bg-active
+      // Getting rid of extra spacing that appears below textarea; size varies among browsers.
+      &area
+        vertical-align: top
 
     // Select Styles
     &-select
