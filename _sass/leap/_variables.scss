@@ -33,133 +33,88 @@ $ui-colors: (
   "red":          #ed5a5a
 );
 
-// Topic Colors
-$topic-colors: (
-  "html": (
-    light:  #62bedb,
-    base:     #39ADD1,
-    dark:   #298fae,
+// Category colors
+$category-colors: (
+  "back-end": (
+    light: lighten(#651776,5%),
+    base: #651776,
+    dark: darken(#651776,5%),
   ),
-  "css": (
-    light:  #4494ca,
-    base:     #3079AB,
-    dark:   #255d83,
-  ),
-  "js": (
-    light:  #d07e94,
-    base:     #c25975,
-    dark:   #aa3e5b,
-  ),
-  "ruby": (
-    light:  #e97d82,
-    base:     #e15258,
-    dark:   #d9272e,
-  ),
-  "business": (
-    light:  #fba98c,
-    base:     #F9845B,
-    dark:   #f75f2a,
-  ),
-  "wordpress": (
-    light:  #a6add7,
-    base:     #838CC7,
-    dark:   #606bb7,
-  ),
-  "php": (
-    light:  #9885b2,
-    base:     #7D669E,
-    dark:   #645180,
-  ),
-  "ios": (
-    light:  #78c9c4,
-    base:     #53BBB4,
-    dark:   #3e9d97,
-  ),
-  "android": (
-    light:  #80c783,
-    base:     #5cb860,
-    dark:   #449d48,
+  "data": (
+    light: lighten(#A40A0A,5%),
+    base: #A40A0A,
+    dark: darken(#A40A0A,5%),
   ),
   "design": (
-    light:  #efaf3c,
-    base:     #e59a13,
-    dark:   #b67a0f,
+    light: lighten(#952669,5%),
+    base: #952669,
+    dark: darken(#952669,5%),
   ),
-  "devtools": (
-    light:  #7f94a8,
-    base:     #637a91,
-    dark:   #4e6173,
+  "experimental": (
+    light: lighten(#433489,5%),
+    base: #433489,
+    dark: darken(#433489,5%),
   ),
-  "java": (
-    light:  #38bd95,
-    base:     #2c9676,
-    dark:   #206f57,
+  "front-end": (
+    light: lighten(#3079AB,5%),
+    base: #3079AB,
+    dark: darken(#3079AB,5%),
   ),
-  "python": (
-    light:  #f6bfd0,
-    base:     #f092b0,
-    dark:   #ea6590,
+  "fundamentals": (
+    light: lighten(#AA411B,5%),
+    base: #AA411B,
+    dark: darken(#AA411B,5%),
   ),
-  "diglit": (
-    light:  #d6b1e2,
-    base:     #c38cd4,
-    dark:   #b067c6,
+  "mobile": (
+    light: lighten(#027C7C,5%),
+    base: #027C7C,
+    dark: darken(#027C7C,5%),
   ),
-  "gamedev": (
-    light:  #29b2b6,
-    base:     #20898c,
-    dark:   #176062,
-  ),
-  "csharp": (
-    light:  #b6689c,
-    base:     #9e4d83,
-    dark:   #7c3c67,
-  ),
-  "databases": (
-    light:  #ef9557,
-    base:     #eb7728,
-    dark:   #cd5e13,
-  ),
-  "virtual-reality": (
-    light:  #b5e296,
-    base:     #95D26C,
-    dark:   #6c9e4a,
-  ),
-  "apis": (
-    light:  #c36479,
-    base:     #993c50,
-    dark:   #712e3d,
-  ),
-  "go": (
-    light:  #4371cf,
-    base:     #375eab,
-    dark:   #284683,
-  ),
-  "data-analysis": (
-    light:  #8d81ab,
-    base:   #645a7e,
-    dark:   #4f4667,
-  ),
-  "security": (
-    light:  #D1897D,
-    base:   #C66C5D,
-    dark:   #955146,
-  ),
-  "quality-assurance": (
-    light:  #A560B5,
-    base:   #80438E,
-    dark:   #60226F,
-  ),
-  "machine-learning": (
-    light:  #459F7F,
-    base:   #2D6853,
-    dark:   #214d3d,
+  "internal": (
+    light: lighten(#222222,5%),
+    base: #222222,
+    dark: darken(#222222,5%),
   ),
   "undefined": (
-    light:  #8c959d,
-    base:     #717b85,
-    dark:   #5a6269,
+    light: lighten(#333333,5%),
+    base: #333333,
+    dark: darken(#333333,5%),
   )
+);
+
+// Topic Colors
+$topic-colors: (
+  "html": map-get($category-colors, front-end),
+  "css": map-get($category-colors, front-end),
+  "js": map-get($category-colors, front-end),
+  "wordpress": map-get($category-colors, front-end),
+
+  "ios": map-get($category-colors, mobile),
+  "android": map-get($category-colors, mobile),
+
+  "design": map-get($category-colors, design),
+
+  "diglit": map-get($category-colors, fundamentals),
+  "devtools": map-get($category-colors, fundamentals),
+  "business": map-get($category-colors, fundamentals),
+  "security": map-get($category-colors, fundamentals),
+  "quality-assurance": map-get($category-colors, fundamentals),
+
+  "java": map-get($category-colors, back-end),
+  "python": map-get($category-colors, back-end),
+  "ruby": map-get($category-colors, back-end),
+  "php": map-get($category-colors, back-end),
+  "apis": map-get($category-colors, back-end),
+  "csharp": map-get($category-colors, back-end),
+
+  "databases": map-get($category-colors, data),
+  "data-analysis": map-get($category-colors, data),
+
+  "go": map-get($category-colors, experimental),
+  "machine-learning": map-get($category-colors, experimental),
+  "gamedev": map-get($category-colors, experimental),
+
+  "undefined": map-get($category-colors, undefined)
 );
 
 // Spacing Units

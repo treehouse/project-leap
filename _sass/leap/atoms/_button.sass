@@ -215,6 +215,28 @@
           svg
             fill: #fff !important
 
+  @each $category, $name in $category-colors
+    &--category-#{$category}
+      border-color: category-color(#{$category}, base) !important
+      color: category-color(#{$category}, base) !important
+      svg
+        fill: category-color(#{$category}, base) !important
+      +selected
+        border-color: darken(category-color(#{$category}, base), 10%) !important
+        color: darken(category-color(#{$category}, base), 10%) !important
+        svg
+          fill: darken(category-color(#{$category}, base), 10%) !important
+      &.button--primary
+        background-color: category-color(#{$category}, base) !important
+        border-color: category-color(#{$category}, base) !important
+        color: #fff !important
+        +selected
+          background-color: darken(category-color(#{$category}, base), 10%) !important
+          border-color: darken(category-color(#{$category}, base), 10%) !important
+          svg
+            fill: #fff !important
+
+
   // Split Buttons
   .split-button &
     float: left
