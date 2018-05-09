@@ -33,14 +33,12 @@ $form-states: success, warning, error
       @each $prop in $properties
         #{$prop}: form-feedback-var-active($state)
 
-// Mixin for creating uniform bg across all form states
+// Mixin for creating uniform bg across all default form states
 @mixin form-feedback-bg-active
   .form-feedback-success &,
   .form-feedback-warning &,
   .form-feedback-error &
     background-color: $form-background-active
-
-
 
 .form
   &-fieldset
@@ -273,72 +271,113 @@ $form-states: success, warning, error
 
     // Form Feedback
     &-feedback
-      display: block
-      margin-top: .5rem
+      color: #fff
       font-size: .9rem
-      +form-feedback(color)
+      display: block
+      padding: 1em
+      margin-top: 0px
+      font-weight: 500
+      border-bottom-left-radius: 4px
+      border-bottom-right-radius: 4px
 
-      &-error
-        .form-feedback
-          color: #fff
-          font-size: 12px
-          display: block
-          padding: 1em
-          margin-top: 0px
-          font-weight: 500
-          background-color: #be4a4a
-          border-bottom-left-radius: 4px
-          border-bottom-right-radius: 4px
-        // Variable width feedback message with top arrow
-        .form-radio ~ .form-feedback,
-        .form-checkbox ~ .form-feedback,
-        .form-upload ~ .form-feedback,
-          color: #fff
-          font-size: 12px
-          display: inline-block
-          position: relative
-          padding: 1em
-          margin-top: 0px
-          font-weight: 500
-          background-color: #be4a4a
-          border-radius: 4px
-          &:after
-            bottom: 100%
-            left: 15px
-            border: solid transparent
-            content: " "
-            height: 0
-            width: 0
-            position: absolute
-            pointer-events: none
-            border-color: rgba(190, 74, 74, 0)
-            border-bottom-color: #be4a4a
-            border-width: 8px
-            margin-left: -8px
-        // Styling form feedback differently for Upload buttons
-        .form-upload ~ .form-feedback
-          display: block
-          float: left
-          clear: both
-          top: 15px
-        .form-upload+.form-label
-          border: 2px solid ui-color(error)
-          display: block
-          float: left
-          &:focus
-            border: 2px solid #fff
-        input, select, textarea
-          border: 2px solid ui-color(error)
-          border-bottom-left-radius: 0px
-          border-bottom-right-radius: 0px
-          &:focus
-            border: 2px solid #fff
-        label
-          &:hover, &:focus
-            -webkit-box-shadow: none
-            -moz-box-shadow: none
-            box-shadow: none
+    &-feedback-error, &-feedback-warning, &-feedback-success
+      input, select, textarea
+        border-bottom-left-radius: 0px
+        border-bottom-right-radius: 0px
 
+      label
+        &:hover, &:focus
+          -webkit-box-shadow: none
+          -moz-box-shadow: none
+          box-shadow: none
+
+      // Styling form feedback differently for Upload buttons
+      .form-upload ~ .form-feedback
+        display: block
+        float: left
+        clear: both
+        top: 15px
+      .form-upload+.form-label
+        display: block
+        float: left
+        &:focus
+          border: 2px solid #fff
+      
+      // Variable width feedback message with top arrow
+      .form-radio ~ .form-feedback,
+      .form-checkbox ~ .form-feedback,
+      .form-upload ~ .form-feedback,
+        color: #fff
+        font-size: 12px
+        display: inline-block
+        position: relative
+        padding: 1em
+        margin-top: 0px
+        font-weight: 500
+        border-radius: 4px
+        &:after
+          bottom: 100%
+          left: 15px
+          border: solid transparent
+          content: " "
+          height: 0
+          width: 0
+          position: absolute
+          pointer-events: none
+          border-color: rgba(190, 74, 74, 0)
+          border-width: 8px
+          margin-left: -8px
+
+    &-feedback-success
+      .form-radio ~ .form-feedback,
+      .form-checkbox ~ .form-feedback,
+      .form-upload ~ .form-feedback
+        &:after
+          border-bottom-color: ui-color(success)
+
+    &-feedback-warning
+      .form-radio ~ .form-feedback,
+      .form-checkbox ~ .form-feedback,
+      .form-upload ~ .form-feedback
+        &:after
+          border-bottom-color: ui-color(warning)
+
+    &-feedback-error
+      .form-radio ~ .form-feedback,
+      .form-checkbox ~ .form-feedback,
+      .form-upload ~ .form-feedback
+        &:after
+          border-bottom-color: ui-color(error)
+
+    &-feedback-success .form-feedback
+      background-color: ui-color(success)
+    &-feedback-success
+      input, select, textarea
+        border: 2px solid ui-color(success)
+
+    &-feedback-warning .form-feedback
+      background-color: ui-color(warning)
+    &-feedback-warning
+      input, select, textarea
+        border: 2px solid ui-color(warning)
+
+    &-feedback-error .form-feedback
+      background-color: ui-color(error)
+    &-feedback-error
+      input, select, textarea
+        border: 2px solid ui-color(error)
+
+    &-feedback-success
+      .form-upload + .form-label
+        border: 2px solid ui-color(success)
+
+    &-feedback-warning
+      .form-upload + .form-label
+        border: 2px solid ui-color(warning)
+
+    &-feedback-error
+      .form-upload + .form-label
+        border: 2px solid ui-color(error)
 
     // Labels
     &-label,
@@ -390,11 +429,14 @@ $form-states: success, warning, error
           color: $form-color-inactive
         // Input & Textarea Form Feedback Styles
         +form-feedback-bg-active
+        +form-feedback-active(border-color)
         // Default Hover and Focus States
         &:hover, &:focus
           -webkit-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.3)
           -moz-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.3)
           box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.3)
+        &:focus
+          border: 2px solid #fff
           // Focus & Hover States for Form Feedback
           +form-feedback-bg-active
       // Getting rid of extra spacing that appears below textarea; size varies among browsers.
@@ -433,7 +475,6 @@ $form-states: success, warning, error
         box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.3)
       &:hover
         background-color: $form-background-active
-        border: 2px solid #fff
         color: $form-color-active
         -webkit-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.3)
         -moz-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.3)
