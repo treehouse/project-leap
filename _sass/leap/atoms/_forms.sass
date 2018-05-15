@@ -9,12 +9,12 @@ $form-border-active: darken($border-color-dark, 15%)
 $form-color-active: text-color(dark)
 
 // Form Feedback Defaults
-$form-feedback-success: ui-color(green)
-$form-feedback-warning: ui-color(orange)
-$form-feedback-error: ui-color(red)
-$form-feedback-active-success: darken(ui-color(green), 12%)
-$form-feedback-active-warning: darken(ui-color(orange), 12%)
-$form-feedback-active-error: darken(ui-color(red), 12%)
+$form-feedback-success: ui-color(success)
+$form-feedback-warning: ui-color(warning)
+$form-feedback-error: ui-color(error)
+$form-feedback-active-success: darken(ui-color(success), 12%)
+$form-feedback-active-warning: darken(ui-color(warning), 12%)
+$form-feedback-active-error: darken(ui-color(error), 12%)
 
 // Form States
 $form-states: success, warning, error
@@ -33,14 +33,12 @@ $form-states: success, warning, error
       @each $prop in $properties
         #{$prop}: form-feedback-var-active($state)
 
-// Mixin for creating uniform bg across all form states
+// Mixin for creating uniform bg across all default form states
 @mixin form-feedback-bg-active
   .form-feedback-success &,
   .form-feedback-warning &,
   .form-feedback-error &
     background-color: $form-background-active
-
-
 
 .form
   &-fieldset
@@ -65,7 +63,7 @@ $form-states: success, warning, error
     margin-bottom: .5rem
     line-height: 1.3
     &-required
-      color: red
+      color: ui-color(error)
       font-weight: $bold
     +form-feedback(color)
 
@@ -104,6 +102,14 @@ $form-states: success, warning, error
         // Focus & Hover States for Form Feedback
         +form-feedback-bg-active
         +form-feedback-active(border-color)
+      // Default Hover State
+      &:hover
+        border-color: $form-border-active
+        // Hover State for Form Feedback
+        +form-feedback-active(border-color)
+    // Getting rid of extra spacing that appears below textarea; size varies among browsers.
+    &area
+      vertical-align: top
 
   // Select Styles
   &-select
@@ -122,20 +128,27 @@ $form-states: success, warning, error
     padding: .844rem 1rem
     padding-right: 3rem
     line-height: 1
+    // Input & Textarea Form Feedback Styles
+    +form-feedback-bg-active
+    +form-feedback(border-color)
     .safari &
       padding: .85rem 1rem
       padding-right: 3rem
     .ff &
       padding: .688rem 1rem
       padding-right: 2rem
-    // Adding in focus & hover states
+    // Focus & hover states
     &:focus
       background-color: $form-background-active
       border: 2px solid $form-border-active
+      +form-feedback-bg-active
+      +form-feedback-active(border-color)
     &:hover
-      background-color: $form-background-active
       border: 2px solid $form-border-active
+      +form-feedback-bg-active
+      +form-feedback-active(border-color)
       color: $form-color-active
+      cursor: pointer
 
 
   // Radio & Checkboxes
@@ -178,6 +191,7 @@ $form-states: success, warning, error
         border: 2px solid $form-border-active
     // Hover states for radio and checkboxes
     &:hover+.form-label
+      cursor: pointer
       &:before
         border: 2px solid $form-border-active
         cursor: pointer
@@ -235,11 +249,337 @@ $form-states: success, warning, error
       // Feedback Styles
       +form-feedback-bg-active
       +form-feedback(border-color, color)
-    // Adding in focus & hover states
-    &:focus + .form-label,
-    & + .form-label:hover
+    // Focus & hover states
+    &:focus + .form-label
       background-color: $form-background-active
       border: 2px solid $form-border-active
       color: $form-color-active
-      // Focused & Hover states for form feedback
+      // Form feedback
       +form-feedback-active(border-color, color)
+    & + .form-label:hover
+      border: 2px solid $form-border-active
+      color: $form-color-active
+      // Form feedback
+      +form-feedback-active(border-color, color)
+
+.form-inverse
+  .form
+    &-fieldset
+      padding: 0
+      border: 0
+      margin: 0
+
+    // Form Feedback
+    &-feedback
+      color: #fff
+      font-size: .9rem
+      display: block
+      padding: 1em
+      margin-top: 0px
+      font-weight: 500
+      border-bottom-left-radius: 4px
+      border-bottom-right-radius: 4px
+
+    &-feedback-error, &-feedback-warning, &-feedback-success
+      input, select, textarea
+        border-bottom-left-radius: 0px
+        border-bottom-right-radius: 0px
+
+      label
+        &:hover, &:focus
+          -webkit-box-shadow: none
+          -moz-box-shadow: none
+          box-shadow: none
+
+      // Styling form feedback differently for Upload buttons
+      .form-upload ~ .form-feedback
+        display: block
+        float: left
+        clear: both
+        top: 15px
+      .form-upload+.form-label
+        display: block
+        float: left
+        &:focus
+          border: 2px solid #fff
+      
+      // Variable width feedback message with top arrow
+      .form-radio ~ .form-feedback,
+      .form-checkbox ~ .form-feedback,
+      .form-upload ~ .form-feedback,
+        color: #fff
+        font-size: 12px
+        display: inline-block
+        position: relative
+        padding: 1em
+        margin-top: 0px
+        font-weight: 500
+        border-radius: 4px
+        &:after
+          bottom: 100%
+          left: 15px
+          border: solid transparent
+          content: " "
+          height: 0
+          width: 0
+          position: absolute
+          pointer-events: none
+          border-color: rgba(190, 74, 74, 0)
+          border-width: 8px
+          margin-left: -8px
+
+    &-feedback-success
+      .form-radio ~ .form-feedback,
+      .form-checkbox ~ .form-feedback,
+      .form-upload ~ .form-feedback
+        &:after
+          border-bottom-color: ui-color(success)
+
+    &-feedback-warning
+      .form-radio ~ .form-feedback,
+      .form-checkbox ~ .form-feedback,
+      .form-upload ~ .form-feedback
+        &:after
+          border-bottom-color: ui-color(warning)
+
+    &-feedback-error
+      .form-radio ~ .form-feedback,
+      .form-checkbox ~ .form-feedback,
+      .form-upload ~ .form-feedback
+        &:after
+          border-bottom-color: ui-color(error)
+
+    &-feedback-success .form-feedback
+      background-color: ui-color(success)
+    &-feedback-success
+      input, select, textarea
+        border: 2px solid ui-color(success)
+
+    &-feedback-warning .form-feedback
+      background-color: ui-color(warning)
+    &-feedback-warning
+      input, select, textarea
+        border: 2px solid ui-color(warning)
+
+    &-feedback-error .form-feedback
+      background-color: ui-color(error)
+    &-feedback-error
+      input, select, textarea
+        border: 2px solid ui-color(error)
+
+    &-feedback-success
+      .form-upload + .form-label
+        border: 2px solid ui-color(success)
+
+    &-feedback-warning
+      .form-upload + .form-label
+        border: 2px solid ui-color(warning)
+
+    &-feedback-error
+      .form-upload + .form-label
+        border: 2px solid ui-color(error)
+
+    // Labels
+    &-label,
+    &-helper
+      display: block
+    &-label
+      color: #fff
+      font-weight: $bold
+      margin-bottom: .5rem
+      line-height: 1.3
+      position: relative
+      &:hover
+        cursor: pointer
+      &-required
+        color: ui-color(error)
+        font-weight: $bold
+      &-required-inset
+        color: ui-color(error)
+        font-weight: $bold
+        position: absolute
+        top: 33px
+        right: 8px
+      +form-feedback(color)
+
+    // Helper Text
+    &-helper
+      color: #fff
+      font-weight: normal
+      font-size: .9rem
+      margin-top: .5rem
+
+    // Inputs & Textareas
+    &-text
+      &-input,
+      &area
+        background-color: $form-background-inactive
+        border-color: $form-border-inactive
+        transition: .2s
+        margin: 0
+        font-size: 1rem
+        padding: .75rem 1rem
+        outline: none
+        border: 2px solid #fff
+        border-radius: $border-radius
+        box-shadow: 0
+        box-sizing: border-box
+        color: $form-color-active
+        +placeholder-style
+          color: $form-color-inactive
+        // Input & Textarea Form Feedback Styles
+        +form-feedback-bg-active
+        +form-feedback-active(border-color)
+        // Default Hover and Focus States
+        &:hover, &:focus
+          -webkit-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+          -moz-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+          box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+        &:focus
+          border: 2px solid #fff
+          // Focus & Hover States for Form Feedback
+          +form-feedback-bg-active
+      // Getting rid of extra spacing that appears below textarea; size varies among browsers.
+      &area
+        vertical-align: top
+
+    // Select Styles
+    &-select
+      -webkit-appearance: none !important
+      -moz-appearance: none !important
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2010%22%3E%0D%0A%09%3Cpath%20fill%3D%22%237b8b8e%22%20d%3D%22M9.5%2C9.5c-0.4%2C0-0.7-0.1-1-0.4L2%2C3.1C1.4%2C2.5%2C1.3%2C1.6%2C1.9%2C1C2.5%2C0.4%2C3.4%2C0.3%2C4%2C0.9L9.5%2C6L15%2C0.9%0D%0A%09%09c0.6-0.6%2C1.6-0.5%2C2.1%2C0.1c0.6%2C0.6%2C0.5%2C1.6-0.1%2C2.1l-6.5%2C6C10.2%2C9.4%2C9.9%2C9.5%2C9.5%2C9.5z%22%2F%3E%0D%0A%3C%2Fsvg%3E")
+      background-size: .9rem
+      background-repeat: no-repeat
+      background-position: calc(100% - 1rem) center
+      background-color: $form-background-inactive
+      border: 2px solid #fff
+      border-radius: $border-radius
+      font-weight: $bold
+      color: $form-color-inactive
+      outline: none
+      padding: .844rem 1rem
+      padding-right: 3rem
+      line-height: 1
+      .safari &
+        padding: .85rem 1rem
+        padding-right: 3rem
+      .ff &
+        padding: .688rem 1rem
+        padding-right: 2rem
+      // Adding in focus & hover states
+      &:focus
+        background-color: $form-background-active
+        border: 2px solid #fff
+        -webkit-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+        -moz-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+        box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+      &:hover
+        background-color: $form-background-active
+        color: $form-color-active
+        -webkit-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+        -moz-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+        box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+        cursor: pointer
+
+
+    // Radio & Checkboxes
+    &-radio,
+    &-checkbox
+      // Visually hiding the default elements
+      width: 0.1px
+      height: 0.1px
+      opacity: 0
+      overflow: hidden
+      position: absolute
+      z-index: -1
+      &+.form-label
+        display: block
+        font-weight: normal
+        color: #fff
+        padding: .25rem 0
+        margin-left: 25px !important
+        // Building stylized elements to replace defaults
+        &:before
+          content: ''
+          display: inline-block
+          width: 1rem
+          height: 1rem
+          position: relative
+          bottom: -2px
+          margin-right: .5rem
+        // Input used for "other" input in radio element label
+        > .form-text-input
+          height: 24px
+          line-height: 24px
+          padding-left: 0.25rem
+      &:checked
+        &+.form-label
+          color: #fff
+      // Adding in focus states for accessibility
+      // Hover states for radio and checkboxes
+      &:hover+.form-label, &:focus+.form-label
+        &:before
+          border: 2px solid #fff
+          cursor: pointer
+          -webkit-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+          -moz-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+          box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+    // Default Radio Styles
+    &-radio
+      &+.form-label:before
+        border-radius: 50%
+        border: 2px solid $border-color-light
+        margin-left: -25px
+      // Selected Radio Styles
+      &:checked+.form-label:before
+        border: 5px solid #fff
+        background-color: ui-color(blue)
+    // Default Checkbox Styles
+    &-checkbox
+      &+.form-label:before
+        content: ''
+        display: inline-block
+        width: 1rem
+        height: 1rem
+        border-radius: $border-radius
+        border: 2px solid $border-color-light
+        margin-left: -25px !important
+      // Selected Checkbox Styles
+      &:checked+.form-label:before
+        border: none
+        background-color: ui-color(blue)
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%0D%0A%09%3Cpath%20fill%3D%27%23FFFFFF%27%20d%3D%27M7%2C11c-0.3%2C0-0.5-0.1-0.7-0.3l-3-3c-0.4-0.4-0.4-1%2C0-1.4s1-0.4%2C1.4%2C0l2.2%2C2.2l4.3-5.2%0D%0A%09%09c0.4-0.4%2C1-0.5%2C1.4-0.1c0.4%2C0.4%2C0.5%2C1%2C0.1%2C1.4l-5%2C6C7.6%2C10.9%2C7.3%2C11%2C7%2C11C7%2C11%2C7%2C11%2C7%2C11z%27%2F%3E%0D%0A%3C%2Fsvg%3E")
+        background-repeat: none
+        background-position: center 1px
+        border: 2px solid #fff
+    // Upload Styles
+    &-upload
+      // Visually hiding the default file upload input
+      width: 0.1px
+      height: 0.1px
+      opacity: 0
+      overflow: hidden
+      position: absolute
+      z-index: -1
+      // Overlaying the input label on top of the file upload input
+      & + .form-label
+        background-color: $form-background-inactive
+        color: $form-color-inactive
+        display: inline-block
+        border: 2px solid #fff
+        border-radius: $border-radius
+        padding: .75rem 1rem
+        cursor: pointer
+        transition: .2s
+        margin-bottom: 0
+        // Feedback Styles
+        +form-feedback-bg-active
+        +form-feedback(border-color, color)
+      // Adding in focus & hover states
+      &:focus + .form-label,
+      & + .form-label:hover
+        -webkit-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+        -moz-box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+        box-shadow: 0px 0px 0px 3px rgba(45,51,57,0.6)
+        color: $form-color-active
+        // Focused & Hover states for form feedback
