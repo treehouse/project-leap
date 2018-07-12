@@ -2,6 +2,7 @@
 layout: default
 title: Forms
 subnav:
+  - Full Form
   - Labels
   - Inputs
   - Helper
@@ -13,9 +14,85 @@ subnav:
   - Success
   - Warning
   - Error
+  - Themes
 ---
 
 <section id="float">
+
+  <!-- Full Form -->
+  <h2 id="Full Form" class="m-b-1-xs">Full Form Example</h2>
+  <p class="m-b-2-xs">Here's an example of the full form, showing all the elements in context. Details about specific elements is stated below.</p>
+  <div class="border-mid-xs p-3-xs round m-b-3-xs">
+    <p class="text-3-xs m-b-2-xs">Default Form</p>
+    <form class="m-b-2-xs">
+      <label for="example-form-text-input-1" class="form-label">Text Input Label<span class="form-label-required">*</span></label>
+      <input type="text" class="form-text-input w-full-xs" id="example-form-text-input-1" placeholder="this is placeholder text">
+      <label class="form-helper m-b-2-xs">I'm helper text.</label>
+      <label for="example-form-textarea-1" class="form-label">Textarea Label<span class="form-label-required">*</span></label>
+      <textarea name="form-textarea-1" id="example-form-textarea-1" class="form-textarea col-50-xs m-b-2-xs w-full-xs"></textarea>
+      <label for="form-select-1" class="form-label">Select Label 1<span class="form-label-required">*</span></label>
+      <select id="form-select-1" class="form-select m-b-2-xs w-full-xs">
+        <option value="">Item 1</option>
+        <option value="">Item 2</option>
+        <option value="">Item 3</option>
+        <option value="">Item 4</option>
+      </select>
+      <input type="radio" id="example-form-radio-1" class="form-radio" name="radio" checked="checked">
+      <label for="example-form-radio-1" class="form-label m-b-2-xs">A really long radio label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.</label>
+      <input type="radio" id="example-form-radio-2" class="form-radio" name="radio">
+      <label for="example-form-radio-2" class="form-label m-b-2-xs">A short radio label.<span class="form-label-required">*</span></label>
+      <input type="checkbox" id="example-form-checkbox-1" class="form-checkbox">
+      <label for="example-form-checkbox-1" class="form-label m-b-2-xs">A really long radio label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.<span class="form-label-required">*</span></label>
+      <input type="file" class="form-upload m-b-2-xs" id="example-form-upload-1">
+      <label for="example-form-upload-1" class="form-label">Upload File...<span class="form-label-required">*</span></label>
+    </form>
+  </div>
+  <div class="border-mid-xs p-3-xs round m-b-3-xs">
+    <p class="text-3-xs m-b-2-xs">Default Form with Errors</p>
+    <form class="m-b-2-xs">
+      <fieldset class="form-feedback-error form-fieldset m-b-2-xs">
+        <label for="example-form-text-input-2" class="form-label">Text Input Label<span class="form-label-required">*</span></label>
+        <input type="text" class="form-text-input w-full-xs" id="example-form-text-input-2" placeholder="this is placeholder text">
+        <span class="form-feedback">I'm an error message.</span>
+        <label class="form-helper">I'm helper text.</label>
+      </fieldset>
+      <fieldset class="form-feedback-warning form-fieldset m-b-2-xs">
+        <label for="example-form-textarea-2" class="form-label">Textarea Label<span class="form-label-required">*</span></label>
+        <textarea name="form-textarea-1" id="example-form-textarea-2" class="form-textarea col-50-xs w-full-xs"></textarea>
+        <span class="form-feedback">I'm a warning message.</span>
+      </fieldset>
+      <fieldset class="form-feedback-success form-fieldset m-b-2-xs">
+        <label for="example-form-select-2" class="form-label">Select Label 1<span class="form-label-required">*</span></label>
+        <select id="example-form-select-2" class="form-select w-full-xs">
+          <option value="">Item 1</option>
+          <option value="">Item 2</option>
+          <option value="">Item 3</option>
+          <option value="">Item 4</option>
+        </select>
+        <span class="form-feedback">I'm a success message.</span>
+      </fieldset>
+      <fieldset class="form-feedback-error form-fieldset m-b-2-xs">
+        <input type="radio" id="exampleform-radio-2b" class="form-radio" name="radio" checked="checked">
+        <label for="example-form-radio-2b" class="form-label">A really long radio label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.<span class="form-label-required">*</span></label>
+        <span class="form-feedback">I'm an error message.</span>
+      </fieldset>
+      <fieldset class="form-feedback-warning form-fieldset m-b-2-xs">
+        <input type="radio" id="example-form-radio-3" class="form-radio" name="radio">
+        <label for="example-form-radio-3" class="form-label">A short radio label.<span class="form-label-required">*</span></label>
+        <span class="form-feedback">I'm a warning message.</span>
+      </fieldset>
+      <fieldset class="form-feedback-success form-fieldset m-b-2-xs">
+        <input type="checkbox" id="example-form-checkbox-2" class="form-checkbox">
+        <label for="example-form-checkbox-2" class="form-label">A really long radio label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.<span class="form-label-required">*</span></label>
+        <span class="form-feedback">I'm a success message.</span>
+      </fieldset>
+      <fieldset class="form-feedback-error form-fieldset">
+        <input type="file" class="form-upload m-b-2-xs" id="example-form-upload-2">
+        <label for="example-form-upload-2" class="form-label">Upload File...<span class="form-label-required">*</span></label>
+        <span class="form-feedback">I'm an error message.</span>
+      </fieldset>
+    </form>
+  </div>
 
   <!-- Labels -->
   <h2 id="Labels" class="m-b-1-xs">Labels</h2>
@@ -114,18 +191,37 @@ subnav:
   <p class="m-b-1-xs">Use <code>.form-radio</code> immediately following a <code>label</code> to get Leap's default radio button style.</p>
 
   <form class="m-b-2-xs">
-    <input type="radio" id="form-radio-1" class="form-radio" name="radio">
-    <label for="form-radio-1" class="form-label">Radio Label 1</label>
+    <input type="radio" id="form-radio-1" class="form-radio" name="radio" checked="checked">
+    <label for="form-radio-1" class="form-label">A really long radio label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.</label>
 
     <input type="radio" id="form-radio-2" class="form-radio" name="radio">
-    <label for="form-radio-2" class="form-label">Radio Label 2</label>
+    <label for="form-radio-2" class="form-label">A short radio label.</label>
   </form>
+
   <div class="guide-code m-b-4-xs">
   <pre><code class="language-html">&lt;form&gt;
   &lt;input type="radio" id="form-radio-1" class="form-radio" name="radio" checked="checked"&gt;
-  &lt;label for="form-radio-1" class="form-label"&gt;Radio Label 1&lt;/label&gt;
+  &lt;label for="form-radio-1" class="form-label"&gt;A really long radio label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.&lt;/label&gt;
   &lt;input type="radio" id="form-radio-2" class="form-radio" name="radio"&gt;
-  &lt;label for="form-radio-2" class="form-label"&gt;Radio Label 2&lt;/label&gt;
+  &lt;label for="form-radio-2" class="form-label"&gt;A short radio label.&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+  </div>
+
+  <p class="m-b-1-xs"><span class="deprecated">Deprecated but Supported</span> Before there was a inverted form theme, forms with white text on dark backgrounds needed a lighter hover state. To enable this, the <code>.text-color-white</code> class was used alongside <code>.form-label</code>. Going forward, don't use this method; instead, use the <a href="#Themes">Inverse Form theme</a>.</p>
+
+  <form class="p-2-xs m-b-2-xs bg-gray-darker round">
+    <input type="radio" id="form-radio-3" class="form-radio" name="radio" checked="checked">
+    <label for="form-radio-3" class="form-label text-color-white">A radio label on a dark background.</label>
+    <input type="radio" id="form-radio-4" class="form-radio" name="radio">
+    <label for="form-radio-4" class="form-label text-color-white m-b-0-xs">Another radio label on a dark background.</label>
+  </form>
+
+  <div class="guide-code m-b-4-xs">
+  <pre><code class="language-html">&lt;form class="p-2-xs m-b-2-xs bg-gray-darker round"&gt;
+  &lt;input type="radio" id="form-radio-3" class="form-radio" name="radio" checked="checked"&gt;
+  &lt;label for="form-radio-3" class="form-label text-color-white"&gt;A radio label on a dark background.&lt;/label&gt;
+  &lt;input type="radio" id="form-radio-4" class="form-radio" name="radio"&gt;
+  &lt;label for="form-radio-4" class="form-label text-color-white m-b-0-xs"&gt;Another radio label on a dark background.&lt;/label&gt;
 &lt;/form&gt;</code></pre>
   </div>
 
@@ -136,20 +232,38 @@ subnav:
 
   <form class="m-b-2-xs">
     <input type="checkbox" id="form-checkbox-1" class="form-checkbox">
-    <label for="form-checkbox-1" class="form-label">Checkbox Label 1</label>
+    <label for="form-checkbox-1" class="form-label">A really long checkbox label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.</label>
 
     <input type="checkbox" id="form-checkbox-2" class="form-checkbox">
-    <label for="form-checkbox-2" class="form-label">Checkbox Label 2</label>
+    <label for="form-checkbox-2" class="form-label">A short checkbox label.</label>
   </form>
+
   <div class="guide-code m-b-4-xs">
   <pre><code class="language-html">&lt;form&gt;
   &lt;input type="checkbox" id="form-checkbox-1" class="form-checkbox"&gt;
-  &lt;label for="form-checkbox-1" class="form-label"&gt;Checkbox Label 1&lt;/label&gt;
+  &lt;label for="form-checkbox-1" class="form-label"&gt;A really long checkbox label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.&lt;/label&gt;
   &lt;input type="checkbox" id="form-checkbox-2" class="form-checkbox"&gt;
-  &lt;label for="form-checkbox-2" class="form-label"&gt;Checkbox Label 2&lt;/label&gt;
+  &lt;label for="form-checkbox-2" class="form-label"&gt;A short checkbox label.&lt;/label&gt;
 &lt;/form&gt;</code></pre>
   </div>
 
+  <p class="m-b-1-xs"><span class="deprecated">Deprecated but Supported</span> Before there was a inverted form theme, forms with white text on dark backgrounds needed a lighter hover state. To enable this, the <code>.text-color-white</code> class was used alongside <code>.form-label</code>. Going forward, don't use this method; instead, use the <a href="#Themes">Inverse Form theme</a>.</p>
+
+  <form class="p-2-xs m-b-2-xs bg-gray-darker round">
+    <input type="checkbox" id="form-checkbox-3" class="form-checkbox">
+    <label for="form-checkbox-3" class="form-label text-color-white">A checkbox label on a dark background.</label>
+    <input type="checkbox" id="form-checkbox-4" class="form-checkbox">
+    <label for="form-checkbox-4" class="form-label text-color-white m-b-0-xs">Another checkbox label on a dark background.</label>
+  </form>
+
+  <div class="guide-code m-b-4-xs">
+  <pre><code class="language-html">&lt;form class="p-2-xs m-b-2-xs bg-gray-darker round"&gt;
+  &lt;input type="checkbox" id="form-checkbox-3" class="form-checkbox"&gt;
+  &lt;label for="form-checkbox-3" class="form-label text-color-white"&gt;A checkbox label on a dark background.&lt;/label&gt;
+  &lt;input type="checkbox" id="form-checkbox-4" class="form-checkbox"&gt;
+  &lt;label for="form-checkbox-4" class="form-label text-color-white m-b-0-xs"&gt;Another checkbox label on a dark background.&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+  </div>
 
   <!-- Uploads -->
   <h2 id="Uploads" class="m-b-1-xs">Uploads</h2>
@@ -196,20 +310,20 @@ subnav:
   <form class="m-b-2-xs">
     <fieldset class="form-feedback-warning form-fieldset">
       <label class="form-label">Radio Label</label>
-      <input type="radio" id="form-radio-3" class="form-radio" name="radio">
-      <label for="form-radio-3" class="form-label">Radio Label 1</label>
-      <input type="radio" id="form-radio-4" class="form-radio" name="radio">
-      <label for="form-radio-4" class="form-label">Radio Label 2</label>
+      <input type="radio" id="form-radio-5" class="form-radio" name="radio">
+      <label for="form-radio-5" class="form-label">Radio Label 1</label>
+      <input type="radio" id="form-radio-6" class="form-radio" name="radio">
+      <label for="form-radio-6" class="form-label">Radio Label 2</label>
       <span class="form-feedback">It's not a tumor</span>
     </fieldset>
   </form>
   <div class="guide-code m-b-4-xs">
   <pre><code class="language-html">&lt;form&gt;
   &lt;label class="form-label">Radio Label&lt;/label&gt;
-  &lt;input type="radio" id="form-radio-3" class="form-radio" name="radio"&gt;
-  &lt;label for="form-radio-3" class="form-label"&gt;Radio Label 1&lt;/label&gt;
-  &lt;input type="radio" id="form-radio-4" class="form-radio" name="radio"&gt;
-  &lt;label for="form-radio-4" class="form-label"&gt;Radio Label 2&lt;/label&gt;
+  &lt;input type="radio" id="form-radio-5" class="form-radio" name="radio"&gt;
+  &lt;label for="form-radio-5" class="form-label"&gt;Radio Label 1&lt;/label&gt;
+  &lt;input type="radio" id="form-radio-6" class="form-radio" name="radio"&gt;
+  &lt;label for="form-radio-6" class="form-label"&gt;Radio Label 2&lt;/label&gt;
   &lt;span class="form-feedback"&gt;It's not a tumor&lt;/span&gt;
 &lt;/form&gt;</code></pre>
   </div>
@@ -230,7 +344,7 @@ subnav:
       <span class="form-feedback">Get to the chopper!</span>
     </fieldset>
   </form>
-  <div class="guide-code">
+  <div class="guide-code m-b-4-xs">
   <pre><code class="language-html">&lt;form&gt;
   &lt;fieldset class="form-feedback-error form-fieldset"&gt;
     &lt;label class="form-label">Input Label&lt;/label&gt;
@@ -243,6 +357,85 @@ subnav:
     &lt;span class="form-feedback"&gt;Get to the chopper!&lt;/span&gt;
   &lt;/fieldset&gt;
 &lt;/form&gt;</code></pre>
+  </div>
+
+
+  <!-- Themes -->
+  <h2 id="Themes" class="m-b-1-xs">Themes</h2>
+  <p class="m-b-2-xs">The default theme is for forms that appear on a white background. To use a form on a dark background, add the <code>.form-inverse</code> class to the <code>&lt;form&gt;</code> element.</p>
+
+  <p class="m-b-2-xs">For any required <code>text input</code>, <code>text area</code>, or <code>select</code> inputs, add the <code>.form-label-required-inset</code> (in place of the usual <code>.form-label-required</code>) to the <code>*</code> span. This positions the required star on the input.</p>
+
+  <div class="text-bg-base p-3-xs round m-b-3-xs">
+    <p class="text-3-xs text-color-white m-b-2-xs">Inverse Form</p>
+    <form class="m-b-2-xs form-inverse">
+      <label for="inverse-form-text-input-1" class="form-label">Text Input Label<span class="form-label-required-inset">*</span></label>
+      <input type="text" class="form-text-input w-full-xs" id="inverse-form-text-input-1" placeholder="this is placeholder text">
+      <label class="form-helper m-b-2-xs">I'm helper text.</label>
+      <label for="inverse-form-textarea-1" class="form-label">Textarea Label<span class="form-label-required-inset">*</span></label>
+      <textarea name="form-textarea-1" id="inverse-form-textarea-1" class="form-textarea col-50-xs m-b-2-xs w-full-xs"></textarea>
+      <label for="form-select-1" class="form-label">Select Label 1<span class="form-label-required-inset">*</span></label>
+      <select id="form-select-1" class="form-select m-b-2-xs w-full-xs">
+        <option value="">Item 1</option>
+        <option value="">Item 2</option>
+        <option value="">Item 3</option>
+        <option value="">Item 4</option>
+      </select>
+      <input type="radio" id="inverse-form-radio-1" class="form-radio" name="radio" checked="checked">
+      <label for="inverse-form-radio-1" class="form-label m-b-2-xs">A really long radio label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.</label>
+      <input type="radio" id="inverse-form-radio-2" class="form-radio" name="radio">
+      <label for="inverse-form-radio-2" class="form-label m-b-2-xs">A short radio label.<span class="form-label-required">*</span></label>
+      <input type="checkbox" id="inverse-form-checkbox-1" class="form-checkbox">
+      <label for="inverse-form-checkbox-1" class="form-label m-b-2-xs">A really long radio label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.<span class="form-label-required">*</span></label>
+      <input type="file" class="form-upload m-b-2-xs" id="inverse-form-upload-1">
+      <label for="inverse-form-upload-1" class="form-label">Upload File...<span class="form-label-required">*</span></label>
+    </form>
+  </div>
+  <div class="text-bg-base p-3-xs round">
+    <p class="text-3-xs text-color-white m-b-2-xs">Inverse Form with Feedback</p>
+    <form class="m-b-2-xs form-inverse">
+      <fieldset class="form-feedback-error form-fieldset m-b-2-xs">
+        <label for="inverse-form-text-input-2" class="form-label">Text Input Label<span class="form-label-required-inset">*</span></label>
+        <input type="text" class="form-text-input w-full-xs" id="inverse-form-text-input-2" placeholder="this is placeholder text">
+        <span class="form-feedback">I'm an error message.</span>
+        <label class="form-helper">I'm helper text.</label>
+      </fieldset>
+      <fieldset class="form-feedback-warning form-fieldset m-b-2-xs">
+        <label for="inverse-form-textarea-2" class="form-label">Textarea Label<span class="form-label-required-inset">*</span></label>
+        <textarea name="form-textarea-1" id="inverse-form-textarea-2" class="form-textarea col-50-xs w-full-xs"></textarea>
+        <span class="form-feedback">I'm an warning message.</span>
+      </fieldset>
+      <fieldset class="form-feedback-success form-fieldset m-b-2-xs">
+        <label for="inverse-form-select-2" class="form-label">Select Label 1<span class="form-label-required-inset">*</span></label>
+        <select id="inverse-form-select-2" class="form-select w-full-xs">
+          <option value="">Item 1</option>
+          <option value="">Item 2</option>
+          <option value="">Item 3</option>
+          <option value="">Item 4</option>
+        </select>
+        <span class="form-feedback">I'm an success message.</span>
+      </fieldset>
+      <fieldset class="form-feedback-error form-fieldset m-b-2-xs">
+        <input type="radio" id="inverse-form-radio-2b" class="form-radio" name="radio" checked="checked">
+        <label for="inverse-form-radio-2b" class="form-label">A really long radio label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.<span class="form-label-required">*</span></label>
+        <span class="form-feedback">I'm an error message.</span>
+      </fieldset>
+      <fieldset class="form-feedback-warning form-fieldset m-b-2-xs">
+        <input type="radio" id="inverse-form-radio-3" class="form-radio" name="radio">
+        <label for="inverse-form-radio-3" class="form-label">A short radio label.<span class="form-label-required">*</span></label>
+        <span class="form-feedback">I'm a warning message.</span>
+      </fieldset>
+      <fieldset class="form-feedback-success form-fieldset m-b-2-xs">
+        <input type="checkbox" id="inverse-form-checkbox-2" class="form-checkbox">
+        <label for="inverse-form-checkbox-2" class="form-label">A really long radio label that goes on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on and on.<span class="form-label-required">*</span></label>
+        <span class="form-feedback">I'm a success message.</span>
+      </fieldset>
+      <fieldset class="form-feedback-error form-fieldset">
+        <input type="file" class="form-upload m-b-2-xs" id="inverse-form-upload-2">
+        <label for="inverse-form-upload-2" class="form-label">Upload File...<span class="form-label-required">*</span></label>
+        <span class="form-feedback">I'm an error message.</span>
+      </fieldset>
+    </form>
   </div>
 
 </section>

@@ -42,10 +42,20 @@
     svg
       fill: #fff !important
     +selected
-      background-color: darken(brand-color(green), 10%) !important
-      border-color: darken(brand-color(green), 10%) !important
+      background-color: darken(brand-color(green), 15%) !important
+      border-color: darken(brand-color(green), 15%) !important
       color: #fff !important
 
+  &--primary-blue
+    background-color: brand-color(blue-light) !important
+    border-color: brand-color(blue-light) !important
+    color: #fff !important
+    svg
+      fill: #fff !important
+    +selected
+      background-color: brand-color(blue-medium) !important
+      border-color: brand-color(blue-medium) !important
+      color: #fff !important
 
 
   // Secondary buttons
@@ -136,7 +146,7 @@
 
   // Inline buttons next to input fields
   &--inline
-    margin-top: 24px !important
+    margin-top: 28px !important
     padding: 0 26px !important
     height: 47px !important
     line-height: 43px !important

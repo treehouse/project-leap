@@ -1,9 +1,12 @@
-$leap-version: "0.8.9";
+$leap-version: "0.9.2";
 
 // Brand Colors
 $brand-colors: (
   "green": #5fcf80,
-  "gray":  #3e474f
+  "gray":  #3e474f,
+  "blue-light": #387bab, // AA 4.58
+  "blue-medium": #2a5d81,
+  "blue-dark": #303853
 );
 
 // Text Colors
@@ -12,7 +15,10 @@ $text-colors: (
   "medium":   #4b5658,
   "base":     #576366,
   "light":    #7b8b8e,
-  "white":    #fff
+  "white":    #fff,
+  "blue-light":    #387bab, // AA 4.58
+  "blue-medium":    #2a5d81,
+  "blue-dark":    #303853
 );
 
 // Gray Colors
@@ -30,7 +36,10 @@ $ui-colors: (
   "green":        #36b55c,
   "yellow":       #ffd466,
   "orange":       #ff9f1f,
-  "red":          #ed5a5a
+  "red":          #ed5a5a,
+  "error":          #be4a4a,
+  "warning":          #bf570f,
+  "success":          #24793d
 );
 
 // Category colors
@@ -76,9 +85,9 @@ $category-colors: (
     dark: darken(#222222,5%),
   ),
   "undefined": (
-    light: lighten(#333333,5%),
-    base: #333333,
-    dark: darken(#333333,5%),
+    light:  #8c959d,
+    base:   #717b85,
+    dark:   #5a6269,
   )
 );
 
@@ -99,6 +108,7 @@ $topic-colors: (
   "business": map-get($category-colors, fundamentals),
   "security": map-get($category-colors, fundamentals),
   "quality-assurance": map-get($category-colors, fundamentals),
+  "learning-resources": map-get($category-colors, fundamentals),
 
   "java": map-get($category-colors, back-end),
   "python": map-get($category-colors, back-end),
