@@ -45,84 +45,86 @@ $ui-colors: (
 // Category colors
 $category-colors: (
   "back-end": (
-    light: lighten(#651776,5%),
-    base: #651776,
-    dark: darken(#651776,5%),
+    light: lighten(#008297,5%),
+    base: #008297,
+    dark: darken(#008297,5%),
   ),
   "data": (
-    light: lighten(#A40A0A,5%),
-    base: #A40A0A,
-    dark: darken(#A40A0A,5%),
+    light: lighten(#9F4B84,5%),
+    base: #9F4B84,
+    dark: darken(#9F4B84,5%),
   ),
   "design": (
-    light: lighten(#952669,5%),
-    base: #952669,
-    dark: darken(#952669,5%),
+    light: lighten(#4a4290,5%),
+    base: #4a4290,
+    dark: darken(#4a4290,5%),
   ),
   "experimental": (
-    light: lighten(#433489,5%),
-    base: #433489,
-    dark: darken(#433489,5%),
+    light: lighten(#733a88,5%),
+    base: #733a88,
+    dark: darken(#733a88,5%),
   ),
   "front-end": (
-    light: lighten(#3079AB,5%),
-    base: #3079AB,
-    dark: darken(#3079AB,5%),
+    light: lighten(#3659a2,5%),
+    base: #3659a2,
+    dark: darken(#3659a2,5%),
   ),
   "fundamentals": (
-    light: lighten(#AA411B,5%),
-    base: #AA411B,
-    dark: darken(#AA411B,5%),
+    light: lighten(#9b3b5a,5%),
+    base: #9b3b5a,
+    dark: darken(#9b3b5a,5%),
   ),
   "mobile": (
-    light: lighten(#027C7C,5%),
-    base: #027C7C,
-    dark: darken(#027C7C,5%),
+    light: lighten(#30826C,5%),
+    base: #30826C,
+    dark: darken(#30826C,5%),
   ),
   "internal": (
-    light: lighten(#222222,5%),
-    base: #222222,
-    dark: darken(#222222,5%),
+    light: lighten(#55616c,5%),
+    base: #55616c,
+    dark: darken(#55616c,5%),
   ),
   "undefined": (
-    light:  #8c959d,
-    base:   #717b85,
-    dark:   #5a6269,
+    light: lighten(#55616c,5%),
+    base: #55616c,
+    dark: darken(#55616c,5%),
   )
 );
 
 // Topic Colors
 $topic-colors: (
-  "html": map-get($category-colors, front-end),
   "css": map-get($category-colors, front-end),
+  "html": map-get($category-colors, front-end),
   "js": map-get($category-colors, front-end),
   "wordpress": map-get($category-colors, front-end),
 
-  "ios": map-get($category-colors, mobile),
   "android": map-get($category-colors, mobile),
+  "ios": map-get($category-colors, mobile),
 
   "design": map-get($category-colors, design),
 
-  "diglit": map-get($category-colors, fundamentals),
-  "devtools": map-get($category-colors, fundamentals),
   "business": map-get($category-colors, fundamentals),
-  "security": map-get($category-colors, fundamentals),
-  "quality-assurance": map-get($category-colors, fundamentals),
+  "computer-science": map-get($category-colors, fundamentals),
+  "devtools": map-get($category-colors, fundamentals),
+  "diglit": map-get($category-colors, fundamentals),
   "learning-resources": map-get($category-colors, fundamentals),
+  "quality-assurance": map-get($category-colors, fundamentals),
+  "security": map-get($category-colors, fundamentals),
 
-  "java": map-get($category-colors, back-end),
-  "python": map-get($category-colors, back-end),
-  "ruby": map-get($category-colors, back-end),
-  "php": map-get($category-colors, back-end),
   "apis": map-get($category-colors, back-end),
   "csharp": map-get($category-colors, back-end),
+  "java": map-get($category-colors, back-end),
+  "php": map-get($category-colors, back-end),
+  "python": map-get($category-colors, back-end),
+  "ruby": map-get($category-colors, back-end),
+  "swift": map-get($category-colors, back-end),
 
-  "databases": map-get($category-colors, data),
   "data-analysis": map-get($category-colors, data),
+  "databases": map-get($category-colors, data),
 
+  "gamedev": map-get($category-colors, experimental),
   "go": map-get($category-colors, experimental),
   "machine-learning": map-get($category-colors, experimental),
-  "gamedev": map-get($category-colors, experimental),
 
   "undefined": map-get($category-colors, undefined)
 );
