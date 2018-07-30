@@ -192,10 +192,8 @@ var textColors = function(elementId, $elementId, guideClass) {
 }
 textColors('textColorData', '#textColorData', '.guide-colors-text');
 
-
-
 // Apply automation to elements in the Guide
-var topicColors = function(elementId, $elementId, guideClass) {
+var categoryColors = function(elementId, $elementId, guideClass) {
 
   var colorDataEl = document.getElementById(elementId);
   var colorData = sassToJs(colorDataEl);
@@ -216,7 +214,7 @@ var topicColors = function(elementId, $elementId, guideClass) {
 
         // Create span to hold color
         var colorSpan = document.createElement('span');
-        colorSpan.className = 'p-2-xs m-lr-1-xs block-xs topic-bg-' + colorClass + '-' + subProp;
+        colorSpan.className = 'p-2-xs m-lr-1-xs block-xs category-bg-' + colorClass + '-' + subProp;
 
         // Create code element to hold var function and hex
         var nameSpan = document.createElement('span');
@@ -242,4 +240,4 @@ var topicColors = function(elementId, $elementId, guideClass) {
     }
   }
 }
-topicColors('topicColorData', '#topicColorData', '.guide-colors-topic');
+categoryColors('categoryColorData', '#categoryColorData', '.guide-colors-category');

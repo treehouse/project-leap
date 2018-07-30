@@ -42,137 +42,52 @@ $ui-colors: (
   "success":          #24793d
 );
 
-// Topic Colors
-$topic-colors: (
-  "html": (
-    light:  #62bedb,
-    base:     #39ADD1,
-    dark:   #298fae,
+// Category colors 
+$category-colors: (
+  "back-end": (
+    light: lighten(#008297,5%),
+    base: #008297,
+    dark: darken(#008297,5%),
   ),
-  "css": (
-    light:  #4494ca,
-    base:     #3079AB,
-    dark:   #255d83,
-  ),
-  "js": (
-    light:  #d07e94,
-    base:     #c25975,
-    dark:   #aa3e5b,
-  ),
-  "ruby": (
-    light:  #e97d82,
-    base:     #e15258,
-    dark:   #d9272e,
-  ),
-  "business": (
-    light:  #fba98c,
-    base:     #F9845B,
-    dark:   #f75f2a,
-  ),
-  "wordpress": (
-    light:  #a6add7,
-    base:     #838CC7,
-    dark:   #606bb7,
-  ),
-  "php": (
-    light:  #9885b2,
-    base:     #7D669E,
-    dark:   #645180,
-  ),
-  "ios": (
-    light:  #78c9c4,
-    base:     #53BBB4,
-    dark:   #3e9d97,
-  ),
-  "android": (
-    light:  #80c783,
-    base:     #5cb860,
-    dark:   #449d48,
+  "data": (
+    light: lighten(#9F4B84,5%),
+    base: #9F4B84,
+    dark: darken(#9F4B84,5%),
   ),
   "design": (
-    light:  #efaf3c,
-    base:     #e59a13,
-    dark:   #b67a0f,
+    light: lighten(#4a4290,5%),
+    base: #4a4290,
+    dark: darken(#4a4290,5%),
   ),
-  "devtools": (
-    light:  #7f94a8,
-    base:     #637a91,
-    dark:   #4e6173,
+  "experimental": (
+    light: lighten(#733a88,5%),
+    base: #733a88,
+    dark: darken(#733a88,5%),
   ),
-  "java": (
-    light:  #38bd95,
-    base:     #2c9676,
-    dark:   #206f57,
+  "front-end": (
+    light: lighten(#3659a2,5%),
+    base: #3659a2,
+    dark: darken(#3659a2,5%),
   ),
-  "python": (
-    light:  #f6bfd0,
-    base:     #f092b0,
-    dark:   #ea6590,
+  "fundamentals": (
+    light: lighten(#9b3b5a,5%),
+    base: #9b3b5a,
+    dark: darken(#9b3b5a,5%),
   ),
-  "diglit": (
-    light:  #d6b1e2,
-    base:     #c38cd4,
-    dark:   #b067c6,
+  "mobile": (
+    light: lighten(#30826C,5%),
+    base: #30826C,
+    dark: darken(#30826C,5%),
   ),
-  "gamedev": (
-    light:  #29b2b6,
-    base:     #20898c,
-    dark:   #176062,
-  ),
-  "csharp": (
-    light:  #b6689c,
-    base:     #9e4d83,
-    dark:   #7c3c67,
-  ),
-  "databases": (
-    light:  #ef9557,
-    base:     #eb7728,
-    dark:   #cd5e13,
-  ),
-  "virtual-reality": (
-    light:  #b5e296,
-    base:     #95D26C,
-    dark:   #6c9e4a,
-  ),
-  "apis": (
-    light:  #c36479,
-    base:     #993c50,
-    dark:   #712e3d,
-  ),
-  "go": (
-    light:  #4371cf,
-    base:     #375eab,
-    dark:   #284683,
-  ),
-  "data-analysis": (
-    light:  #8d81ab,
-    base:   #645a7e,
-    dark:   #4f4667,
-  ),
-  "security": (
-    light:  #D1897D,
-    base:   #C66C5D,
-    dark:   #955146,
-  ),
-  "quality-assurance": (
-    light:  #A560B5,
-    base:   #80438E,
-    dark:   #60226F,
-  ),
-  "machine-learning": (
-    light:  #459F7F,
-    base:   #2D6853,
-    dark:   #214d3d,
-  ),
-  "learning-resources": (
-    light:  #569CAD,
-    base:   #38798A,
-    dark:   #19596A,
+  "internal": (
+    light: lighten(#55616c,5%),
+    base: #55616c,
+    dark: darken(#55616c,5%),
   ),
   "undefined": (
-    light:  #8c959d,
-    base:   #717b85,
-    dark:   #5a6269,
+    light: lighten(#55616c,5%),
+    base: #55616c,
+    dark: darken(#55616c,5%),
   )
 );
 

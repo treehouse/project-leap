@@ -100,10 +100,8 @@ $properties: fill stroke color border-color background-color
       .text-#{$property}-#{$color-name}
         #{$property}: text-color($color-name) !important
 
-
-
-// Iterate through topic-colors map to create colors for classes
-@each $color-name, $color in $topic-colors
+// Iterate through category-colors map to create colors for classes
+@each $color-name, $color in $category-colors
   @each $color-value, $color-hex in $color
 
     // Iterate through properties var to create properties for classes
@@ -117,11 +115,11 @@ $properties: fill stroke color border-color background-color
       //
       // Else just use the regular property name
       @if $property == background-color
-        .topic-bg-#{$color-name}-#{$color-value}
+        .category-bg-#{$color-name}-#{$color-value}
           #{$property}: map-get($color, $color-value) !important
       @else if $property == border-color
-        .topic-border-#{$color-name}-#{$color-value}
+        .category-border-#{$color-name}-#{$color-value}
           #{$property}: map-get($color, $color-value) !important
       @else
-        .topic-#{$property}-#{$color-name}-#{$color-value}
+        .category-#{$property}-#{$color-name}-#{$color-value}
           #{$property}: map-get($color, $color-value) !important
