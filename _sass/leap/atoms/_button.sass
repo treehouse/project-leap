@@ -203,28 +203,6 @@
   // Extra Large button classes
   +button(xl, min-width $xl)
 
-  // Topic color buttons
-  @each $topic, $name in $topic-colors
-    &--topic-#{$topic}
-      border-color: topic-color(#{$topic}, base) !important
-      color: topic-color(#{$topic}, base) !important
-      svg
-        fill: topic-color(#{$topic}, base) !important
-      +selected
-        border-color: darken(topic-color(#{$topic}, base), 10%) !important
-        color: darken(topic-color(#{$topic}, base), 10%) !important
-        svg
-          fill: darken(topic-color(#{$topic}, base), 10%) !important
-      &.button--primary
-        background-color: topic-color(#{$topic}, base) !important
-        border-color: topic-color(#{$topic}, base) !important
-        color: #fff !important
-        +selected
-          background-color: darken(topic-color(#{$topic}, base), 10%) !important
-          border-color: darken(topic-color(#{$topic}, base), 10%) !important
-          svg
-            fill: #fff !important
-
   @each $category, $name in $category-colors
     &--category-#{$category}
       border-color: category-color(#{$category}, base) !important

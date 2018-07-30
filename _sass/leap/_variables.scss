@@ -91,44 +91,6 @@ $category-colors: (
   )
 );
 
-// Topic Colors
-$topic-colors: (
-  "css": map-get($category-colors, front-end),
-  "html": map-get($category-colors, front-end),
-  "js": map-get($category-colors, front-end),
-  "wordpress": map-get($category-colors, front-end),
-
-  "android": map-get($category-colors, mobile),
-  "ios": map-get($category-colors, mobile),
-
-  "design": map-get($category-colors, design),
-
-  "business": map-get($category-colors, fundamentals),
-  "computer-science": map-get($category-colors, fundamentals),
-  "devtools": map-get($category-colors, fundamentals),
-  "diglit": map-get($category-colors, fundamentals),
-  "learning-resources": map-get($category-colors, fundamentals),
-  "quality-assurance": map-get($category-colors, fundamentals),
-  "security": map-get($category-colors, fundamentals),
-
-  "apis": map-get($category-colors, back-end),
-  "csharp": map-get($category-colors, back-end),
-  "java": map-get($category-colors, back-end),
-  "php": map-get($category-colors, back-end),
-  "python": map-get($category-colors, back-end),
-  "ruby": map-get($category-colors, back-end),
-  "swift": map-get($category-colors, back-end),
-
-  "data-analysis": map-get($category-colors, data),
-  "databases": map-get($category-colors, data),
-
-  "gamedev": map-get($category-colors, experimental),
-  "go": map-get($category-colors, experimental),
-  "machine-learning": map-get($category-colors, experimental),
-
-  "undefined": map-get($category-colors, undefined)
-);
-
 // Spacing Units
 //   0   = 0px
 //   0.5 = 8px
