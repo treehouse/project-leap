@@ -35,14 +35,15 @@ $ui-colors: (
   "blue":         #3f8abf,
   "green":        #36b55c,
   "yellow":       #ffd466,
+  "wtf":       #ffd466,
   "orange":       #ff9f1f,
   "red":          #ed5a5a,
-  "error":          #be4a4a,
-  "warning":          #bf570f,
-  "success":          #24793d
+  "error":        #be4a4a,
+  "warning":      #bf570f,
+  "success":      #24793d
 );
 
-// Category colors 
+// Category colors
 $category-colors: (
   "back-end": (
     light: lighten(#008297,5%),
@@ -124,8 +125,8 @@ $spacing-sides: (
 
 // Type Variables
 $text-size: (
-  0: 3rem,
-  1: 2.25rem,
+  0: 2.5rem,
+  1: 2rem,
   2: 1.75rem,
   3: 1.25rem,
   4: 1.125rem,

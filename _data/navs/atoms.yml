@@ -1,5 +1,5 @@
 filename: atoms
-name: Atoms
+name: Utilities
 pages:
   - slug: /typography.html
     name: Typography

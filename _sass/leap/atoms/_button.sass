@@ -152,6 +152,27 @@
     line-height: 43px !important
 
 
+  // When you want to use button HTML syntax without border formatting
+  &--icon-only
+    background: none
+    border: none
+    color: grey
+    fill: grey
+    padding: 5px
+    width: 22px
+    transition: background 0.2s
+    &:hover
+      fill: black
+
+  &--gray
+    background: gray-color(gray-dark)
+    border: gray-color(gray-dark)
+    color: #e9ecec
+    &:hover
+      background: gray-color(gray-darker)
+      border: gray-color(gray-darker)
+      color: white
+
 
   // Button size style maps
   $button-sizes: (xlarge: (font-size: 18px, height: 58px, padding: 28px), large: (font-size: 16px, height: 50px, padding: 22px), normal: (font-size: 16px, height: 40px, padding: 15px), small: (font-size: 12px, height: 34px, padding: 12px), xsmall: (font-size: 12px, height: 30px, padding: 10px))

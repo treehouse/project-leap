@@ -1,0 +1,8 @@
+filename: components
+name: Components
+pages:
+  - slug: /#
+    name: Coming Soon
+
+  - slug: /cards.html
+    name: Cards

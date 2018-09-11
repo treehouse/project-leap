@@ -1,0 +1,15 @@
+filename: examples
+name: Examples
+pages:
+
+  - slug: /examples/library.html
+    name: Library
+
+  - slug: /examples/syllabus.html
+    name: Course Syllabus
+
+  - slug: /examples/community.html
+    name: Community
+
+  - slug: /examples/support.html
+    name: Support
