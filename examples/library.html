@@ -3,60 +3,129 @@ layout: example
 title: Library
 ---
 
-<header class="bg- col-100">
-  <nav>
-    <button class="hamburger-button hamburger-button-inverse" aria-label="Navigation Menu" data-hamburger-button="">
-      <span class="hamburger"></span>
+{% include component-examples/header-nav.html %}
+
+<main class="col-max col-container">
+  <div class="alert-banner flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
+    <p>This is an Alert with the :info class set</p>
+    <button class="button--icon-only" data-close-alert="" title="Close">
+      <svg viewBox="0 0 12 12"><path d="m8.2 6 3.3-3.3c.6-.6.6-1.6 0-2.2s-1.6-.6-2.2 0l-3.3 3.3-3.3-3.3c-.6-.6-1.6-.6-2.2 0s-.6 1.6 0 2.2l3.3 3.3-3.3 3.3c-.6.6-.6 1.6 0 2.2s1.6.6 2.2 0l3.3-3.3 3.3 3.3c.6.6 1.6.6 2.2 0s.6-1.6 0-2.2z"/></svg>
     </button>
-    <a href="">Home</a>
-    <a href="">Tracks</a>
-    <a href="">Library</a>
-    <a href="">Community</a>
-    <a href="">Support</a>
-
-  </nav>
-</header>
-
-<div class="alert-banner flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
-  <p>This is an Alert with the :info class set</p>
-  <button class="button--icon-only" data-close-alert="" title="Close">
-    <svg viewBox="0 0 12 12"><path d="m8.2 6 3.3-3.3c.6-.6.6-1.6 0-2.2s-1.6-.6-2.2 0l-3.3 3.3-3.3-3.3c-.6-.6-1.6-.6-2.2 0s-.6 1.6 0 2.2l3.3 3.3-3.3 3.3c-.6.6-.6 1.6 0 2.2s1.6.6 2.2 0l3.3-3.3 3.3 3.3c.6.6 1.6.6 2.2 0s.6-1.6 0-2.2z"/></svg>
-  </button>
-</div>
+  </div>
 
 
-<div class="alert-banner alert-banner--success flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
-  <p>This is an Alert with the :success class set</p>
-  <button class="button--icon-only" data-close-alert="" title="Close">
-    <svg viewBox="0 0 12 12"><path d="m8.2 6 3.3-3.3c.6-.6.6-1.6 0-2.2s-1.6-.6-2.2 0l-3.3 3.3-3.3-3.3c-.6-.6-1.6-.6-2.2 0s-.6 1.6 0 2.2l3.3 3.3-3.3 3.3c-.6.6-.6 1.6 0 2.2s1.6.6 2.2 0l3.3-3.3 3.3 3.3c.6.6 1.6.6 2.2 0s.6-1.6 0-2.2z"/></svg>
-  </button>
-</div>
+  <div class="alert-banner alert-banner--success flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
+    <p>This is an Alert with the :success class set</p>
+    <button class="button--icon-only" data-close-alert="" title="Close">
+      <svg viewBox="0 0 12 12"><path d="m8.2 6 3.3-3.3c.6-.6.6-1.6 0-2.2s-1.6-.6-2.2 0l-3.3 3.3-3.3-3.3c-.6-.6-1.6-.6-2.2 0s-.6 1.6 0 2.2l3.3 3.3-3.3 3.3c-.6.6-.6 1.6 0 2.2s1.6.6 2.2 0l3.3-3.3 3.3 3.3c.6.6 1.6.6 2.2 0s.6-1.6 0-2.2z"/></svg>
+    </button>
+  </div>
 
-<div class="alert-banner alert-banner--with-icon alert-banner--warning flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
-  <p>
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M18,22H4c-2.2,0-4-1.8-4-4V4c0-2.2,1.8-4,4-4h14c2.2,0,4,1.8,4,4v14
-      C22,20.2,20.2,22,18,22z M17,2H5C3.7,2,2.6,2.8,2.2,4h17.6C19.4,2.8,18.3,2,17,2z M20,6H2v11c0,1.7,1.3,3,3,3h12c1.7,0,3-1.3,3-3V6z
-       M13.9,16.6c-0.4,0.4-1,0.4-1.4,0c-0.4-0.4-0.4-1,0-1.4l2.1-2.1l-2.1-2.1c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l2.8,2.8
-      c0.4,0.4,0.4,1,0,1.4L13.9,16.6z M9.5,16.5c-0.4,0.4-1,0.4-1.4,0l-2.8-2.8c-0.4-0.4-0.4-1,0-1.4l2.8-2.8c0.4-0.4,1-0.4,1.4,0
-      c0.4,0.4,0.4,1,0,1.4L7.4,13l2.1,2.1C9.9,15.5,9.9,16.1,9.5,16.5z"/>
-    </svg>
-    <strong>Nice.</strong> This is an Alert with the :warning class set</p>
-  <button class="button--icon-only" data-close-alert="" title="Close">
-    <svg viewBox="0 0 12 12"><path d="m8.2 6 3.3-3.3c.6-.6.6-1.6 0-2.2s-1.6-.6-2.2 0l-3.3 3.3-3.3-3.3c-.6-.6-1.6-.6-2.2 0s-.6 1.6 0 2.2l3.3 3.3-3.3 3.3c-.6.6-.6 1.6 0 2.2s1.6.6 2.2 0l3.3-3.3 3.3 3.3c.6.6 1.6.6 2.2 0s.6-1.6 0-2.2z"/></svg>
-  </button>
-</div>
+  <div class="alert-banner alert-banner--with-icon alert-banner--warning flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
+    <p>
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M18,22H4c-2.2,0-4-1.8-4-4V4c0-2.2,1.8-4,4-4h14c2.2,0,4,1.8,4,4v14
+        C22,20.2,20.2,22,18,22z M17,2H5C3.7,2,2.6,2.8,2.2,4h17.6C19.4,2.8,18.3,2,17,2z M20,6H2v11c0,1.7,1.3,3,3,3h12c1.7,0,3-1.3,3-3V6z
+         M13.9,16.6c-0.4,0.4-1,0.4-1.4,0c-0.4-0.4-0.4-1,0-1.4l2.1-2.1l-2.1-2.1c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l2.8,2.8
+        c0.4,0.4,0.4,1,0,1.4L13.9,16.6z M9.5,16.5c-0.4,0.4-1,0.4-1.4,0l-2.8-2.8c-0.4-0.4-0.4-1,0-1.4l2.8-2.8c0.4-0.4,1-0.4,1.4,0
+        c0.4,0.4,0.4,1,0,1.4L7.4,13l2.1,2.1C9.9,15.5,9.9,16.1,9.5,16.5z"/>
+      </svg>
+      <strong>Nice.</strong> This is an Alert with the :warning class set</p>
+    <button class="button--icon-only" data-close-alert="" title="Close">
+      <svg viewBox="0 0 12 12"><path d="m8.2 6 3.3-3.3c.6-.6.6-1.6 0-2.2s-1.6-.6-2.2 0l-3.3 3.3-3.3-3.3c-.6-.6-1.6-.6-2.2 0s-.6 1.6 0 2.2l3.3 3.3-3.3 3.3c-.6.6-.6 1.6 0 2.2s1.6.6 2.2 0l3.3-3.3 3.3 3.3c.6.6 1.6.6 2.2 0s.6-1.6 0-2.2z"/></svg>
+    </button>
+  </div>
 
-<div class="alert-banner alert-banner--error flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
-  <p>This is an Alert with the :warning class set</p>
-  <button class="button--icon-only" data-close-alert="" title="Close">
-    x
-  </button>
-</div>
-<div class="alert-banner alert-banner--error flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
-  <p>This is an Alert with the :warning class set</p>
-  <button class="button button--small-xs button--gray" data-close-alert="" title="Close">
-    Close
-  </button>
-</div>
+  <div class="alert-banner alert-banner--with-icon flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
+    <p>
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M18,22H4c-2.2,0-4-1.8-4-4V4c0-2.2,1.8-4,4-4h14c2.2,0,4,1.8,4,4v14
+        C22,20.2,20.2,22,18,22z M17,2H5C3.7,2,2.6,2.8,2.2,4h17.6C19.4,2.8,18.3,2,17,2z M20,6H2v11c0,1.7,1.3,3,3,3h12c1.7,0,3-1.3,3-3V6z
+         M13.9,16.6c-0.4,0.4-1,0.4-1.4,0c-0.4-0.4-0.4-1,0-1.4l2.1-2.1l-2.1-2.1c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l2.8,2.8
+        c0.4,0.4,0.4,1,0,1.4L13.9,16.6z M9.5,16.5c-0.4,0.4-1,0.4-1.4,0l-2.8-2.8c-0.4-0.4-0.4-1,0-1.4l2.8-2.8c0.4-0.4,1-0.4,1.4,0
+        c0.4,0.4,0.4,1,0,1.4L7.4,13l2.1,2.1C9.9,15.5,9.9,16.1,9.5,16.5z"/>
+      </svg>
+      <strong>Nice.</strong> This is an Alert with the :warning class set</p>
+    <button class="button--icon-only" data-close-alert="" title="Close">
+      <svg viewBox="0 0 12 12"><path d="m8.2 6 3.3-3.3c.6-.6.6-1.6 0-2.2s-1.6-.6-2.2 0l-3.3 3.3-3.3-3.3c-.6-.6-1.6-.6-2.2 0s-.6 1.6 0 2.2l3.3 3.3-3.3 3.3c-.6.6-.6 1.6 0 2.2s1.6.6 2.2 0l3.3-3.3 3.3 3.3c.6.6 1.6.6 2.2 0s.6-1.6 0-2.2z"/></svg>
+    </button>
+  </div>
+
+  <div class="alert-banner alert-banner--with-icon alert-banner--success flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
+    <p>
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M18,22H4c-2.2,0-4-1.8-4-4V4c0-2.2,1.8-4,4-4h14c2.2,0,4,1.8,4,4v14
+        C22,20.2,20.2,22,18,22z M17,2H5C3.7,2,2.6,2.8,2.2,4h17.6C19.4,2.8,18.3,2,17,2z M20,6H2v11c0,1.7,1.3,3,3,3h12c1.7,0,3-1.3,3-3V6z
+         M13.9,16.6c-0.4,0.4-1,0.4-1.4,0c-0.4-0.4-0.4-1,0-1.4l2.1-2.1l-2.1-2.1c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l2.8,2.8
+        c0.4,0.4,0.4,1,0,1.4L13.9,16.6z M9.5,16.5c-0.4,0.4-1,0.4-1.4,0l-2.8-2.8c-0.4-0.4-0.4-1,0-1.4l2.8-2.8c0.4-0.4,1-0.4,1.4,0
+        c0.4,0.4,0.4,1,0,1.4L7.4,13l2.1,2.1C9.9,15.5,9.9,16.1,9.5,16.5z"/>
+      </svg>
+      <strong>Nice.</strong> This is an Alert with the :warning class set</p>
+    <button class="button--icon-only" data-close-alert="" title="Close">
+      <svg viewBox="0 0 12 12"><path d="m8.2 6 3.3-3.3c.6-.6.6-1.6 0-2.2s-1.6-.6-2.2 0l-3.3 3.3-3.3-3.3c-.6-.6-1.6-.6-2.2 0s-.6 1.6 0 2.2l3.3 3.3-3.3 3.3c-.6.6-.6 1.6 0 2.2s1.6.6 2.2 0l3.3-3.3 3.3 3.3c.6.6 1.6.6 2.2 0s.6-1.6 0-2.2z"/></svg>
+    </button>
+  </div>
+
+  <div class="alert-banner alert-banner--with-icon alert-banner--error flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
+    <p>
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M18,22H4c-2.2,0-4-1.8-4-4V4c0-2.2,1.8-4,4-4h14c2.2,0,4,1.8,4,4v14
+        C22,20.2,20.2,22,18,22z M17,2H5C3.7,2,2.6,2.8,2.2,4h17.6C19.4,2.8,18.3,2,17,2z M20,6H2v11c0,1.7,1.3,3,3,3h12c1.7,0,3-1.3,3-3V6z
+         M13.9,16.6c-0.4,0.4-1,0.4-1.4,0c-0.4-0.4-0.4-1,0-1.4l2.1-2.1l-2.1-2.1c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l2.8,2.8
+        c0.4,0.4,0.4,1,0,1.4L13.9,16.6z M9.5,16.5c-0.4,0.4-1,0.4-1.4,0l-2.8-2.8c-0.4-0.4-0.4-1,0-1.4l2.8-2.8c0.4-0.4,1-0.4,1.4,0
+        c0.4,0.4,0.4,1,0,1.4L7.4,13l2.1,2.1C9.9,15.5,9.9,16.1,9.5,16.5z"/>
+      </svg>
+      <strong>Nice.</strong> This is an Alert with the :warning class set</p>
+    <button class="button--icon-only" data-close-alert="" title="Close">
+      <svg viewBox="0 0 12 12"><path d="m8.2 6 3.3-3.3c.6-.6.6-1.6 0-2.2s-1.6-.6-2.2 0l-3.3 3.3-3.3-3.3c-.6-.6-1.6-.6-2.2 0s-.6 1.6 0 2.2l3.3 3.3-3.3 3.3c-.6.6-.6 1.6 0 2.2s1.6.6 2.2 0l3.3-3.3 3.3 3.3c.6.6 1.6.6 2.2 0s.6-1.6 0-2.2z"/></svg>
+    </button>
+  </div>
+
+  <div class="alert-banner alert-banner--error flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
+    <p>This is an Alert with the :warning class set</p>
+    <button class="button--icon-only" data-close-alert="" title="Close">
+      x
+    </button>
+  </div>
+  <div class="alert-banner alert-banner--error flex-block-xs flex-justify-between-xs flex-item-center-xs" data-featurette="alert" id="featurette-2">
+    <p>This is an Alert with the :warning class set</p>
+    <button class="button button--small-xs button--gray" data-close-alert="" title="Close">
+      Close
+    </button>
+  </div>
+
+  <div class="w-fit-xs box p-tb-2-xs flex-block-xs flex-justify-between-xs">
+     <div class="">
+       svg
+       Search bar
+     </div>
+     <div class="">
+       form
+     </div>
+     <div class="">
+       form
+     </div>
+     <div class="">
+       form
+     </div>
+  </div>
+
+<section>
+  <ul class="col-container col-gutters list-unstyled">
+
+    {% include component-examples/card.html %}
+    {% include component-examples/card.html %}
+    {% include component-examples/card.html %}
+    {% include component-examples/card.html %}
+    {% include component-examples/card.html %}    {% include component-examples/card.html %}
+    {% include component-examples/card.html %}
+
+  </ul>
+</section>
+
+
+</main>

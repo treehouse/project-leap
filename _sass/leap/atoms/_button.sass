@@ -39,6 +39,8 @@
     background-color: brand-color(green) !important
     border-color: brand-color(green) !important
     color: #fff !important
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
     svg
       fill: #fff !important
     +selected
@@ -50,6 +52,8 @@
     background-color: brand-color(blue-light) !important
     border-color: brand-color(blue-light) !important
     color: #fff !important
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
     svg
       fill: #fff !important
     +selected
@@ -105,6 +109,8 @@
     border-color: #fff !important
     color: #fff !important
     opacity: 0.88 !important
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
     svg
       fill: #fff !important
     +selected
@@ -117,6 +123,8 @@
       border-color: #fff !important
       color: text-color(medium) !important
       opacity: 0.88
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
       svg
         fill: text-color(medium) !important
       +selected
@@ -126,6 +134,8 @@
       border-color: #fff !important
       color: #fff !important
       opacity: 0.15 !important
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
       +selected
         border-color: #fff !important
         color: #fff !important
@@ -136,6 +146,8 @@
       border-color: #fff !important
       color: text-color(medium) !important
       opacity: 0.15 !important
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
       +selected
         background-color: #fff !important
         border-color: #fff !important
@@ -156,18 +168,20 @@
   &--icon-only
     background: none
     border: none
-    color: grey
-    fill: grey
+    color: gray-color(gray-dark)
+    fill: gray-color(gray-dark)
     padding: 5px
-    width: 22px
-    transition: background 0.2s
+    width: 24px
+    transition: fill 0.2s
     &:hover
-      fill: black
+      fill: gray-color(gray-darker)
 
   &--gray
     background: gray-color(gray-dark)
     border: gray-color(gray-dark)
     color: #e9ecec
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
     &:hover
       background: gray-color(gray-darker)
       border: gray-color(gray-darker)
@@ -239,6 +253,8 @@
         background-color: category-color(#{$category}, base) !important
         border-color: category-color(#{$category}, base) !important
         color: #fff !important
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
         +selected
           background-color: darken(category-color(#{$category}, base), 10%) !important
           border-color: darken(category-color(#{$category}, base), 10%) !important

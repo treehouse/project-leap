@@ -16,6 +16,7 @@ $text-colors: (
   "base":     #576366,
   "light":    #7b8b8e,
   "white":    #fff,
+  "light-on-dark":    #b2bbbd,
   "blue-light":    #387bab, // AA 4.58
   "blue-medium":    #2a5d81,
   "blue-dark":    #303853
@@ -26,8 +27,15 @@ $gray-colors: (
   "gray-darker":  #2d3339,
   "gray-dark":    #3f4850,
   "gray":         #c6ccd2,
+  "gray-40":      #dfe3e4,
   "gray-light":   #edeff0,
   "gray-lighter": #f9fafa
+);
+
+// Icon colors
+$icon-colors: (
+  "normal":       #bfc7ce,
+  "active":       #9099a1
 );
 
 // UI Colors
@@ -144,6 +152,8 @@ $border-color-mid:    #d4d9dd;
 $border-color-normal: #e8ebed;
 $border-color-light:  #f0f2f4;
 $border-radius: 4px;
+
+$box-shadow: 0 2px 0 rgba(#000,.06);
 
 // Grid max width
 $grid-width: 1260px;

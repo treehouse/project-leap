@@ -1,0 +1,19 @@
+.header-nav
+  background: gray-color(gray-darker)
+  z-index: 101
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  transition: height 600ms 0s ease
+  height: 70px
+
+.header-nav-container
+  height: 70px
+  a
+    color: text-color(light-on-dark)
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    margin-right: 30px
+    &:hover, &.active
+      color: white
