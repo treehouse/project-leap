@@ -2,8 +2,54 @@
   background: white
   border-radius: $border-radius
   box-shadow: $box-shadow
-  margin-bottom: 1.5rem
-  // height: 280px
+  margin-bottom: 2rem
+  // CLEAN height: 280px
+  +animation(card-fade-up .5s ease)
+  // CLEAN THIS
+  +keyframes(card-fade-up)
+    0%
+      opacity: 0
+      +transform(translatey(20px))
+    100%
+      opacity: 1
+      +transform(translatey(0))
+
+.card__header
+  font-size: text-size(6)
+  svg
+    width: 18px
+    height: 18px
+    margin-right: 1rem
+
+// Progress circles
+.card__stages
+  display: inline-block
+  margin: 0
+  padding: 0
+  list-style: none
+  height: 10px
+  width: calc(100% - 40px)
+  overflow: hidden
+  li
+    background-color: transparent
+    border: 2px solid rgba(255,255,255,0.3)
+    border-radius: 100px
+    text-indent: -100px
+    overflow: hidden
+    display: block
+    float: left
+    height: 10px
+    margin: 0 7px 0 0 !important
+    width: 10px
+  li.complete
+    background-color: white
+    border-color: white
+  li.current
+    border-color: white
+
+.card__estimate
+  margin-left: auto
+  min-width: 80px
 
 .card__description
   display: -webkit-box
@@ -11,3 +57,17 @@
   -webkit-box-orient: vertical
   max-height: 40px
   overflow: hidden
+
+// Track Card
+.card--track::after, .card--track::before
+  content: ""
+  background: #fff
+  height: 5px
+  display: block
+  box-shadow: 0 2px 0 rgba(0,0,0,0.07) inset, 0 2px 0 rgba(0,0,0,0.07)
+  border-radius: 0 0 $border-radius $border-radius
+  position: absolute
+  top: 100%
+  right: 10px
+  left: 10px
+  transition: .1s ease-in-out

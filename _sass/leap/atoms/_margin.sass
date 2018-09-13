@@ -16,6 +16,9 @@
         @if $unit == 0.5
           .m-05-#{$suffix}
             margin: spacing($unit) !important
+        @else if $unit == 0.25
+          .m-025-#{$suffix}
+            margin: spacing($unit) !important
         @else
           .m-#{$unit}-#{$suffix}
             margin: spacing($unit) !important
@@ -41,6 +44,21 @@
               margin-bottom: spacing($unit) !important
           @else
             .m-#{$type}-05-#{$suffix}
+              margin-#{$side}: spacing($unit) !important
+        @else if $unit == 0.25
+
+          // We need to control printing out two properties for
+          // the lt and tb case and a single for the others
+          @if $type == lr
+            .m-#{$type}-025-#{$suffix}
+              margin-left: spacing($unit) !important
+              margin-right: spacing($unit) !important
+          @else if $type == tb
+            .m-#{$type}-025-#{$suffix}
+              margin-top: spacing($unit) !important
+              margin-bottom: spacing($unit) !important
+          @else
+            .m-#{$type}-025-#{$suffix}
               margin-#{$side}: spacing($unit) !important
         @else
 

@@ -16,6 +16,9 @@
         @if $unit == 0.5
           .p-05-#{$suffix}
             padding: spacing($unit) !important
+        @else if $unit == 0.25
+          .p-025-#{$suffix}
+            padding: spacing($unit) !important
         @else
           .p-#{$unit}-#{$suffix}
             padding: spacing($unit) !important
@@ -37,6 +40,21 @@
               padding-right: spacing($unit) !important
           @else if $type == tb
             .p-#{$type}-05-#{$suffix}
+              padding-top: spacing($unit) !important
+              padding-bottom: spacing($unit) !important
+          @else
+            .p-#{$type}-05-#{$suffix}
+              padding-#{$side}: spacing($unit) !important
+        @else if $unit == 0.25
+
+          // We need to control printing out two properties for
+          // the lt and tb case and a single for the others
+          @if $type == lr
+            .p-#{$type}-025-#{$suffix}
+              padding-left: spacing($unit) !important
+              padding-right: spacing($unit) !important
+          @else if $type == tb
+            .p-#{$type}-025-#{$suffix}
               padding-top: spacing($unit) !important
               padding-bottom: spacing($unit) !important
           @else
