@@ -12,7 +12,6 @@ h1, h2, h3, h4, h5, h6
   text-rendering: optimizeLegibility
 
 
-
 // text sizes for each header
 @for $num from 0 through 6
   h#{$num}
@@ -37,8 +36,6 @@ h1, h2, h3, h4, h5, h6
     +media(min-width $lg)
       .text-#{$size}-#{$suffix}
         font-size: #{$number} !important
-
-
 
 
 // Adds the media queries to the header mixin
@@ -91,10 +88,9 @@ p
   font-weight: normal !important
 
 strong,
+b,
 .bold
   font-weight: $bold !important
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
 
 em,
 .italic
