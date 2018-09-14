@@ -75,6 +75,8 @@
           @else
             .m-#{$type}-#{$unit}-#{$suffix}
               margin-#{$side}: spacing($unit) !important
+            .m-#{$type}-auto-#{$suffix}
+              margin-#{$side}: auto !important
 
 
 
@@ -82,8 +84,6 @@
 @mixin margin-auto($suffix)
   .m-auto-#{$suffix}
     margin: 0 auto !important
-
-
 
 // Adds the media queries to the margin-style mixin
 @mixin margin($suffix, $media: null)
