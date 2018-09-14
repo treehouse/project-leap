@@ -4,13 +4,17 @@
   box-shadow: $box-shadow
   font-size: 1rem
   font-weight: $bold
-  padding: 1rem 1.5rem
   margin-bottom: 2rem
   display: flex
+
+  // Mobile variation
   flex-direction: column
+  padding: 1rem 1.5rem
   +media(min-width $md)
     flex-direction: row
     padding: 1.5rem 2rem
+
+  // Link styling
   a
     color: text-color(light)
     margin-bottom: 1rem
@@ -25,3 +29,23 @@
   a.current,
   a:hover
     color: text-color(dark)
+
+  svg
+    height: 22px
+
+.control-bar__search
+  display: flex
+  width: calc(100% - 400px)
+  svg
+    margin-right: 20px
+  input
+    border: 0
+    font-weight: normal
+    padding: 0.5rem 0.5rem
+    width: 100%
+
+
+.control-bar__dropdowns
+  list-style: none
+  li
+    display: inline-block

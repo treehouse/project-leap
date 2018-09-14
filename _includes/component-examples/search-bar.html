@@ -1,0 +1,63 @@
+<div class="control-bar control-bar--search">
+  <form class="control-search search-form control-bar__search">
+    <label for="search">
+      <svg id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <path d="M15.6,13.5l-4-4c0.6-1,1-2.1,1-3.3C12.5,2.8,9.8,0,6.3,0C2.9,0,0,2.8,0,6.2s2.8,6.2,6.3,6.2c1.2,0,2.2-0.3,3.1-0.9l4,4.1
+        	c0.5,0.5,1.5,0.5,2.1,0C16.1,15,16.1,14.1,15.6,13.5z M6.5,9.4c-1.8,0-3.3-1.5-3.3-3.2C3.2,4.4,4.7,3,6.5,3s3.3,1.5,3.3,3.2
+        	C9.7,8,8.3,9.4,6.5,9.4z"/>
+      </svg>
+    </label>
+    <input type="text" class="search input-text" id="q" placeholder="Search Courses, Conferences and Teachers..."></input>
+  </form>
+
+  <ul class="control-bar__dropdowns">
+
+    <!-- Sorting -->
+    <li id="sort" class="dropdown-parent filter-container" data-featurette="filter-list">
+      <a class="dropdown-parent-label sort" data-filter-list-current-value="">Newest</a>
+      <ul class="sorting-container dropdown-child filter-dropdown" style="display: none;">
+        <li><a data-filter-value="" class="selected">Newest</a></li>
+        <li><a data-filter-value="oldest" class="">Oldest</a></li>
+        <li><a data-filter-value="title" class="">Alphabetical</a></li>
+        <li><a data-filter-value="difficulty" class="">Difficulty</a></li>
+      </ul>
+    </li>
+
+      <!-- Filtering -->
+      <li id="type" class="dropdown-parent filter-container " data-featurette="filter-list">
+        <a class="dropdown-parent-label type" data-filter-list-current-value="">All Types</a>
+        <ul class="sorting-container dropdown-child filter-dropdown" style="display: none;">
+          <li><a data-filter-value="" class="selected">All Types</a></li>
+          <li><a data-filter-value="course">Course</a></li>
+          <li><a data-filter-value="workshop">Workshop</a></li>
+          <li><a data-filter-value="practice">Practice</a></li>
+          <li><a data-filter-value="conference">Conference</a></li>
+          <li><a data-filter-value="bonus">Bonus Series</a></li>
+        </ul>
+      </li>
+
+    <!-- Courses -->
+    <li id="topic" class="dropdown-parent filter-container" data-featurette="filter-list">
+      <a class="dropdown-parent-label course" data-filter-list-current-value="">All Topics</a>
+      <ul class="dropdown-child filter-dropdown" style="display: none;">
+        <li><a itemprop="url" href="" data-filter-value="" class="selected">All Topics</a></li>
+          <li class="android">
+            <a data-filter-value="android">
+              <span class="topic-color" style="color:#30826C">
+              •
+              </span>
+              Android
+            </a>
+          </li>
+          <li class="apis">
+            <a data-filter-value="apis">
+              <span class="topic-color" style="color:#008297">
+              •
+              </span>
+               APIs
+            </a>
+          </li>
+      </ul><!-- /child -->
+    </li><!-- /parent -->
+  </ul>
+</div>
