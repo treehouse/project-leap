@@ -1,0 +1,27 @@
+.control-bar
+  background: white
+  border-radius: $border-radius
+  box-shadow: $box-shadow
+  font-size: 1rem
+  font-weight: $bold
+  padding: 1rem 1.5rem
+  margin-bottom: 2rem
+  display: flex
+  flex-direction: column
+  +media(min-width $md)
+    flex-direction: row
+    padding: 1.5rem 2rem
+  a
+    color: text-color(light)
+    margin-bottom: 1rem
+    margin-right: 0
+    +media(min-width $md)
+      margin-right: 2rem
+      margin-bottom: 0
+  a:last-of-type
+    margin-bottom: 0
+    +media(min-width $md)
+      margin-right: 0
+  a.current,
+  a:hover
+    color: text-color(dark)
