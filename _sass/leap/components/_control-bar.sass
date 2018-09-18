@@ -6,6 +6,7 @@
   font-weight: $bold
   margin-bottom: 2rem
   display: flex
+  margin-top: 2rem
 
   // Mobile variation
   flex-direction: column
@@ -49,3 +50,18 @@
   list-style: none
   li
     display: inline-block
+
+
+.control-bar--small
+  font-size: text-size(6)
+  background-color: #f9fafa
+  // FIX THIS ^
+  a
+    padding: 3px 12px
+    margin-left: -12px
+    margin-right: 1rem
+
+  a.selected, a.current, a.active
+    background-color: #4b5658
+    color: #fff
+    border-radius: 100px
