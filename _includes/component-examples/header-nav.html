@@ -1,16 +1,16 @@
 <header class="header-nav" role="banner">
-  <div class="header-nav-container col-max flex-block-xs flex-justify-between-xs flex-item-center-xs bold">
+  <div class="header-nav-container col-max">
     <button class="hamburger-button hamburger-button-inverse" aria-label="Navigation Menu" data-hamburger-button="">
       <span class="hamburger"></span>
     </button>
     <!-- skip link-->
-    <nav class="main-nav" role="navigation">
+    <nav class="header-nav__main" role="navigation">
       <ul>
         <li>
           <a class="header-nav__home" href="">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="32px" height="32px" viewBox="0 0 82 90" style="enable-background:new 0 0 82 90;" xml:space="preserve">
-            <path style="fill:#FFFFFF;" d="M71.574,17.411c-2.879-1.628-7.478,0.99-10.27,5.848l-5.056,8.795
+            <path style="" d="M71.574,17.411c-2.879-1.628-7.478,0.99-10.27,5.848l-5.056,8.795
               c-1.847,3.656-1.594,8.01,0.749,11.371l0.147,0.212c2.343,3.361,5.485,6.468,6.525,7.575c0.61,0.652,1.078,1.456,1.335,2.376
               c0.854,3.054-0.929,6.221-3.982,7.076c-3.054,0.853-6.222-0.929-7.075-3.982c-0.215-0.767-0.263-1.54-0.166-2.283
               c0.164-1.261-0.241-3.316-2.05-5.334c-1.808-2.016-5.506,1.793-6.701,5.711l-0.055,0.18c-1.196,3.919-1.95,7.337-1.724,7.666
@@ -37,19 +37,36 @@
         <li><a href="support.html">Support</a></li>
       </ul>
     </nav>
-    <nav class="secondary-nav" role="navigation">
+    <nav class="header-nav__secondary" role="navigation">
       <ul>
         <li><a href="">My Org</a></li>
-        <li><a href="">Workspaces</a></li>
-        <li><a href="">
-            13,230
-            me
-            v
-          </a></li>
+        <li class="header-nav__workspaces"><a href="">Workspaces</a></li>
         <li>
-          <a href="">
-                0
-          </a></li>
+          <a class="header-nav__profile" href="">
+            13,230
+            <div id="avatar-581710" class="avatar-staff header-nav__profile-avatar avatar-deep-blue-bg avatar avatar--small">
+              <div class="avatar-container">
+                <img alt="Tyreek Beahan" class="avatar-image" src="https://secure.gravatar.com/avatar/7a7ed453a86495e97a7271b4923f2e2a?s=72&amp;d=mm&amp;r=pg">
+              </div>
+            </div>
+            <svg class="chevron-icon header-nav__chevron" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 7.5">
+              <g id="chevron-icon">
+                <g>
+                	<path d="M6,7.5L0.3,1.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0L6,4.6l4.3-4.3c0.4-0.4,1-0.4,1.4,0c0.4,0.4,0.4,1,0,1.4L6,7.5z"></path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a data-notifications-link="" data-dropdown-toggle="notifications" data-analytics-link="Notifications" data-analytics-action="clicked:internal" data-analytics-event="application nav link" data-analytics-path="/notifications" class="header-nav-link " href="/notifications">
+              <svg class="header-nav__notifications notifications-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 12">
+                <g id="notifications-icon">
+                  <path d="M11.7,9.4c-0.2-0.3-0.5-0.4-0.9-0.6c0,0,0,0-0.1,0C9.3,7.5,10,6.5,10,5.1c0-1.3-1.3-3.4-3-3.9     c0,0,0-0.1,0-0.1C7,0.5,6.6,0,6,0C5.4,0,5,0.5,5,1.1c0,0.1,0,0.1,0,0.2C3.4,1.9,2.2,3.8,2.2,5.1c0,1.3,0.6,2.4-0.7,3.6     C1.2,8.9,1,9,0.7,9.1C0.6,9.2,0.4,9.3,0.3,9.4C0.1,9.6,0,9.8,0,10.1c0,0.3,0.1,0.5,0.3,0.7c0.2,0.3,0.5,0.4,0.9,0.6     c0.5,0.2,1.2,0.4,2.1,0.5C4.1,11.9,5,12,6,12c1.5,0,2.9-0.1,3.9-0.4c0.5-0.1,1-0.3,1.3-0.5c0.2-0.1,0.3-0.2,0.5-0.4     c0.1-0.2,0.3-0.4,0.3-0.7C12,9.8,11.9,9.6,11.7,9.4z M10.4,10.2c-0.4,0.2-1,0.3-1.8,0.4C7.9,10.7,7,10.7,6,10.7     c-1.5,0-2.8-0.1-3.7-0.4c-0.4-0.1-0.7-0.2-0.9-0.3c0,0,0.1,0,0.1-0.1c0.4-0.2,1-0.3,1.8-0.4c0.5-0.1,1.1-0.1,1.7-0.1     c0.1,0.4,0.5,0.8,0.9,0.8c0.5,0,0.8-0.3,0.9-0.8c1.1,0,2,0.2,2.7,0.3c0.4,0.1,0.7,0.2,0.9,0.3C10.5,10.1,10.5,10.2,10.4,10.2z"></path>
+                </g>
+              </svg>
+              <!-- <span class="header-nav-item-notifications-text">Notifications</span> -->
+          </a>
       </ul>
     </nav>
   </div>

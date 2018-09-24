@@ -34,11 +34,17 @@
   svg
     height: 22px
 
+.control-bar--search
+  padding: 1rem 2rem
+
 .control-bar__search
   display: flex
   width: calc(100% - 400px)
+  font-size: 14px
   svg
-    margin-right: 20px
+    margin-top: 6px
+    width: 16px
+    fill: #4b5658
   input
     border: 0
     font-weight: normal
@@ -50,6 +56,11 @@
   list-style: none
   li
     display: inline-block
+    // Temp display hack
+    margin-top: 5px
+    font-size: 14px
+    width: 116px
+    text-align: right
 
 
 .control-bar--small

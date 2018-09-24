@@ -12182,7 +12182,7 @@ table td {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
 }
 
-.l-alert-banner {
+.l-alert-banner, .alert-banner {
   background: #c6ccd2;
   border: 2px solid #9ba6b0;
   border-left-width: 10px;
@@ -12191,7 +12191,7 @@ table td {
   margin: 2rem 0 15px 0;
   position: relative;
 }
-.l-alert-banner p {
+.l-alert-banner p, .alert-banner p {
   color: #40484a;
 }
 
@@ -12395,10 +12395,14 @@ body.example-page {
   right: 0;
   transition: height 600ms 0s ease;
   font-size: 1.125rem;
+  font-weight: 500;
 }
 
 .header-nav-container {
   height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header-nav-container a {
   color: #b2bbbd;
@@ -12414,6 +12418,8 @@ body.example-page {
   padding-right: 1.5rem;
   display: flex;
   align-items: center;
+  margin-right: 1rem;
+  padding-left: 0;
 }
 .header-nav-container a.header-nav__home svg {
   margin-right: 1rem;
@@ -12422,11 +12428,13 @@ body.example-page {
 .header-nav-container a.header-nav__home:hover svg {
   fill: white;
 }
-
-nav ul {
+.header-nav-container nav ul {
   list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
-nav ul li {
+.header-nav-container nav ul li {
   display: inline-block;
 }
 
@@ -12509,6 +12517,28 @@ nav ul li {
   background-color: #4b5658;
   color: #fff;
   border-radius: 100px;
+}
+
+.avatar-container {
+  background: #d4d9dd;
+  border-radius: 50%;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #edeff0;
+  transition: border-color 300ms 0s ease;
+}
+
+.avatar-image {
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  transition: width 300ms 0s ease, height 300ms 0s ease;
+  background: #edeff0;
+  padding: 2px;
 }
 
 /*# sourceMappingURL=leap.css.map */
