@@ -1,8 +1,20 @@
 filename: atoms
-name: Atoms
+name: Utilities
 pages:
-  - slug: /typography.html
-    name: Typography
+  - slug: /borders.html
+    name: Borders
+
+  - slug: /buttons.html
+    name: Buttons
+
+  - slug: /colors.html
+    name: Colors
+
+  - slug: /flexbox.html
+    name: Flex Box
+
+  - slug: /forms.html
+    name: Forms
 
   - slug: /grid.html
     name: Grid
@@ -13,23 +25,11 @@ pages:
   - slug: /layout.html
     name: Layout
 
-  - slug: /flexbox.html
-    name: Flex Box
-
-  - slug: /buttons.html
-    name: Buttons
-
-  - slug: /colors.html
-    name: Colors
-
-  - slug: /borders.html
-    name: Borders
-
-  - slug: /forms.html
-    name: Forms
-
   - slug: /icons.html
     name: Icons
 
   - slug: /tables.html
     name: Tables
+
+  - slug: /typography.html
+    name: Typography

@@ -1,0 +1,78 @@
+.control-bar
+  background: white
+  border-radius: $border-radius
+  box-shadow: $box-shadow
+  font-size: 1rem
+  font-weight: $bold
+  margin-bottom: 2rem
+  display: flex
+  margin-top: 2rem
+
+  // Mobile variation
+  flex-direction: column
+  padding: 1rem 1.5rem
+  +media(min-width $md)
+    flex-direction: row
+    padding: 1.5rem 2rem
+
+  // Link styling
+  a
+    color: text-color(light)
+    margin-bottom: 1rem
+    margin-right: 0
+    +media(min-width $md)
+      margin-right: 2rem
+      margin-bottom: 0
+  a:last-of-type
+    margin-bottom: 0
+    +media(min-width $md)
+      margin-right: 0
+  a.current,
+  a:hover
+    color: text-color(dark)
+
+  svg
+    height: 22px
+
+.control-bar--search
+  padding: 1rem 2rem
+
+.control-bar__search
+  display: flex
+  width: calc(100% - 400px)
+  font-size: 14px
+  svg
+    margin-top: 6px
+    width: 16px
+    fill: #4b5658
+  input
+    border: 0
+    font-weight: normal
+    padding: 0.5rem 0.5rem
+    width: 100%
+
+
+.control-bar__dropdowns
+  list-style: none
+  li
+    display: inline-block
+    // Temp display hack
+    margin-top: 5px
+    font-size: 14px
+    width: 116px
+    text-align: right
+
+
+.control-bar--small
+  font-size: text-size(6)
+  background-color: #f9fafa
+  // FIX THIS ^
+  a
+    padding: 3px 12px
+    margin-left: -12px
+    margin-right: 1rem
+
+  a.selected, a.current, a.active
+    background-color: #4b5658
+    color: #fff
+    border-radius: 100px

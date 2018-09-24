@@ -20,13 +20,15 @@ $widths: 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 
   // Include this alongside .col-container to add our default max-width
   &-max
     max-width: $grid-width !important
-    margin: 0 auto !important
-    @media screen
-      padding: 0
+    margin: 0 15px !important
+    // @media screen
+    //   padding: 0
+    // +media(min-width $md)
+    //   padding: 0 5px
     +media(min-width $md)
-      padding: 0 5px
-    +media(min-width $lg)
-      padding: 0 15px
+      margin: 0 30px !important
+    +media(min-width $grid-width)
+      margin: 0 auto !important
 
   // Center a single column inside of a .col-container
   &-center

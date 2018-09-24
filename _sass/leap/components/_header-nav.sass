@@ -1,0 +1,86 @@
+body.example-page
+  padding-top: 70px
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.header-nav
+  background: gray-color(gray-darker)
+  z-index: 101
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  transition: height 600ms 0s ease
+  font-size: text-size(4)
+  font-weight: $bold
+
+.header-nav-container
+  height: 70px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  a
+    color: text-color(light-on-dark)
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    padding: 2px 10px
+    &:hover, &.active
+      color: white
+
+  a.header-nav__home
+    border-right: 2px solid rgba(white, 0.2)
+    padding-right: 1.5rem
+    display: flex
+    align-items: center
+    margin-right: 1rem
+    padding-left: 0
+    svg
+      margin-right: 1rem
+      fill: brand-color(green)
+      transition: fill 0.2s
+    &:hover
+      svg
+        fill: white
+
+  nav ul
+    list-style: none
+    display: flex
+    align-items: center
+    padding: 0
+    li
+      display: inline-block
+
+.header-nav__workspaces
+  border-right: 2px solid rgba(white, 0.2)
+  padding-right: 0.5rem
+
+// Profile Link Batch
+
+.header-nav__profile
+  display: flex
+  align-items: center
+  margin-left: 0.5rem
+
+.header-nav__profile-avatar
+  margin-left: 0.5rem
+
+.header-nav__chevron
+  fill: #7b8b8e
+  margin-left: 0.5rem
+  margin-top: 4px
+  transition: fill 0.2s
+  width: 12px
+
+.header-nav__profile:hover
+  .header-nav__chevron
+    fill: white
+
+.header-nav__notifications
+  fill: #7b8b8e
+  margin-top: 8px
+  transition: fill 0.2s
+  height: 25px
+  width: 26px
+  &:hover
+    fill: white

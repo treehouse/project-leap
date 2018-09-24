@@ -1,0 +1,40 @@
+// Base structures for all alerts, info alert default
+.l-alert-banner, .alert-banner
+  background: gray-color(gray)
+  border: 2px solid darken(gray-color(gray), 15%)
+  border-left-width: 10px
+  border-radius: $border-radius
+  padding: 10px 1rem
+  margin: 2rem 0 15px 0
+  position: relative
+  p
+    color: text-color(dark)
+
+.alert-banner--with-icon
+  padding-left: calc(1rem + 36px)
+  p svg
+    position: absolute
+    top: 50%
+    fill: text-color(dark)
+    transform: translatey(-50%)
+    left: 15px
+    width: 24px
+
+// Alert color variations
+.alert-banner--success
+  background: lighten(brand-color(green),25%)
+  border-color: brand-color(green)
+  p svg
+    fill: darken(brand-color(green),20%)
+
+.alert-banner--warning
+  background: lighten(ui-color(wtf),20%)
+  border-color: ui-color(wtf)
+  p svg
+    fill: darken(ui-color(wtf),30%)
+
+.alert-banner--error
+  background: lighten(ui-color(red),28%)
+  border-color: ui-color(red)
+  p svg
+    fill: darken(ui-color(red),15%)

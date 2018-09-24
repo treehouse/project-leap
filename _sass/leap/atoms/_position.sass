@@ -28,6 +28,9 @@ $z-indexes: (100: 1, 200: 2, 300: 3, 400: 4)
       @if $unit == 0.5
         .pos-#{$shorthand}-05-#{$suffix}
           #{$side}: spacing($unit) !important
+      @else if $unit == 0.25
+        .pos-#{$shorthand}-025-#{$suffix}
+          #{$side}: spacing($unit) !important
       @else
         .pos-#{$shorthand}-#{$unit}-#{$suffix}
           #{$side}: spacing($unit) !important

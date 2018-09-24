@@ -16,6 +16,7 @@ $text-colors: (
   "base":     #576366,
   "light":    #7b8b8e,
   "white":    #fff,
+  "light-on-dark":    #b2bbbd,
   "blue-light":    #387bab, // AA 4.58
   "blue-medium":    #2a5d81,
   "blue-dark":    #303853
@@ -26,8 +27,15 @@ $gray-colors: (
   "gray-darker":  #2d3339,
   "gray-dark":    #3f4850,
   "gray":         #c6ccd2,
+  "gray-40":      #dfe3e4,
   "gray-light":   #edeff0,
   "gray-lighter": #f9fafa
+);
+
+// Icon colors
+$icon-colors: (
+  "normal":       #bfc7ce,
+  "active":       #9099a1
 );
 
 // UI Colors
@@ -35,14 +43,15 @@ $ui-colors: (
   "blue":         #3f8abf,
   "green":        #36b55c,
   "yellow":       #ffd466,
+  "wtf":       #ffd466,
   "orange":       #ff9f1f,
   "red":          #ed5a5a,
-  "error":          #be4a4a,
-  "warning":          #bf570f,
-  "success":          #24793d
+  "error":        #be4a4a,
+  "warning":      #bf570f,
+  "success":      #24793d
 );
 
-// Category colors 
+// Category colors
 $category-colors: (
   "back-end": (
     light: lighten(#008297,5%),
@@ -102,6 +111,7 @@ $category-colors: (
 //   6   = 80px
 $spacing: (
   0:   0rem,
+  0.25: 0.25rem,
   0.5: 0.5rem,
   1:   1rem,
   2:   1.5rem,
@@ -124,14 +134,25 @@ $spacing-sides: (
 
 // Type Variables
 $text-size: (
-  0: 3rem,
-  1: 2.25rem,
+  0: 2.5rem,
+  1: 2rem,
   2: 1.75rem,
   3: 1.25rem,
   4: 1.125rem,
   5: 1rem,
   6: 0.875rem
 );
+$text-size-mobile: (
+  0: 2rem,
+  1: 1.75rem,
+  2: 1.5rem,
+  3: 1.25rem,
+  4: 1rem,
+  5: 1rem,
+  6: 0.875rem
+);
+
+
 $gotham: "Gotham Rounded A", "Gotham Rounded B", "Helvetica", Helvetica, Arial, sans-serif;
 $bold: 500;
 
@@ -143,6 +164,8 @@ $border-color-mid:    #d4d9dd;
 $border-color-normal: #e8ebed;
 $border-color-light:  #f0f2f4;
 $border-radius: 4px;
+
+$box-shadow: 0 2px 0 rgba(#000,.06);
 
 // Grid max width
 $grid-width: 1260px;
