@@ -18,8 +18,7 @@ h1, h2, h3, h4, h5, h6
 @for $num from 0 through 6
   h#{$num}
     font-size: text-size($num) !important
-
-
+    letter-spacing: text-tracking($num) !important
 
 // Create text size classes
 @mixin header-size($suffix)
@@ -74,6 +73,7 @@ hr
 p
   color: text-color(base)
   font-size: 1rem
+  letter-spacing: 0.58px
   line-height: 1.5
   margin: 0
 

@@ -146,10 +146,21 @@ $text-size: (
   1: 3rem,
   2: 2.25rem,
   3: 1.5rem,
-  4: 1rem,
-  5: 0.875rem,
-  6: 0.75rem
+  4: 1.125rem,
+  5: 1rem,
+  6: 0.875rem
 );
+
+$text-tracking: (
+  0: 2.5px,
+  1: 2px,
+  2: 1.5px,
+  3: 1px,
+  4: 0.75px,
+  5: 0.58px,
+  6: 0.5px
+);
+
 $gotham: "Gotham Rounded A", "Gotham Rounded B", "Helvetica", Helvetica, Arial, sans-serif;
 $bold: 500;
 
