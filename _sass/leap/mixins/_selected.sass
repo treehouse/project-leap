@@ -2,10 +2,16 @@
 @mixin selected($focus: true)
   @if $focus
     &:hover,
-    &:active,
+    &:active
+      @content
     &:focus
       @content
+      box-shadow: 0 0 0 2px #ffffff, 0 0 0px 4px brand-color(blue-light)
+      outline: 2px dotted transparent
+      outline-offset: 2px
   @else
-    &:hover,
     &:active,
+    &:hover,
+    &:focus
       @content
+
