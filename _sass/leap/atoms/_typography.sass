@@ -16,21 +16,16 @@ h1, h2, h3, h4, h5, h6
 @for $num from 0 through 6
   h#{$num}
     font-size: text-size($num)
-
-// Letter spacing for headers 0 - 3
-@for $num from 0 through 3
-  h#{$num}
     letter-spacing: text-tracking($num)
 
 // Create text size classes
 @mixin header-size($suffix)
 
-  // Iterate through each text-size create text size classes
-  @each $size, $number in $text-size
+  // Iterate through each text-size to create text size classes with letter-spacing
+  @each $size, $number in $text-size and $text-tracking
     .text-#{$size}-#{$suffix}
       font-size: #{$number} !important
-
-
+      letter-spacing: #{$number} !important
 
 // Adds the media queries to the header mixin
 @mixin header-classes($suffix, $media: null)
