@@ -21,10 +21,14 @@ h1, h2, h3, h4, h5, h6
 // Create text size classes
 @mixin header-size($suffix)
 
-  // Iterate through each text-size to create text size classes with letter-spacing
-  @each $size, $number in $text-size and $text-tracking
+  // Iterate through each text-size to create text size classes
+  @each $size, $number in $text-size
     .text-#{$size}-#{$suffix}
       font-size: #{$number} !important
+
+  // Iterate through each text-size to add letter-spacing
+  @each $size, $number in $text-tracking
+    .text-#{$size}-#{$suffix}
       letter-spacing: #{$number} !important
 
 // Adds the media queries to the header mixin
