@@ -33,17 +33,29 @@
     fill: brand-color(green)
 
 
-
   // Primary buttons
   &--primary
-    background-color: brand-color(green) !important
-    border-color: brand-color(green) !important
+    background: #50b06c !important
+    background: linear-gradient(to bottom, #55ba73 0%,#50b06c 100%) !important
+    border-color: transparent !important
     color: #fff !important
     svg
       fill: #fff !important
     +selected
-      background-color: darken(brand-color(green), 15%) !important
-      border-color: darken(brand-color(green), 15%) !important
+      background: linear-gradient(#408d56,#408d56) !important
+      border-color: transparent !important
+      color: #fff !important
+
+  &--primary-teal
+    background: #008298 !important
+    background: linear-gradient(to bottom,  #008298 0%,#007589 100%) !important
+    border-color: transparent !important
+    color: #fff !important
+    svg
+      fill: #fff !important
+    +selected
+      background: linear-gradient(#004652,#004652) !important
+      border-color: transparent !important
       color: #fff !important
 
   &--primary-blue
@@ -60,7 +72,7 @@
 
   // Secondary buttons
   &--secondary
-    background-color: transparent !important
+    background-color: #fff !important
     border-color: $border-color-normal !important
     color: text-color(base) !important
     svg
@@ -107,7 +119,7 @@
     opacity: 0.88 !important
     svg
       fill: #fff !important
-    +selected
+    +selected-inverse
       border-color: #fff !important
       color: #fff !important
       opacity: 1 !important
@@ -119,14 +131,25 @@
       opacity: 0.88
       svg
         fill: text-color(medium) !important
-      +selected
+      +selected-inverse
+        opacity: 1 !important
+
+    &-primary-teal
+      background-color: #fff !important
+      border-color: #fff !important
+      color: text-color(medium) !important
+      opacity: 0.88
+      svg
+        fill: pop-color(teal) !important
+      +selected-inverse
+        color: darken(pop-color(teal), 6%) !important
         opacity: 1 !important
 
     &-disabled
       border-color: #fff !important
       color: #fff !important
       opacity: 0.15 !important
-      +selected
+      +selected-inverse
         border-color: #fff !important
         color: #fff !important
         opacity: 0.15 !important
@@ -136,12 +159,11 @@
       border-color: #fff !important
       color: text-color(medium) !important
       opacity: 0.15 !important
-      +selected
+      +selected-inverse
         background-color: #fff !important
         border-color: #fff !important
         color: text-color(medium) !important
         opacity: 0.15 !important
-
 
 
   // Inline buttons next to input fields
@@ -215,11 +237,11 @@
         svg
           fill: darken(category-color(#{$category}, base), 10%) !important
       &.button--primary
-        background-color: category-color(#{$category}, base) !important
+        background: category-color(#{$category}, base) !important
         border-color: category-color(#{$category}, base) !important
         color: #fff !important
         +selected
-          background-color: darken(category-color(#{$category}, base), 10%) !important
+          background: darken(category-color(#{$category}, base), 10%) !important
           border-color: darken(category-color(#{$category}, base), 10%) !important
           svg
             fill: #fff !important

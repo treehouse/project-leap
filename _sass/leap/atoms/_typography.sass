@@ -12,24 +12,24 @@ h1, h2, h3, h4, h5, h6
   line-height: 1.3 !important
   text-rendering: optimizeLegibility
 
-
-
-// text sizes for each header
+// Text sizes for each header
 @for $num from 0 through 6
   h#{$num}
-    font-size: text-size($num) !important
-
-
+    font-size: text-size($num)
+    letter-spacing: text-tracking($num)
 
 // Create text size classes
 @mixin header-size($suffix)
 
-  // Iterate through each text-size create text size classes
+  // Iterate through each text-size to create text size classes
   @each $size, $number in $text-size
     .text-#{$size}-#{$suffix}
       font-size: #{$number} !important
 
-
+  // Iterate through each text-size to add letter-spacing
+  @each $size, $number in $text-tracking
+    .text-#{$size}-#{$suffix}
+      letter-spacing: #{$number} !important
 
 // Adds the media queries to the header mixin
 @mixin header-classes($suffix, $media: null)
@@ -159,3 +159,11 @@ ol
 .list-unstyled
   list-style: none
   padding: 0
+
+.list-lined
+  list-style: none
+  padding: 0
+  li
+    list-style-type: none
+    padding: spacing(1) 0
+    border-bottom: 1px solid $border-color-normal

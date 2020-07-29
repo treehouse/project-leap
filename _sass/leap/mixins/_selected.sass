@@ -1,11 +1,35 @@
-// Easily create hover, active and focus states with a single mixin
+// Easily create hover, active and focus states with a single mixin.
+// selected is for buttons on white. selected-inverse is for buttons on dark backgrounds.
+// Since box-shadow is invisible in Windows high-contrast mode, the transparent outline is a fallback; it actually does show up in high-contrast mode.
+
 @mixin selected($focus: true)
   @if $focus
     &:hover,
-    &:active,
+    &:active
+      @content
     &:focus
       @content
+      box-shadow: 0 0 0 2px #ffffff, 0 0 0px 3px brand-color(blue-light)
+      outline: 2px dotted transparent
+      outline-offset: 2px
   @else
-    &:hover,
     &:active,
+    &:hover,
+    &:focus
+      @content
+
+@mixin selected-inverse($focus: true)
+  @if $focus
+    &:hover,
+    &:active
+      @content
+    &:focus
+      @content
+      box-shadow: 0 0 0 2px #000, 0 0 0px 3px #ffffff
+      outline: 2px dotted transparent
+      outline-offset: 2px
+  @else
+    &:active,
+    &:hover,
+    &:focus
       @content
