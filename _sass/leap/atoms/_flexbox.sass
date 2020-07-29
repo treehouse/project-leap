@@ -1,10 +1,10 @@
-// Adds flex and flex-inline classes
+// Adds flex and inline-flex classes
 @mixin flex-container($suffix)
   .flex
     &-block-#{$suffix}
       display: flex !important
     &-inline-#{$suffix}
-      display: flex-inline !important
+      display: inline-flex !important
 
 // Adds flex direction classes
 @mixin flex-direction($suffix)
@@ -107,8 +107,12 @@
       align-self: auto !important
     &-start-#{$suffix}
       align-self: flex-start !important
+    &-start-flush-#{$suffix}
+      align-self: start !important
     &-end-#{$suffix}
       align-self: flex-end !important
+    &-end-flush-#{$suffix}
+      align-self: end !important
     &-center-#{$suffix}
       align-self: center !important
     &-stretch-#{$suffix}

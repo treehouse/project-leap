@@ -1,8 +1,9 @@
-$leap-version: "0.9.2";
+$leap-version: "0.11.0";
 
 // Brand Colors
 $brand-colors: (
   "green": #5fcf80,
+  "green-dark": #2F9D4F,
   "gray":  #3e474f,
   "blue-light": #387bab, // AA 4.58
   "blue-medium": #2a5d81,
@@ -40,6 +41,21 @@ $ui-colors: (
   "error":          #be4a4a,
   "warning":          #bf570f,
   "success":          #24793d
+);
+
+// Pop Colors
+$pop-colors: (
+  "blue-pastel":    #5185c1,
+  "blue":           #3859a2,
+  "blue-dark":      #323952,
+  "teal":           #0498b1,
+  "green":          #6ac17e,
+  "golden":         #ecc148,
+  "orange":         #e98134,
+  "red-orange":     #e95e31,
+  "purple-pastel":  #8171a0,
+  "purple":      #4a4290,
+  "magenta":         #b15592
 );
 
 // Category colors 
@@ -91,6 +107,8 @@ $category-colors: (
   )
 );
 
+
+
 // Spacing Units
 //   0   = 0px
 //   0.5 = 8px
@@ -124,14 +142,22 @@ $spacing-sides: (
 
 // Type Variables
 $text-size: (
-  0: 3rem,
-  1: 2.25rem,
-  2: 1.75rem,
-  3: 1.25rem,
+  0: 3.75rem,
+  1: 3rem,
+  2: 2.25rem,
+  3: 1.5rem,
   4: 1.125rem,
   5: 1rem,
   6: 0.875rem
 );
+
+$text-tracking: (
+  0: 1.4px,
+  1: 1.3px,
+  2: 1.2px,
+  3: 1px
+);
+
 $gotham: "Gotham Rounded A", "Gotham Rounded B", "Helvetica", Helvetica, Arial, sans-serif;
 $bold: 500;
 

@@ -6,7 +6,7 @@ subnav:
   - Items
 ---
 
-<p class="m-b-4-xs">Flexbox is perfect for aligning items inside components. It typically isn't used for large scale layouts but for smaller parts of a page or component. All of the flex box utility classes can be used with our breakpoint suffixes.</p>
+<p class="m-b-4-xs">Flexbox is perfect for aligning items inside components. It typically isn't used for large scale layouts but for smaller parts of a page or component. All of the flex box utility classes can be used with our breakpoint suffixes. In some cases, adding an auto margin to a side is needed to align content. In that case, check out <a href="layout.html">auto margins</a>.</p>
 
 <section id="Container">
   <h2 class="m-b-1-xs">Flex Container</h2>
@@ -579,11 +579,19 @@ subnav:
       </tr>
       <tr>
         <td><code>.flex-self-start-xs</code></td>
-        <td>Cross-start margin edge of the items is placed on the cross-start line</td>
+        <td>Cross-start margin edge of the flex item is placed on the cross-start line (align-self: flex-start)</td>
+      </tr>
+      <tr>
+        <td><code>.flex-self-start-flush-xs</code></td>
+        <td>Cross-start margin edge of the item is placed on the cross-start line (align-self: start)</td>
       </tr>
       <tr>
         <td><code>.flex-self-end-xs</code></td>
-        <td>Cross-end margin edge of the items is placed on the cross-end line</td>
+        <td>Cross-end margin edge of the flex item is placed on the cross-end line (align-self: flex-end)</td>
+      </tr>
+      <tr>
+        <td><code>.flex-self-end-flush-xs</code></td>
+        <td>Cross-end margin edge of the item is placed on the cross-end line (align-self: end)</td>
       </tr>
       <tr>
         <td><code>.flex-self-center-xs</code></td>

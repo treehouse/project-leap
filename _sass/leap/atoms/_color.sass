@@ -123,3 +123,26 @@ $properties: fill stroke color border-color background-color
       @else
         .category-#{$property}-#{$color-name}-#{$color-value}
           #{$property}: map-get($color, $color-value) !important
+
+// Iterate through pop-colors map to create colors for classes
+@each $color-name, $color in $pop-colors
+
+  // Iterate through properties var to create properties for classes
+  @each $property in $properties
+
+    // We want to use 'bg' for the class name when using the
+    // background-color property
+    //
+    // We want to use 'border' for the class name when using the
+    // border-color property
+    //
+    // Else just use the regular property name
+    @if $property == background-color
+      .pop-bg-#{$color-name}
+        #{$property}: pop-color($color-name) !important
+    @else if $property == border-color
+      .pop-border-#{$color-name}
+        #{$property}: pop-color($color-name) !important
+    @else
+      .pop-#{$property}-#{$color-name}
+        #{$property}: pop-color($color-name) !important
