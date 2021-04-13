@@ -1,4 +1,4 @@
-/*! Leap Version 0.11.0 */
+/*! Leap Version 0.11.1 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -219,47 +219,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h0 {
-  font-size: 3.75rem !important;
+  font-size: 3.75rem;
+  letter-spacing: 1.4px;
 }
 
 h1 {
-  font-size: 3rem !important;
+  font-size: 3rem;
+  letter-spacing: 1.3px;
 }
 
 h2 {
-  font-size: 2.25rem !important;
+  font-size: 2.25rem;
+  letter-spacing: 1.2px;
 }
 
 h3 {
-  font-size: 1.5rem !important;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 h4 {
-  font-size: 1.125rem !important;
+  font-size: 1.125rem;
 }
 
 h5 {
-  font-size: 1rem !important;
+  font-size: 1rem;
 }
 
 h6 {
-  font-size: 0.875rem !important;
-}
-
-h0 {
-  letter-spacing: 1.4px !important;
-}
-
-h1 {
-  letter-spacing: 1.3px !important;
-}
-
-h2 {
-  letter-spacing: 1.2px !important;
-}
-
-h3 {
-  letter-spacing: 1px !important;
+  font-size: 0.875rem;
 }
 
 @media screen {
@@ -290,6 +278,22 @@ h3 {
   .text-6-xs {
     font-size: 0.875rem !important;
   }
+
+  .text-0-xs {
+    letter-spacing: 1.4px !important;
+  }
+
+  .text-1-xs {
+    letter-spacing: 1.3px !important;
+  }
+
+  .text-2-xs {
+    letter-spacing: 1.2px !important;
+  }
+
+  .text-3-xs {
+    letter-spacing: 1px !important;
+  }
 }
 @media screen and (min-width: 480px) {
   .text-0-sm {
@@ -318,6 +322,22 @@ h3 {
 
   .text-6-sm {
     font-size: 0.875rem !important;
+  }
+
+  .text-0-sm {
+    letter-spacing: 1.4px !important;
+  }
+
+  .text-1-sm {
+    letter-spacing: 1.3px !important;
+  }
+
+  .text-2-sm {
+    letter-spacing: 1.2px !important;
+  }
+
+  .text-3-sm {
+    letter-spacing: 1px !important;
   }
 }
 @media screen and (min-width: 680px) {
@@ -348,6 +368,22 @@ h3 {
   .text-6-md {
     font-size: 0.875rem !important;
   }
+
+  .text-0-md {
+    letter-spacing: 1.4px !important;
+  }
+
+  .text-1-md {
+    letter-spacing: 1.3px !important;
+  }
+
+  .text-2-md {
+    letter-spacing: 1.2px !important;
+  }
+
+  .text-3-md {
+    letter-spacing: 1px !important;
+  }
 }
 @media screen and (min-width: 960px) {
   .text-0-lg {
@@ -377,6 +413,22 @@ h3 {
   .text-6-lg {
     font-size: 0.875rem !important;
   }
+
+  .text-0-lg {
+    letter-spacing: 1.4px !important;
+  }
+
+  .text-1-lg {
+    letter-spacing: 1.3px !important;
+  }
+
+  .text-2-lg {
+    letter-spacing: 1.2px !important;
+  }
+
+  .text-3-lg {
+    letter-spacing: 1px !important;
+  }
 }
 @media screen and (min-width: 1140px) {
   .text-0-xl {
@@ -405,6 +457,22 @@ h3 {
 
   .text-6-xl {
     font-size: 0.875rem !important;
+  }
+
+  .text-0-xl {
+    letter-spacing: 1.4px !important;
+  }
+
+  .text-1-xl {
+    letter-spacing: 1.3px !important;
+  }
+
+  .text-2-xl {
+    letter-spacing: 1.2px !important;
+  }
+
+  .text-3-xl {
+    letter-spacing: 1px !important;
   }
 }
 hr {
@@ -1298,6 +1366,126 @@ ol {
 
 .brand-bg-blue-dark {
   background-color: #303853 !important;
+}
+
+.brand-fill-ubora-orange {
+  fill: #E98034 !important;
+}
+
+.brand-stroke-ubora-orange {
+  stroke: #E98034 !important;
+}
+
+.brand-color-ubora-orange {
+  color: #E98034 !important;
+}
+
+.brand-border-ubora-orange {
+  border-color: #E98034 !important;
+}
+
+.brand-bg-ubora-orange {
+  background-color: #E98034 !important;
+}
+
+.brand-fill-ubora-magenta {
+  fill: #A8438C !important;
+}
+
+.brand-stroke-ubora-magenta {
+  stroke: #A8438C !important;
+}
+
+.brand-color-ubora-magenta {
+  color: #A8438C !important;
+}
+
+.brand-border-ubora-magenta {
+  border-color: #A8438C !important;
+}
+
+.brand-bg-ubora-magenta {
+  background-color: #A8438C !important;
+}
+
+.brand-fill-ubora-magenta-dark {
+  fill: #741B5B !important;
+}
+
+.brand-stroke-ubora-magenta-dark {
+  stroke: #741B5B !important;
+}
+
+.brand-color-ubora-magenta-dark {
+  color: #741B5B !important;
+}
+
+.brand-border-ubora-magenta-dark {
+  border-color: #741B5B !important;
+}
+
+.brand-bg-ubora-magenta-dark {
+  background-color: #741B5B !important;
+}
+
+.brand-fill-ubora-green {
+  fill: #30826C !important;
+}
+
+.brand-stroke-ubora-green {
+  stroke: #30826C !important;
+}
+
+.brand-color-ubora-green {
+  color: #30826C !important;
+}
+
+.brand-border-ubora-green {
+  border-color: #30826C !important;
+}
+
+.brand-bg-ubora-green {
+  background-color: #30826C !important;
+}
+
+.brand-fill-ubora-black {
+  fill: #212121 !important;
+}
+
+.brand-stroke-ubora-black {
+  stroke: #212121 !important;
+}
+
+.brand-color-ubora-black {
+  color: #212121 !important;
+}
+
+.brand-border-ubora-black {
+  border-color: #212121 !important;
+}
+
+.brand-bg-ubora-black {
+  background-color: #212121 !important;
+}
+
+.brand-fill-ubora-mint {
+  fill: #E6F1EE !important;
+}
+
+.brand-stroke-ubora-mint {
+  stroke: #E6F1EE !important;
+}
+
+.brand-color-ubora-mint {
+  color: #E6F1EE !important;
+}
+
+.brand-border-ubora-mint {
+  border-color: #E6F1EE !important;
+}
+
+.brand-bg-ubora-mint {
+  background-color: #E6F1EE !important;
 }
 
 .fill-blue {
@@ -2537,10 +2725,7 @@ ol {
 }
 .button--primary {
   background: #50b06c !important;
-  background: -moz-linear-gradient(top, #55ba73 0%, #50b06c 100%) !important;
-  background: -webkit-linear-gradient(top, #55ba73 0%, #50b06c 100%) !important;
   background: linear-gradient(to bottom, #55ba73 0%, #50b06c 100%) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55ba73', endColorstr='#50b06c',GradientType=0 ) !important;
   border-color: transparent !important;
   color: #fff !important;
 }
@@ -2562,10 +2747,7 @@ ol {
 }
 .button--primary-teal {
   background: #008298 !important;
-  background: -moz-linear-gradient(top, #008298 0%, #007589 100%) !important;
-  background: -webkit-linear-gradient(top, #008298 0%, #007589 100%) !important;
   background: linear-gradient(to bottom, #008298 0%, #007589 100%) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008298', endColorstr='#007589',GradientType=0 ) !important;
   border-color: transparent !important;
   color: #fff !important;
 }
@@ -2601,6 +2783,27 @@ ol {
 .button--primary-blue:focus {
   background-color: #2a5d81 !important;
   border-color: #2a5d81 !important;
+  color: #fff !important;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0px 3px #387bab;
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+}
+.button--primary-ubora {
+  background-color: #30826C !important;
+  border-color: #30826C !important;
+  color: #fff !important;
+}
+.button--primary-ubora svg {
+  fill: #fff !important;
+}
+.button--primary-ubora:hover, .button--primary-ubora:active {
+  background-color: #296f5d !important;
+  border-color: #296f5d !important;
+  color: #fff !important;
+}
+.button--primary-ubora:focus {
+  background-color: #296f5d !important;
+  border-color: #296f5d !important;
   color: #fff !important;
   box-shadow: 0 0 0 2px #ffffff, 0 0 0px 3px #387bab;
   outline: 2px dotted transparent;
