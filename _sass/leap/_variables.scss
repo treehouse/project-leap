@@ -1,4 +1,4 @@
-$leap-version: "0.11.0";
+$leap-version: "0.11.1";
 
 // Brand Colors
 $brand-colors: (
@@ -7,7 +7,13 @@ $brand-colors: (
   "gray":  #3e474f,
   "blue-light": #387bab, // AA 4.58
   "blue-medium": #2a5d81,
-  "blue-dark": #303853
+  "blue-dark": #303853,
+  "ubora-orange": #E98034,
+  "ubora-magenta": #A8438C,
+  "ubora-magenta-dark": #741B5B,
+  "ubora-green": #30826C,
+  "ubora-black": #212121,
+  "ubora-mint": #E6F1EE
 );
 
 // Text Colors
@@ -45,17 +51,17 @@ $ui-colors: (
 
 // Pop Colors
 $pop-colors: (
-  "blue-pastel":    #5185c1,
-  "blue":           #3859a2,
+  "blue-pastel":    #3887c8,
+  "blue":           #133ea2,
   "blue-dark":      #323952,
-  "teal":           #0498b1,
-  "green":          #6ac17e,
+  "teal":           #0098b1,
+  "green":          #31af7f,
   "golden":         #ecc148,
-  "orange":         #e98134,
+  "orange":         #e88034,
   "red-orange":     #e95e31,
-  "purple-pastel":  #8171a0,
-  "purple":      #4a4290,
-  "magenta":         #b15592
+  "purple-pastel":  #856fc4,
+  "purple":         #4a4290,
+  "magenta":        #be4e95
 );
 
 // Category colors 
