@@ -23,5 +23,13 @@ To get Jekyll running follow these steps:
 
 Way to go, nerd. You should be up and running now!
 
+## Compiling CSS Separately
+To compile the CSS outside of Jekyll, run:
+
+```
+bundle exec sass --update --force --style expanded _sass/leap.sass:css/leap.css
+bundle exec sass --update --force --style compressed _sass/leap.sass:css/leap.min.css
+```
+
 ## Copyright and license
 Code and documentation copyright 2020 Treehouse Island, Inc. Code released under the [MIT license](https://github.com/treehouse/project-leap/LICENSE).

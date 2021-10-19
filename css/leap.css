@@ -528,7 +528,7 @@ code {
 }
 
 address {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 @media screen {
@@ -2449,43 +2449,43 @@ ol {
 }
 
 .pop-fill-blue-pastel {
-  fill: #5185c1 !important;
+  fill: #3887c8 !important;
 }
 
 .pop-stroke-blue-pastel {
-  stroke: #5185c1 !important;
+  stroke: #3887c8 !important;
 }
 
 .pop-color-blue-pastel {
-  color: #5185c1 !important;
+  color: #3887c8 !important;
 }
 
 .pop-border-blue-pastel {
-  border-color: #5185c1 !important;
+  border-color: #3887c8 !important;
 }
 
 .pop-bg-blue-pastel {
-  background-color: #5185c1 !important;
+  background-color: #3887c8 !important;
 }
 
 .pop-fill-blue {
-  fill: #3859a2 !important;
+  fill: #133ea2 !important;
 }
 
 .pop-stroke-blue {
-  stroke: #3859a2 !important;
+  stroke: #133ea2 !important;
 }
 
 .pop-color-blue {
-  color: #3859a2 !important;
+  color: #133ea2 !important;
 }
 
 .pop-border-blue {
-  border-color: #3859a2 !important;
+  border-color: #133ea2 !important;
 }
 
 .pop-bg-blue {
-  background-color: #3859a2 !important;
+  background-color: #133ea2 !important;
 }
 
 .pop-fill-blue-dark {
@@ -2509,43 +2509,43 @@ ol {
 }
 
 .pop-fill-teal {
-  fill: #0498b1 !important;
+  fill: #0098b1 !important;
 }
 
 .pop-stroke-teal {
-  stroke: #0498b1 !important;
+  stroke: #0098b1 !important;
 }
 
 .pop-color-teal {
-  color: #0498b1 !important;
+  color: #0098b1 !important;
 }
 
 .pop-border-teal {
-  border-color: #0498b1 !important;
+  border-color: #0098b1 !important;
 }
 
 .pop-bg-teal {
-  background-color: #0498b1 !important;
+  background-color: #0098b1 !important;
 }
 
 .pop-fill-green {
-  fill: #6ac17e !important;
+  fill: #31af7f !important;
 }
 
 .pop-stroke-green {
-  stroke: #6ac17e !important;
+  stroke: #31af7f !important;
 }
 
 .pop-color-green {
-  color: #6ac17e !important;
+  color: #31af7f !important;
 }
 
 .pop-border-green {
-  border-color: #6ac17e !important;
+  border-color: #31af7f !important;
 }
 
 .pop-bg-green {
-  background-color: #6ac17e !important;
+  background-color: #31af7f !important;
 }
 
 .pop-fill-golden {
@@ -2569,23 +2569,23 @@ ol {
 }
 
 .pop-fill-orange {
-  fill: #e98134 !important;
+  fill: #e88034 !important;
 }
 
 .pop-stroke-orange {
-  stroke: #e98134 !important;
+  stroke: #e88034 !important;
 }
 
 .pop-color-orange {
-  color: #e98134 !important;
+  color: #e88034 !important;
 }
 
 .pop-border-orange {
-  border-color: #e98134 !important;
+  border-color: #e88034 !important;
 }
 
 .pop-bg-orange {
-  background-color: #e98134 !important;
+  background-color: #e88034 !important;
 }
 
 .pop-fill-red-orange {
@@ -2609,23 +2609,23 @@ ol {
 }
 
 .pop-fill-purple-pastel {
-  fill: #8171a0 !important;
+  fill: #856fc4 !important;
 }
 
 .pop-stroke-purple-pastel {
-  stroke: #8171a0 !important;
+  stroke: #856fc4 !important;
 }
 
 .pop-color-purple-pastel {
-  color: #8171a0 !important;
+  color: #856fc4 !important;
 }
 
 .pop-border-purple-pastel {
-  border-color: #8171a0 !important;
+  border-color: #856fc4 !important;
 }
 
 .pop-bg-purple-pastel {
-  background-color: #8171a0 !important;
+  background-color: #856fc4 !important;
 }
 
 .pop-fill-purple {
@@ -2649,23 +2649,23 @@ ol {
 }
 
 .pop-fill-magenta {
-  fill: #b15592 !important;
+  fill: #be4e95 !important;
 }
 
 .pop-stroke-magenta {
-  stroke: #b15592 !important;
+  stroke: #be4e95 !important;
 }
 
 .pop-color-magenta {
-  color: #b15592 !important;
+  color: #be4e95 !important;
 }
 
 .pop-border-magenta {
-  border-color: #b15592 !important;
+  border-color: #be4e95 !important;
 }
 
 .pop-bg-magenta {
-  background-color: #b15592 !important;
+  background-color: #be4e95 !important;
 }
 
 .button {
@@ -2920,14 +2920,14 @@ ol {
   opacity: .88;
 }
 .button--inverse-primary-teal svg {
-  fill: #0498b1 !important;
+  fill: #0098b1 !important;
 }
 .button--inverse-primary-teal:hover, .button--inverse-primary-teal:active {
-  color: #037e93 !important;
+  color: #007e92 !important;
   opacity: 1 !important;
 }
 .button--inverse-primary-teal:focus {
-  color: #037e93 !important;
+  color: #007e92 !important;
   opacity: 1 !important;
   box-shadow: 0 0 0 2px #000, 0 0 0px 3px #ffffff;
   outline: 2px dotted transparent;
