@@ -1,6 +1,6 @@
 {
   "name": "project-leap",
-  "version": "0.8.8",
+  "version": "0.11.2",
   "description": "An internal CSS library made for Treehouse, which contains immutable utility classes",
   "main": "_sass/leap/",
   "repository": {

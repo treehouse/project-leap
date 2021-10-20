@@ -32,4 +32,4 @@ bundle exec sass --update --force --style compressed _sass/leap.sass:css/leap.mi
 ```
 
 ## Copyright and license
-Code and documentation copyright 2020 Treehouse Island, Inc. Code released under the [MIT license](https://github.com/treehouse/project-leap/LICENSE).
+Code and documentation copyright 2021 Treehouse Island, Inc. Code released under the [MIT license](https://github.com/treehouse/project-leap/LICENSE).

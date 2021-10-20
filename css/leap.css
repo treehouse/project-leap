@@ -1,4 +1,4 @@
-/*! Leap Version 0.11.1 */
+/*! Leap Version 0.11.2 */
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -220,22 +220,18 @@ h1, h2, h3, h4, h5, h6 {
 
 h0 {
   font-size: 3.75rem;
-  letter-spacing: 1.4px;
 }
 
 h1 {
   font-size: 3rem;
-  letter-spacing: 1.3px;
 }
 
 h2 {
   font-size: 2.25rem;
-  letter-spacing: 1.2px;
 }
 
 h3 {
   font-size: 1.5rem;
-  letter-spacing: 1px;
 }
 
 h4 {
@@ -278,22 +274,6 @@ h6 {
   .text-6-xs {
     font-size: 0.875rem !important;
   }
-
-  .text-0-xs {
-    letter-spacing: 1.4px !important;
-  }
-
-  .text-1-xs {
-    letter-spacing: 1.3px !important;
-  }
-
-  .text-2-xs {
-    letter-spacing: 1.2px !important;
-  }
-
-  .text-3-xs {
-    letter-spacing: 1px !important;
-  }
 }
 @media screen and (min-width: 480px) {
   .text-0-sm {
@@ -322,22 +302,6 @@ h6 {
 
   .text-6-sm {
     font-size: 0.875rem !important;
-  }
-
-  .text-0-sm {
-    letter-spacing: 1.4px !important;
-  }
-
-  .text-1-sm {
-    letter-spacing: 1.3px !important;
-  }
-
-  .text-2-sm {
-    letter-spacing: 1.2px !important;
-  }
-
-  .text-3-sm {
-    letter-spacing: 1px !important;
   }
 }
 @media screen and (min-width: 680px) {
@@ -368,22 +332,6 @@ h6 {
   .text-6-md {
     font-size: 0.875rem !important;
   }
-
-  .text-0-md {
-    letter-spacing: 1.4px !important;
-  }
-
-  .text-1-md {
-    letter-spacing: 1.3px !important;
-  }
-
-  .text-2-md {
-    letter-spacing: 1.2px !important;
-  }
-
-  .text-3-md {
-    letter-spacing: 1px !important;
-  }
 }
 @media screen and (min-width: 960px) {
   .text-0-lg {
@@ -413,22 +361,6 @@ h6 {
   .text-6-lg {
     font-size: 0.875rem !important;
   }
-
-  .text-0-lg {
-    letter-spacing: 1.4px !important;
-  }
-
-  .text-1-lg {
-    letter-spacing: 1.3px !important;
-  }
-
-  .text-2-lg {
-    letter-spacing: 1.2px !important;
-  }
-
-  .text-3-lg {
-    letter-spacing: 1px !important;
-  }
 }
 @media screen and (min-width: 1140px) {
   .text-0-xl {
@@ -457,22 +389,6 @@ h6 {
 
   .text-6-xl {
     font-size: 0.875rem !important;
-  }
-
-  .text-0-xl {
-    letter-spacing: 1.4px !important;
-  }
-
-  .text-1-xl {
-    letter-spacing: 1.3px !important;
-  }
-
-  .text-2-xl {
-    letter-spacing: 1.2px !important;
-  }
-
-  .text-3-xl {
-    letter-spacing: 1px !important;
   }
 }
 hr {
@@ -528,7 +444,7 @@ code {
 }
 
 address {
-  font-size: 0.875rem;
+  font-size: .875rem;
 }
 
 @media screen {
