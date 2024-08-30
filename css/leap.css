@@ -204,7 +204,7 @@ html {
 
 body {
   font-size: 1rem;
-  font-family: "Gotham Rounded A", "Gotham Rounded B", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "GothamRoundedMedium", "Helvetica", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -2600,7 +2600,7 @@ ol {
   color: #5fcf80;
   cursor: pointer;
   display: inline-block;
-  font-family: "Gotham Rounded A", "Gotham Rounded B", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "GothamRoundedMedium", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   height: 40px;
