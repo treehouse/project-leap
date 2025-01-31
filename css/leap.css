@@ -204,7 +204,7 @@ html {
 
 body {
   font-size: 1rem;
-  font-family: "GothamRoundedMedium", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -212,7 +212,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #40484a;
   display: block;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
   line-height: 1.3 !important;
   text-rendering: optimizeLegibility;
@@ -405,12 +405,12 @@ p {
 }
 
 .regular {
-  font-weight: normal !important;
+  font-weight: 400 !important;
 }
 
 strong,
 .bold {
-  font-weight: 500 !important;
+  font-weight: 700 !important;
 }
 
 em,
@@ -2600,9 +2600,9 @@ ol {
   color: #5fcf80;
   cursor: pointer;
   display: inline-block;
-  font-family: "GothamRoundedMedium", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   height: 40px;
   line-height: 36px;
   padding: 0 15px;
@@ -8495,13 +8495,13 @@ ol {
 }
 .form-label {
   color: #40484a;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: .5rem;
   line-height: 1.3;
 }
 .form-label-required {
   color: #be4a4a;
-  font-weight: 500;
+  font-weight: 700;
 }
 .form-feedback-success .form-label {
   color: #24793d;
@@ -8514,7 +8514,7 @@ ol {
 }
 .form-helper {
   color: #7b8b8e;
-  font-weight: normal;
+  font-weight: 400;
   font-size: .9rem;
   margin-top: .5rem;
 }
@@ -8602,7 +8602,7 @@ ol {
   background-color: #f9fafa;
   border: 2px solid #d4d9dd;
   border-radius: 4px;
-  font-weight: 500;
+  font-weight: 700;
   color: #4b5658;
   outline: none;
   padding: .844rem 1rem;
@@ -8673,7 +8673,7 @@ ol {
 }
 .form-radio + .form-label, .form-checkbox + .form-label {
   display: block;
-  font-weight: normal;
+  font-weight: 400;
   color: #4b5658;
   padding: .25rem 0;
   margin-left: 25px !important;
@@ -8929,7 +8929,7 @@ ol {
 }
 .form-inverse .form-label {
   color: #fff;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: .5rem;
   line-height: 1.3;
   position: relative;
@@ -8939,11 +8939,11 @@ ol {
 }
 .form-inverse .form-label-required {
   color: #be4a4a;
-  font-weight: 500;
+  font-weight: 700;
 }
 .form-inverse .form-label-required-inset {
   color: #be4a4a;
-  font-weight: 500;
+  font-weight: 700;
   position: absolute;
   top: 33px;
   right: 8px;
@@ -8959,7 +8959,7 @@ ol {
 }
 .form-inverse .form-helper {
   color: #fff;
-  font-weight: normal;
+  font-weight: 400;
   font-size: .9rem;
   margin-top: .5rem;
 }
@@ -9031,7 +9031,7 @@ ol {
   background-color: #f9fafa;
   border: 2px solid #fff;
   border-radius: 4px;
-  font-weight: 500;
+  font-weight: 700;
   color: #4b5658;
   outline: none;
   padding: .844rem 1rem;
@@ -9071,7 +9071,7 @@ ol {
 }
 .form-inverse .form-radio + .form-label, .form-inverse .form-checkbox + .form-label {
   display: block;
-  font-weight: normal;
+  font-weight: 400;
   color: #fff;
   padding: .25rem 0;
   margin-left: 25px !important;

@@ -157,10 +157,16 @@ $text-size: (
   6: 0.875rem
 );
 
-$gotham: "GothamRoundedMedium", "Helvetica", Helvetica, Arial, sans-serif;
-$bold: 500;
+// Fonts
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$quicksand: "Quicksand", $sans-serif;
 
-
+// Font Weights
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
 
 // Global Border Variables
 $border-color-dark:   #b7c0c7;
