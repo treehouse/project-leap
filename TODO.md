@@ -40,7 +40,7 @@ Let's utilize a mobile-first approach and have mobile be the default. The rest o
 
 Typography
 ---
-We utilize Gotham Rounded for all of our web typography. Maybe we should include a download of it for people to use while prototyping?
+We utilize Quicksand for all of our web typography. Maybe we should include a download of it for people to use while prototyping?
 
 #### Headers and Sizing
 We can provide styling for default `<h1> - <h6>`, as well as, utility classes for applying different sizes to the default elements so that we can control markup hierarchy while still applying the sizes we want visually.
